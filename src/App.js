@@ -12,12 +12,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          {/* <Route path="/" element={<Navbar />}> */}
           <Route index element={<Home />} />
           <Route path="about-me" element={<About />} />
           <Route path="skills" element={<Skills />} />
           <Route path="projects" element={<Projects />} />
-          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </div>

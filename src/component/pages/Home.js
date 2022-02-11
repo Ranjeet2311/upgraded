@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import backgroundVideo from "../videos/cercuit-bg.mp4";
+import backgroundVideo from "./upgraded/images/cercuit-bg.mp4";
 import greetingHI from "../avatar/Avatar-Hi.png";
 import greetingNamaste from "../avatar/Avatar-Namaste.png";
 import HeadH1 from "../elements/HeadH1";
