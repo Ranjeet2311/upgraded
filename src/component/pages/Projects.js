@@ -4,7 +4,6 @@ import Heading from "../elements/Heading";
 import HeadH2 from "../elements/HeadH2";
 import Divider from "../elements/Divider";
 import projectData from "../ProjectData";
-import CardItem from "../elements/CardItem";
 import Card from "../elements/Card";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
