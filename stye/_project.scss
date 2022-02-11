@@ -1,0 +1,30 @@
+.project-wrapper {
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .project-display {
+    margin: 1rem auto;
+    display: grid;
+    // grid-template-columns: repeat(4, 25%);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: dense;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+
+    @include for-tablet-portrait-up() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .item-wrapper {
+      box-shadow: 0 2px 3px black;
+    }
+  }
+}

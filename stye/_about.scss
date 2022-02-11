@@ -1,0 +1,30 @@
+.wrapper {
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  padding: 0.5rem;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    .caption {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+
+      @include for-tablet-portrait-up() {
+        flex-direction: column;
+      }
+
+      .para {
+        width: 100%;
+      }
+      .img {
+        margin: 0 0.2rem;
+        padding: 0 4px;
+      }
+    }
+    // .para {
+    //   margin: 0 auto;
+    //   width: 90%;
+    // }
+  }
+}
