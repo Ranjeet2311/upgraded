@@ -12,11 +12,11 @@ const MenuLinks = [
   },
   {
     title: "Skills",
-    url: "upgraded//skills",
+    url: "/upgraded/skills",
   },
   {
     title: "Projects",
-    url: "upgraded/projects",
+    url: "/upgraded/projects",
   },
   // {
   //   title: <GitHubIcon />,
