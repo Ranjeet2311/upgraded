@@ -2,53 +2,53 @@ const itemData = [
   {
     id: 1,
 
-    img: "images/vs.png",
+    img: "./upgraded/images/vs.png",
     title: "Vs Code",
   },
   {
     id: 2,
-    img: "images/react-js.png",
+    img: "./upgraded/images/react-js.png",
     title: "React",
   },
   {
     id: 3,
-    img: "images/mui.png",
+    img: "./upgraded/images/mui.png",
     title: "Material-Ui",
   },
   {
     id: 4,
-    img: "images/js.png",
+    img: "./upgraded/images/js.png",
     title: "Java Script",
   },
   {
     id: 5,
-    img: "images/html.png",
+    img: "./upgraded/images/html.png",
     title: "HTML",
   },
   {
     id: 6,
-    img: "images/sass.png",
+    img: "./upgraded/images/sass.png",
     title: "Sass",
   },
   {
     id: 7,
-    img: "images/css.png",
+    img: "./upgraded/images/css.png",
     title: "Css",
   },
   {
     id: 8,
-    img: "images/boots.png",
+    img: "./upgraded/images/boots.png",
     title: "Bootstrap",
   },
 
   {
     id: 9,
-    img: "images/git.png",
+    img: "./upgraded/images/git.png",
     title: "Git",
   },
   {
     id: 10,
-    img: "images/bitbucket.png",
+    img: "./upgraded/images/bitbucket.png",
     title: "Bitbucket",
   },
 ];
@@ -56,17 +56,17 @@ const itemData = [
 const otherSkillData = [
   {
     id: 1,
-    img: "images/magento.png",
+    img: "./upgraded/images/magento.png",
     title: "Magento",
   },
   {
     id: 2,
-    img: "images/woo-commerce.png",
+    img: "./upgraded/images/woo-commerce.png",
     title: "Woo-Commerce",
   },
   {
     id: 3,
-    img: "images/wordpress.png",
+    img: "./upgraded/images/wordpress.png",
     title: "Wordpress",
   },
 ];
