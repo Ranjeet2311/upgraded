@@ -1,6 +1,3 @@
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
 const MenuLinks = [
   {
     title: "Home",
@@ -18,14 +15,6 @@ const MenuLinks = [
     title: "Projects",
     url: "/projects",
   },
-  // {
-  //   title: <GitHubIcon />,
-  //   url: "https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/",
-  // },
-  // {
-  //   title: <LinkedInIcon />,
-  //   url: "/projects",
-  // },
 ];
 
 export default MenuLinks;
