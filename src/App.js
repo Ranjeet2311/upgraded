@@ -9,13 +9,13 @@ import Navbar from "./component/navbar/Navbar";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/upgraded">
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
-          <Route path="about-me" element={<About />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="/about-me" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
           {/* <Route index path="/upgraded" element={<Home />} />
           <Route path="/upgraded/about-me" element={<About />} />
           <Route path="/upgraded/skills" element={<Skills />} />
