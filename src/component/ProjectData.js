@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 1,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/to-do-tasks.jpg",
+    img: "images/projectPics/to-do-tasks.jpg",
     title: " To-do-app",
     code: "https://github.com/Ranjeet2311/To-Do-App-Vanilla-JS",
     demo: "https://ranjeet2311.github.io/app-demo/todo.html",
@@ -10,7 +10,7 @@ const projectData = [
   {
     id: 2,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/Weather.jpg",
+    img: "images/projectPics/Weather.jpg",
     title: "Weathe App",
     code: "https://github.com/Ranjeet2311/Weather-App",
     demo: "https://ranjeet2311.github.io/app-demo/weather.html",
@@ -19,7 +19,7 @@ const projectData = [
   {
     id: 3,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/qr-code-bg.jpg",
+    img: "images/projectPics/qr-code-bg.jpg",
     title: " QR-Code Generator",
     code: "https://github.com/Ranjeet2311/Qr-Code-Generator",
     demo: "https://qr-code-25-11.netlify.app/",
@@ -27,7 +27,7 @@ const projectData = [
   {
     id: 4,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/Personality-match.jpg",
+    img: "images/projectPics/Personality-match.jpg",
     title: "Personality Match",
     code: "https://github.com/Ranjeet2311/Personality-Match",
     demo: "https://personality-match.netlify.app/",
@@ -36,7 +36,7 @@ const projectData = [
   {
     id: 5,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/weight-converter.jpg",
+    img: "images/projectPics/weight-converter.jpg",
     title: " Weight converter",
     code: "https://ranjeet2311.github.io/app-banner/weight-converter.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/weight-converter.html",
@@ -45,7 +45,7 @@ const projectData = [
   {
     id: 6,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/music-player.jpg",
+    img: "images/projectPics/music-player.jpg",
     title: "Music player",
     code: "https://ranjeet2311.github.io/app-banner/music-player.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/music-player.html",
@@ -54,7 +54,7 @@ const projectData = [
   {
     id: 7,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/counter.jpg",
+    img: "images/projectPics/counter.jpg",
     title: "Counter",
     code: "https://ranjeet2311.github.io/app-banner/counter.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/counter.html",
@@ -63,7 +63,7 @@ const projectData = [
   {
     id: 8,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/Digital-Clock.jpg",
+    img: "images/projectPics/Digital-Clock.jpg",
     title: " Digital clock",
     code: "https://ranjeet2311.github.io/app-banner/Digital-Clock.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/digital-clock.html",
@@ -72,7 +72,7 @@ const projectData = [
   {
     id: 9,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/play-music.jpg",
+    img: "images/projectPics/play-music.jpg",
     title: "Tap the music",
     code: "https://ranjeet2311.github.io/app-banner/play-music.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/play-music.html",
@@ -81,7 +81,7 @@ const projectData = [
   {
     id: 10,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/Menu-display.jpg",
+    img: "images/projectPics/Menu-display.jpg",
     title: "Menu display -filter",
     code: "https://ranjeet2311.github.io/app-banner/Menu-display.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/menu-display.html",
@@ -90,7 +90,7 @@ const projectData = [
   {
     id: 11,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/modal.jpg",
+    img: "images/projectPics/modal.jpg",
     title: "Best pictures from Europe",
     code: "https://ranjeet2311.github.io/app-banner/modal.jpg",
     demo: "https://ranjeet2311.github.io/app-demo/e-commerce-demo.html",
@@ -98,7 +98,7 @@ const projectData = [
   {
     id: 12,
     ref: "webApp",
-    img: "./upgraded/images/projectPics/diceGame.png",
+    img: "images/projectPics/diceGame.png",
     title: "Dice Game",
     code: "https://github.com/Ranjeet2311/Dice-Game",
     demo: "https://dazzling-heisenberg-3851ef.netlify.app/",
@@ -107,7 +107,8 @@ const projectData = [
   {
     id: 13,
     ref: "template",
-    img: "./upgraded/images/projectPics/e-commerce-demo.png",
+    img: "images/projectPics/e-commerce-demo.png",
+
     title: "E-commerce-demo",
     code: "https://github.com/Ranjeet2311/Projects",
     demo: "https://ranjeet2311.github.io/app-demo/yoga-demo.html",
@@ -115,7 +116,7 @@ const projectData = [
   {
     id: 14,
     ref: "template",
-    img: "./upgraded/images/projectPics/yoga-demo.png",
+    img: "images/projectPics/yoga-demo.png",
     title: "Yoga-demo",
     code: "https://github.com/Ranjeet2311/Projects",
     demo: "https://ranjeet2311.github.io/app-demo/yoga-demo.html",
@@ -123,7 +124,7 @@ const projectData = [
   {
     id: 15,
     ref: "template",
-    img: "./upgraded/images/projectPics/tech-demo.jpg",
+    img: "images/projectPics/tech-demo.jpg",
     title: "Tech-demo",
     code: "https://github.com/Ranjeet2311/Projects",
     demo: "https://ranjeet2311.github.io/app-demo/tech-demo.html",
@@ -131,7 +132,7 @@ const projectData = [
   {
     id: 16,
     ref: "template",
-    img: "./upgraded/images/projectPics/car-service-demo.png",
+    img: "images/projectPics/car-service-demo.png",
     // img: "https://ranjeet2311.github.io/app-banner/car-service-demo.png",
     title: "Car service demo",
     code: "https://github.com/Ranjeet2311/Projects",
@@ -140,7 +141,7 @@ const projectData = [
   {
     id: 17,
     ref: "template",
-    img: "./upgraded/images/projectPics/game-sign-up.png",
+    img: "images/projectPics/game-sign-up.png",
     // img: "https://ranjeet2311.github.io/app-banner/game-sign-up.png",
     title: "Game-sign-up",
     code: "https://github.com/Ranjeet2311/Projects",
@@ -149,7 +150,7 @@ const projectData = [
   {
     id: 18,
     ref: "template",
-    img: "./upgraded/images/projectPics/my-portfolio.png",
+    img: "images/projectPics/my-portfolio.png",
     // img: "https://ranjeet2311.github.io/app-banner/my-portfolio.png",
     title: "Old portfolio",
     code: "https://github.com/Ranjeet2311/Ranjeet2311.github.io",
@@ -158,7 +159,7 @@ const projectData = [
   {
     id: 19,
     ref: "template",
-    img: "./upgraded/images/projectPics/Animated-Boat.jpg",
+    img: "images/projectPics/Animated-Boat.jpg",
     // img: "https://ranjeet2311.github.io/app-banner/Animated-Boat.jpg",
     title: "Animated Boat",
     code: "https://github.com/Ranjeet2311/Boat-Animation",
@@ -167,7 +168,7 @@ const projectData = [
   {
     id: 20,
     ref: "template",
-    img: "./upgraded/images/projectPics/Av-st-Template-demo.PNG",
+    img: "images/projectPics/Av-st-Template-demo.PNG",
     // img: "https://ranjeet2311.github.io/app-banner/Av-st-Template-demo.PNG",
     title: "Av-st-Template",
     code: "https://github.com/Ranjeet2311/frontend-_AV",
@@ -177,7 +178,7 @@ const projectData = [
   {
     id: 21,
     ref: "react",
-    img: "./upgraded/images/projectPics/movie-database-project.png",
+    img: "images/projectPics/movie-database-project.png",
     // img: "https://ranjeet2311.github.io/reactScreenshots/movie-database-project.png",
     title: "React-Movie Database",
     code: "https://github.com/Ranjeet2311/React-MovieDatabase-app",
@@ -187,7 +188,7 @@ const projectData = [
   {
     id: 22,
     ref: "react",
-    img: "./upgraded/images/projectPics/KeeperApp.png",
+    img: "images/projectPics/KeeperApp.png",
     title: "Keeper App",
     code: "https://github.com/Ranjeet2311/Keeper-App",
     demo: "https://keeper-01.netlify.app/",
@@ -196,7 +197,7 @@ const projectData = [
   {
     id: 23,
     ref: "react",
-    img: "./upgraded/images/projectPics/quiz-demo.jpg",
+    img: "images/projectPics/quiz-demo.jpg",
     // img: "https://ranjeet2311.github.io/reactScreenshots/quiz-demo.jpg",
     title: "React-Quiz App",
     code: "https://github.com/Ranjeet2311/React-Quiz-App",
@@ -205,7 +206,7 @@ const projectData = [
   {
     id: 24,
     ref: "react",
-    img: "./upgraded/images/projectPics/Text-to-speech-image.jpg",
+    img: "images/projectPics/Text-to-speech-image.jpg",
     // img: "https://ranjeet2311.github.io/app-banner/Text-to-speech-image.jpg",
     title: "React-Text to Speech",
     code: "https://github.com/Ranjeet2311/React-Speech-to-text",
@@ -214,7 +215,7 @@ const projectData = [
   {
     id: 25,
     ref: "react",
-    img: "./upgraded/images/projectPics/drone-comapny.jpg",
+    img: "images/projectPics/drone-comapny.jpg",
     // img: "https://ranjeet2311.github.io/app-banner/drone-comapny.jpg",
     title: "React-Drone Company",
     code: "https://github.com/Ranjeet2311/React--Sass-Website",
@@ -223,7 +224,7 @@ const projectData = [
   {
     id: 26,
     ref: "react",
-    img: "./upgraded/images/projectPics/React-home.png",
+    img: "images/projectPics/React-home.png",
     // img: "https://ranjeet2311.github.io/reactScreenshots/React-home.png",
     title: "React-React-Website",
     code: "https://github.com/Ranjeet2311/React-Website",
@@ -232,7 +233,7 @@ const projectData = [
   {
     id: 27,
     ref: "react",
-    img: "./upgraded/images/projectPics/react-menu-home.png",
+    img: "images/projectPics/react-menu-home.png",
     // img: "https://ranjeet2311.github.io/reactScreenshots/react-menu-home.png",
     title: "React-React Dynamic Menu",
     code: "https://github.com/Ranjeet2311/React-Navbar",
@@ -241,3 +242,247 @@ const projectData = [
 ];
 
 export default projectData;
+
+// const projectData = [
+//   {
+//     id: 1,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/to-do-tasks.jpg",
+//     title: " To-do-app",
+//     code: "https://github.com/Ranjeet2311/To-Do-App-Vanilla-JS",
+//     demo: "https://ranjeet2311.github.io/app-demo/todo.html",
+//   },
+//   {
+//     id: 2,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/Weather.jpg",
+//     title: "Weathe App",
+//     code: "https://github.com/Ranjeet2311/Weather-App",
+//     demo: "https://ranjeet2311.github.io/app-demo/weather.html",
+//   },
+
+//   {
+//     id: 3,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/qr-code-bg.jpg",
+//     title: " QR-Code Generator",
+//     code: "https://github.com/Ranjeet2311/Qr-Code-Generator",
+//     demo: "https://qr-code-25-11.netlify.app/",
+//   },
+//   {
+//     id: 4,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/Personality-match.jpg",
+//     title: "Personality Match",
+//     code: "https://github.com/Ranjeet2311/Personality-Match",
+//     demo: "https://personality-match.netlify.app/",
+//   },
+
+//   {
+//     id: 5,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/weight-converter.jpg",
+//     title: " Weight converter",
+//     code: "https://ranjeet2311.github.io/app-banner/weight-converter.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/weight-converter.html",
+//   },
+
+//   {
+//     id: 6,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/music-player.jpg",
+//     title: "Music player",
+//     code: "https://ranjeet2311.github.io/app-banner/music-player.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/music-player.html",
+//   },
+
+//   {
+//     id: 7,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/counter.jpg",
+//     title: "Counter",
+//     code: "https://ranjeet2311.github.io/app-banner/counter.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/counter.html",
+//   },
+
+//   {
+//     id: 8,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/Digital-Clock.jpg",
+//     title: " Digital clock",
+//     code: "https://ranjeet2311.github.io/app-banner/Digital-Clock.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/digital-clock.html",
+//   },
+
+//   {
+//     id: 9,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/play-music.jpg",
+//     title: "Tap the music",
+//     code: "https://ranjeet2311.github.io/app-banner/play-music.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/play-music.html",
+//   },
+
+//   {
+//     id: 10,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/Menu-display.jpg",
+//     title: "Menu display -filter",
+//     code: "https://ranjeet2311.github.io/app-banner/Menu-display.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/menu-display.html",
+//   },
+
+//   {
+//     id: 11,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/modal.jpg",
+//     title: "Best pictures from Europe",
+//     code: "https://ranjeet2311.github.io/app-banner/modal.jpg",
+//     demo: "https://ranjeet2311.github.io/app-demo/e-commerce-demo.html",
+//   },
+//   {
+//     id: 12,
+//     ref: "webApp",
+//     img: "./upgraded/images/projectPics/diceGame.png",
+//     title: "Dice Game",
+//     code: "https://github.com/Ranjeet2311/Dice-Game",
+//     demo: "https://dazzling-heisenberg-3851ef.netlify.app/",
+//   },
+
+//   {
+//     id: 13,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/e-commerce-demo.png",
+//     title: "E-commerce-demo",
+//     code: "https://github.com/Ranjeet2311/Projects",
+//     demo: "https://ranjeet2311.github.io/app-demo/yoga-demo.html",
+//   },
+//   {
+//     id: 14,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/yoga-demo.png",
+//     title: "Yoga-demo",
+//     code: "https://github.com/Ranjeet2311/Projects",
+//     demo: "https://ranjeet2311.github.io/app-demo/yoga-demo.html",
+//   },
+//   {
+//     id: 15,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/tech-demo.jpg",
+//     title: "Tech-demo",
+//     code: "https://github.com/Ranjeet2311/Projects",
+//     demo: "https://ranjeet2311.github.io/app-demo/tech-demo.html",
+//   },
+//   {
+//     id: 16,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/car-service-demo.png",
+//     // img: "https://ranjeet2311.github.io/app-banner/car-service-demo.png",
+//     title: "Car service demo",
+//     code: "https://github.com/Ranjeet2311/Projects",
+//     demo: "https://ranjeet2311.github.io/app-demo/car-service.html",
+//   },
+//   {
+//     id: 17,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/game-sign-up.png",
+//     // img: "https://ranjeet2311.github.io/app-banner/game-sign-up.png",
+//     title: "Game-sign-up",
+//     code: "https://github.com/Ranjeet2311/Projects",
+//     demo: "https://ranjeet2311.github.io/app-demo/hero-page.html",
+//   },
+//   {
+//     id: 18,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/my-portfolio.png",
+//     // img: "https://ranjeet2311.github.io/app-banner/my-portfolio.png",
+//     title: "Old portfolio",
+//     code: "https://github.com/Ranjeet2311/Ranjeet2311.github.io",
+//     demo: "https://ranjeet2311.github.io/",
+//   },
+//   {
+//     id: 19,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/Animated-Boat.jpg",
+//     // img: "https://ranjeet2311.github.io/app-banner/Animated-Boat.jpg",
+//     title: "Animated Boat",
+//     code: "https://github.com/Ranjeet2311/Boat-Animation",
+//     demo: "https://ranjeet2311.github.io/app-demo/animatedBoat.html",
+//   },
+//   {
+//     id: 20,
+//     ref: "template",
+//     img: "./upgraded/images/projectPics/Av-st-Template-demo.PNG",
+//     // img: "https://ranjeet2311.github.io/app-banner/Av-st-Template-demo.PNG",
+//     title: "Av-st-Template",
+//     code: "https://github.com/Ranjeet2311/frontend-_AV",
+//     demo: "https://av-st-template.netlify.app/",
+//   },
+
+//   {
+//     id: 21,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/movie-database-project.png",
+//     // img: "https://ranjeet2311.github.io/reactScreenshots/movie-database-project.png",
+//     title: "React-Movie Database",
+//     code: "https://github.com/Ranjeet2311/React-MovieDatabase-app",
+//     demo: "https://movie-database-project-0802.netlify.app/",
+//   },
+
+//   {
+//     id: 22,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/KeeperApp.png",
+//     title: "Keeper App",
+//     code: "https://github.com/Ranjeet2311/Keeper-App",
+//     demo: "https://keeper-01.netlify.app/",
+//   },
+
+//   {
+//     id: 23,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/quiz-demo.jpg",
+//     // img: "https://ranjeet2311.github.io/reactScreenshots/quiz-demo.jpg",
+//     title: "React-Quiz App",
+//     code: "https://github.com/Ranjeet2311/React-Quiz-App",
+//     demo: "https://quiz-app-0810.netlify.app/",
+//   },
+//   {
+//     id: 24,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/Text-to-speech-image.jpg",
+//     // img: "https://ranjeet2311.github.io/app-banner/Text-to-speech-image.jpg",
+//     title: "React-Text to Speech",
+//     code: "https://github.com/Ranjeet2311/React-Speech-to-text",
+//     demo: "https://speech-to-text-09-01.netlify.app",
+//   },
+//   {
+//     id: 25,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/drone-comapny.jpg",
+//     // img: "https://ranjeet2311.github.io/app-banner/drone-comapny.jpg",
+//     title: "React-Drone Company",
+//     code: "https://github.com/Ranjeet2311/React--Sass-Website",
+//     demo: "https://drone-comapny.netlify.app/",
+//   },
+//   {
+//     id: 26,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/React-home.png",
+//     // img: "https://ranjeet2311.github.io/reactScreenshots/React-home.png",
+//     title: "React-React-Website",
+//     code: "https://github.com/Ranjeet2311/React-Website",
+//     demo: "https://react-website-0803.netlify.app/",
+//   },
+//   {
+//     id: 27,
+//     ref: "react",
+//     img: "./upgraded/images/projectPics/react-menu-home.png",
+//     // img: "https://ranjeet2311.github.io/reactScreenshots/react-menu-home.png",
+//     title: "React-React Dynamic Menu",
+//     code: "https://github.com/Ranjeet2311/React-Navbar",
+//     demo: "https://react-navigation-menu-0803.netlify.app/",
+//   },
+// ];
+
+// export default projectData;

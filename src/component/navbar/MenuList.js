@@ -4,19 +4,19 @@
 const MenuLinks = [
   {
     title: "Home",
-    url: "/upgraded",
+    url: "/",
   },
   {
     title: "About",
-    url: "/upgraded/about-me",
+    url: "/about-me",
   },
   {
     title: "Skills",
-    url: "/upgraded/skills",
+    url: "/skills",
   },
   {
     title: "Projects",
-    url: "/upgraded/projects",
+    url: "/projects",
   },
   // {
   //   title: <GitHubIcon />,
