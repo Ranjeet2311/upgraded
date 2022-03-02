@@ -173,23 +173,30 @@ const projectData = [
   {
     id: 21,
     ref: "react",
-    img: "images/projectPics/movie-database-project.png",
-    title: "React-Movie Database",
-    code: "https://github.com/Ranjeet2311/React-MovieDatabase-app",
-    demo: "https://movie-database-project-0802.netlify.app/",
-  },
-
-  {
-    id: 22,
-    ref: "react",
     img: "images/projectPics/KeeperApp.png",
     title: "Keeper App",
     code: "https://github.com/Ranjeet2311/Keeper-App",
     demo: "https://keeper-01.netlify.app/",
   },
-
+  {
+    id: 22,
+    ref: "react",
+    img: "images/projectPics/movie-database-project.png",
+    title: "React-Movie Database",
+    code: "https://github.com/Ranjeet2311/React-MovieDatabase-app",
+    demo: "https://movie-database-project-0802.netlify.app/",
+  },
   {
     id: 23,
+    ref: "react",
+    img: "images/projectPics/contact-manager.jpg",
+    title: "Contact Manager",
+    code: "https://github.com/Ranjeet2311/React-Contact-Mangaer",
+    demo: "https://contact-manager-001.netlify.app/",
+  },
+
+  {
+    id: 24,
     ref: "react",
     img: "images/projectPics/quiz-demo.jpg",
     title: "React-Quiz App",
@@ -197,7 +204,7 @@ const projectData = [
     demo: "https://quiz-app-0810.netlify.app/",
   },
   {
-    id: 24,
+    id: 25,
     ref: "react",
     img: "images/projectPics/Text-to-speech-image.jpg",
     title: "React-Text to Speech",
@@ -205,7 +212,7 @@ const projectData = [
     demo: "https://speech-to-text-09-01.netlify.app",
   },
   {
-    id: 25,
+    id: 26,
     ref: "react",
     img: "images/projectPics/drone-comapny.jpg",
     title: "React-Drone Company",
@@ -213,7 +220,7 @@ const projectData = [
     demo: "https://drone-comapny.netlify.app/",
   },
   {
-    id: 26,
+    id: 27,
     ref: "react",
     img: "images/projectPics/React-home.png",
     title: "React-React-Website",
@@ -221,7 +228,7 @@ const projectData = [
     demo: "https://react-website-0803.netlify.app/",
   },
   {
-    id: 27,
+    id: 28,
     ref: "react",
     img: "images/projectPics/react-menu-home.png",
     title: "React-React Dynamic Menu",

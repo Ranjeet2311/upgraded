@@ -6,7 +6,6 @@
   .skillBox {
     margin: 1rem auto;
     display: grid;
-    // grid-template-columns: repeat(4, 25%);
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-auto-flow: dense;
