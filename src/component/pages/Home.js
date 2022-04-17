@@ -14,10 +14,14 @@ function Home() {
 
   // ---animation
   const pop = useRef();
+  const leftX = useRef();
+  const rightX = useRef();
 
   useEffect(() => {
     gsap.from(pop.current, { scale: 1.2 });
-  });
+    gsap.from(leftX.current, { x: "-1000", duration: 2 });
+    gsap.from(rightX.current, { x: "1000", duration: 2 });
+  }, []);
 
   function onDownload() {
     const link = document.createElement("a");

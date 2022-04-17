@@ -93,7 +93,7 @@ const projectData = [
     img: "images/projectPics/modal.jpg",
     title: "Best pictures from Europe",
     code: "https://github.com/Ranjeet2311/Modal",
-    demo: "https://old-portfolio0.netlify.app/app-demo/e-commerce-demo.html",
+    demo: "https://old-portfolio0.netlify.app/app-demo/modal.html",
   },
   {
     id: 12,
@@ -111,7 +111,7 @@ const projectData = [
 
     title: "E-commerce-demo",
     code: "https://github.com/Ranjeet2311/Projects",
-    demo: "https://old-portfolio0.netlify.app/app-demo/yoga-demo.html",
+    demo: "https://old-portfolio0.netlify.app/app-demo/e-commerce-demo.html",
   },
   {
     id: 14,
