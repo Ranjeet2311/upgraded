@@ -7,30 +7,29 @@ const itemData = [
   },
   {
     id: 2,
-
-    img: "images/node-js.svg",
-    title: "Node Js",
-  },
-
-  {
-    id: 3,
     img: "images/react-js.png",
     title: "React",
   },
   {
-    id: 4,
+    id: 3,
     img: "images/mui.png",
     title: "Material-Ui",
   },
   {
-    id: 5,
+    id: 4,
     img: "images/js.png",
     title: "Java Script",
   },
   {
-    id: 6,
+    id: 5,
     img: "images/jquery.svg",
     title: "jquery",
+  },
+  {
+    id: 6,
+
+    img: "images/node-js.svg",
+    title: "Node Js",
   },
   {
     id: 7,

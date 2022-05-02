@@ -56,16 +56,16 @@ function AboutMe() {
             />
           </div>
           <div
-            className="img"
-            class="animate__animated animate__zoomIn animate__delay-10s"
+            // className="img"
+            class="animate__animated animate__zoomIn animate__delay-10s img"
           >
             <Image image={Profile1} alt="profile-pic1" />
           </div>
         </div>
         <div className="caption">
           <div
-            className="img"
-            class="animate__animated animate__zoomIn animate__delay-10s"
+            // className="img"
+            class="animate__animated animate__zoomIn animate__delay-10s img"
           >
             <Image image={Profile2} alt="profile-pic2" />
           </div>
