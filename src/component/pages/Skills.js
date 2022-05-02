@@ -7,6 +7,8 @@ import Divider from "../elements/Divider";
 import ImgSm from "../elements/ImgSm";
 import itemData, { otherSkillData } from "../allSkill/Skills";
 
+import "animate.css";
+
 function Skills() {
   // ---animation
 
@@ -24,7 +26,7 @@ function Skills() {
 
       <Paragraph text="As a front-end developer these are the tools that I use" />
 
-      <div className="skillBox" ref={up}>
+      <div class="animate__animated animate__fadeInLeft animate__delay-1.5s skillBox">
         {itemData.map((item) => {
           return (
             <ImgSm
