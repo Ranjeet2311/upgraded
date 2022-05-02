@@ -1,17 +1,15 @@
 .skill-wrapper {
   margin: 0 auto;
   text-align: center;
-  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  background-color: white;
+  // background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 
   .skillBox {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-auto-flow: dense;
-    gap: 1rem;
-    justify-items: center;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     @include for-tablet-portrait-up() {
       display: flex;
