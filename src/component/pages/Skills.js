@@ -7,15 +7,13 @@ import Divider from "../elements/Divider";
 import ImgSm from "../elements/ImgSm";
 import itemData, { otherSkillData } from "../allSkill/Skills";
 
-import "animate.css";
-
 function Skills() {
   // ---animation
 
-  const up = useRef();
+  const left = useRef();
 
   useEffect(() => {
-    gsap.from(up.current, { x: "-1000", duration: 1.2 });
+    gsap.from(left.current, { x: "-1000", duration: 1.2 });
   });
 
   return (
@@ -26,7 +24,7 @@ function Skills() {
 
       <Paragraph text="As a front-end developer these are the tools that I use" />
 
-      <div class="animate__animated animate__fadeInLeft animate__delay-1s skillBox">
+      <div class="skillBox" ref={left}>
         {itemData.map((item) => {
           return (
             <ImgSm
