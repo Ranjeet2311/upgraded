@@ -7,49 +7,66 @@ const itemData = [
   },
   {
     id: 2,
+
+    img: "images/node-js.svg",
+    title: "Node Js",
+  },
+
+  {
+    id: 3,
     img: "images/react-js.png",
     title: "React",
   },
   {
-    id: 3,
+    id: 4,
     img: "images/mui.png",
     title: "Material-Ui",
   },
   {
-    id: 4,
+    id: 5,
     img: "images/js.png",
     title: "Java Script",
   },
   {
-    id: 5,
+    id: 6,
+    img: "images/jquery.svg",
+    title: "jquery",
+  },
+  {
+    id: 7,
     img: "images/html.png",
     title: "HTML",
   },
   {
-    id: 6,
+    id: 8,
     img: "images/sass.png",
     title: "Sass",
   },
   {
-    id: 7,
+    id: 9,
     img: "images/css.png",
     title: "Css",
   },
   {
-    id: 8,
+    id: 10,
     img: "images/boots.png",
     title: "Bootstrap",
   },
 
   {
-    id: 9,
+    id: 11,
     img: "images/git.png",
     title: "Git",
   },
   {
-    id: 10,
+    id: 12,
     img: "images/bitbucket.png",
     title: "Bitbucket",
+  },
+  {
+    id: 13,
+    img: "images/figma.svg",
+    title: "Figma",
   },
 ];
 

@@ -30,6 +30,7 @@ function ImgSm({ image, alt, name }) {
         src={image}
         alt={alt}
       />
+      <p>{name}</p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function ImgMediaCard({ img, title, code, demo }) {
+function ImgMediaCard({ img, title, code, demo }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={title} height="140" image={img} />
@@ -30,3 +30,5 @@ export default function ImgMediaCard({ img, title, code, demo }) {
     </Card>
   );
 }
+
+export default ImgMediaCard;

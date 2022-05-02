@@ -13,7 +13,7 @@ function Skills() {
   const up = useRef();
 
   useEffect(() => {
-    gsap.from(up.current, { y: "1000", duration: 1.5 });
+    gsap.from(up.current, { x: "-1000", duration: 1.2 });
   });
 
   return (

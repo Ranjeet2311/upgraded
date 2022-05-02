@@ -17,10 +17,29 @@ function AboutMe() {
 
   useEffect(() => {
     // gsap.from(avatar.current, { rotation: "+=360" });
-    gsap.from(leftX.current, { x: "-1000", duration: 2 });
-    gsap.from(leftX1.current, { x: "1000", duration: 2 });
-    gsap.from(rightX.current, { x: "1000", duration: 2 });
-    gsap.from(rightX1.current, { x: "-1000", duration: 2 });
+    gsap.fromTo(
+      leftX.current,
+      { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
+      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    );
+    // gsap.from(leftX.current, { x: "-1000", duration: 2 });
+    gsap.fromTo(
+      leftX1.current,
+      { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
+      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    );
+    // gsap.from(leftX1.current, { x: "1000", duration: 2 });
+    gsap.fromTo(
+      rightX.current,
+      { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
+      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    );
+    // gsap.from(rightX.current, { x: "1000", duration: 2 });
+    gsap.fromTo(
+      rightX1.current,
+      { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
+      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    );
     gsap.from(bottom.current, { y: "1000", duration: 2 });
   });
 

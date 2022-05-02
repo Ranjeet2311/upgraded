@@ -10,9 +10,9 @@ function Heading({ text }) {
   });
   return (
     <div>
-      <header>
+      <heading ref={up}>
         <h1 className="heading">{text}</h1>
-      </header>
+      </heading>
     </div>
   );
 }

@@ -18,9 +18,19 @@ function Home() {
   const rightX = useRef();
 
   useEffect(() => {
-    gsap.from(pop.current, { scale: 1.2 });
-    gsap.from(leftX.current, { x: "-1000", duration: 2 });
-    gsap.from(rightX.current, { x: "1000", duration: 2 });
+    gsap.from(pop.current, { scale: 1.4 });
+    gsap.fromTo(
+      leftX.current,
+      { x: "-1000", autoAlpha: -1, duration: 2 },
+      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
+    );
+    // gsap.from(leftX.current, { x: "-1000", duration: 2 });
+    gsap.fromTo(
+      rightX.current,
+      { autoAlpha: -1, x: "1000", duration: 2 },
+      { autoAlpha: 1, x: "0", duration: 2 }
+    );
+    // gsap.fromTo(rightX.current, { x: "1000", duration: 2, });
   }, []);
 
   function onDownload() {
@@ -45,14 +55,14 @@ function Home() {
           muted
         ></video>
         <div className="container">
-          <div className="left-side">
+          <div className="left-side" ref={leftX}>
             {image ? (
               <img src={greetingHI} alt="Greeting-Avatar" />
             ) : (
               <img src={greetingNamaste} alt="Greeting-Avatar" />
             )}
           </div>
-          <div onMouseEnter={imageChangeHandler} className="right">
+          <div onMouseEnter={imageChangeHandler} className="right" ref={rightX}>
             <HeadH1 text="Welcome! I'm Ranjeet" />
             <Paragraph
               text=" Perseverance and creativity drive my day-to-day actions. I'm a self taught front-end developer. My journey started from designing websited on Wordpress,Woo-commerce, opencart and Magento etc. Installing plugins generally would pile up a lot of junk codes that are not being used and it make the website response very slow and this is the point where I wanted to learn something where I don't have to depend on plugins. I wanted to be more effiecient so I started spending more time with HTML, CS JAVA SCRIPT, different JavaScript libraries and JS Frameworks, . I would like to work for a company where I can deliver some fantastic results for the company and grow as a person.
