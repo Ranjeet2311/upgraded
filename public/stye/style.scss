@@ -49,6 +49,7 @@
   text-shadow: 1px 1px 2px black;
   padding: 0.5rem 0;
   margin: 1rem 0;
+  font-family: system-ui;
   @include for-tablet-portrait-up() {
     font-size: 2.1rem;
     margin: 0.5rem 0;
@@ -93,28 +94,46 @@
   }
 }
 // ------Small Image Component--------
-.small-image-wrapper {
-  width: 100%;
-  text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
 
-  .small-image {
-    margin: 0 auto;
+.ccard-main {
+  // width: 100%;
+  text-align: center;
+  margin: 20px;
+
+  .ccard {
     height: 140px;
     width: 140px;
-
-    &:hover {
-      transform: all 0.8s ease-out;
-      transform: scale(1.2);
-    }
-  }
-  p {
-    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 10px;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    box-shadow: 0 0 2px silver;
   }
 }
+// .small-image-wrapper {
+//   width: 100%;
+//   text-align: center;
+//   // display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+//   // flex-direction: column;
+
+//   .small-image {
+//     margin: 0 auto;
+//     height: 140px;
+//     width: 140px;
+
+//     &:hover {
+//       transform: all 0.8s ease-out;
+//       transform: scale(1.2);
+//     }
+//   }
+//   p {
+//     margin: 0 auto;
+//   }
+// }
 // ------Divider hr Component--------
 .hr {
   margin: 0.5rem auto;

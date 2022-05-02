@@ -38,7 +38,8 @@
         height: 300px;
         border: 4px solid white;
         border-radius: 50%;
-        background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+        background-color: white;
 
         @include at-900px() {
           width: 180px;
