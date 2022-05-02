@@ -26,7 +26,7 @@ function Skills() {
 
       <Paragraph text="As a front-end developer these are the tools that I use" />
 
-      <div class="animate__animated animate__fadeInLeft animate__delay-1.5s skillBox">
+      <div class="animate__animated animate__fadeInLeft animate__delay-1s skillBox">
         {itemData.map((item) => {
           return (
             <ImgSm
