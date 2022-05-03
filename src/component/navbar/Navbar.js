@@ -14,6 +14,14 @@ const menuLinks = [
   { name: "Projects", url: "/projects" },
 ];
 
+const navIconStyle = {
+  marginRight: "2rem",
+  color: "rgb(0, 0, 0)",
+  border: "1px solid white",
+  background: "white",
+  margin: "6px 12px",
+};
+
 function Navbar() {
   const [clicked, setClicked] = useState(false);
 
@@ -54,14 +62,15 @@ function Navbar() {
             })}
 
             <IconButton
-              className="iconLinks"
+              style={navIconStyle}
               target="_blank"
               href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
             >
               <LinkedInIcon />
             </IconButton>
+
             <IconButton
-              className="iconLinks"
+              style={navIconStyle}
               target="_blank"
               href="https://github.com/Ranjeet2311"
             >
