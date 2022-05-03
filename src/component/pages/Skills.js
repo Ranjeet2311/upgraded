@@ -10,10 +10,16 @@ import itemData, { otherSkillData } from "../allSkill/Skills";
 function Skills() {
   // ---animation
 
-  const left = useRef();
+  const up = useRef();
+  const appear = useRef();
 
   useEffect(() => {
-    gsap.from(left.current, { x: "-1000", duration: 1.2 });
+    gsap.from(up.current, { y: "1200", duration: 2 });
+    gsap.fromTo(
+      appear.current,
+      { autoAlpha: -1, duration: 2 },
+      { autoAlpha: 1, duration: 3, ease: "back" }
+    );
   });
 
   return (
@@ -24,7 +30,7 @@ function Skills() {
 
       <Paragraph text="As a front-end developer these are the tools that I use" />
 
-      <div class="skillBox" ref={left}>
+      <div class="skillBox" ref={up}>
         {itemData.map((item) => {
           return (
             <ImgSm

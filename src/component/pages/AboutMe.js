@@ -18,27 +18,42 @@ function AboutMe() {
   useEffect(() => {
     gsap.fromTo(
       leftX.current,
-      { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
-      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+      { autoAlpha: -2, duration: 2 },
+      { autoAlpha: 1, duration: 2, ease: "easeInOut" }
     );
 
     gsap.fromTo(
       leftX1.current,
-      { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
-      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+      { autoAlpha: -2, duration: 2 },
+      { autoAlpha: 1, duration: 2, ease: "easeInOut" }
     );
+    // gsap.fromTo(
+    //   leftX1.current,
+    //   { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
+    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    // );
 
     gsap.fromTo(
       rightX.current,
-      { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
-      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+      { autoAlpha: -2, duration: 2 },
+      { autoAlpha: 1, duration: 2, ease: "easeInOut" }
     );
+    // gsap.fromTo(
+    //   rightX.current,
+    //   { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
+    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    // );
 
     gsap.fromTo(
       rightX1.current,
-      { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
-      { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+      { autoAlpha: -2, duration: 2 },
+      { autoAlpha: 1, duration: 2, ease: "easeInOut" }
     );
+    // gsap.fromTo(
+    //   rightX1.current,
+    //   { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
+    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
+    // );
     gsap.from(bottom.current, { y: "1000", duration: 2 });
   });
 

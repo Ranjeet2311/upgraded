@@ -257,7 +257,7 @@
   position: relative;
   z-index: 1;
   margin: 0.2rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 0.5rem;
 }
 
@@ -319,7 +319,7 @@
 .wrapper {
   background-color: white;
   padding: 0.5rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .wrapper .container {
@@ -361,7 +361,7 @@
   margin: 0 auto;
   text-align: center;
   background-color: white;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .skill-wrapper .skillBox {
@@ -412,7 +412,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .project-wrapper .project-display {
@@ -594,6 +594,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  font-size: 6rem;
 }
 
 /* width */

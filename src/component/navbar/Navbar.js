@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div>
-      <header>
+      <header className="header">
         <div className="Navbar-wrap">
           <div className="logo">
             <img className="logo-image" src={Logo} alt="logo" />
