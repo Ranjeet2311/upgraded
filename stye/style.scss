@@ -60,7 +60,7 @@
 .h2 {
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
-  margin: 1rem 0;
+  // margin: 1rem 0;
   font-family: system-ui;
   @include for-tablet-portrait-up() {
     font-size: 1rem;
@@ -149,6 +149,10 @@
 }
 
 // --------Scroll bar------
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  font-size: 6rem;
+}
 
 /* width */
 ::-webkit-scrollbar {
