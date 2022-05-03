@@ -116,13 +116,21 @@ const projectData = [
   {
     id: 14,
     ref: "template",
+    img: "images/projectPics/form-validation-e.jpg",
+    title: "Form validation",
+    code: "https://github.com/Ranjeet2311/Parcel-bundler",
+    demo: "https://render-007.netlify.app/",
+  },
+  {
+    id: 15,
+    ref: "template",
     img: "images/projectPics/yoga-demo.png",
     title: "Yoga-demo",
     code: "https://github.com/Ranjeet2311/Projects",
     demo: "https://old-portfolio0.netlify.app/app-demo/yoga-demo.html",
   },
   {
-    id: 15,
+    id: 16,
     ref: "template",
     img: "images/projectPics/tech-demo.jpg",
     title: "Tech-demo",
@@ -130,7 +138,7 @@ const projectData = [
     demo: "https://old-portfolio0.netlify.app/app-demo/tech-demo.html",
   },
   {
-    id: 16,
+    id: 17,
     ref: "template",
     img: "images/projectPics/car-service-demo.png",
     title: "Car service demo",
@@ -138,7 +146,7 @@ const projectData = [
     demo: "https://old-portfolio0.netlify.app/app-demo/car-service.html",
   },
   {
-    id: 17,
+    id: 18,
     ref: "template",
     img: "images/projectPics/game-sign-up.png",
     title: "Game-sign-up",
@@ -146,7 +154,7 @@ const projectData = [
     demo: "https://old-portfolio0.netlify.app/app-demo/hero-page.html",
   },
   {
-    id: 18,
+    id: 19,
     ref: "template",
     img: "images/projectPics/my-portfolio.png",
     title: "Old portfolio",
@@ -154,7 +162,7 @@ const projectData = [
     demo: "https://old-portfolio0.netlify.app/",
   },
   {
-    id: 19,
+    id: 20,
     ref: "template",
     img: "images/projectPics/Animated-Boat.jpg",
     title: "Animated Boat",
@@ -162,7 +170,7 @@ const projectData = [
     demo: "https://old-portfolio0.netlify.app/app-demo/animatedBoat.html",
   },
   {
-    id: 20,
+    id: 21,
     ref: "template",
     img: "images/projectPics/Av-st-Template-demo.PNG",
     title: "Av-st-Template",
@@ -171,7 +179,7 @@ const projectData = [
   },
 
   {
-    id: 21,
+    id: 22,
     ref: "react",
     img: "images/projectPics/KeeperApp.png",
     title: "Keeper App",
@@ -179,7 +187,7 @@ const projectData = [
     demo: "https://keeper-01.netlify.app/",
   },
   {
-    id: 22,
+    id: 23,
     ref: "react",
     img: "images/projectPics/movie-database-project.png",
     title: "React-Movie Database",
@@ -187,7 +195,7 @@ const projectData = [
     demo: "https://movie-database-project-0802.netlify.app/",
   },
   {
-    id: 23,
+    id: 24,
     ref: "react",
     img: "images/projectPics/contact-manager.jpg",
     title: "Contact Manager",
@@ -196,7 +204,7 @@ const projectData = [
   },
 
   {
-    id: 24,
+    id: 25,
     ref: "react",
     img: "images/projectPics/quiz-demo.jpg",
     title: "React-Quiz App",
@@ -204,7 +212,7 @@ const projectData = [
     demo: "https://quiz-app-0810.netlify.app/",
   },
   {
-    id: 25,
+    id: 26,
     ref: "react",
     img: "images/projectPics/Text-to-speech-image.jpg",
     title: "React-Text to Speech",
@@ -212,7 +220,7 @@ const projectData = [
     demo: "https://speech-to-text-09-01.netlify.app",
   },
   {
-    id: 26,
+    id: 27,
     ref: "react",
     img: "images/projectPics/drone-comapny.jpg",
     title: "React-Drone Company",
@@ -220,7 +228,7 @@ const projectData = [
     demo: "https://drone-comapny.netlify.app/",
   },
   {
-    id: 27,
+    id: 28,
     ref: "react",
     img: "images/projectPics/React-home.png",
     title: "React-React-Website",
@@ -228,7 +236,7 @@ const projectData = [
     demo: "https://react-website-0803.netlify.app/",
   },
   {
-    id: 28,
+    id: 29,
     ref: "react",
     img: "images/projectPics/react-menu-home.png",
     title: "React-React Dynamic Menu",
