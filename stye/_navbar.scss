@@ -5,6 +5,12 @@
   justify-content: space-between;
   align-items: center;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
   @include at-900px {
     padding: 30px 16px;
   }
@@ -27,7 +33,7 @@
   .burger-menu {
     position: absolute;
     top: 0.4rem;
-    right: 1rem;
+    right: 3rem;
     display: none;
     cursor: pointer;
     z-index: 1000;
@@ -37,59 +43,63 @@
     }
   }
 
-  ul {
-    display: flex;
-    align-items: center;
+  nav {
+    padding: 0 50px;
 
-    @include at-900px {
-      flex-direction: column;
-    }
-
-    li {
-      list-style: none;
-      list-style: none;
-      margin-right: 3rem;
-
-      @include at-900px {
-        margin: 20px 10px;
-      }
-
-      a {
-        border-bottom: 2px solid transparent;
-        text-decoration: none;
-        color: white;
-        font-family: "Public Sans", sans-serif;
-        font-size: 1.5rem;
-
-        @include at-900px {
-          font-size: 2.5rem;
-          text-shadow: 3px 2px black;
-        }
-
-        &::after {
-          content: "";
-          width: 0%;
-          height: 3px;
-          background-color: white;
-          display: block;
-        }
-        &:hover::after {
-          width: 100%;
-          transition: all 0.4s ease-in-out;
-        }
-      }
-    }
-
-    .search {
-      position: absolute;
-      right: 100px;
-      top: 60px;
+    ul {
       display: flex;
-      justify-content: center;
       align-items: center;
 
       @include at-900px {
-        position: revert;
+        flex-direction: column;
+      }
+
+      li {
+        list-style: none;
+        list-style: none;
+        margin-right: 3rem;
+
+        @include at-900px {
+          margin: 20px 10px;
+        }
+
+        a {
+          border-bottom: 2px solid transparent;
+          text-decoration: none;
+          color: white;
+          font-family: "Public Sans", sans-serif;
+          font-size: 1.5rem;
+
+          @include at-900px {
+            font-size: 2.5rem;
+            text-shadow: 3px 2px black;
+          }
+
+          &::after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: white;
+            display: block;
+          }
+          &:hover::after {
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+
+      .search {
+        position: absolute;
+        right: 100px;
+        top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include at-900px {
+          position: revert;
+        }
       }
     }
   }
