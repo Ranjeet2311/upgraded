@@ -141,14 +141,6 @@
   }
 }
 
-.Navbar-wrap .iconLinks {
-  width: 40px;
-  height: 40px;
-  margin: 6px 12px;
-  background-color: white;
-  text-shadow: 3px 2px black;
-}
-
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
