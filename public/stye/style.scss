@@ -115,28 +115,7 @@
     box-shadow: 0 0 2px silver;
   }
 }
-// .small-image-wrapper {
-//   width: 100%;
-//   text-align: center;
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   // flex-direction: column;
 
-//   .small-image {
-//     margin: 0 auto;
-//     height: 140px;
-//     width: 140px;
-
-//     &:hover {
-//       transform: all 0.8s ease-out;
-//       transform: scale(1.2);
-//     }
-//   }
-//   p {
-//     margin: 0 auto;
-//   }
-// }
 // ------Divider hr Component--------
 .hr {
   margin: 0.5rem auto;
@@ -167,4 +146,29 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+// --------Scroll bar------
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #56b0fd94, #3a7bd5);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: all 0, 4s ease-in-out;
+  background: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 }

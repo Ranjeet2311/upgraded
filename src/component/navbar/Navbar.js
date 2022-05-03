@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav>
+      <header>
         <div className="Navbar-wrap">
           <div className="logo">
             <img className="logo-image" src={Logo} alt="logo" />
@@ -44,41 +44,42 @@ function Navbar() {
               <MenuIcon style={{ fontSize: "2.5rem", color: "white" }} />
             )}
           </div>
+          <nav>
+            <ul className={clicked ? "menu-list" : "menu-list-close"}>
+              {menuLinks.map((link, i) => {
+                return (
+                  <li key={i}>
+                    <Link
+                      onClick={() => {
+                        setClicked(!clicked);
+                      }}
+                      to={link.url}
+                    >
+                      {link.name}{" "}
+                    </Link>
+                  </li>
+                );
+              })}
 
-          <ul className={clicked ? "menu-list" : "menu-list-close"}>
-            {menuLinks.map((link, i) => {
-              return (
-                <li key={i}>
-                  <Link
-                    onClick={() => {
-                      setClicked(!clicked);
-                    }}
-                    to={link.url}
-                  >
-                    {link.name}{" "}
-                  </Link>
-                </li>
-              );
-            })}
+              <IconButton
+                style={navIconStyle}
+                target="_blank"
+                href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
+              >
+                <LinkedInIcon />
+              </IconButton>
 
-            <IconButton
-              style={navIconStyle}
-              target="_blank"
-              href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
-            >
-              <LinkedInIcon />
-            </IconButton>
-
-            <IconButton
-              style={navIconStyle}
-              target="_blank"
-              href="https://github.com/Ranjeet2311"
-            >
-              <GitHubIcon />
-            </IconButton>
-          </ul>
+              <IconButton
+                style={navIconStyle}
+                target="_blank"
+                href="https://github.com/Ranjeet2311"
+              >
+                <GitHubIcon />
+              </IconButton>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </header>
       <Outlet />
     </div>
   );
