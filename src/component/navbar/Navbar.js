@@ -54,22 +54,14 @@ function Navbar() {
             })}
 
             <IconButton
-              style={{
-                marginRight: "2rem",
-                color: "#000000",
-                border: "1px solid white",
-              }}
+              className="iconLinks"
               target="_blank"
               href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
             >
               <LinkedInIcon />
             </IconButton>
             <IconButton
-              style={{
-                marginRight: "2rem",
-                color: "#000000",
-                border: "1px solid white",
-              }}
+              className="iconLinks"
               target="_blank"
               href="https://github.com/Ranjeet2311"
             >
