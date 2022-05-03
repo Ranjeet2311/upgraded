@@ -14,7 +14,11 @@ function Skills() {
   const appear = useRef();
 
   useEffect(() => {
-    gsap.from(up.current, { y: "1200", duration: 2 });
+    gsap.fromTo(
+      up.current,
+      { y: -1000, autoAlpha: -1, duration: 2 },
+      { y: 0, autoAlpha: 1, duration: 2 }
+    );
     gsap.fromTo(
       appear.current,
       { autoAlpha: -1, duration: 2 },

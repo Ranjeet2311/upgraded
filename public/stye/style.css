@@ -8,7 +8,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.Navbar-wrap {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #eee;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+}
+
+.header .Navbar-wrap {
   padding: 10px 16px;
   background: -webkit-gradient(linear, right top, left top, from(#56b0fd94), to(#3a7bd5));
   background: linear-gradient(to left, #56b0fd94, #3a7bd5);
@@ -21,56 +31,51 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap {
+  .header .Navbar-wrap {
     padding: 30px 16px;
   }
 }
 
-.Navbar-wrap .logo {
+.header .Navbar-wrap .logo {
   padding: 0 40px;
   z-index: 1000;
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap .logo {
+  .header .Navbar-wrap .logo {
     position: absolute;
     left: 0px;
   }
 }
 
-.Navbar-wrap .logo .logo-image {
+.header .Navbar-wrap .logo .logo-image {
   width: 40px;
   border-radius: 50%;
 }
 
-.Navbar-wrap .burger-menu {
+.header .Navbar-wrap .burger-menu {
   position: absolute;
   top: 0.4rem;
-  right: 3rem;
+  right: 2.5rem;
   display: none;
   cursor: pointer;
   z-index: 1000;
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap .burger-menu {
+  .header .Navbar-wrap .burger-menu {
     display: block;
   }
 }
 
-.Navbar-wrap nav {
+.header .Navbar-wrap nav {
   padding: 0 50px;
 }
 
-.Navbar-wrap nav ul {
+.header .Navbar-wrap nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +85,7 @@
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap nav ul {
+  .header .Navbar-wrap nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -88,19 +93,19 @@
   }
 }
 
-.Navbar-wrap nav ul li {
+.header .Navbar-wrap nav ul li {
   list-style: none;
   list-style: none;
   margin-right: 3rem;
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap nav ul li {
+  .header .Navbar-wrap nav ul li {
     margin: 20px 10px;
   }
 }
 
-.Navbar-wrap nav ul li a {
+.header .Navbar-wrap nav ul li a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   color: white;
@@ -109,13 +114,13 @@
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap nav ul li a {
+  .header .Navbar-wrap nav ul li a {
     font-size: 2.5rem;
     text-shadow: 3px 2px black;
   }
 }
 
-.Navbar-wrap nav ul li a::after {
+.header .Navbar-wrap nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -123,13 +128,13 @@
   display: block;
 }
 
-.Navbar-wrap nav ul li a:hover::after {
+.header .Navbar-wrap nav ul li a:hover::after {
   width: 100%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.Navbar-wrap nav ul .search {
+.header .Navbar-wrap nav ul .search {
   position: absolute;
   right: 100px;
   top: 60px;
@@ -145,7 +150,7 @@
 }
 
 @media (max-width: 900px) {
-  .Navbar-wrap nav ul .search {
+  .header .Navbar-wrap nav ul .search {
     position: revert;
   }
 }
@@ -490,7 +495,6 @@
 .h2 {
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
-  margin: 1rem 0;
   font-family: system-ui;
 }
 
