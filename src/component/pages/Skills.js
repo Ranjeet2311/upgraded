@@ -16,8 +16,8 @@ function Skills() {
   useEffect(() => {
     gsap.fromTo(
       up.current,
-      { y: -1000, autoAlpha: -1, duration: 2 },
-      { y: 0, autoAlpha: 1, duration: 2 }
+      { y: 1000, autoAlpha: -1, duration: 1 },
+      { y: 0, autoAlpha: 1, duration: 1 }
     );
     gsap.fromTo(
       appear.current,
