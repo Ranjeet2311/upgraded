@@ -5,7 +5,7 @@ import "animate.css";
 function HeadH1({ text }) {
   return (
     <div class="animate__animated animate__zoomInDown animate__delay-10s">
-      <h1 className="h1">{text}</h1>
+      <h1>{text}</h1>
     </div>
   );
 }

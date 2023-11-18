@@ -6,7 +6,7 @@ import { useControls } from "leva";
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 2,
   (x - rect.left - rect.width / 2) / 2,
-  1.1,
+  1.4,
 ];
 const trans = (x, y, s) =>
   `perspective(400px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;

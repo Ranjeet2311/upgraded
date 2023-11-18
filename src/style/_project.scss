@@ -1,14 +1,14 @@
 .project-wrapper {
   // background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
-  background-color: white;
+  // background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
+  // margin-top: 4rem;
 
   .project-display {
-    margin: 1rem auto;
+    margin: 60px auto !important;
     display: grid;
     // grid-template-columns: repeat(4, 25%);
     grid-template-columns: auto auto auto;
@@ -29,4 +29,9 @@
       box-shadow: 0 2px 3px black;
     }
   }
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  font-size: 14px !important;
+  padding: 10px auto !important;
 }

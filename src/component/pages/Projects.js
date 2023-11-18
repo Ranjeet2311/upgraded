@@ -16,9 +16,15 @@ function Projects() {
   // ---animation
 
   const up = useRef();
+  const appear = useRef();
 
   useEffect(() => {
     gsap.from(up.current, { y: "1200", duration: 0.5 });
+    gsap.fromTo(
+      appear.current,
+      { autoAlpha: -1, duration: 2 },
+      { autoAlpha: 1, duration: 2, ease: "back" }
+    );
   });
 
   const handleChange = (event, newValue) => {
@@ -40,12 +46,12 @@ function Projects() {
   }
 
   return (
-    <div className="project-wrapper">
+    <div className="project-wrapper wrapper container">
       <Heading text="My Projects" />
       <Divider />
       <HeadH2 text="Quick Project Navigation" />
 
-      <Box>
+      <Box className="mt-4">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -78,7 +84,7 @@ function Projects() {
         </Tabs>
       </Box>
 
-      <div className="project-display" ref={up}>
+      <div className="project-display" ref={appear}>
         {projectList.map((item, index) => {
           return (
             <Card

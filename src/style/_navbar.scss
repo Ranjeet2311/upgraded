@@ -3,12 +3,11 @@
   top: 0;
   left: 0;
   width: 100vw;
-  // height: 60px;
+  background: linear-gradient(to left, #56b0fd94, #3a7bd5);
   z-index: 100;
 
   .Navbar-wrap {
     padding: 10px 16px;
-    background: linear-gradient(to left, #56b0fd94, #3a7bd5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +23,12 @@
     }
 
     .logo {
-      padding: 0 40px;
       z-index: 1000;
 
       @include at-900px {
         position: absolute;
         left: 0px;
+        padding: 0 40px;
       }
 
       .logo-image {
@@ -52,11 +51,13 @@
     }
 
     nav {
-      padding: 0 50px;
+      // padding: 0 50px;
 
       ul {
         display: flex;
         align-items: center;
+        margin-bottom: 0 !important;
+        padding-left: 0 !important;
 
         @include at-900px {
           flex-direction: column;
@@ -66,21 +67,25 @@
           list-style: none;
           list-style: none;
           margin-right: 3rem;
+          margin-top: 6px;
 
           @include at-900px {
-            margin: 20px 10px;
+            margin: 0 auto 10px;
           }
 
           a {
-            border-bottom: 2px solid transparent;
+            border-bottom: 1px solid transparent;
             text-decoration: none;
             color: white;
-            font-family: "Public Sans", sans-serif;
-            font-size: 1.5rem;
 
             @include at-900px {
-              font-size: 2.5rem;
+              font-size: 1.2rem;
               text-shadow: 3px 2px black;
+            }
+
+            &:active {
+              width: 100%;
+              transition: all 0.4s ease-in-out;
             }
 
             &::after {

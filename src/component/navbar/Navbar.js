@@ -33,10 +33,10 @@ function Navbar() {
   return (
     <div>
       <header className="header">
-        <div className="Navbar-wrap">
-          <div className="logo">
+        <div className="Navbar-wrap container">
+          <Link to="/" className="logo">
             <img className="logo-image" src={Logo} alt="logo" />
-          </div>
+          </Link>
           <div onClick={clickHandler} className="burger-menu">
             {clicked ? (
               <CloseIcon style={{ fontSize: "2.5rem", color: "white" }} />
@@ -60,7 +60,6 @@ function Navbar() {
                   </li>
                 );
               })}
-
               <IconButton
                 style={navIconStyle}
                 target="_blank"
@@ -80,7 +79,6 @@ function Navbar() {
           </nav>
         </div>
       </header>
-      <Outlet />
     </div>
   );
 }

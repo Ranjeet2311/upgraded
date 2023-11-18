@@ -11,9 +11,15 @@ function Skills() {
   // ---animation
 
   const up = useRef();
+  const upx = useRef();
   const appear = useRef();
 
   useEffect(() => {
+    gsap.fromTo(
+      upx.current,
+      { y: 1000, autoAlpha: -1, duration: 1 },
+      { y: 0, autoAlpha: 1, duration: 1 }
+    );
     gsap.fromTo(
       up.current,
       { y: 1000, autoAlpha: -1, duration: 1 },
@@ -27,13 +33,11 @@ function Skills() {
   });
 
   return (
-    <div className="skill-wrapper">
+    <div className="text-center wrapper container">
       <Heading text="My skills" />
       <HeadH2 text="Please check my projects on GitHub" />
       <Divider />
-
       <Paragraph text="As a front-end developer these are the tools that I use" />
-
       <div class="skillBox" ref={up}>
         {itemData.map((item) => {
           return (
@@ -46,10 +50,9 @@ function Skills() {
           );
         })}
       </div>
-
       <HeadH2 text="Other Skills" />
       <Divider />
-      <div className="skillBox">
+      <div className="skillBox" ref={upx}>
         {otherSkillData.map((item) => {
           return (
             <ImgSm
