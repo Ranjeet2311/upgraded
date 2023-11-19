@@ -9,8 +9,8 @@ import IconButton from "@mui/material/IconButton";
 
 const menuLinks = [
   { name: "Home", url: "/" },
-  { name: "About", url: "/about-me" },
   { name: "Skills", url: "/skills" },
+  { name: "Experience", url: "/experience" },
   { name: "Projects", url: "/projects" },
 ];
 

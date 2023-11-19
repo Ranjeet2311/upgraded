@@ -109,7 +109,7 @@ a {
 // ------Image Component--------
 .image-wrapper {
   width: 100%;
-  text-align: center;
+  // text-align: center;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -119,6 +119,7 @@ a {
     margin: 0 auto;
     height: 240px;
     width: 240px;
+    border-radius: 50%;
   }
   p {
     margin: 0 auto;
@@ -129,7 +130,11 @@ a {
 .ccard-main {
   // width: 100%;
   text-align: center;
-  margin: 20px;
+  margin: 12px 16px;
+
+  @include for-tablet-portrait-up() {
+    margin-top: 16px;
+  }
 
   .ccard {
     // height: 140px;
@@ -141,6 +146,8 @@ a {
     transition: box-shadow 0.5s;
     will-change: transform;
     box-shadow: 0 0 2px silver;
+    height: 77px;
+    object-fit: contain;
   }
 }
 

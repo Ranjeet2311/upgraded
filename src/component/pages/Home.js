@@ -33,8 +33,8 @@ function Home() {
 
   function onDownload() {
     const link = document.createElement("a");
-    link.download = `cv_Ranjeet.pdf`;
-    link.href = "cv_Ranjeet.pdf";
+    link.download = `CV_Ranjeet_Kumar.pdf`;
+    link.href = "CV_Ranjeet_Kumar.pdf";
     link.click();
   }
 
@@ -66,10 +66,7 @@ function Home() {
             ref={right}
           >
             <HeadH1 text="Welcome! I'm Ranjeet" />
-            <Paragraph
-              text=" Perseverance and creativity drive my day-to-day actions. I'm a self taught front-end developer. My journey started from designing websited on Wordpress,Woo-commerce, opencart and Magento etc. Installing plugins generally would pile up a lot of junk codes that are not being used and it make the website response very slow and this is the point where I wanted to learn something where I don't have to depend on plugins. I wanted to be more effiecient so I started spending more time with HTML, CS JAVA SCRIPT, different JavaScript libraries and JS Frameworks, . I would like to work for a company where I can deliver some fantastic results for the company and grow as a person.
-							Respect | honesty | simplicity | smart work | hard work | ~ are my basics."
-            />
+            <Paragraph text=" A frontend developer, tech enthusiast with creativity, scalability and responsibility. I’m experienced in leveraging the strength of Html, CSS, SCSS, bootstrap, java-script, Reactjs, Vuejs, restful API and much more to build responsive and interactive websites/web apps. Always excited to learn some new tech and ready for challenges. Perseverance and creativity drive my day-to-day actions. I would like to be a part of a company where I can deliver some fantastic results for the company and grow as a person. " />
             <Tooltip className="mt-2" title="Download" ref={pop}>
               <Button onClick={onDownload} variant="contained" target="_blank">
                 <DownloadIcon /> Download my CV

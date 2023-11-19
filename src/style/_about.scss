@@ -10,11 +10,15 @@
     .caption {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      // align-items: center;
       margin: 0 auto;
 
       @include for-tablet-portrait-up() {
         flex-direction: column;
+      }
+      p {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
       }
 
       // .para {
