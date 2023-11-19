@@ -8,7 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 
 const menuLinks = [
-  { name: "Home", url: "/" },
+  { name: "Info", url: "/" },
   { name: "Skills", url: "/skills" },
   { name: "Experience", url: "/experience" },
   { name: "Projects", url: "/projects" },
