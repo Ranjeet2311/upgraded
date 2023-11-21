@@ -88,17 +88,20 @@
               transition: all 0.4s ease-in-out;
             }
 
-            &::after {
-              content: "";
-              width: 0%;
-              height: 3px;
-              background-color: white;
-              display: block;
-            }
+            // &::after {
+            //   content: "";
+            //   width: 0%;
+            //   height: 3px;
+            //   background-color: white;
+            //   display: block;
+            // }
             &:hover::after {
               width: 100%;
               transition: all 0.4s ease-in-out;
             }
+          }
+          .active {
+            text-decoration: underline;
           }
         }
 

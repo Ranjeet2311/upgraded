@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../avatar/fevicon-Avatar.jpg";
@@ -34,9 +34,9 @@ function Navbar() {
     <div>
       <header className="header">
         <div className="Navbar-wrap container">
-          <Link to="/" className="logo">
+          <NavLink to="/" className="logo">
             <img className="logo-image" src={Logo} alt="logo" />
-          </Link>
+          </NavLink>
           <div onClick={clickHandler} className="burger-menu">
             {clicked ? (
               <CloseIcon style={{ fontSize: "2.5rem", color: "white" }} />
@@ -49,14 +49,16 @@ function Navbar() {
               {menuLinks.map((link, i) => {
                 return (
                   <li key={i}>
-                    <Link
+                    <NavLink
                       onClick={() => {
                         setClicked(!clicked);
                       }}
                       to={link.url}
+                      exact
+                      activeClassName="active"
                     >
                       {link.name}{" "}
-                    </Link>
+                    </NavLink>
                   </li>
                 );
               })}
