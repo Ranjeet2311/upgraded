@@ -46,6 +46,11 @@ const itemData = [
   },
   {
     id: 10,
+    img: "images/ts.png",
+    title: "TypeScript",
+  },
+  {
+    id: 10,
     img: "images/jquery.svg",
     title: "jquery",
   },

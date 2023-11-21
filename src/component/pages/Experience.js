@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Heading from "../elements/Heading";
 import Paragraph from "../elements/Paragraph";
-import Profile1 from "../myImages/portfolio-img-1.jpg";
+// import Profile1 from "../myImages/portfolio-img-1.jpg";
 import Profile2 from "../myImages/portfolio-img-2.jpg";
 import Image from "../elements/Image";
 import experienceData from "../experienceList/experienceList";

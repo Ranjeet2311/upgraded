@@ -1,3 +1,4 @@
+import { colors } from "@mui/material";
 import React from "react";
 
 function HeadH2({ text }) {

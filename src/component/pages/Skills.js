@@ -35,9 +35,9 @@ function Skills() {
   return (
     <div className="text-center wrapper container">
       <Heading text="My skills" />
-      <HeadH2 text="Please check my projects on GitHub" />
+      {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
-      <Paragraph text="As a front-end developer these are the tools that I use" />
+      <HeadH2 text="As a front-end developer these are the tools that I use" />
       <div class="skillBox" ref={up}>
         {itemData.map((item) => {
           return (
