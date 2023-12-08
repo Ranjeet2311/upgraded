@@ -88,13 +88,16 @@
               transition: all 0.4s ease-in-out;
             }
 
-            // &::after {
-            //   content: "";
-            //   width: 0%;
-            //   height: 3px;
-            //   background-color: white;
-            //   display: block;
-            // }
+            &::after {
+              content: "";
+              width: 0%;
+              height: 2px;
+              background-color: rgb(197, 223, 246);
+              display: block;
+              position: relative;
+              top: -7px;
+              // text-shadow: 3px 2px 6px black;
+            }
             &:hover::after {
               width: 100%;
               transition: all 0.4s ease-in-out;
@@ -102,6 +105,10 @@
           }
           .active {
             text-decoration: underline;
+
+            &::after {
+              background-color: transparent;
+            }
           }
         }
 
