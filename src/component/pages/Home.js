@@ -1,23 +1,23 @@
-import React, { useState, useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import backgroundVideo from "../videos/cercuit-bg.mp4";
-import greetingHI from "../avatar/Avatar-Hi.png";
-import greetingNamaste from "../avatar/Avatar-Namaste.png";
-import HeadH1 from "../elements/HeadH1";
-import Heading from "../elements/Heading";
-import Paragraph from "../elements/Paragraph";
-import Button from "@mui/material/Button";
-import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
-import Tooltip from "@mui/material/Tooltip";
-import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
-import SportsMartialArtsIcon from "@mui/icons-material/SportsMartialArts";
-import PodcastsIcon from "@mui/icons-material/Podcasts";
-import GroupsIcon from "@mui/icons-material/Groups";
-import YardOutlinedIcon from "@mui/icons-material/YardOutlined";
-import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
+import React, { useState, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import backgroundVideo from '../videos/cercuit-bg.mp4';
+import greetingHI from '../avatar/Avatar-Hi.png';
+import greetingNamaste from '../avatar/Avatar-Namaste.png';
+import HeadH1 from '../elements/HeadH1';
+import Heading from '../elements/Heading';
+import Paragraph from '../elements/Paragraph';
+import Button from '@mui/material/Button';
+import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
+import Tooltip from '@mui/material/Tooltip';
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts';
+import PodcastsIcon from '@mui/icons-material/Podcasts';
+import GroupsIcon from '@mui/icons-material/Groups';
+import YardOutlinedIcon from '@mui/icons-material/YardOutlined';
+import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
 
 function Home() {
   const [image, setImage] = useState(false);
@@ -31,20 +31,20 @@ function Home() {
     gsap.from(pop.current, { scale: 1.4 });
     gsap.fromTo(
       leftX.current,
-      { x: "-1000", autoAlpha: -1, duration: 2 },
-      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
+      { x: '-1000', autoAlpha: -1, duration: 2 },
+      { x: '0', autoAlpha: 1, duration: 3, ease: 'back' }
     );
     gsap.fromTo(
       right.current,
-      { x: "1000", autoAlpha: -1, duration: 3 },
-      { x: "0", autoAlpha: 1, duration: 1, ease: "back" }
+      { x: '1000', autoAlpha: -1, duration: 3 },
+      { x: '0', autoAlpha: 1, duration: 1, ease: 'back' }
     );
   }, []);
 
   function onDownload() {
-    const link = document.createElement("a");
+    const link = document.createElement('a');
     link.download = `CV_Ranjeet_Kumar.pdf`;
-    link.href = "CV_Ranjeet_Kumar.pdf";
+    link.href = 'CV_Ranjeet_Kumar.pdf';
     link.click();
   }
 
@@ -91,7 +91,7 @@ function Home() {
                   <SportsMartialArtsIcon /> Martial Arts
                 </p>
                 <p className="me-2 me-lg-4">
-                  {" "}
+                  {' '}
                   <PodcastsIcon /> Tech Podcasts
                 </p>
                 <p className="me-2 me-lg-4">
@@ -113,7 +113,7 @@ function Home() {
               <div className="d-flex flex-wrap">
                 <a
                   className="me-2 me-lg-4"
-                  style={{ color: "white", textDecoration: "none" }}
+                  style={{ color: 'white', textDecoration: 'none' }}
                   target="blank"
                   href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
                 >
@@ -121,7 +121,7 @@ function Home() {
                 </a>
                 <a
                   className="me-2 me-lg-4"
-                  style={{ color: "white", textDecoration: "none" }}
+                  style={{ color: 'white', textDecoration: 'none' }}
                   target="blank"
                   href="mailto:ranjeetkumar2311@gmail.com"
                 >

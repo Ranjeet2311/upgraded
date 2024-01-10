@@ -1,32 +1,32 @@
-import React, { useState } from "react";
-import { Outlet, NavLink } from "react-router-dom";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import Logo from "../avatar/fevicon-Avatar.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import IconButton from "@mui/material/IconButton";
+import React, { useState } from 'react';
+import { Outlet, NavLink } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import Logo from '../avatar/fevicon-Avatar.jpg';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import IconButton from '@mui/material/IconButton';
 
 const menuLinks = [
-  { name: "Info", url: "/" },
-  { name: "Skills", url: "/skills" },
-  { name: "Experience", url: "/experience" },
-  { name: "Projects", url: "/projects" },
+  { name: 'Info', url: '/' },
+  { name: 'Skills', url: '/skills' },
+  { name: 'Experience', url: '/experience' },
+  { name: 'Projects', url: '/projects' },
 ];
 
 const navIconStyle = {
-  marginRight: "2rem",
-  color: "rgb(0, 0, 0)",
-  border: "1px solid white",
-  background: "white",
-  margin: "6px 12px",
+  marginRight: '2rem',
+  color: 'rgb(0, 0, 0)',
+  border: '1px solid white',
+  background: 'white',
+  margin: '6px 12px',
 };
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
 
   const clickHandler = () => {
-    console.log("Burger Clicked");
+    console.log('Burger Clicked');
     setClicked(!clicked);
   };
 
@@ -39,13 +39,13 @@ function Navbar() {
           </NavLink>
           <div onClick={clickHandler} className="burger-menu">
             {clicked ? (
-              <CloseIcon style={{ fontSize: "2.5rem", color: "white" }} />
+              <CloseIcon style={{ fontSize: '2.5rem', color: 'white' }} />
             ) : (
-              <MenuIcon style={{ fontSize: "2.5rem", color: "white" }} />
+              <MenuIcon style={{ fontSize: '2.5rem', color: 'white' }} />
             )}
           </div>
           <nav>
-            <ul className={clicked ? "menu-list" : "menu-list-close"}>
+            <ul className={clicked ? 'menu-list' : 'menu-list-close'}>
               {menuLinks.map((link, i) => {
                 return (
                   <li key={i}>
@@ -55,9 +55,9 @@ function Navbar() {
                       }}
                       to={link.url}
                       exact
-                      activeClassName="active"
+                      activeclassname="active"
                     >
-                      {link.name}{" "}
+                      {link.name}{' '}
                     </NavLink>
                   </li>
                 );

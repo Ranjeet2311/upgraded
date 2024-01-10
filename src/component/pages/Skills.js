@@ -1,11 +1,11 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import Heading from "../elements/Heading";
-import HeadH2 from "../elements/HeadH2";
-import Paragraph from "../elements/Paragraph";
-import Divider from "../elements/Divider";
-import ImgSm from "../elements/ImgSm";
-import itemData, { otherSkillData } from "../allSkill/Skills";
+import React, { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import Heading from '../elements/Heading';
+import HeadH2 from '../elements/HeadH2';
+import Paragraph from '../elements/Paragraph';
+import Divider from '../elements/Divider';
+import ImgSm from '../elements/ImgSm';
+import itemData, { otherSkillData } from '../allSkill/Skills';
 
 function Skills() {
   // ---animation
@@ -28,7 +28,7 @@ function Skills() {
     gsap.fromTo(
       appear.current,
       { autoAlpha: -1, duration: 2 },
-      { autoAlpha: 1, duration: 3, ease: "back" }
+      { autoAlpha: 1, duration: 3, ease: 'back' }
     );
   });
 
@@ -38,7 +38,7 @@ function Skills() {
       {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
       <HeadH2 text="As a front-end developer these are the tools that I use" />
-      <div class="skillBox" ref={up}>
+      <div className="skillBox" ref={up}>
         {itemData.map((item) => {
           return (
             <ImgSm
