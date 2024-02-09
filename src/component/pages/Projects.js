@@ -1,15 +1,15 @@
-import React, { useRef, useEffect, useState } from "react";
-import { gsap } from "gsap";
-import Heading from "../elements/Heading";
-import HeadH2 from "../elements/HeadH2";
-import Divider from "../elements/Divider";
-import projectData from "../ProjectData";
-import Card from "../elements/Card";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import Paragraph from "../elements/Paragraph";
-import SentimentVeryDissatisfiedSharpIcon from "@mui/icons-material/SentimentVeryDissatisfiedSharp";
+import React, { useRef, useEffect, useState } from 'react';
+import { gsap } from 'gsap';
+import Heading from '../elements/Heading';
+import HeadH2 from '../elements/HeadH2';
+import Divider from '../elements/Divider';
+import projectData from '../ProjectData';
+import Card from '../elements/Card';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import Paragraph from '../elements/Paragraph';
+import SentimentVeryDissatisfiedSharpIcon from '@mui/icons-material/SentimentVeryDissatisfiedSharp';
 
 function Projects() {
   const [projectList, setProjectList] = useState(projectData);
@@ -21,11 +21,11 @@ function Projects() {
   const appear = useRef();
 
   useEffect(() => {
-    gsap.from(up.current, { y: "1200", duration: 0.5 });
+    gsap.from(up.current, { y: '1200', duration: 0.5 });
     gsap.fromTo(
       appear.current,
       { autoAlpha: -1, duration: 2 },
-      { autoAlpha: 1, duration: 2, ease: "back" }
+      { autoAlpha: 1, duration: 2, ease: 'back' }
     );
   });
 
@@ -49,6 +49,11 @@ function Projects() {
 
   return (
     <div className="project-wrapper wrapper container">
+      <img
+        className="video"
+        src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
+        alt=""
+      />
       <Heading text="My Projects" />
       <Divider />
       <div className="col">
@@ -72,21 +77,21 @@ function Projects() {
           <Tab onClick={allFilterHandler} label="All Projects" />
           <Tab
             onClick={() => {
-              filterHandler("react");
+              filterHandler('react');
             }}
             name="react"
             label="React Projects"
           />
           <Tab
             onClick={() => {
-              filterHandler("webApp");
+              filterHandler('webApp');
             }}
             name="webApp"
             label="Wes Apps"
           />
           <Tab
             onClick={() => {
-              filterHandler("template");
+              filterHandler('template');
             }}
             name="template"
             label="Web Templates"

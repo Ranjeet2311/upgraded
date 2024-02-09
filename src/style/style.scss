@@ -10,6 +10,7 @@
 // font-family: 'Roboto Serif', serif;
 $headFont: 'Roboto Serif', serif;
 $baseFont: 'Montserrat', sans-serif;
+$white: #ffffff;
 
 * {
   padding: 0;
@@ -51,11 +52,12 @@ $baseFont: 'Montserrat', sans-serif;
 
   .heading {
     font-size: 36px;
-    line-height: 38px;
+    line-height: 48px;
     font-weight: 700;
     font-family: $headFont !important;
     text-shadow: 1px 1px 2px black;
     padding: 0.5rem 0;
+
     @include for-tablet-portrait-up() {
       font-size: 2.1rem;
       margin: 0.5rem 0;
@@ -65,15 +67,24 @@ $baseFont: 'Montserrat', sans-serif;
 // ------H1 Component --------
 h1 {
   font-size: 48px;
-  line-height: 60px;
+  line-height: 62px;
   font-weight: 700;
   font-family: $headFont !important;
   text-shadow: 1px 1px 2px black;
   padding: 0.5rem 0;
+  color: $white;
 
   @include for-tablet-portrait-up() {
     font-size: 2.1rem;
     margin: 0.5rem 0;
+  }
+}
+
+h2,
+h5 {
+  color: $white !important;
+  span {
+    margin-right: 5px !important;
   }
 }
 // ------H2 Component --------
@@ -95,9 +106,15 @@ p {
   line-height: 28px;
   padding: 0.2rem 0;
   margin: 0.2rem 0rem;
+  color: $white;
 
   @include for-tablet-portrait-up() {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+}
+ul {
+  li {
+    color: $white;
   }
 }
 
@@ -131,9 +148,6 @@ button {
 
   .image {
     margin: 0 auto;
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
   }
   p {
     margin: 0 auto;
@@ -153,9 +167,9 @@ button {
   .ccard {
     // height: 140px;
     width: 80px;
-    background: white;
+    // background: white;
     border-radius: 5px;
-    border: 1px solid silver;
+    border: 1px solid rgb(0 0 0 / 30%);
     padding: 10px;
     transition: box-shadow 0.5s;
     will-change: transform;
@@ -234,4 +248,15 @@ button {
   @include for-tablet-portrait-up() {
     flex-direction: column !important;
   }
+}
+
+.button {
+  background-color: #fc3845 !important;
+}
+
+.app {
+  margin-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 12px;
+  padding-right: 12px;
 }

@@ -11,7 +11,7 @@ const menuLinks = [
   { name: 'Info', url: '/' },
   { name: 'Skills', url: '/skills' },
   { name: 'Experience', url: '/experience' },
-  { name: 'Projects', url: '/projects' },
+  // { name: 'Projects', url: '/projects' },
 ];
 
 const navIconStyle = {
@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div>
-      <header className="header">
+      <div className="top-wrap">
         <div className="Navbar-wrap container">
           <NavLink to="/" className="logo">
             <img className="logo-image" src={Logo} alt="logo" />
@@ -80,7 +80,7 @@ function Navbar() {
             </ul>
           </nav>
         </div>
-      </header>
+      </div>
     </div>
   );
 }

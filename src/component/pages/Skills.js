@@ -5,7 +5,7 @@ import HeadH2 from '../elements/HeadH2';
 import Paragraph from '../elements/Paragraph';
 import Divider from '../elements/Divider';
 import ImgSm from '../elements/ImgSm';
-import itemData, { otherSkillData } from '../allSkill/Skills';
+import itemData, { otherSkillData } from '../skillsList/Skills';
 
 function Skills() {
   // ---animation
@@ -34,6 +34,11 @@ function Skills() {
 
   return (
     <div className="text-center wrapper container">
+      <img
+        className="background"
+        src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
+        alt=""
+      />
       <Heading text="My skills" />
       {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />

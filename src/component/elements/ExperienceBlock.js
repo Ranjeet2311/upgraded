@@ -1,15 +1,18 @@
-import React from "react";
-import TaskAltRoundedIcon from "@mui/icons-material/TaskAltRounded";
+import React from 'react';
+import TaskAltRoundedIcon from '@mui/icons-material/TaskAltRounded';
 
-function ExperienceBlock({ title, responsibilities }) {
+function ExperienceBlock({ title, responsibilities, techs }) {
   return (
-    <div className="col-12 mt-4 ">
+    <div className="col-12 mt-4 experience">
       <h5
         className="fw-bolder text-decoration-underline"
-        style={{ color: "#0076db94" }}
+        style={{ color: '#ffffff' }}
       >
         <span>
-          <TaskAltRoundedIcon fontSize="large" style={{ fill: "#0076db94" }} />
+          <TaskAltRoundedIcon
+            fontSize="large"
+            style={{ fill: 'rgb(255 255 255 / 58%)' }}
+          />
         </span>
         {title}
       </h5>
@@ -18,6 +21,17 @@ function ExperienceBlock({ title, responsibilities }) {
         {responsibilities &&
           responsibilities.map((resposibility, i) => {
             return <li>{resposibility}</li>;
+          })}
+      </ul>
+      {techs && (
+        <p if className="fw-bold ps-3">
+          Used tech stack:
+        </p>
+      )}
+      <ul className="stack-wrap ps-2 pe-0">
+        {techs &&
+          techs.map((tech, i) => {
+            return <li className="stack-pill">{tech}</li>;
           })}
       </ul>
     </div>

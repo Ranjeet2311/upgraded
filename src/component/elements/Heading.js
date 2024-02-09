@@ -11,10 +11,12 @@ function Heading({ text, align }) {
     gsap.from(up.current, { y: '-1000', duration: 1.5 });
   });
   return (
-    <div className={align ? 'text-start head' : 'text-center head'}>
-      <h1 className="animate__animated animate__flipInY animate__delay-10s  heading">
+    <div
+      className={align ? 'text-center text-lg-start head' : 'text-center head'}
+    >
+      <h2 className="animate__animated animate__flipInY animate__delay-10s  heading">
         {text}
-      </h1>
+      </h2>
     </div>
   );
 }

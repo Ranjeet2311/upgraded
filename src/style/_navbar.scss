@@ -1,9 +1,23 @@
-.header {
+.top-wrap {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  background: linear-gradient(to left, #56b0fd94, #3a7bd5);
+  padding: 10px 0;
+  background-color: rgb(0 0 0 / 30%);
+  // background: #0575e6; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to left,
+  //   #fc3845,
+  //   #491414
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   270deg,
+  //   #fc3845,
+  //   #491414
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // background: linear-gradient(to left, #56b0fd94, #3a7bd5);
   z-index: 100;
 
   .Navbar-wrap {
@@ -20,6 +34,7 @@
 
     @include at-900px {
       padding: 30px 16px;
+      // background: rgb(0 0 0 / 60%);
     }
 
     .logo {
@@ -39,7 +54,7 @@
 
     .burger-menu {
       position: absolute;
-      top: 0.4rem;
+      top: 21px;
       right: 2.5rem;
       display: none;
       cursor: pointer;
@@ -89,7 +104,7 @@
             }
 
             &::after {
-              content: "";
+              content: '';
               width: 0%;
               height: 2px;
               background-color: rgb(197, 223, 246);
@@ -156,7 +171,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to left, #56b0fd94, #3a7bd5);
+    // background: linear-gradient(to left, #56b0fd94, #3a7bd5);
+    background-color: rgb(0 0 0 / 80%);
   }
 }
 
@@ -179,6 +195,7 @@
     right: 0;
     transform: translateX(-700rem);
     transition: all 0.5s ease-in-out;
-    background: linear-gradient(to left, #56b0fd94, #3a7bd5);
+    // background: linear-gradient(to left, #56b0fd94, #3a7bd5);
+    background-color: rgb(0 0 0 / 80%);
   }
 }
