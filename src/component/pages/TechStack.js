@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Heading from '../elements/Heading';
 import HeadH2 from '../elements/HeadH2';
-import Paragraph from '../elements/Paragraph';
 import Divider from '../elements/Divider';
 import ImgSm from '../elements/ImgSm';
 import itemData, { otherSkillData } from '../skillsList/Skills';
@@ -39,7 +38,7 @@ function Skills() {
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
-      <Heading text="My skills" />
+      <Heading text="My tech stack" />
       {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
       <HeadH2 text="As a front-end developer these are the tools that I use" />

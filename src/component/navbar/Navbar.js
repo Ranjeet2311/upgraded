@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Logo from '../avatar/fevicon-Avatar.jpg';
@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 
 const menuLinks = [
   { name: 'Info', url: '/' },
-  { name: 'Skills', url: '/skills' },
+  { name: 'Tech-Stack', url: '/tech-stack' },
   { name: 'Experience', url: '/experience' },
   // { name: 'Projects', url: '/projects' },
 ];

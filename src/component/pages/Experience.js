@@ -75,7 +75,7 @@ function Experience() {
         <div className="col-12 col-lg-4 experience-img">
           <img src={Profile2} alt="" />
         </div>
-        <div className="col-12 col-lg-8 para ">
+        <div className="col-12 col-lg-8 para mt-4 mt-lg-0">
           <Paragraph text="Honesty and hard work are very much a part of my personal identity. I love my pace of life and would bring all the interpersonal and time management skills that are such a core part of my work life to this role. My zeal to learn more and more brought me always on a bigger challenge, be it my academic days or professional life. Curiosity pushed early humans to discover wheel, Darwin to 'Evolution by natural selection, Copernicus to Heliocentrism' and to me in learning web Development in detail. Since having a science background, tech was always appealing to me. Eagerness to learn more I'm looking for a place where I could be valuable contributing member of a team and bring some fantastic results for the company.  " />
         </div>
         {/* <div className="experience-img col-12 col-lg-4 col-xl-4 pe-md-4 mb-4 mb-lg-0">

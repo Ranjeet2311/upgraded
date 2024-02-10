@@ -156,7 +156,6 @@ button {
 // ------Small Image Component--------
 
 .ccard-main {
-  // width: 100%;
   text-align: center;
   margin: 12px 16px;
 
@@ -165,9 +164,8 @@ button {
   }
 
   .ccard {
-    // height: 140px;
     width: 80px;
-    // background: white;
+    // background: rgba(70, 70, 70, 0.3);
     border-radius: 5px;
     border: 1px solid rgb(0 0 0 / 30%);
     padding: 10px;
@@ -259,4 +257,23 @@ button {
   padding-bottom: 120px;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.colore-pill {
+  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
+  margin: 6px 4px;
+  padding: 4px 16px;
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 12px;
+  max-width: fit-content;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background: repeating-linear-gradient(135deg, #483285 30%, #bc3eae94 70%);
+    transform: scale(1.4);
+    transition: all 0.3s ease-out;
+  }
 }

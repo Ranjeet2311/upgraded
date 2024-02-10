@@ -61,52 +61,57 @@ const itemData = [
   },
   {
     id: 12,
+    img: 'images/express-js-icon.png',
+    title: 'Express Js',
+  },
+  {
+    id: 13,
     img: 'images/html.png',
     title: 'HTML',
   },
   {
-    id: 13,
+    id: 14,
     img: 'images/markdown-icon.png',
     title: 'Markdown',
   },
   {
-    id: 14,
+    id: 15,
     img: 'images/css.png',
     title: 'Css',
   },
 
   {
-    id: 15,
+    id: 16,
     img: 'images/git.png',
     title: 'Git',
   },
   {
-    id: 16,
+    id: 17,
     img: 'images/gitlab.png',
     title: 'Gitlab',
   },
   {
-    id: 17,
+    id: 18,
     img: 'images/bitbucket.png',
     title: 'Bitbucket',
   },
   {
-    id: 18,
+    id: 19,
     img: 'images/figma.svg',
     title: 'Figma',
   },
   {
-    id: 19,
+    id: 20,
     img: 'images/adobeXd.png',
     title: 'AdobeXd',
   },
   {
-    id: 19,
+    id: 21,
     img: 'images/docker-icon.png',
     title: 'Docker',
   },
   {
-    id: 19,
+    id: 22,
     img: 'images/database-line-icon.png',
     title: 'Sql',
   },

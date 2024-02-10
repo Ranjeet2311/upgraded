@@ -71,7 +71,7 @@ function Home() {
         </div>
         <div
           onMouseEnter={imageChangeHandler}
-          className="col-12 col-lg-8 right mt-4"
+          className="col-12 col-lg-8 right mt-4 "
           ref={right}
         >
           <HeadH1 text="Welcome! I'm Ranjeet" />
@@ -79,67 +79,69 @@ function Home() {
 
           <div className="col mt-4 mb-4">
             <Heading text="My Interest" align />
-            <div className="d-flex flex-wrap interest-wrap">
-              <p className="me-2 me-lg-4">
+            <div className="d-flex flex-wrap justify-content-center justify-content-lg-start  interest-wrap">
+              <p className="me-2 me-lg-4 colore-pill">
                 <SelfImprovementIcon /> Yoga
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 <SportsMartialArtsIcon /> Martial Arts
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 {' '}
                 <PodcastsIcon /> Tech Podcasts
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 <GroupsIcon /> Tech Conferences
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 <YardOutlinedIcon /> Gardening
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 <DirectionsBikeIcon /> Cycling
               </p>
-              <p className="me-2 me-lg-4">
+              <p className="me-2 me-lg-4 colore-pill">
                 <AutoStoriesIcon /> Reading
               </p>
             </div>
           </div>
-          <div className="col mt-4 mb-4">
-            <Heading text="Let's Connect" align />
-            <div className="d-flex flex-wrap">
-              <a
-                className="me-2 me-lg-4"
-                style={{ color: 'white', textDecoration: 'none' }}
-                target="blank"
-                href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
-              >
-                <LinkedInIcon /> Linkedin
-              </a>
-              <a
-                className="me-2 me-lg-4"
-                style={{ color: 'white', textDecoration: 'none' }}
-                target="blank"
-                href="mailto:ranjeetkumar2311@gmail.com"
-              >
-                <MarkEmailUnreadIcon /> Write me
-              </a>
+          <div className="d-flex flex-column align-items-center align-items-lg-start">
+            <div className="col mt-4 mb-4">
+              <Heading text="Let's Connect" align />
+              <div className="d-flex flex-wrap ">
+                <a
+                  className="me-2 me-lg-4"
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  target="blank"
+                  href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
+                >
+                  <LinkedInIcon /> Linkedin
+                </a>
+                <a
+                  className="me-2 me-lg-4"
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  target="blank"
+                  href="mailto:ranjeetkumar2311@gmail.com"
+                >
+                  <MarkEmailUnreadIcon /> Write me
+                </a>
+              </div>
             </div>
+            <Tooltip className="mt-2" title="Download" ref={pop}>
+              <Button
+                style={{
+                  borderRadius: 35,
+                  backgroundColor: '#483285',
+                  padding: '12px 26px',
+                  fontSize: '18px',
+                }}
+                onClick={onDownload}
+                variant="contained"
+                target="_blank"
+              >
+                <FileDownloadRoundedIcon /> Download my CV
+              </Button>
+            </Tooltip>
           </div>
-          <Tooltip className="mt-2" title="Download" ref={pop}>
-            <Button
-              style={{
-                borderRadius: 35,
-                backgroundColor: '#483285',
-                padding: '12px 26px',
-                fontSize: '18px',
-              }}
-              onClick={onDownload}
-              variant="contained"
-              target="_blank"
-            >
-              <FileDownloadRoundedIcon /> Download my CV
-            </Button>
-          </Tooltip>
         </div>
       </div>
     </div>
