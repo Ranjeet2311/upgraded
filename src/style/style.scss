@@ -277,3 +277,24 @@ button {
     transition: all 0.3s ease-out;
   }
 }
+
+.card {
+  min-width: 383px;
+  height: auto;
+  @include at-900px() {
+    min-width: auto;
+  }
+
+  @include for-tablet-portrait-up() {
+    max-width: 340px !important;
+    margin: auto;
+    min-width: auto;
+  }
+
+  img {
+    object-fit: cover !important;
+    width: auto !important;
+    height: 250px;
+    // margin: 20px !important ;
+  }
+}

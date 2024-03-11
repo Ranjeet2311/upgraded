@@ -8,10 +8,9 @@ import Card from '../elements/Card';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import SentimentVeryDissatisfiedSharpIcon from '@mui/icons-material/SentimentVeryDissatisfiedSharp';
 
 function Projects() {
-  const [projectList, setProjectList] = useState(projectData);
+  const [projectList, setProjectList] = useState(projectData.reverse());
   const [value, setValue] = useState(0);
 
   // ---animation
@@ -49,56 +48,83 @@ function Projects() {
   return (
     <div className="project-wrapper wrapper container">
       <img
-        className="video"
+        className="background"
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
       <Heading text="My Projects" />
       <Divider />
-      <div className="col">
-        <p className="text-center mb-4">
-          <span>
-            <SentimentVeryDissatisfiedSharpIcon />
-          </span>
-          I didn't get much time to do the new projects, so many of these
-          projects are almost 2 years old
-        </p>
-      </div>
+      <div className="col"></div>
       <HeadH2 text="Quick Project Navigation" />
-      <Box className="mt-4">
+      <Box className="mt-2">
         <Tabs
           value={value}
           onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="auto"
-          aria-label="scrollable auto tabs example"
+          scrollButtons
+          allowScrollButtonsMobile
+          aria-label="scrollable force tabs example"
         >
-          <Tab onClick={allFilterHandler} label="All Projects" />
+          <Tab
+            onClick={allFilterHandler}
+            label="All"
+            style={{
+              color: 'white',
+            }}
+          />
+          <Tab
+            onClick={() => {
+              filterHandler('vue');
+            }}
+            name="Vue"
+            label="Vue"
+            style={{
+              color: 'white',
+            }}
+          />
+          <Tab
+            onClick={() => {
+              filterHandler('angular');
+            }}
+            name="Angular"
+            label="Angular"
+            style={{
+              color: 'white',
+            }}
+          />
           <Tab
             onClick={() => {
               filterHandler('react');
             }}
             name="react"
-            label="React Projects"
+            label="React"
+            style={{
+              color: 'white',
+            }}
           />
           <Tab
             onClick={() => {
-              filterHandler('webApp');
+              filterHandler('funApp');
             }}
             name="webApp"
-            label="Wes Apps"
+            label="fun JS Apps"
+            style={{
+              color: 'white',
+            }}
           />
           <Tab
             onClick={() => {
               filterHandler('template');
             }}
             name="template"
-            label="Web Templates"
+            label="Templates"
+            style={{
+              color: 'white',
+            }}
           />
         </Tabs>
       </Box>
 
-      <div className="project-display" ref={up}>
+      <div className="row row-cols-1 row-cols-md-3 g-4 mt-4" ref={up}>
         {projectList.map((item, index) => {
           return (
             <Card
