@@ -11,7 +11,7 @@ function ExperienceBlock({ title, responsibilities, techs }) {
         <span>
           <TaskAltRoundedIcon
             fontSize="large"
-            style={{ fill: 'rgb(255 255 255 / 58%)' }}
+            style={{ fill: 'rgb(255 255 255 / 100%)' }}
           />
         </span>
         {title}

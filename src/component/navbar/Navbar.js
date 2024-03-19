@@ -11,7 +11,7 @@ const menuLinks = [
   { name: 'Info', url: '/' },
   { name: 'Tech-Stack', url: '/tech-stack' },
   { name: 'Experience', url: '/experience' },
-  // { name: 'Projects', url: '/projects' },
+  { name: 'Projects', url: '/projects' },
 ];
 
 const navIconStyle = {

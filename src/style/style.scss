@@ -259,7 +259,7 @@ button {
   padding-right: 12px;
 }
 
-.colore-pill {
+.colored-pill {
   background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
   margin: 6px 4px;
   padding: 4px 16px;
@@ -279,8 +279,14 @@ button {
 }
 
 .card {
-  min-width: 383px;
-  height: auto;
+  cursor: pointer;
+  background: rgb(0 0 0 / 60%);
+
+  &:hover {
+    box-shadow: 6px 6px 23px white;
+    transition: all 0.2s ease-in-out;
+  }
+
   @include at-900px() {
     min-width: auto;
   }
@@ -291,10 +297,21 @@ button {
     min-width: auto;
   }
 
-  img {
-    object-fit: cover !important;
-    width: auto !important;
-    height: 250px;
-    // margin: 20px !important ;
+  .img-wrap {
+    height: 220px;
+    overflow: hidden;
+    img {
+      object-fit: cover !important;
+    }
   }
+
+  .card-title {
+    color: white !important;
+  }
+}
+
+.experience {
+  background: rgb(0 0 0 / 30%);
+  padding: 12px;
+  border-radius: 12px;
 }

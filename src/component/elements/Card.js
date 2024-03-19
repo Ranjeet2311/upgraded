@@ -4,7 +4,9 @@ function ImgMediaCard({ img, title, code, demo }) {
   return (
     <div class="col-12 col-md-6 col-xl-4">
       <div class="card h-100">
-        <img src={img} class="card-img-top" alt="..." />
+        <div className="img-wrap">
+          <img src={img} class="card-img-top" alt={title} />
+        </div>
         <div class="card-body">
           <h5 class="card-title text-dark"> {title}</h5>
           <div className="d-flex justify-content-between">

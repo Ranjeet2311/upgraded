@@ -10,7 +10,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
 function Projects() {
-  const [projectList, setProjectList] = useState(projectData.reverse());
+  const [projectList, setProjectList] = useState(projectData);
   const [value, setValue] = useState(0);
 
   // ---animation
