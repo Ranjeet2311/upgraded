@@ -25,6 +25,14 @@ const projectData = [
   },
   {
     id: 4,
+    ref: 'angular',
+    img: 'images/projectPics/Appointment-App.png',
+    title: 'Appointment tracker (Angular)',
+    code: 'https://github.com/Ranjeet2311/Personal-appointment-booking',
+    demo: 'https://tracker01.netlify.app/',
+  },
+  {
+    id: 5,
     ref: 'react',
     img: 'images/projectPics/quiz-demo.jpg',
     title: 'Quiz App (React)',
@@ -32,7 +40,7 @@ const projectData = [
     demo: 'https://quiz-app-0810.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     ref: 'react',
     img: 'images/projectPics/Text-to-speech-image.jpg',
     title: 'React-Text to Speech (React)',
@@ -40,7 +48,7 @@ const projectData = [
     demo: 'https://speech-to-text-09-01.netlify.app',
   },
   {
-    id: 6,
+    id: 7,
     ref: 'vue',
     img: 'images/projectPics/counter-app.png',
     title: 'Simple Counter (vue)',
@@ -48,7 +56,7 @@ const projectData = [
     demo: 'https://dulcet-quokka-b7e591.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     ref: 'react',
     img: 'images/projectPics/KeeperApp.png',
     title: 'Keeper Ap (React)',
@@ -56,7 +64,7 @@ const projectData = [
     demo: 'https://keeper-01.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     ref: 'react',
     img: 'images/projectPics/movie-database-project.png',
     title: 'Movie Database (React)',
@@ -64,7 +72,7 @@ const projectData = [
     demo: 'https://movie-database-project-0802.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     ref: 'react',
     img: 'images/projectPics/contact-manager.jpg',
     title: 'Contact Manager (React)',
@@ -73,7 +81,7 @@ const projectData = [
   },
 
   {
-    id: 10,
+    id: 11,
     ref: 'react',
     img: 'images/projectPics/drone-comapny.jpg',
     title: 'Drone Company (React)',
@@ -81,7 +89,7 @@ const projectData = [
     demo: 'https://drone-comapny.netlify.app/',
   },
   {
-    id: 11,
+    id: 12,
     ref: 'react',
     img: 'images/projectPics/React-home.png',
     title: 'React-Website (React)',
@@ -89,7 +97,7 @@ const projectData = [
     demo: 'https://react-website-0803.netlify.app/',
   },
   {
-    id: 12,
+    id: 13,
     ref: 'react',
     img: 'images/projectPics/react-menu-home.png',
     title: 'React Dynamic Menu (React)',
@@ -98,7 +106,7 @@ const projectData = [
   },
 
   {
-    id: 13,
+    id: 14,
     ref: 'funApp',
     img: 'images/projectPics/to-do-tasks.jpg',
     title: ' To-do-app',
@@ -106,7 +114,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/todo.html',
   },
   {
-    id: 14,
+    id: 15,
     ref: 'funApp',
     img: 'images/projectPics/Weather.jpg',
     title: 'Weathe App',
@@ -115,7 +123,7 @@ const projectData = [
   },
 
   {
-    id: 15,
+    id: 16,
     ref: 'funApp',
     img: 'images/projectPics/qr-code-bg.jpg',
     title: ' QR-Code Generator',
@@ -123,7 +131,7 @@ const projectData = [
     demo: 'https://qr-code-25-11.netlify.app/',
   },
   {
-    id: 16,
+    id: 17,
     ref: 'funApp',
     img: 'images/projectPics/Personality-match.jpg',
     title: 'Personality Match',
@@ -132,7 +140,7 @@ const projectData = [
   },
 
   {
-    id: 17,
+    id: 18,
     ref: 'funApp',
     img: 'images/projectPics/weight-converter.jpg',
     title: ' Weight converter',
@@ -141,7 +149,7 @@ const projectData = [
   },
 
   {
-    id: 18,
+    id: 19,
     ref: 'funApp',
     img: 'images/projectPics/music-player.jpg',
     title: 'Music player',
@@ -150,7 +158,7 @@ const projectData = [
   },
 
   {
-    id: 19,
+    id: 20,
     ref: 'funApp',
     img: 'images/projectPics/counter.jpg',
     title: 'Counter',
@@ -159,7 +167,7 @@ const projectData = [
   },
 
   {
-    id: 20,
+    id: 21,
     ref: 'funApp',
     img: 'images/projectPics/Digital-Clock.jpg',
     title: ' Digital clock',
@@ -168,7 +176,7 @@ const projectData = [
   },
 
   {
-    id: 21,
+    id: 22,
     ref: 'funApp',
     img: 'images/projectPics/play-music.jpg',
     title: 'Tap the music',
@@ -177,7 +185,7 @@ const projectData = [
   },
 
   {
-    id: 22,
+    id: 23,
     ref: 'funApp',
     img: 'images/projectPics/Menu-display.jpg',
     title: 'Menu display -filter',
@@ -186,7 +194,7 @@ const projectData = [
   },
 
   {
-    id: 23,
+    id: 24,
     ref: 'funApp',
     img: 'images/projectPics/modal.jpg',
     title: 'Best pictures from Europe',
@@ -194,7 +202,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/modal.html',
   },
   {
-    id: 24,
+    id: 25,
     ref: 'funApp',
     img: 'images/projectPics/diceGame.png',
     title: 'Dice Game',
@@ -202,7 +210,7 @@ const projectData = [
     demo: 'https://dazzling-heisenberg-3851ef.netlify.app/',
   },
   {
-    id: 25,
+    id: 26,
     ref: 'template',
     img: 'images/projectPics/Av-st-Template-demo.PNG',
     title: 'Av-st-Template',
@@ -210,7 +218,7 @@ const projectData = [
     demo: 'https://av-st-template.netlify.app/',
   },
   {
-    id: 26,
+    id: 27,
     ref: 'template',
     img: 'images/projectPics/form-validation-e.jpg',
     title: 'Form validation',
@@ -218,7 +226,7 @@ const projectData = [
     demo: 'https://render-007.netlify.app/',
   },
   {
-    id: 27,
+    id: 28,
     ref: 'template',
     img: 'images/projectPics/yoga-demo.png',
     title: 'Yoga-demo',
@@ -226,7 +234,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/yoga-demo.html',
   },
   {
-    id: 28,
+    id: 29,
     ref: 'template',
     img: 'images/projectPics/tech-demo.jpg',
     title: 'Tech-demo',
@@ -234,7 +242,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/tech-demo.html',
   },
   {
-    id: 29,
+    id: 30,
     ref: 'template',
     img: 'images/projectPics/car-service-demo.png',
     title: 'Car service demo',
@@ -242,7 +250,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/car-service.html',
   },
   {
-    id: 30,
+    id: 31,
     ref: 'template',
     img: 'images/projectPics/game-sign-up.png',
     title: 'Game-sign-up',
@@ -250,7 +258,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/hero-page.html',
   },
   {
-    id: 31,
+    id: 32,
     ref: 'template',
     img: 'images/projectPics/my-portfolio.png',
     title: 'Old portfolio',
@@ -258,7 +266,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/',
   },
   {
-    id: 32,
+    id: 33,
     ref: 'template',
     img: 'images/projectPics/Animated-Boat.jpg',
     title: 'Animated Boat',
@@ -266,7 +274,7 @@ const projectData = [
     demo: 'https://old-portfolio0.netlify.app/app-demo/animatedBoat.html',
   },
   {
-    id: 33,
+    id: 34,
     ref: 'template',
     img: 'images/projectPics/e-commerce-demo.png',
     title: 'E-commerce-demo',

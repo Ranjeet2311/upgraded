@@ -60,7 +60,8 @@ function Projects() {
         <Tabs
           value={value}
           onChange={handleChange}
-          scrollButtons
+          variant="scrollable"
+          scrollButtons="auto"
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
