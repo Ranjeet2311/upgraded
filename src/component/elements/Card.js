@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-function ImgMediaCard({ img, title, code, demo }) {
+function ImgMediaCard({ img, title, code, demo, tags }) {
+  const stack = tags;
   return (
     <div class="col-12 col-md-6 col-xl-4">
       <div class="card h-100">
@@ -9,7 +10,17 @@ function ImgMediaCard({ img, title, code, demo }) {
         </div>
         <div class="card-body">
           <h5 class="card-title text-dark"> {title}</h5>
-          <div className="d-flex justify-content-between">
+          <div className="row card-stack">
+            {stack &&
+              stack.map((item, index) => {
+                return (
+                  <p className="stack-pill" key={index}>
+                    {item}{' '}
+                  </p>
+                );
+              })}
+          </div>
+          <div className="d-flex card-btns justify-content-between">
             <a
               target="_blank"
               rel="noreferrer"

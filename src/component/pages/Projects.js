@@ -134,6 +134,7 @@ function Projects() {
               title={item.title}
               code={item.code}
               demo={item.demo}
+              tags={item.tags}
             />
           );
         })}

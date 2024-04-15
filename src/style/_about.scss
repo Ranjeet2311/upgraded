@@ -59,25 +59,6 @@
       // justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-
-      .stack-pill {
-        background-color: #483285;
-        margin: 6px 4px;
-        padding: 4px 16px;
-        border-radius: 20px;
-        line-height: 18px;
-        font-size: 12px;
-        max-width: fit-content;
-        list-style: none;
-        text-align: center;
-        cursor: pointer;
-
-        &:hover {
-          background-color: #32235a;
-          transform: scale(1.4);
-          transition: all 0.3s ease-out;
-        }
-      }
     }
   }
 }
