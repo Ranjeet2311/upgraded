@@ -74,11 +74,11 @@ function Home() {
           className="col-12 col-lg-8 right mt-4 "
           ref={right}
         >
-          <HeadH1 text="Welcome! I'm Ranjeet" />
+          <HeadH1 text="{ Welcome! I'm Ranjeet }" />
           <Paragraph text=" A frontend developer, tech enthusiast with creativity, scalability and responsibility. I’m experienced in leveraging the strength of Html, CSS, SCSS, bootstrap, java-script, Reactjs, Angular, Vuejs, restful & graphQl APIs and much more to build responsive and interactive web-apps/websites. Always excited to learn some new tech and ready for challenges. Perseverance and creativity drive my day-to-day actions. I would like to be a part of a company where I can deliver some fantastic results for the company and grow as a person. " />
 
           <div className="col mt-4 mb-4">
-            <Heading text="My Interest" align />
+            <Heading text="< My Interest />" align />
             <div className="d-flex flex-wrap justify-content-center justify-content-lg-start  interest-wrap">
               <p className="me-2 me-lg-4 colored-pill">
                 <SelfImprovementIcon /> Yoga
@@ -106,7 +106,7 @@ function Home() {
           </div>
           <div className="d-flex flex-column align-items-center align-items-lg-start">
             <div className="col mt-4 mb-4">
-              <Heading text="Let's Connect" align />
+              <Heading text="< Let's Connect />" align />
               <div className="d-flex flex-wrap ">
                 <a
                   className="me-2 me-lg-4"

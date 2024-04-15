@@ -38,7 +38,7 @@ function Skills() {
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
-      <Heading text="My tech stack" />
+      <Heading text="< My tech stack />" />
       {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
       <HeadH2 text="As a front-end developer these are the tools that I use" />

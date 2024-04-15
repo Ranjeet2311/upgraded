@@ -8,6 +8,7 @@ import Card from '../elements/Card';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Paragraph from '../elements/Paragraph';
 
 function Projects() {
   const [projectList, setProjectList] = useState(projectData);
@@ -52,11 +53,12 @@ function Projects() {
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
-      <Heading text="My Projects" />
+      <Heading text="< My Projects />" />
+      <Paragraph text="Checkout my codes at Github <☝️>" />
       <Divider />
       <div className="col"></div>
-      <HeadH2 text="Quick Project Navigation" />
-      <Box className="mt-2">
+      <HeadH2 text="Quick Navigation" />
+      <Box className="mt-2 experience">
         <Tabs
           value={value}
           onChange={handleChange}

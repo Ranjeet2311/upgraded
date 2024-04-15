@@ -70,7 +70,7 @@ function Experience() {
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
-      <Heading text="Experience" />
+      <Heading text="< Experience />" />
       <div className="row caption mb-4 mt-4" ref={leftX}>
         <div className="col-12 col-lg-4 experience-img">
           <img src={Profile2} alt="" />

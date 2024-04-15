@@ -304,8 +304,19 @@ button {
   overflow-x: hidden;
 
   &:hover {
-    box-shadow: 6px 6px 23px white;
-    transition: all 0.2s ease-in-out;
+    background-color: rgba(188 62 174 /60%);
+    border: rgba(188 62 174 /60%);
+    box-shadow: 6px 6px 23px rgb(0 0 0 / 90%);
+    transition: all 0.3s ease-in-out;
+
+    .btn,
+    .stack-pill {
+      box-shadow: 4px 4px 12px black;
+      transition: all 0.3s ease-in-out;
+    }
+    .card-title {
+      text-shadow: 4px 4px 12px black;
+    }
   }
 
   @include at-900px() {
@@ -330,9 +341,11 @@ button {
     color: white !important;
   }
   .card-stack {
-    max-height: 150px;
+    max-height: 130px;
     margin: 30px 0 40px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 15px;
   }
 
   .card-btns {
