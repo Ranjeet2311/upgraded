@@ -53,7 +53,7 @@ function Projects() {
         src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
         alt=""
       />
-      <Heading text="< My Projects />" />
+      <Heading text="< My Personal Projects />" />
       <Paragraph text="Checkout my codes at Github <☝️>" />
       <Divider />
       <div className="col"></div>
