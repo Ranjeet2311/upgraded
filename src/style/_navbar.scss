@@ -39,15 +39,17 @@
 
     .logo {
       z-index: 1000;
+      width: 60px;
 
       @include at-900px {
         position: absolute;
-        left: 0px;
-        padding: 0 40px;
+        left: 32px;
+        padding: 15px 0 0;
+        width: 50px;
       }
 
       .logo-image {
-        width: 40px;
+        width: 100%;
         border-radius: 50%;
       }
     }
