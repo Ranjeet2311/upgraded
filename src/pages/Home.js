@@ -72,9 +72,9 @@ function Home() {
           ref={right}
         >
           <HeadH1 text="{ Welcome! I'm Ranjeet }" />
-          <Paragraph text=" A frontend developer, tech enthusiast with creativity, scalability and responsibility. I’m experienced in leveraging the strength of Html, CSS, SCSS, bootstrap, java-script, Reactjs, Angular, Vuejs, restful & graphQl APIs and much more to build responsive and interactive web-apps/websites. Always excited to learn some new tech and ready for challenges. Perseverance and creativity drive my day-to-day actions. I would like to be a part of a company where I can deliver some fantastic results for the company and grow as a person. " />
+          <Paragraph text="As a frontend developer software engineer, I am passionate about crafting seamless user experiences and building innovative web applications. With a keen eye for design and a strong foundation in HTML, CSS, and JavaScript, I thrive on translating creative concepts into functional and responsive interfaces. My experience extends to utilizing modern frontend frameworks like React.js, Vue.js and Angular to develop dynamic and scalable solutions. I am committed to continuously enhancing my skills and staying updated with the latest industry trends to deliver high-quality software that not only meets but exceeds user expectations. With a collaborative mindset and a drive for excellence, I am dedicated to contributing to the success of every project I undertake, bringing creativity, innovation, and technical expertise to the forefront." />
 
-          <div className="col mt-4 mb-4">
+          <div className="col mt-4 mb-4 d-flex flex-column align-items-center align-items-lg-start">
             <Heading text="< My Interest />" />
             <div className="d-flex flex-wrap justify-content-center justify-content-lg-start  interest-wrap">
               <p className="me-2 me-lg-4 colored-pill">

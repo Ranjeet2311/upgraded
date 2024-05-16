@@ -12,11 +12,10 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @include for-tablet-portrait-up() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  // @include for-tablet-portrait-up() {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
 }
-// }

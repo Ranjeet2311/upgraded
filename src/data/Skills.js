@@ -120,23 +120,23 @@ const itemData = [
 const otherSkillData = [
   {
     id: 1,
-    img: 'images/skillPics/wordpress.png',
-    title: 'Wordpress',
-  },
-  {
-    id: 2,
-    img: 'images/skillPics/woo-commerce.png',
-    title: 'Woo-Commerce',
-  },
-  {
-    id: 3,
     img: 'images/skillPics/magento.png',
     title: 'Magento',
   },
   {
-    id: 4,
+    id: 2,
     img: 'images/skillPics/seo.png',
     title: 'SEO',
+  },
+  {
+    id: 3,
+    img: 'images/skillPics/wordpress.png',
+    title: 'Wordpress',
+  },
+  {
+    id: 4,
+    img: 'images/skillPics/woo-commerce.png',
+    title: 'Woo-Com.',
   },
 ];
 
