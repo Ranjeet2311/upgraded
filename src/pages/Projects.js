@@ -4,7 +4,7 @@ import Heading from '../component/Heading';
 import HeadH2 from '../component/HeadH2';
 import Divider from '../component/Divider';
 import Paragraph from '../component/Paragraph';
-import projectData from '../component/ProjectData';
+import projectData from '../data/ProjectData';
 import Card from '../component/Card';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
