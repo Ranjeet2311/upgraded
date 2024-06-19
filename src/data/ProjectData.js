@@ -1,9 +1,10 @@
 const projectData = [
   {
     id: 1,
+    createdAt: '2024-02-16T12:25:16+0000',
     ref: 'vue',
     img: 'images/projectPics/music-app.png',
-    title: 'Music Wallets (vue)',
+    title: 'Music Wallets (vue 3)',
     tags: [
       'javascript',
       'firebase',
@@ -25,9 +26,10 @@ const projectData = [
   },
   {
     id: 2,
+    createdAt: '2023-12-20T12:25:16+0000',
     ref: 'vue',
     img: 'images/projectPics/chat-app.png',
-    title: 'Group Chat (vue)',
+    title: 'Group Chat (vue 3)',
     tags: [
       'vue-components',
       'vue-router',
@@ -49,6 +51,7 @@ const projectData = [
   },
   {
     id: 3,
+    createdAt: '2024-03-03T12:25:16+0000',
     ref: 'angular',
     img: 'images/projectPics/git-app.png',
     title: 'Github Repo browser (Angular)',
@@ -76,6 +79,7 @@ const projectData = [
   },
   {
     id: 4,
+    createdAt: '2024-03-27T12:25:16+0000',
     ref: 'angular',
     img: 'images/projectPics/Appointment-App.png',
     title: 'Appointment tracker (Angular)',
@@ -98,9 +102,10 @@ const projectData = [
   },
   {
     id: 5,
+    createdAt: '2022-02-11T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/Portfolio.png',
-    title: 'Portfolio',
+    title: 'Portfolio (React)',
     tags: [
       'eslint',
       'JavaScript XML',
@@ -134,6 +139,7 @@ const projectData = [
   },
   {
     id: 5,
+    createdAt: '2021-08-10T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/quiz-demo.jpg',
     title: 'Quiz App (React)',
@@ -163,6 +169,7 @@ const projectData = [
   },
   {
     id: 6,
+    createdAt: '2021-09-02T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/Text-to-speech-image.jpg',
     title: 'React-Text to Speech (React)',
@@ -193,9 +200,10 @@ const projectData = [
   },
   {
     id: 7,
+    createdAt: '2022-03-02T12:25:16+0000',
     ref: 'vue',
     img: 'images/projectPics/counter-app.png',
-    title: 'Simple Counter (vue)',
+    title: 'Simple Counter (vue 2)',
     tags: [
       'vue-components',
       'state management',
@@ -213,6 +221,7 @@ const projectData = [
   },
   {
     id: 8,
+    createdAt: '2022-02-11T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/KeeperApp.png',
     title: 'Keeper Ap (React)',
@@ -245,6 +254,7 @@ const projectData = [
   },
   {
     id: 9,
+    createdAt: '2021-12-15T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/movie-database-project.png',
     title: 'Movie Database (React)',
@@ -277,6 +287,7 @@ const projectData = [
   },
   {
     id: 10,
+    createdAt: '2022-03-02T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/contact-manager.jpg',
     title: 'Contact Manager (React)',
@@ -310,6 +321,7 @@ const projectData = [
 
   {
     id: 11,
+    createdAt: '2023-02-01T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/drone-comapny.jpg',
     title: 'Drone Company (React)',
@@ -339,6 +351,7 @@ const projectData = [
   },
   {
     id: 12,
+    createdAt: '2023-02-01T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/React-home.png',
     title: 'React-Website (React)',
@@ -373,6 +386,7 @@ const projectData = [
   },
   {
     id: 13,
+    createdAt: '2023-02-01T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/react-menu-home.png',
     title: 'React Dynamic Menu (React)',

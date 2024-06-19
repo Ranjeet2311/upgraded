@@ -1,7 +1,13 @@
 import * as React from 'react';
+import moment from 'moment';
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
-function ImgMediaCard({ img, title, code, demo, tags }) {
+function ImgMediaCard({ img, title, code, demo, tags, createdAt }) {
   const stack = tags;
+  const date = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
+    'DD MMMM YYYY'
+  );
+
   return (
     <div class="col-12 col-md-6 col-xl-4">
       <div class="card h-100">
@@ -10,12 +16,16 @@ function ImgMediaCard({ img, title, code, demo, tags }) {
         </div>
         <div class="card-body">
           <h5 class="card-title text-dark"> {title}</h5>
+          <p className="created d-flex align-items-center">
+            <QueryBuilderIcon /> <span className="ms-2 me-2">Created at :</span>
+            <span> {date !== 'Invalid date' ? date : 'NA'}</span>
+          </p>
           <div className="row card-stack">
             {stack &&
               stack.map((item, index) => {
                 return (
                   <p className="stack-pill" key={index}>
-                    {item}{' '}
+                    {item}
                   </p>
                 );
               })}

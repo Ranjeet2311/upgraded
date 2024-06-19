@@ -10,6 +10,12 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import backgroundImage from '../images/background.jpg';
+import vue from '../images/vue-js-icon.svg';
+import angular from '../images/angular-icon.svg';
+import react from '../images/react-js-icon.svg';
+import javaScript from '../images/javascript-icon.png';
+import template from '../images/paint-bucket-icon.svg';
+import Icon from '../component/Icon';
 
 function Projects() {
   const [projectList, setProjectList] = useState(projectData);
@@ -65,65 +71,79 @@ function Projects() {
           aria-label="scrollable force tabs example"
         >
           <Tab
-            onClick={allFilterHandler}
+            name="All"
             label="All"
             style={{
               color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
             }}
+            onClick={allFilterHandler}
           />
           <Tab
+            name="Vue"
+            icon={<Icon alt="test avatar" img={vue} />}
+            style={{
+              color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
+            }}
             onClick={() => {
               filterHandler('vue');
             }}
-            name="Vue"
-            label="Vue"
-            style={{
-              color: 'white',
-            }}
           />
           <Tab
-            onClick={() => {
-              filterHandler('angular');
-            }}
-            name="Angular"
-            label="Angular"
+            name="react"
+            icon={<Icon alt="test avatar" img={react} />}
             style={{
               color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
             }}
-          />
-          <Tab
             onClick={() => {
               filterHandler('react');
             }}
-            name="react"
-            label="React"
+          />
+          <Tab
+            name="Angular"
+            icon={<Icon alt="test avatar" img={angular} />}
             style={{
               color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
+            }}
+            onClick={() => {
+              filterHandler('angular');
             }}
           />
           <Tab
+            name="webApp"
+            icon={<Icon alt="test avatar" img={javaScript} />}
+            style={{
+              color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
+            }}
             onClick={() => {
               filterHandler('funApp');
             }}
-            name="webApp"
-            label="fun JS Apps"
-            style={{
-              color: 'white',
-            }}
           />
           <Tab
+            icon={<Icon alt="test avatar" img={template} />}
             onClick={() => {
               filterHandler('template');
             }}
             name="template"
-            label="Templates"
+            // label="Templates"
             style={{
               color: 'white',
+              padding: '10px 10px',
+              minWidth: '50px',
+              filter: 'invert(1)',
             }}
           />
         </Tabs>
       </Box>
-
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-4" ref={up}>
         {projectList.map((item, index) => {
           return (
@@ -134,6 +154,7 @@ function Projects() {
               code={item.code}
               demo={item.demo}
               tags={item.tags}
+              createdAt={item.createdAt}
             />
           );
         })}

@@ -204,7 +204,7 @@ button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #56b0fd94, #3a7bd5);
+  background: linear-gradient(to top, #ed4eda99, #3a7bd5);
   border-radius: 6px;
 }
 
@@ -315,6 +315,10 @@ button {
 
   .card-title {
     color: white !important;
+  }
+  .created {
+    font-size: 12px;
+    font-family: $headFont;
   }
   .card-stack {
     max-height: 130px;
