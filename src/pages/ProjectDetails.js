@@ -1,0 +1,110 @@
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import projectData from '../data/ProjectData';
+import backgroundImage from '../images/background.jpg';
+import Heading from '../component/Heading';
+import moment from 'moment';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+function ProjectDetails() {
+  const { projectId } = useParams();
+  const navigate = useNavigate();
+  let proIndex;
+  let filterProject = projectData.find((item, index) => {
+    proIndex = index;
+    return item.title === projectId;
+  });
+
+  const [data, setData] = useState(filterProject);
+  console.log(`data  :: `, data);
+  const { createdAt, img, title, tags, code, demo, description } = data;
+
+  const createdDate = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
+    'DD MMMM YYYY'
+  );
+  return (
+    <div className="project-wrapper wrapper container">
+      <img className="background" src={backgroundImage} alt="bg" />
+      <div className="row">
+        <div className="col-12 col-lg-6 pb-2">
+          <img
+            src={process.env.PUBLIC_URL + '/' + img}
+            alt={filterProject.title}
+            className="details-image "
+          />
+        </div>
+        <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience">
+          <Heading className="text-start" text={title} />
+          <p>{description ? description : '---Description not available---'}</p>
+          <div className="row my-4 ms-0">
+            <span className="text-white d-block mb-2 px-0">
+              Some used tech highlights:{' '}
+            </span>
+            {tags &&
+              tags.map((items, index) => {
+                return (
+                  <div className="stack-pill text-light" key={index}>
+                    {items}
+                  </div>
+                );
+              })}
+          </div>
+          <p className="experience w-100"> Created at : {createdDate} </p>
+
+          <a
+            href={demo}
+            target="blank"
+            class="btn btn-bg text-light w-100"
+            type="button"
+          >
+            Live Demo
+          </a>
+          <a
+            href={code}
+            target="blank"
+            class="btn btn-bg text-light w-100  mt-2"
+            type="button"
+          >
+            Source Code
+          </a>
+          <a
+            href="https://github.com/Ranjeet2311/"
+            target="blank"
+            class="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center"
+            type="button"
+          >
+            <GitHubIcon /> <span className="ms-2"> Go to my Github</span>
+          </a>
+          <button
+            onClick={() => navigate(-1)}
+            target="blank"
+            class="btn btn-bg text-light w-100"
+            type="button"
+          >
+            <ArrowBackIosIcon /> Back to projects
+          </button>
+        </div>
+        {/* <div className="col-12 d-flex justify-content-center align-items-center mt-4">
+          <button
+            class="btn btn-primary btn-lg me-4"
+            type="button"
+            onClick={backProject}
+          >
+            <ArrowBackIosIcon />
+          </button>
+          <button
+            class="btn btn-primary btn-lg"
+            type="button"
+            onClick={nextProject}
+          >
+            <ArrowBackIosIcon style={{ rotate: '180deg', zIndex: '-99' }} />
+          </button>
+        </div> */}
+      </div>
+    </div>
+  );
+}
+
+export default ProjectDetails;

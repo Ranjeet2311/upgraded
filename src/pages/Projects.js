@@ -145,19 +145,20 @@ function Projects() {
         </Tabs>
       </Box>
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-4" ref={up}>
-        {projectList.map((item, index) => {
-          return (
-            <Card
-              key={index}
-              img={item.img}
-              title={item.title}
-              code={item.code}
-              demo={item.demo}
-              tags={item.tags}
-              createdAt={item.createdAt}
-            />
-          );
-        })}
+        {projectList &&
+          projectList.map((item, index) => {
+            return (
+              <Card
+                key={index}
+                img={item.img}
+                title={item.title}
+                code={item.code}
+                demo={item.demo}
+                tags={item.tags}
+                createdAt={item.createdAt}
+              />
+            );
+          })}
       </div>
     </div>
   );

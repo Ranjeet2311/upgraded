@@ -21,6 +21,8 @@ const projectData = [
       'composition-api',
       'crud-operation',
     ],
+    description:
+      'Login with your email and password and create your playlist, add your favorite YouTube music videos to your playlist and watch your music video anytime. Saves your time in browing your favourite music. You can also browse and listen to the music playlist made by other members. You can delete and add as many videos as you wish on your account. If you have no account then start with sign-up. This app does not save any data to browser memory',
     code: 'https://github.com/Ranjeet2311/Music-Wallets',
     demo: 'https://music-at-tips.web.app/login',
   },
@@ -46,6 +48,8 @@ const projectData = [
       'scss',
       'Html',
     ],
+    description:
+      'Login with your email and password, if you have no account then start with sign-up. User is routed to common chat room ,once the user is authenticated. Chat room gves access to chat with all the members of the group. Initially made for my school friends but holding on to it for some new upgrades. This app does not save any data to browser memory',
     code: 'https://github.com/Ranjeet2311/group-chat',
     demo: 'https://group-chat-2.netlify.app/',
   },
@@ -74,6 +78,8 @@ const projectData = [
       'reactiveformsmodule',
       'list-filter',
     ],
+    description:
+      'This app lets your browse all github repositories and you are able to see their stars, issues, descriptions etc. Use you github token to run this app, beware Angular reactive forms are quick in giving red signs. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/GIthub-Repo-browser',
     demo: 'https://gith.netlify.app/',
   },
@@ -97,6 +103,8 @@ const projectData = [
       'scss',
       'list-filter',
     ],
+    description:
+      'This app lets you create some important appointments, so you can check it anytime and delete the assignment once you have completed the appointment. This app will store data to browser memory, hence giving a feel of real web app. This app is intended for small scale use, adding a lot of appointments will result in more browser memory consumption.',
     code: 'https://github.com/Ranjeet2311/Personal-appointment-booking',
     demo: 'https://tracker01.netlify.app/',
   },
@@ -134,11 +142,12 @@ const projectData = [
       'useEffect',
       'DOM',
     ],
+    description: 'This is this same portfolio.',
     code: 'https://github.com/Ranjeet2311/upgraded',
     demo: 'https://ranjeet2311.github.io/upgraded/',
   },
   {
-    id: 5,
+    id: 6,
     createdAt: '2021-08-10T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/quiz-demo.jpg',
@@ -164,11 +173,13 @@ const projectData = [
       'mapping',
       'DOM',
     ],
+    description:
+      'Put your knowledge of java-script to test. This app calculates score of correct and incorrect answeres, correct answers adds-up 1 point and incorrect reduces 1 point. There are total 10 questions. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/React-Quiz-App',
     demo: 'https://quiz-app-0810.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     createdAt: '2021-09-02T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/Text-to-speech-image.jpg',
@@ -195,11 +206,13 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'Enjoy the benefits of speach to text app. It starts transcribing as soon as the app is allow to listen to your talks. It has limitless capacity to transcribe. Saying the word RESET will rest all transcriptions. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/React-Speech-to-text',
     demo: 'https://speech-to-text-09-01.netlify.app',
   },
   {
-    id: 7,
+    id: 8,
     createdAt: '2022-03-02T12:25:16+0000',
     ref: 'vue',
     img: 'images/projectPics/counter-app.png',
@@ -216,11 +229,13 @@ const projectData = [
       'scss',
       'Html',
     ],
+    description:
+      'It is just a simple counter app made in Vue Framework with up, down and reset button. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/Vue-Counter',
     demo: 'https://dulcet-quokka-b7e591.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     createdAt: '2022-02-11T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/KeeperApp.png',
@@ -249,11 +264,13 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'This app was inspired by keeper app of google. It lets you create and delete any items in the keeper app.  This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/Keeper-App',
     demo: 'https://keeper-01.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     createdAt: '2021-12-15T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/movie-database-project.png',
@@ -282,11 +299,13 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'This app was made initially just to test the API and returned data. Quering any movie name will initiate API call and related movies are displayed. Movie details are shown when you hover the movie card.  This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/React-MovieDatabase-app',
     demo: 'https://movie-database-project-0802.netlify.app/',
   },
   {
-    id: 10,
+    id: 11,
     createdAt: '2022-03-02T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/contact-manager.jpg',
@@ -315,12 +334,14 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'This app was inspired by contact manager apps. It lets you create and delete contacts. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/React-Contact-Mangaer',
     demo: 'https://contact-manager-001.netlify.app/',
   },
 
   {
-    id: 11,
+    id: 12,
     createdAt: '2023-02-01T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/drone-comapny.jpg',
@@ -346,11 +367,13 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'A simple single page application (SPA). with minimal hand-written animation',
     code: 'https://github.com/Ranjeet2311/React--Sass-Website',
     demo: 'https://drone-comapny.netlify.app/',
   },
   {
-    id: 12,
+    id: 13,
     createdAt: '2023-02-01T12:25:16+0000',
     ref: 'react',
     img: 'images/projectPics/React-home.png',
@@ -381,6 +404,8 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'A simple single page application (SPA). with minimal hand-written animation',
     code: 'https://github.com/Ranjeet2311/React-Website',
     demo: 'https://react-website-0803.netlify.app/',
   },
@@ -411,6 +436,8 @@ const projectData = [
       'Destructuring',
       'ES6',
     ],
+    description:
+      'A simple single page application (SPA). with minimal hand-written animation',
     code: 'https://github.com/Ranjeet2311/React-Navbar',
     demo: 'https://react-navigation-menu-0803.netlify.app/',
   },
@@ -420,6 +447,8 @@ const projectData = [
     ref: 'funApp',
     img: 'images/projectPics/to-do-tasks.jpg',
     title: ' To-do-app',
+    description:
+      'Just a fun todo app, allows you to create, delete and mark completed tasks. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/To-Do-App-Vanilla-JS',
     demo: 'https://old-portfolio0.netlify.app/app-demo/todo.html',
   },
@@ -428,6 +457,8 @@ const projectData = [
     ref: 'funApp',
     img: 'images/projectPics/Weather.jpg',
     title: 'Weathe App',
+    description:
+      'Just a fun todo app, allows you to check wethaer of any correct entered location. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/Weather-App',
     demo: 'https://old-portfolio0.netlify.app/app-demo/weather.html',
   },
@@ -437,6 +468,8 @@ const projectData = [
     ref: 'funApp',
     img: 'images/projectPics/qr-code-bg.jpg',
     title: ' QR-Code Generator',
+    description:
+      'Enables you to crerate QR code for any text or URL you need. Take a screenshot or QR code and use it wherever you need it. This app does not save any data to browser memory.',
     code: 'https://github.com/Ranjeet2311/Qr-Code-Generator',
     demo: 'https://qr-code-25-11.netlify.app/',
   },

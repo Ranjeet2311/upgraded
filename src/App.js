@@ -6,6 +6,7 @@ import TechStack from './pages/TechStack';
 import Projects from './pages/Projects';
 import Navbar from './component/Navbar';
 import NotFound from './pages/NotFound';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
