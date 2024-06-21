@@ -49,7 +49,7 @@ function Projects() {
 
   function allFilterHandler() {
     setProjectList(() => {
-      return projectData;
+      // return projectData;
     });
   }
 
@@ -94,6 +94,7 @@ function Projects() {
           />
           <Tab
             name="react"
+            // label="React"
             icon={<Icon alt="test avatar" img={react} />}
             style={{
               color: 'white',
@@ -106,6 +107,7 @@ function Projects() {
           />
           <Tab
             name="Angular"
+            // label="Angular"
             icon={<Icon alt="test avatar" img={angular} />}
             style={{
               color: 'white',
@@ -118,6 +120,7 @@ function Projects() {
           />
           <Tab
             name="webApp"
+            // label="Fun Apps"
             icon={<Icon alt="test avatar" img={javaScript} />}
             style={{
               color: 'white',
@@ -155,6 +158,7 @@ function Projects() {
                 code={item.code}
                 demo={item.demo}
                 tags={item.tags}
+                description={item.description}
                 createdAt={item.createdAt}
               />
             );

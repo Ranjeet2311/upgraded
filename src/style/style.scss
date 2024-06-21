@@ -10,6 +10,14 @@ $white: #ffffff;
   scroll-behavior: smooth;
   font-family: $baseFont;
 }
+// body {
+//   background-repeat: repeat;
+//   background-image: url(../images/background.jpg);
+//   background-position: top;
+//   background-size: cover;
+//   // background-position: top left;
+//   // background-blend-mode: luminosity;
+// }
 
 @mixin for-tablet-portrait-up {
   @media (max-width: 600px) {
@@ -143,9 +151,9 @@ button {
 
   .ccard {
     width: 80px;
-    // background: rgba(70, 70, 70, 0.3);
+    background: rgba(255, 255, 255, 1);
     border-radius: 5px;
-    border: 1px solid rgb(0 0 0 / 30%);
+    border: none;
     padding: 10px;
     transition: box-shadow 0.5s;
     will-change: transform;
@@ -159,7 +167,9 @@ button {
 .hr {
   margin: 0.5rem auto;
   width: 60%;
-  background-color: rgb(39, 38, 38);
+  // background-color: rgb(39, 38, 38);
+  background: white;
+  border: 1px solid white !important;
 }
 
 .links-container {
@@ -277,14 +287,13 @@ button {
 
   .card {
     position: relative;
-    cursor: pointer;
-    background: rgb(0 0 0 / 60%);
-    padding-bottom: 30px;
+    background: rgb(0 0 0 / 40%);
+    padding-bottom: 10px;
     overflow-x: hidden;
 
     &:hover {
-      background-color: rgba(188 62 174 /60%);
-      border: rgba(188 62 174 /60%);
+      background-color: rgba(188 62 174 /70%);
+      // border: rgba(188 62 174 /60%);
       box-shadow: 6px 6px 23px rgb(0 0 0 / 90%);
       transition: all 0.3s ease-in-out;
 
@@ -295,6 +304,10 @@ button {
       }
       .card-title {
         text-shadow: 4px 4px 12px black;
+      }
+      img {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
       }
     }
 
@@ -321,20 +334,26 @@ button {
     }
     .created {
       font-size: 12px;
+      line-height: 22px;
       font-family: $headFont;
     }
+    .description {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
     .card-stack {
-      max-height: 130px;
-      margin: 30px 0 40px;
+      max-height: 80px;
+      margin: 12px 0 24px;
       overflow-y: scroll;
       overflow-x: hidden;
-      padding-bottom: 15px;
+      // padding-bottom: 15px;
     }
 
     .card-btns {
       // position: absolute;
       bottom: 20px;
-
+      cursor: pointer;
       .more {
         text-decoration: none;
       }

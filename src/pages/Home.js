@@ -126,11 +126,12 @@ function Home() {
             <Tooltip className="mt-2" title="Download" ref={pop}>
               <Button
                 style={{
-                  borderRadius: 35,
+                  borderRadius: 8,
                   backgroundColor: '#483285',
                   padding: '12px 26px',
                   fontSize: '18px',
                 }}
+                className="btn-bg"
                 onClick={onDownload}
                 variant="contained"
                 target="_blank"

@@ -2,8 +2,17 @@ import * as React from 'react';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 
-function ImgMediaCard({ img, title, code, demo, tags, createdAt }) {
+function ImgMediaCard({
+  img,
+  title,
+  code,
+  demo,
+  tags,
+  createdAt,
+  description,
+}) {
   const stack = tags;
+
   const date = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
     'DD MMMM YYYY'
   );
@@ -13,13 +22,16 @@ function ImgMediaCard({ img, title, code, demo, tags, createdAt }) {
       <Link to={`/projects/${title}`} className="card-link">
         <div className="card h-100">
           <div className="img-wrap">
-            <img src={img} class="card-img-top" alt={title} />
+            <img src={img} className="card-img-top" alt={title} />
           </div>
           <div className="card-body">
             <h5 className="card-title text-dark"> {title}</h5>
             <p className="created d-flex align-items-center">
-              <span className="ms-2 me-2">Created at :</span>
+              <span className="me-2">Created at :</span>
               <span> {date !== 'Invalid date' ? date : 'NA'}</span>
+            </p>
+            <p className="description d-flex align-items-center">
+              {description && description.substr(0, 140)} ......
             </p>
             <div className="row card-stack">
               {stack &&
@@ -36,10 +48,10 @@ function ImgMediaCard({ img, title, code, demo, tags, createdAt }) {
                 rel="noreferrer"
                 href={demo}
                 target="_blank"
-                class="btn btn-bg text-light w-100 more"
+                className="btn btn-bg text-light w-100 more"
                 type="button"
               >
-                More Details
+                More Details ...
               </a>
               {/* <a
                 target="_blank"
