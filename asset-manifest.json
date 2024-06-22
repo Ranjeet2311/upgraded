@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.e19c12b5.css",
-    "main.js": "/upgraded/static/js/main.a1955f81.js",
+    "main.css": "/upgraded/static/css/main.55cb6dc1.css",
+    "main.js": "/upgraded/static/js/main.2bb82fbe.js",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
@@ -13,11 +13,11 @@
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
     "index.html": "/upgraded/index.html",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.e19c12b5.css.map": "/upgraded/static/css/main.e19c12b5.css.map",
-    "main.a1955f81.js.map": "/upgraded/static/js/main.a1955f81.js.map"
+    "main.55cb6dc1.css.map": "/upgraded/static/css/main.55cb6dc1.css.map",
+    "main.2bb82fbe.js.map": "/upgraded/static/js/main.2bb82fbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.e19c12b5.css",
-    "static/js/main.a1955f81.js"
+    "static/css/main.55cb6dc1.css",
+    "static/js/main.2bb82fbe.js"
   ]
 }
