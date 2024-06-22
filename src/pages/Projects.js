@@ -49,7 +49,7 @@ function Projects() {
 
   function allFilterHandler() {
     setProjectList(() => {
-      // return projectData;
+      return projectData;
     });
   }
 
