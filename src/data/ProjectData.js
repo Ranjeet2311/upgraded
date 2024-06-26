@@ -552,6 +552,7 @@ const projectData = [
     code: 'https://github.com/Ranjeet2311/Dice-Game',
     demo: 'https://dazzling-heisenberg-3851ef.netlify.app/',
   },
+
   {
     id: 26,
     ref: 'template',
@@ -592,22 +593,22 @@ const projectData = [
     code: 'https://github.com/Ranjeet2311/Projects',
     demo: 'https://old-portfolio0.netlify.app/app-demo/car-service.html',
   },
-  {
-    id: 31,
-    ref: 'template',
-    img: 'images/projectPics/game-sign-up.png',
-    title: 'Game-sign-up',
-    code: 'https://github.com/Ranjeet2311/Projects',
-    demo: 'https://old-portfolio0.netlify.app/app-demo/hero-page.html',
-  },
-  {
-    id: 32,
-    ref: 'template',
-    img: 'images/projectPics/my-portfolio.png',
-    title: 'Old portfolio',
-    code: 'https://github.com/Ranjeet2311/Ranjeet2311.github.io',
-    demo: 'https://old-portfolio0.netlify.app/',
-  },
+  // {
+  //   id: 31,
+  //   ref: 'template',
+  //   img: 'images/projectPics/game-sign-up.png',
+  //   title: 'Game-sign-up',
+  //   code: 'https://github.com/Ranjeet2311/Projects',
+  //   demo: 'https://old-portfolio0.netlify.app/app-demo/hero-page.html',
+  // },
+  // {
+  //   id: 32,
+  //   ref: 'template',
+  //   img: 'images/projectPics/my-portfolio.png',
+  //   title: 'Old portfolio',
+  //   code: 'https://github.com/Ranjeet2311/Ranjeet2311.github.io',
+  //   demo: 'https://old-portfolio0.netlify.app/',
+  // },
   {
     id: 33,
     ref: 'template',
@@ -616,17 +617,18 @@ const projectData = [
     code: 'https://github.com/Ranjeet2311/Boat-Animation',
     demo: 'https://old-portfolio0.netlify.app/app-demo/animatedBoat.html',
   },
-  {
-    id: 34,
-    ref: 'template',
-    img: 'images/projectPics/e-commerce-demo.png',
-    title: 'E-commerce-demo',
-    code: 'https://github.com/Ranjeet2311/Projects',
-    demo: 'https://old-portfolio0.netlify.app/app-demo/e-commerce-demo.html',
-  },
 
   // {
   //   id: 34,
+  //   ref: 'template',
+  //   img: 'images/projectPics/e-commerce-demo.png',
+  //   title: 'E-commerce-demo',
+  //   code: 'https://github.com/Ranjeet2311/Projects',
+  //   demo: 'https://old-portfolio0.netlify.app/app-demo/e-commerce-demo.html',
+  // },
+
+  // {
+  //   id: 35,
   //   ref: 'angular',
   //   img: 'images/projectPics/angular-todo.png',
   //   title: 'Todo-Angular',

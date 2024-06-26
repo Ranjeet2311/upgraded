@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from 'react';
+import { itemData, otherSkillData } from '../data/Skills';
 import { gsap } from 'gsap';
 import Heading from '../component/Heading';
 import HeadH2 from '../component/HeadH2';
 import Divider from '../component/Divider';
 import ImgSm from '../component/ImgSm';
 import backgroundImage from '../images/background.jpg';
-import { itemData, otherSkillData } from '../data/Skills';
 
 function Skills() {
   // ---animation

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import projectData from '../data/ProjectData';
 import backgroundImage from '../images/background.jpg';
 import Heading from '../component/Heading';
@@ -11,9 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function ProjectDetails() {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  // let proIndex;
   let filterProject = projectData.find((item, index) => {
-    // proIndex = index;
     return item.title === projectId;
   });
 
@@ -24,6 +21,7 @@ function ProjectDetails() {
   const createdDate = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
     'DD MMMM YYYY'
   );
+
   return (
     <div className="project-wrapper wrapper container">
       <img className="background" src={backgroundImage} alt="bg" />
@@ -40,7 +38,7 @@ function ProjectDetails() {
           <p>{description ? description : '---Description not available---'}</p>
           <div className="row my-4 ms-0">
             <span className="text-white d-block mb-2 px-0">
-              Some used tech highlights:{' '}
+              {tags ? ' Tech highlights' : 'Checkout github for more details'}
             </span>
             {tags &&
               tags.map((items, index) => {
@@ -51,7 +49,12 @@ function ProjectDetails() {
                 );
               })}
           </div>
-          <p className="experience w-100"> Created at : {createdDate} </p>
+          <p className="experience w-100">
+            Created at :{' '}
+            {createdDate !== 'Invalid date'
+              ? createdDate
+              : 'Checkout github for date'}
+          </p>
 
           <a
             href={demo}

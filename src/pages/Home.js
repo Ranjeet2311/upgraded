@@ -123,7 +123,14 @@ function Home() {
                 </a>
               </div>
             </div>
-            <Tooltip className="mt-2" title="Download" ref={pop}>
+            <Tooltip
+              className="mt-2"
+              title="Download"
+              ref={pop}
+              classes={{
+                tooltip: 'btn-bg text-white',
+              }}
+            >
               <Button
                 style={{
                   borderRadius: 8,

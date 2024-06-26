@@ -11,12 +11,10 @@ function ImgMediaCard({
   createdAt,
   description,
 }) {
-  const stack = tags;
-
+  const stack = tags && tags.slice(0, 5);
   const date = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
     'DD MMMM YYYY'
   );
-
   return (
     <div className="col-12 col-md-6 col-xl-4">
       <Link to={`/projects/${title}`} className="card-link">
@@ -28,10 +26,14 @@ function ImgMediaCard({
             <h5 className="card-title text-dark"> {title}</h5>
             <p className="created d-flex align-items-center">
               <span className="me-2">Created at :</span>
-              <span> {date !== 'Invalid date' ? date : 'NA'}</span>
+              <span>
+                {' '}
+                {date !== 'Invalid date' ? date : 'Checkout github for date'}
+              </span>
             </p>
             <p className="description d-flex align-items-center">
-              {description && description.substr(0, 140)} ......
+              {description && description.substr(0, 130)}{' '}
+              {description && '....Read more....'}
             </p>
             <div className="row card-stack">
               {stack &&
@@ -42,6 +44,7 @@ function ImgMediaCard({
                     </p>
                   );
                 })}
+              {stack && <p className="stack-pill">more....</p>}
             </div>
             <div className=" d-flex card-btns  justify-content-between">
               <a
@@ -51,7 +54,7 @@ function ImgMediaCard({
                 className="btn btn-bg text-light w-100 more"
                 type="button"
               >
-                More Details ...
+                More Details
               </a>
               {/* <a
                 target="_blank"
