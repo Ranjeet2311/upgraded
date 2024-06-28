@@ -1,0 +1,12 @@
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      transition: transform 0.2s ease;
+    }
+  }
+  .carousel-caption {
+    h5 {
+      font-size: 16px !important;
+    }
+  }
+}

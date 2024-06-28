@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 
@@ -11,14 +11,22 @@ function ImgMediaCard({
   createdAt,
   description,
 }) {
+  const [hide, setHide] = useState(false);
   const stack = tags && tags.slice(0, 5);
   const date = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
     'DD MMMM YYYY'
   );
+
   return (
     <div className="col-12 col-md-6 col-xl-4">
       <Link to={`/projects/${title}`} className="card-link">
-        <div className="card h-100">
+        <div
+          className="card h-100"
+          onMouseEnter={() => setHide(true)}
+          onMouseLeave={() => {
+            setHide(false);
+          }}
+        >
           <div className="img-wrap">
             <img src={img} className="card-img-top" alt={title} />
           </div>
@@ -54,7 +62,7 @@ function ImgMediaCard({
                 className="btn btn-bg text-light w-100 more"
                 type="button"
               >
-                More Details
+                {hide ? ' Click for more details' : 'More Details'}
               </a>
               {/* <a
                 target="_blank"

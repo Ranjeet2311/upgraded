@@ -80,5 +80,21 @@ const experienceData = [
     ],
   },
 ];
+const sliderImages = [
+  {
+    slide: 'images/slideImages/frankfurt.jpeg',
+    place: 'Frankfurt, Germany',
+  },
+  { slide: 'images/slideImages/werdev.jpg', place: 'Berlin, Germany' },
+  {
+    slide: 'images/slideImages/Belgium.jpeg',
+    place: 'Brussels, Belgium',
+  },
+  { slide: 'images/slideImages/france.jpeg', place: 'Paris, France' },
+  {
+    slide: 'images/slideImages/venice.jpeg',
+    place: 'Venice, Italy',
+  },
+];
 
-export default experienceData;
+export { experienceData, sliderImages };

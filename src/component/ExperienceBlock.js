@@ -20,7 +20,7 @@ function ExperienceBlock({ title, responsibilities, techs }) {
       <ul>
         {responsibilities &&
           responsibilities.map((resposibility, i) => {
-            return <li>{resposibility}</li>;
+            return <li key={i}>{resposibility}</li>;
           })}
       </ul>
       {techs && (
@@ -31,7 +31,11 @@ function ExperienceBlock({ title, responsibilities, techs }) {
       <ul className="stack-wrap ps-2 pe-0">
         {techs &&
           techs.map((tech, i) => {
-            return <li className="stack-pill">{tech}</li>;
+            return (
+              <li key={i} className="stack-pill">
+                {tech}
+              </li>
+            );
           })}
       </ul>
     </div>
