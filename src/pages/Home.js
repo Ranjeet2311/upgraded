@@ -72,7 +72,11 @@ function Home() {
           ref={right}
         >
           <HeadH1 text="{ Welcome! I'm Ranjeet }" />
-          <Paragraph text="As a frontend developer software engineer, I am passionate about crafting seamless user experiences and building innovative web applications. With a keen eye for design and a strong foundation in HTML, CSS, and JavaScript, I thrive on translating creative concepts into functional and responsive interfaces. My experience extends to utilizing modern frontend frameworks like React.js, Vue.js and Angular to develop dynamic and scalable solutions. I am committed to continuously enhancing my skills and staying updated with the latest industry trends to deliver high-quality software that not only meets but exceeds user expectations. With a collaborative mindset and a drive for excellence, I am dedicated to contributing to the success of every project I undertake, bringing creativity, innovation, and technical expertise to the forefront." />
+          <div className="experience">
+            <Paragraph text="I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code. But I'm not just confined to the realm of computers." />
+            <Paragraph text="A true traveler and explorer at heart I've journeyed across continents, immersing in diverse cultures, and navigating through some of the world’s most breathtaking landscapes. Whether hiking through remote mountain ranges, diving into the depths of the ocean, or exploring bustling urban environments, I bring the same curiosity and problem-solving skills to each new adventure." />
+            <Paragraph text="Combining technical expertise with a love for discovery, I continually seeks new horizons, both in the digital world and beyond. This unique blend of experiences not only enriches my professional life but also fuels a profound understanding of the interconnectedness of our world." />
+          </div>
 
           <div className="col mt-4 mb-4 d-flex flex-column align-items-center align-items-lg-start">
             <Heading text="< My Interest />" />
