@@ -49,7 +49,7 @@ function Crousel({ data }) {
             })}
         </div>
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev experience"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
@@ -61,7 +61,7 @@ function Crousel({ data }) {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next experience"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"

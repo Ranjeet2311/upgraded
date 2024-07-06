@@ -140,4 +140,77 @@ const otherSkillData = [
   },
 ];
 
-export { itemData, otherSkillData };
+const workWithMe = [
+  {
+    title: 'Soft skills',
+    desc: [
+      '- Strong problem-solving abilities.',
+      '- Excellent communication and teamwork skills.',
+      '- Ability to work effectively in multicultural environments.',
+      '- Adaptability and willingness to learn new technologies.',
+    ],
+    pageLink: '/experience',
+  },
+  {
+    title: 'Engineering practices',
+    desc: [
+      '- Accessibility in HTML / CSS.',
+      '- Estimation and work planning.',
+      '- Web performance optimization.',
+      '- Cross-browser testing & Web animations.',
+      '- Ability to troubleshoot and resolve issues efficiently.',
+    ],
+    pageLink: '/experience',
+  },
+  {
+    title: 'Skill set',
+    desc: [
+      ' HTML5,',
+      'CSS3,',
+      'SCSS,',
+      'React & Redux,',
+      'Vue & VueX,',
+      'Angular & RxJs,',
+      'Express.js,',
+      'Firebase,',
+      'PostgreSQL,',
+      'Cypress,',
+      'ESLint,',
+      'Bootstrap,',
+      'Tailwind,',
+      'Git,',
+      '& more...... ',
+    ],
+    pageLink: '/tech-stack',
+  },
+  {
+    title: 'Academics',
+    desc: [
+      '- BA-Prog. -Delhi University.',
+      '- G.B Senior Secondary School, New Delhi.',
+    ],
+    pageLink: '/experience',
+  },
+  {
+    title: 'My interest ',
+    desc: [
+      'Yoga,',
+      'Martial Arts,',
+      'Tech Podcasts,',
+      'Tech Conferences,',
+      'Gardening,',
+      'Cycling,',
+      'Reading,',
+    ],
+    pageLink: '/experience',
+  },
+  {
+    title: 'Experience ',
+    desc: [
+      '- A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.',
+    ],
+    pageLink: '/experience',
+  },
+];
+
+export { itemData, otherSkillData, workWithMe };

@@ -55,7 +55,7 @@ function Projects() {
   return (
     <div className="project-wrapper wrapper container">
       <img className="background" src={backgroundImage} alt="" />
-      <Heading text="< My Personal Projects />" />
+      <Heading text="< 🤸 My Personal Projects />" />
       <Paragraph text="Checkout my codes at Github <☝️>" />
       <Divider />
       <div className="col"></div>
@@ -199,16 +199,22 @@ function Projects() {
         {projectList &&
           projectList.map((item, index) => {
             return (
-              <Card
-                key={index}
-                img={item.img}
-                title={item.title}
-                code={item.code}
-                demo={item.demo}
-                tags={item.tags}
-                description={item.description}
-                createdAt={item.createdAt}
-              />
+              <div className="col-12 col-md-6 col-lg-4">
+                <Card
+                  key={index}
+                  img={item.img}
+                  title={item.title}
+                  code={item.code}
+                  demo={item.demo}
+                  tags={item.tags}
+                  description={item.description}
+                  createdAt={item.createdAt}
+                  pageLink={`/projects/${item.title}`}
+                  showBtn={true}
+                  primeBtnText="More Details"
+                  secBtnText="🤠 Click for more details"
+                />
+              </div>
             );
           })}
       </div>

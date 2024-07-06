@@ -35,10 +35,10 @@ function Skills() {
   return (
     <div className="text-center wrapper container">
       <img className="background" src={backgroundImage} alt="" />
-      <Heading text="< My tech stack />" />
+      <Heading text="< 🛡️ My tech stack />" />
       {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
-      <HeadH2 text="As a front-end developer these are the tools that I use" />
+      <HeadH2 text="🤠 My buddies" />
       <div className="skillBox" ref={up}>
         {itemData.map((item) => {
           return (

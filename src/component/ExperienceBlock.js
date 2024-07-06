@@ -32,7 +32,7 @@ function ExperienceBlock({ title, responsibilities, techs }) {
         {techs &&
           techs.map((tech, i) => {
             return (
-              <li key={i} className="stack-pill">
+              <li key={i} className="colored-pill">
                 {tech}
               </li>
             );

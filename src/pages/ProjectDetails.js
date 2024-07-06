@@ -43,7 +43,7 @@ function ProjectDetails() {
             {tags &&
               tags.map((items, index) => {
                 return (
-                  <div className="stack-pill text-light" key={index}>
+                  <div className="colored-pill text-light" key={index}>
                     {items}
                   </div>
                 );

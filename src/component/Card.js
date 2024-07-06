@@ -10,6 +10,12 @@ function ImgMediaCard({
   tags,
   createdAt,
   description,
+  pageLink,
+  showBtn,
+  list,
+  secBtnText,
+  primeBtnText,
+  type,
 }) {
   const [hide, setHide] = useState(false);
   const stack = tags && tags.slice(0, 5);
@@ -18,31 +24,40 @@ function ImgMediaCard({
   );
 
   return (
-    <div className="col-12 col-md-6 col-xl-4">
-      <Link to={`/projects/${title}`} className="card-link">
-        <div
-          className="card h-100"
-          onMouseEnter={() => setHide(true)}
-          onMouseLeave={() => {
-            setHide(false);
-          }}
-        >
+    // <div className="col-12 col-md-6 col-xl-4">
+    <Link to={pageLink} className="card-link">
+      <div
+        className="card h-100"
+        onMouseEnter={() => setHide(true)}
+        onMouseLeave={() => {
+          setHide(false);
+        }}
+      >
+        {img && (
           <div className="img-wrap">
             <img src={img} className="card-img-top" alt={title} />
           </div>
-          <div className="card-body">
-            <h5 className="card-title text-dark"> {title}</h5>
+        )}
+        <div className="card-body">
+          <h5 className="card-title text-dark">
+            <span className={type === 'general' ? 'inline me-1' : 'd-none'}>
+              🟢
+            </span>
+            {title}
+          </h5>
+          {createdAt && (
             <p className="created d-flex align-items-center">
               <span className="me-2">Created at :</span>
               <span>
-                {' '}
                 {date !== 'Invalid date' ? date : 'Checkout github for date'}
               </span>
             </p>
-            <p className="description d-flex align-items-center">
-              {description && description.substr(0, 130)}{' '}
-              {description && '....Read more....'}
-            </p>
+          )}
+          <p className="description d-flex align-items-center">
+            {description && description.substr(0, 130)}{' '}
+            {description && '....Read more....'}
+          </p>
+          {stack && (
             <div className="row card-stack">
               {stack &&
                 stack.map((item, index) => {
@@ -54,17 +69,28 @@ function ImgMediaCard({
                 })}
               {stack && <p className="stack-pill">more....</p>}
             </div>
-            <div className=" d-flex card-btns  justify-content-between">
-              <a
-                rel="noreferrer"
-                href={demo}
-                target="_blank"
-                className="btn btn-bg text-light w-100 more"
-                type="button"
-              >
-                {hide ? ' Click for more details' : 'More Details'}
-              </a>
-              {/* <a
+          )}
+
+          <ul className="desc-list">
+            {list &&
+              list.map((description, i) => {
+                return <li> {description} </li>;
+              })}
+          </ul>
+          {/* <div className=" d-flex card-btns  justify-content-between"> */}
+          {showBtn && (
+            <a
+              rel="noreferrer"
+              href={demo}
+              target="_blank"
+              className="btn btn-bg text-light w-100 more"
+              type="button"
+            >
+              {hide ? secBtnText : primeBtnText}
+            </a>
+          )}
+
+          {/* <a
                 target="_blank"
                 rel="noreferrer"
                 href={code}
@@ -72,11 +98,11 @@ function ImgMediaCard({
               >
                 Source Code
               </a> */}
-            </div>
-          </div>
+          {/* </div> */}
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
+    // </div>
   );
 }
 
