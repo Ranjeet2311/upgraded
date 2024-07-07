@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-
 import HeadH1 from '../component/HeadH1';
 import Heading from '../component/Heading';
 import Paragraph from '../component/Paragraph';
@@ -16,26 +15,31 @@ import Crousel from '../component/Crousel';
 import { sliderImages } from '../data/experienceList';
 
 function Home() {
-  // ---animation
   const pop = useRef();
-  const leftX = useRef();
+  const popx = useRef();
+  const left = useRef();
   const right = useRef();
 
   useEffect(() => {
     gsap.from(
       pop.current,
-      { scale: 0, duration: 2 },
+      { scale: 0.4, duration: 1 },
       { scale: 1.4, duration: 2, ease: 'back' }
     );
+    gsap.from(
+      popx.current,
+      { scale: 0.4, duration: 1 },
+      { scale: 1.4, duration: 4, ease: 'back' }
+    );
     gsap.fromTo(
-      leftX.current,
+      left.current,
       { x: '-1000', autoAlpha: -1, duration: 2 },
       { x: '0', autoAlpha: 1, duration: 3, ease: 'back' }
     );
     gsap.fromTo(
       right.current,
-      { x: '1000', autoAlpha: -1, duration: 3 },
-      { x: '0', autoAlpha: 1, duration: 1, ease: 'back' }
+      { x: '1000', autoAlpha: -1, duration: 2 },
+      { x: '0', autoAlpha: 1, duration: 3, ease: 'back' }
     );
   }, []);
 
@@ -52,45 +56,17 @@ function Home() {
       <div className="row align-items-center">
         <div
           className=" col-12 col-lg-4 left-side d-flex flex-column align-items-center experience-img"
-          ref={leftX}
+          ref={left}
         >
           <Crousel data={sliderImages} />
         </div>
-        <div className="col-12 col-lg-8 right mt-4 " ref={right}>
+        <div className="col-12 col-lg-8 right mt-4" ref={right}>
           <HeadH1 text="{👋 Welcome! I'm Ranjeet }" />
           <div className="experience">
             <Paragraph text="I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code. But I'm not just confined to the realm of computers." />
             <Paragraph text="A true traveler and explorer at heart I've journeyed across continents, immersing in diverse cultures, and navigating through some of the world’s most breathtaking landscapes. Whether hiking through remote mountain ranges, diving into the depths of the ocean, or exploring bustling urban environments, I bring the same curiosity and problem-solving skills to each new adventure." />
             <Paragraph text="Combining technical expertise with a love for discovery, I continually seeks new horizons, both in the digital world and beyond. This unique blend of experiences not only enriches my professional life but also fuels a profound understanding of the interconnectedness of our world." />
           </div>
-
-          {/* <div className="col mt-4 mb-4 d-flex flex-column align-items-center align-items-lg-start">
-            <Heading text="< My Interest />" />
-            <div className="d-flex flex-wrap justify-content-center justify-content-lg-start  interest-wrap">
-              <p className="me-2 me-lg-4 colored-pill">
-                <SelfImprovementIcon /> Yoga
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                <SportsMartialArtsIcon /> Martial Arts
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                {' '}
-                <PodcastsIcon /> Tech Podcasts
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                <GroupsIcon /> Tech Conferences
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                <YardOutlinedIcon /> Gardening
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                <DirectionsBikeIcon /> Cycling
-              </p>
-              <p className="me-2 me-lg-4 colored-pill">
-                <AutoStoriesIcon /> Reading
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="row">
@@ -145,7 +121,7 @@ function Home() {
           <Tooltip
             className="mt-2"
             title="Download"
-            ref={pop}
+            ref={popx}
             classes={{
               tooltip: 'btn-bg text-white',
             }}
@@ -162,7 +138,8 @@ function Home() {
               variant="contained"
               target="_blank"
             >
-              <FileDownloadRoundedIcon /> Download my CV
+              <FileDownloadRoundedIcon />
+              Download my CV
             </Button>
           </Tooltip>
         </div>

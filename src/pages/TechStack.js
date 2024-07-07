@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { itemData, otherSkillData } from '../data/Skills';
+import { skillsData, otherSkillData } from '../data/Skills';
 import { gsap } from 'gsap';
 import Heading from '../component/Heading';
 import HeadH2 from '../component/HeadH2';
@@ -12,58 +12,121 @@ function Skills() {
 
   const up = useRef();
   const upx = useRef();
-  const appear = useRef();
+  const upx2 = useRef();
+  const upx3 = useRef();
+  const upx4 = useRef();
+
+  const frontend = skillsData.filter((item, i) => {
+    return item.end === 'Frontend';
+  });
+  const Backend = skillsData.filter((item, i) => {
+    return item.end === 'Backend';
+  });
+  const codeManage = skillsData.filter((item, i) => {
+    return item.end === 'Managing';
+  });
+  const design = skillsData.filter((item, i) => {
+    return item.end === 'Design';
+  });
+
+  console.log(` frontend ::: `, frontend);
 
   useEffect(() => {
+    gsap.fromTo(up.current, { y: 1000, duration: 1 }, { y: 0, duration: 1 });
     gsap.fromTo(
       upx.current,
-      { y: 1000, autoAlpha: -1, duration: 1 },
-      { y: 0, autoAlpha: 1, duration: 1 }
+      { y: 1000, duration: 1 },
+      { y: 0, autoAlpha: 1, duration: 2 }
     );
-    gsap.fromTo(
-      up.current,
-      { y: 1000, autoAlpha: -1, duration: 1 },
-      { y: 0, autoAlpha: 1, duration: 1 }
-    );
-    gsap.fromTo(
-      appear.current,
-      { autoAlpha: -1, duration: 2 },
-      { autoAlpha: 1, duration: 3, ease: 'back' }
-    );
+    gsap.fromTo(upx2.current, { y: 1000, duration: 1 }, { y: 0, duration: 3 });
+    gsap.fromTo(upx3.current, { y: 1000, duration: 1 }, { y: 0, duration: 4 });
+    gsap.fromTo(upx4.current, { y: 1000, duration: 1 }, { y: 0, duration: 5 });
   });
 
   return (
     <div className="text-center wrapper container">
       <img className="background" src={backgroundImage} alt="" />
       <Heading text="< 🛡️ My tech stack />" />
-      {/* <HeadH2 text="Please check my projects on GitHub" /> */}
       <Divider />
-      <HeadH2 text="🤠 My buddies" />
-      <div className="skillBox" ref={up}>
-        {itemData.map((item) => {
-          return (
-            <ImgSm
-              key={item.id}
-              image={item.img}
-              alt={item.title}
-              name={item.title}
-            />
-          );
-        })}
+      <div ref={up}>
+        <HeadH2 text="🤠 Frontend" />
+        <div className="skillBox experience">
+          {frontend &&
+            frontend.map((item) => {
+              return (
+                <ImgSm
+                  key={item.id}
+                  image={item.img}
+                  alt={item.title}
+                  name={item.title}
+                />
+              );
+            })}
+        </div>
       </div>
-      <HeadH2 text="Other Skills" />
-      <Divider />
-      <div className="skillBox" ref={upx}>
-        {otherSkillData.map((item) => {
-          return (
-            <ImgSm
-              key={item.id}
-              image={item.img}
-              alt={item.title}
-              name={item.title}
-            />
-          );
-        })}
+      <div ref={upx}>
+        <HeadH2 text="🤠 Backend" />
+        <div className="skillBox experience">
+          {Backend &&
+            Backend.map((item) => {
+              return (
+                <ImgSm
+                  key={item.id}
+                  image={item.img}
+                  alt={item.title}
+                  name={item.title}
+                />
+              );
+            })}
+        </div>
+      </div>
+      <div ref={upx2}>
+        <HeadH2 text="🤠 CI/CD (Code management)" />
+        <div className="skillBox experience">
+          {codeManage &&
+            codeManage.map((item) => {
+              return (
+                <ImgSm
+                  key={item.id}
+                  image={item.img}
+                  alt={item.title}
+                  name={item.title}
+                />
+              );
+            })}
+        </div>
+      </div>
+      <div ref={upx3}>
+        <HeadH2 text="🤠 Design" />
+        <div className="skillBox experience">
+          {design &&
+            design.map((item) => {
+              return (
+                <ImgSm
+                  key={item.id}
+                  image={item.img}
+                  alt={item.title}
+                  name={item.title}
+                />
+              );
+            })}
+        </div>
+      </div>
+      <div ref={upx4}>
+        <HeadH2 text="Content management systems" />
+        <Divider />
+        <div className="skillBox experience">
+          {otherSkillData.map((item) => {
+            return (
+              <ImgSm
+                key={item.id}
+                image={item.img}
+                alt={item.title}
+                name={item.title}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
