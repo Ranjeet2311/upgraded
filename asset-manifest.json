@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.6d63f604.css",
-    "main.js": "/upgraded/static/js/main.624c6e24.js",
+    "main.css": "/upgraded/static/css/main.b3e62a35.css",
+    "main.js": "/upgraded/static/js/main.e6937360.js",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/avatar-first.png": "/upgraded/static/media/avatar-first.d5c9c4a3ad7ac6f9ed67.png",
@@ -10,17 +10,16 @@
     "static/media/all-icon.svg": "/upgraded/static/media/all-icon.5eac64278842a86f7eb72d82aa923773.svg",
     "static/media/react-js-icon.svg": "/upgraded/static/media/react-js-icon.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
     "static/media/paint-bucket-icon.svg": "/upgraded/static/media/paint-bucket-icon.611c67227f8f4900e20caabffd8b69c1.svg",
-    "static/media/zoom-icon.svg": "/upgraded/static/media/zoom-icon.2a01d616f0e69beb0f59.svg",
     "static/media/angle-circle-arrow-up-icon.svg": "/upgraded/static/media/angle-circle-arrow-up-icon.3aa96e478bcbe5516990.svg",
     "static/media/angle-circle-arrow-down-icon.svg": "/upgraded/static/media/angle-circle-arrow-down-icon.4d726fba4a328d3e3e92.svg",
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
     "index.html": "/upgraded/index.html",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.6d63f604.css.map": "/upgraded/static/css/main.6d63f604.css.map",
-    "main.624c6e24.js.map": "/upgraded/static/js/main.624c6e24.js.map"
+    "main.b3e62a35.css.map": "/upgraded/static/css/main.b3e62a35.css.map",
+    "main.e6937360.js.map": "/upgraded/static/js/main.e6937360.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d63f604.css",
-    "static/js/main.624c6e24.js"
+    "static/css/main.b3e62a35.css",
+    "static/js/main.e6937360.js"
   ]
 }
