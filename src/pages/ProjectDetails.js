@@ -8,30 +8,44 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function ProjectDetails() {
+  const [zoom, setZoom] = useState(false);
   const { projectId } = useParams();
   const navigate = useNavigate();
+
   let filterProject = projectData.find((item, index) => {
     return item.title === projectId;
   });
 
   const [data, setData] = useState(filterProject);
-  console.log(`data  :: `, data);
+  // console.log(`data  :: `, data);
   const { createdAt, img, title, tags, code, demo, description } = data;
 
   const createdDate = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
     'DD MMMM YYYY'
   );
 
+  function zoomHandler() {
+    console.log(` setZoomsetZoom : `, zoom);
+    return setZoom(!zoom);
+  }
+
   return (
     <div className="project-wrapper wrapper container">
       <img className="background" src={backgroundImage} alt="bg" />
+
       <div className="row">
-        <div className="col-12 col-lg-6 pb-2 pb-lg-0">
+        <div className="col-12 col-lg-6 pb-2 pb-lg-0 details-img-wrap">
           <img
+            onClick={zoomHandler}
             src={process.env.PUBLIC_URL + '/' + img}
             alt={filterProject.title}
-            className="details-image "
+            className={`details-image ${zoom ? 'zoom' : ''}`}
           />
+          <p className="text-center">Click to zoom</p>
+          {/* <div
+            className={`zoom-icon ${zoom ? 'zoom' : ''}`}
+            onClick={zoomHandler}
+          ></div> */}
         </div>
         <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience pt-0">
           <Heading className="text-start" text={title} />
@@ -89,6 +103,7 @@ function ProjectDetails() {
             <ArrowBackIosIcon /> Back to projects
           </button>
         </div>
+        <div className="col-12 mt-4"></div>
       </div>
     </div>
   );

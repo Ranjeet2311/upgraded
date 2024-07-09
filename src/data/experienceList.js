@@ -1,8 +1,7 @@
 const experienceData = [
   {
     id: 4,
-    title:
-      'Taking a break to finish some important things in life | Dec 2023 - till now | ',
+    title: 'Parental leave  | December 2023 - till now |',
     techs: [
       'Html',
       'Markdown',

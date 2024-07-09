@@ -15,6 +15,10 @@ import javaScript from '../images/javascript-icon.png';
 import template from '../images/paint-bucket-icon.svg';
 import browse from '../images/all-icon.svg';
 import Icon from '../component/Icon';
+import Accordian from '../component/Accordian';
+import Contact from '../component/Contact';
+import StaticModal from '../component/StaticModal';
+import ContactForm from '../component/ContactForm';
 
 function Projects() {
   const [projectList, setProjectList] = useState(projectData);
@@ -53,172 +57,183 @@ function Projects() {
   }
 
   return (
-    <div className="project-wrapper wrapper container">
-      <img className="background" src={backgroundImage} alt="" />
-      <Heading text="< 🤸 My Personal Projects />" />
-      <Paragraph text="Checkout my codes at Github <☝️>" />
-      <Divider />
-      <div className="col"></div>
-      <HeadH2 text="Filter projects by frameworks & types" />
-      <Box className="experience">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="auto"
-          allowScrollButtonsMobile
-          aria-label="scrollable force tabs example"
-        >
-          <Tooltip
-            className="mt-2"
-            title="Browse all"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
+    <>
+      <div className="project-wrapper wrapper container">
+        <img className="background" src={backgroundImage} alt="" />
+        <Heading text="< 🤸 My Personal Projects />" />
+        <Paragraph text="Checkout my codes at Github <☝️>" />
+        <Divider />
+        <div className="col"></div>
+        <HeadH2 text="Filter projects by frameworks & types" />
+        <Box className="experience">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
+            aria-label="scrollable force tabs example"
           >
-            <Tab
-              name="All"
-              // label="All"
-              icon={<Icon alt="test avatar" img={browse} />}
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
+            <Tooltip
+              className="mt-2"
+              title="Browse all"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-              onClick={allFilterHandler}
-            />
-          </Tooltip>
-          <Tooltip
-            className="mt-2"
-            title="Vue"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
-          >
-            <Tab
-              name="Vue"
-              icon={<Icon alt="test avatar" img={vue} />}
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
+            >
+              <Tab
+                name="All"
+                // label="All"
+                icon={<Icon alt="test avatar" img={browse} />}
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                }}
+                onClick={allFilterHandler}
+              />
+            </Tooltip>
+            <Tooltip
+              className="mt-2"
+              title="Vue"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-              onClick={() => {
-                filterHandler('vue');
+            >
+              <Tab
+                name="Vue"
+                icon={<Icon alt="test avatar" img={vue} />}
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                }}
+                onClick={() => {
+                  filterHandler('vue');
+                }}
+              />
+            </Tooltip>
+            <Tooltip
+              className="mt-2"
+              title="React"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-            />
-          </Tooltip>
-          <Tooltip
-            className="mt-2"
-            title="React"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
-          >
-            <Tab
-              name="react"
-              // label="React"
-              icon={<Icon alt="test avatar" img={react} />}
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
+            >
+              <Tab
+                name="react"
+                // label="React"
+                icon={<Icon alt="test avatar" img={react} />}
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                }}
+                onClick={() => {
+                  filterHandler('react');
+                }}
+              />
+            </Tooltip>
+            <Tooltip
+              className="mt-2"
+              title="Angular"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-              onClick={() => {
-                filterHandler('react');
+            >
+              <Tab
+                name="Angular"
+                // label="Angular"
+                icon={<Icon alt="test avatar" img={angular} />}
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                }}
+                onClick={() => {
+                  filterHandler('angular');
+                }}
+              />
+            </Tooltip>
+            <Tooltip
+              className="mt-2"
+              title="Fun Apps"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-            />
-          </Tooltip>
-          <Tooltip
-            className="mt-2"
-            title="Angular"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
-          >
-            <Tab
-              name="Angular"
-              // label="Angular"
-              icon={<Icon alt="test avatar" img={angular} />}
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
+            >
+              <Tab
+                name="webApp"
+                // label="Fun Apps"
+                icon={<Icon alt="test avatar" img={javaScript} />}
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                }}
+                onClick={() => {
+                  filterHandler('funApp');
+                }}
+              />
+            </Tooltip>
+            <Tooltip
+              className="mt-2"
+              title="templates"
+              classes={{
+                tooltip: 'btn-bg text-white',
               }}
-              onClick={() => {
-                filterHandler('angular');
-              }}
-            />
-          </Tooltip>
-          <Tooltip
-            className="mt-2"
-            title="Fun Apps"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
-          >
-            <Tab
-              name="webApp"
-              // label="Fun Apps"
-              icon={<Icon alt="test avatar" img={javaScript} />}
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
-              }}
-              onClick={() => {
-                filterHandler('funApp');
-              }}
-            />
-          </Tooltip>
-          <Tooltip
-            className="mt-2"
-            title="templates"
-            classes={{
-              tooltip: 'btn-bg text-white',
-            }}
-          >
-            <Tab
-              icon={<Icon alt="test avatar" img={template} />}
-              onClick={() => {
-                filterHandler('template');
-              }}
-              name="template"
-              // label="Templates"
-              style={{
-                color: 'white',
-                padding: '10px 10px',
-                minWidth: '50px',
-                filter: 'invert(1)',
-              }}
-            />
-          </Tooltip>
-        </Tabs>
-      </Box>
-      <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
-        {projectList &&
-          projectList.map((item, index) => {
-            return (
-              <div className="col-12 col-md-6 col-lg-4">
-                <Card
-                  key={index}
-                  img={item.img}
-                  title={item.title}
-                  code={item.code}
-                  demo={item.demo}
-                  tags={item.tags}
-                  description={item.description}
-                  createdAt={item.createdAt}
-                  pageLink={`/projects/${item.title}`}
-                  showBtn={true}
-                  primeBtnText="More Details"
-                  secBtnText="🤠 Click for more details"
-                />
-              </div>
-            );
-          })}
+            >
+              <Tab
+                icon={<Icon alt="test avatar" img={template} />}
+                onClick={() => {
+                  filterHandler('template');
+                }}
+                name="template"
+                // label="Templates"
+                style={{
+                  color: 'white',
+                  padding: '10px 10px',
+                  minWidth: '50px',
+                  filter: 'invert(1)',
+                }}
+              />
+            </Tooltip>
+          </Tabs>
+        </Box>
+        <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
+          {projectList &&
+            projectList.map((item, index) => {
+              return (
+                <div className="col-12 col-md-6 col-lg-4">
+                  <Card
+                    key={index}
+                    img={item.img}
+                    title={item.title}
+                    code={item.code}
+                    demo={item.demo}
+                    tags={item.tags}
+                    description={item.description}
+                    createdAt={item.createdAt}
+                    pageLink={`/projects/${item.title}`}
+                    showBtn={true}
+                    primeBtnText="More Details"
+                    secBtnText="🤠 Click for more details"
+                  />
+                </div>
+              );
+            })}
+        </div>
       </div>
-    </div>
+      <div className="container mt-4">
+        <Accordian heading="Connect with me" accordianSelect="projectOne">
+          <Contact>
+            <StaticModal title="Sending message to @Ranjeet">
+              <ContactForm> </ContactForm>
+            </StaticModal>
+          </Contact>
+        </Accordian>
+      </div>
+    </>
   );
 }
 

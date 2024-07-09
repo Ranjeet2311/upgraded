@@ -6,6 +6,8 @@ import Logo from '../images/new-logo.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
+import StaticModal from './StaticModal';
+import ContactForm from './ContactForm';
 
 const menuLinks = [
   { name: 'Info', url: '/' },
@@ -62,6 +64,11 @@ function Navbar() {
                   </li>
                 );
               })}
+              <li>
+                <StaticModal title="Sending message to @Ranjeet">
+                  <ContactForm downloadCv="true"> </ContactForm>
+                </StaticModal>{' '}
+              </li>
               <IconButton
                 style={navIconStyle}
                 target="_blank"

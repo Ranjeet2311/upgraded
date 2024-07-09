@@ -47,7 +47,7 @@ function ImgMediaCard({
           </h5>
           {createdAt && (
             <p className="created d-flex align-items-center">
-              <span className="me-2">Created at :</span>
+              <span className="me-2">Last updated :</span>
               <span>
                 {date !== 'Invalid date' ? date : 'Checkout github for date'}
               </span>
@@ -83,7 +83,7 @@ function ImgMediaCard({
               rel="noreferrer"
               href={demo}
               target="_blank"
-              className="btn btn-bg text-light w-100 more"
+              className="btn btn-bg text-light w-100 more card-btns"
               type="button"
             >
               {hide ? secBtnText : primeBtnText}

@@ -1,0 +1,22 @@
+.modal-content {
+  background: linear-gradient(
+    45deg,
+    rgba(188, 62, 174, 1) 30%,
+    rgb(72, 50, 133, 1) 70%
+  ) !important;
+  border: 1px solid white !important;
+  border-radius: 12px !important;
+
+  .form-label {
+    color: white;
+  }
+
+  .btn-bg {
+    border: 1px solid white !important;
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }
+  .btn-close {
+    filter: invert(1);
+  }
+}

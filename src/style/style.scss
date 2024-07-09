@@ -3,6 +3,7 @@
 $headFont: 'Roboto Serif', serif;
 $baseFont: 'Montserrat', sans-serif;
 $white: #ffffff;
+$linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 
 * {
   padding: 0;
@@ -16,7 +17,7 @@ $white: #ffffff;
 //   background-position: top;
 //   background-size: cover;
 //   // background-position: top left;
-//   // background-blend-mode: luminosity;
+// background-blend-mode: luminosity;
 // }
 
 @mixin for-tablet-portrait-up {
@@ -290,10 +291,11 @@ button {
     background: rgb(0 0 0 / 40%);
     padding-bottom: 10px;
     overflow-x: hidden;
+    border: 1px solid black;
 
     &:hover {
       background-color: rgba(188 62 174 /70%);
-      // border: rgba(188 62 174 /60%);
+      border: 1px solid rgba(188, 62, 174);
       box-shadow: 6px 6px 23px rgb(0 0 0 / 90%);
       transition: all 0.3s ease-in-out;
 
@@ -367,6 +369,8 @@ button {
       // position: absolute;
       bottom: 20px;
       cursor: pointer;
+      transform: scale(1);
+      border: none;
       .more {
         text-decoration: none;
       }
@@ -377,21 +381,23 @@ button {
 .btn-bg {
   background: linear-gradient(
     to left,
-    rgba(188, 62, 174, 0.5803921569) 30%,
-    #483285 70%
+    rgba(188, 62, 174, 1) 30%,
+    rgb(72, 50, 133, 1) 70%
   );
-  border: none;
+  border: 2px solid rgb(72, 50, 133, 0.4);
 
   &:hover {
+    transition: all 0.4s ease-out;
     background: linear-gradient(
       to left,
-
-      #483285 30%,
-      rgba(188, 62, 174, 0.5803921569) 70%
+      rgb(72, 50, 133, 1) 30%,
+      rgba(188, 62, 174, 1) 70%
     );
-    border: none;
+    border: 1px solid white;
+    transform: scale(1.1);
   }
 }
+
 .experience {
   background: rgb(0 0 0 / 30%);
   padding: 12px;
@@ -399,34 +405,107 @@ button {
 }
 
 // -----details--------------
-.details-image {
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.8s;
-  height: auto;
-  max-height: 600px;
-  overflow: hidden;
-  z-index: 99999;
+.details-img-wrap {
+  position: relative;
 
-  @include at-900px() {
-    height: 400px !important;
-    transform: scale(1);
-  }
-
-  &:hover {
-    transform: scale(1.6) translate(30%, 30%);
+  .details-image {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.8s;
     height: auto;
-    overflow: auto;
-    object-fit: fill;
+    max-height: 600px;
+    overflow: hidden;
+    cursor: pointer;
 
     @include at-900px() {
-      // height: 50px !important;
+      height: 400px !important;
+      transform: scale(1);
+    }
+
+    &:hover {
+      // transform: scale(1.6) translate(30%, 30%);
+      height: auto;
+      overflow: auto;
+      // object-fit: fill;
+
+      // @include at-900px() {
+      //   transform: scale(1.1);
+      // }
+    }
+  }
+
+  .zoom {
+    transform: scale(1.6) translate(30%, 30%);
+
+    @include at-900px() {
       transform: scale(1.1);
     }
   }
 }
 
-.MuiTooltip-arrow {
-  background-color: red;
-  border: 1px solid red;
+.accordion {
+  .accordion-button {
+    .collapsed {
+      &:hover {
+        background: linear-gradient(
+          to left,
+
+          #483285 30%,
+          rgba(188, 62, 174, 0.5803921569) 70%
+        );
+      }
+    }
+
+    &:not(.collapsed) {
+      box-shadow: none !important;
+      background: transparent;
+
+      &::after {
+        background-image: url('../images/angle-circle-arrow-up-icon.svg');
+        transform: scale(1.6);
+        @include at-900px() {
+          transform: scale(1.2);
+        }
+      }
+    }
+    &::after {
+      background-image: url('../images/angle-circle-arrow-down-icon.svg');
+      transform: scale(1.6);
+      filter: invert(100%);
+      @include at-900px() {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .heading {
+    @include at-900px() {
+      font-size: 22px;
+    }
+  }
+}
+
+.accordion-item:last-child {
+  border-radius: 12px !important;
+  border-top: 1px solid rgba(188, 62, 174, 0.5803921569) !important;
+  border-bottom: 1px solid rgba(188, 62, 174, 0.5803921569) !important;
+  border: 1px solid rgba(188, 62, 174, 0.5803921569);
+  // &:hover {
+  //   background: linear-gradient(
+  //     to left,
+
+  //     #483285 30%,
+  //     rgba(188, 62, 174, 0.5803921569) 70%
+  //   );
+  // }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg) !important;
+  --bs-tooltip-color: var(--bs-white) !important;
+}
+
+.modal-backdrop {
+  z-index: 9999999 !important;
+  height: auto !important;
 }
