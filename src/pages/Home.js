@@ -78,7 +78,7 @@ function Home() {
             );
           })}
       </div>
-      <div className="col-12 mt-4">
+      <div className="col-12 mt-4 d-none d-xl-block">
         <Accordian heading="Let's Connect " accordianSelect="homeTwo">
           <Contact>
             <StaticModal title="Sending message to @Ranjeet">

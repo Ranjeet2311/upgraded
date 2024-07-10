@@ -134,7 +134,7 @@ function Skills() {
           </div>
         </div>
       </Accordian>
-      <div className="mt-4">
+      <div className="mt-4 d-none d-xl-block">
         <Accordian heading="Let's Connect " accordianSelect="techTwo">
           <Contact>
             <StaticModal title="Sending message to @Ranjeet">

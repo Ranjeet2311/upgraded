@@ -67,7 +67,7 @@ function Navbar() {
               <li>
                 <StaticModal title="Sending message to @Ranjeet">
                   <ContactForm downloadCv="true"> </ContactForm>
-                </StaticModal>{' '}
+                </StaticModal>
               </li>
               <IconButton
                 style={navIconStyle}

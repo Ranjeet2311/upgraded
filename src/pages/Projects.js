@@ -224,7 +224,7 @@ function Projects() {
             })}
         </div>
       </div>
-      <div className="container mt-4">
+      <div className="container mt-4 d-none d-xl-block">
         <Accordian heading="Connect with me" accordianSelect="projectOne">
           <Contact>
             <StaticModal title="Sending message to @Ranjeet">
