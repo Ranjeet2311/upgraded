@@ -23,8 +23,10 @@ function Contact({ children, download }) {
 
   return (
     <div className=" col-12 ">
-      <div className="row justify-content-center">
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">{children}</div>
+      <div className="row justify-content-xl-center">
+        <div className="col-12 col-lg-3 mb-2 mb-lg-0 d-none d-xl-block">
+          {children}
+        </div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           <a
             className="me-2 me-lg-4 btn btn-bg w-100"
@@ -45,12 +47,11 @@ function Contact({ children, download }) {
             <MarkEmailUnreadIcon /> Email me
           </a>
         </div>
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">
+        <div className="col-12 col-lg-3 mb-2 mb-lg-0 d-none d-xl-block">
           <btn
             type="button"
             className="me-2 me-lg-4 btn btn-bg w-100"
             style={{ color: 'white', textDecoration: 'none' }}
-            href="mailto:ranjeetkumar2311@gmail.com"
             onClick={download}
             target="_blank"
           >

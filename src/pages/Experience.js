@@ -108,7 +108,7 @@ function Experience() {
             );
           })}
       </div>
-      <div className=" mt-4 d-none d-xl-block">
+      <div className=" mt-4">
         <Accordian heading="Connect with me" accordianSelect="projectOne">
           <Contact>
             <StaticModal title="Sending message to @Ranjeet">
