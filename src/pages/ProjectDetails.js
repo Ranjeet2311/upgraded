@@ -6,6 +6,7 @@ import Heading from '../component/Heading';
 import moment from 'moment';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Divider from '../component/Divider';
 
 function ProjectDetails() {
   const [zoom, setZoom] = useState(false);

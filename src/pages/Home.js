@@ -11,6 +11,8 @@ import Contact from '../component/Contact';
 import Accordian from '../component/Accordian';
 import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
+import Heading from '../component/Heading';
+import Divider from '../component/Divider';
 
 function Home() {
   const pop = useRef();
@@ -59,6 +61,10 @@ function Home() {
             <Paragraph text="Combining technical expertise with a love for discovery, I continually seeks new horizons, both in the digital world and beyond. This unique blend of experiences not only enriches my professional life but also fuels a profound understanding of the interconnectedness of our world." />
           </div>
         </div>
+      </div>
+      <div className="mt-3 mb-1">
+        <Heading text="<🧐 Also comes with me />" />
+        <Divider />
       </div>
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mt-4">
         {workWithMe &&

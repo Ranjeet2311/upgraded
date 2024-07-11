@@ -108,11 +108,11 @@ const experienceData = [
   },
 ];
 const sliderImages = [
-  { slide: 'images/slideImages/werdev.jpg', place: 'Berlin, Germany' },
   {
     slide: 'images/slideImages/frankfurt.jpeg',
     place: 'Frankfurt, Germany',
   },
+  { slide: 'images/slideImages/werdev.jpg', place: 'Berlin, Germany' },
   {
     slide: 'images/slideImages/Belgium.jpeg',
     place: 'Brussels, Belgium',

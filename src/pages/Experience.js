@@ -11,6 +11,7 @@ import Accordian from '../component/Accordian';
 import Contact from '../component/Contact';
 import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
+import Divider from '../component/Divider';
 
 function Experience() {
   const [image, setImage] = useState(false);
@@ -82,6 +83,7 @@ function Experience() {
     <div className="wrapper container">
       <img className="background" src={backgroundImage} alt="" />
       <Heading text="< ⚙️ Experience />" />
+      <Divider />
       <div className="row caption mb-4 mt-4" onMouseEnter={imageChangeHandler}>
         <div className="col-12 col-lg-4 experience-img left-side experience">
           {image ? (
