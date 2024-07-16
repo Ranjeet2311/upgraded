@@ -28,7 +28,7 @@ function ContactForm() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div class="mb-3">
+        <div className="mb-3">
           <div className="row">
             <div className="col">
               <label for="exampleFormControlInput1" className="form-label">

@@ -283,7 +283,8 @@ button {
   }
 }
 
-.card-link {
+.card-link,
+.reverseLinks {
   text-decoration: none;
 
   .card {
@@ -508,4 +509,36 @@ button {
 .modal-backdrop {
   z-index: 9999999 !important;
   height: auto !important;
+}
+
+.reverseLinks {
+  color: rgb(244, 244, 244);
+  padding: 2px 4px;
+  &:hover {
+    text-shadow: 1px 1px 2px black;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+}
+
+.react-multi-carousel-list {
+  padding-bottom: 40px;
+
+  li {
+    margin-right: 5px;
+  }
+
+  .react-multiple-carousel__arrow {
+    border-radius: 10px;
+    border: 1px solid rgba(188, 62, 174) !important;
+
+    &:hover {
+      border: 1px solid white !important;
+    }
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: 0px;
+  }
 }

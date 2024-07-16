@@ -6,14 +6,14 @@ function StaticModal({ title, children }) {
     <div>
       <button
         type="button"
-        class="btn btn btn-bg w-100 text-light"
+        className="btn btn btn-bg w-100 text-light"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
         <TextsmsIcon /> Message me
       </button>
       <div
-        class="modal fade"
+        className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -21,29 +21,29 @@ function StaticModal({ title, children }) {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="staticBackdropLabel">
                 {title}
               </h1>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body"> {children} </div>
-            {/* <div class="modal-footer">
+            <div className="modal-body"> {children} </div>
+            {/* <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Understood
               </button>
             </div> */}

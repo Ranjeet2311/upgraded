@@ -35,7 +35,11 @@ function ImgMediaCard({
       >
         {img && (
           <div className="img-wrap">
-            <img src={img} className="card-img-top" alt={title} />
+            <img
+              src={process.env.PUBLIC_URL + '/' + img}
+              className="card-img-top"
+              alt={title}
+            />
           </div>
         )}
         <div className="card-body">
@@ -94,7 +98,7 @@ function ImgMediaCard({
                 target="_blank"
                 rel="noreferrer"
                 href={code}
-                class="btn btn-primary ms-2"
+                className="btn btn-primary ms-2"
               >
                 Source Code
               </a> */}

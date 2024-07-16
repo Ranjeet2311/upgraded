@@ -2,7 +2,7 @@ import Heading from './Heading';
 
 function Accordian({ heading, children, accordianSelect }) {
   return (
-    <div className="accordion accordion-flush" id="accordionFlushExample">
+    <div className="accordion accordion-flush w-100" id="accordionFlushExample">
       <div className="accordion-item experience py-0">
         <h2 className="accordion-header" id="flush-headingOne">
           <button
