@@ -5,7 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 4,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -24,8 +24,8 @@ const responsive = {
 function MultiCarousel({ children }) {
   return (
     <Carousel
-      swipeable={false}
-      draggable={false}
+      swipeable={true}
+      draggable={true}
       showDots={true}
       responsive={responsive}
       ssr={true}
@@ -33,12 +33,15 @@ function MultiCarousel({ children }) {
       autoPlay={true}
       autoPlaySpeed={3000}
       keyBoardControl={true}
-      customTransition="all .5"
+      customTransition="all 1.5s"
       transitionDuration={500}
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={['tablet', 'mobile']}
-      dotListClass="custom-dot-list-style"
+      containerClass="carousel-container experience mb-4"
+      // removeArrowOnDeviceType={['tablet', 'mobile']}
+      dotListClass="custom-dot-list-style experience"
       itemClass="carousel-item-padding-40-px"
+      minimumTouchDrag={0}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}
     >
       {children}
     </Carousel>
