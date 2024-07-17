@@ -28,7 +28,7 @@ function Navbar() {
   const [clicked, setClicked] = useState(false);
 
   const clickHandler = () => {
-    console.log('Burger Clicked');
+    // console.log('Burger Clicked');
     setClicked(!clicked);
   };
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import projectData from '../data/ProjectData';
 import backgroundImage from '../images/background.jpg';
@@ -35,11 +35,15 @@ function ProjectDetails() {
   });
 
   function zoomHandler() {
-    console.log(` setZoomsetZoom : `, zoom);
-    console.log(`ref :: `, ref);
-    console.log(`relatedData ::; `, relatedData);
+    // console.log(` setZoomsetZoom : `, zoom);
+    // console.log(`ref :: `, ref);
+    // console.log(`relatedData ::; `, relatedData);
     return setZoom(!zoom);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="wrapper container">
@@ -47,6 +51,7 @@ function ProjectDetails() {
       <div className="row">
         <div className="col-12 col-lg-6 pt-4 pb-2 pb-lg-0 details-img-wrap">
           <div className="text-center mb-4 d-flex align-items-center btn experience">
+            <ArrowBackIosIcon />{' '}
             <Link className="reverseLinks" to="/projects">
               Projects
             </Link>

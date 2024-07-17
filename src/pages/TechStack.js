@@ -31,7 +31,7 @@ function Skills() {
     return item.end === 'Design';
   });
 
-  console.log(` frontend ::: `, frontend);
+  // console.log(` frontend ::: `, frontend);
 
   useEffect(() => {
     gsap.fromTo(up.current, { x: 1000, duration: 1 }, { x: 0, duration: 1 });
