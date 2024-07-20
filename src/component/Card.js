@@ -42,7 +42,7 @@ function ImgMediaCard({
             />
           </div>
         )}
-        <div className="card-body">
+        <div className="card-body pb-0">
           <h5 className="card-title text-dark">
             <span className={type === 'general' ? 'inline me-1' : 'd-none'}>
               🟢
@@ -74,14 +74,16 @@ function ImgMediaCard({
               {stack && <p className="stack-pill">more....</p>}
             </div>
           )}
-
-          <ul className="desc-list">
-            {list &&
-              list.map((description, i) => {
-                return <li> {description} </li>;
-              })}
-          </ul>
-          {/* <div className=" d-flex card-btns  justify-content-between"> */}
+          {list && (
+            <ul className="desc-list">
+              {list &&
+                list.map((description, i) => {
+                  return <li> {description} </li>;
+                })}
+            </ul>
+          )}
+        </div>
+        <div class="card-footer border-0">
           {showBtn && (
             <a
               rel="noreferrer"
@@ -93,7 +95,6 @@ function ImgMediaCard({
               {hide ? secBtnText : primeBtnText}
             </a>
           )}
-
           {/* <a
                 target="_blank"
                 rel="noreferrer"
@@ -102,7 +103,6 @@ function ImgMediaCard({
               >
                 Source Code
               </a> */}
-          {/* </div> */}
         </div>
       </div>
     </Link>

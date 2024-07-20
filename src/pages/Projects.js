@@ -12,13 +12,22 @@ import vue from '../images/vue-js-icon.svg';
 import angular from '../images/angular-icon.svg';
 import react from '../images/react-js-icon.svg';
 import javaScript from '../images/javascript-icon.png';
-import template from '../images/paint-bucket-icon.svg';
+import template from '../images/template.svg';
 import browse from '../images/all-icon.svg';
 import Icon from '../component/Icon';
 import Accordian from '../component/Accordian';
 import Contact from '../component/Contact';
 import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
+
+const tabs = [
+  { title: 'Browse all', ref: 'all', imgSrc: browse },
+  { title: 'React', ref: 'react', imgSrc: react },
+  { title: 'Vue', ref: 'vue', imgSrc: vue },
+  { title: 'Angular', ref: 'angular', imgSrc: angular },
+  { title: 'Fun Apps', ref: 'funApp', imgSrc: javaScript },
+  { title: 'Templates', ref: 'template', imgSrc: template },
+];
 
 function Projects() {
   const [projectList, setProjectList] = useState(projectData);
@@ -42,18 +51,21 @@ function Projects() {
     setValue(newValue);
   };
 
-  function filterHandler(Categoty) {
-    setProjectList(() => {
-      return projectData.filter((item, i) => {
-        return item.ref === Categoty;
-      });
-    });
-  }
+  let show = false;
 
-  function allFilterHandler() {
-    setProjectList(() => {
-      return projectData;
-    });
+  function filterHandler(Categoty) {
+    show = true;
+    if (Categoty === 'all') {
+      setProjectList(() => {
+        return projectData;
+      });
+    } else {
+      setProjectList(() => {
+        return projectData.filter((item, i) => {
+          return item.ref === Categoty;
+        });
+      });
+    }
   }
 
   return (
@@ -67,137 +79,39 @@ function Projects() {
         <HeadH2 text="Filter projects by frameworks & types" />
         <Box className="experience">
           <Tabs
-            value={value}
-            onChange={handleChange}
             variant="scrollable"
             scrollButtons="auto"
             allowScrollButtonsMobile
+            value={value}
+            onChange={handleChange}
             aria-label="scrollable force tabs example"
           >
-            <Tooltip
-              className="mt-2"
-              title="Browse all"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                name="All"
-                // label="All"
-                icon={<Icon alt="test avatar" img={browse} />}
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                }}
-                onClick={allFilterHandler}
-              />
-            </Tooltip>
-            <Tooltip
-              className="mt-2"
-              title="Vue"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                name="Vue"
-                icon={<Icon alt="test avatar" img={vue} />}
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                }}
-                onClick={() => {
-                  filterHandler('vue');
-                }}
-              />
-            </Tooltip>
-            <Tooltip
-              className="mt-2"
-              title="React"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                name="react"
-                // label="React"
-                icon={<Icon alt="test avatar" img={react} />}
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                }}
-                onClick={() => {
-                  filterHandler('react');
-                }}
-              />
-            </Tooltip>
-            <Tooltip
-              className="mt-2"
-              title="Angular"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                name="Angular"
-                // label="Angular"
-                icon={<Icon alt="test avatar" img={angular} />}
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                }}
-                onClick={() => {
-                  filterHandler('angular');
-                }}
-              />
-            </Tooltip>
-            <Tooltip
-              className="mt-2"
-              title="Fun Apps"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                name="webApp"
-                // label="Fun Apps"
-                icon={<Icon alt="test avatar" img={javaScript} />}
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                }}
-                onClick={() => {
-                  filterHandler('funApp');
-                }}
-              />
-            </Tooltip>
-            <Tooltip
-              className="mt-2"
-              title="templates"
-              classes={{
-                tooltip: 'btn-bg text-white',
-              }}
-            >
-              <Tab
-                icon={<Icon alt="test avatar" img={template} />}
-                onClick={() => {
-                  filterHandler('template');
-                }}
-                name="template"
-                // label="Templates"
-                style={{
-                  color: 'white',
-                  padding: '10px 10px',
-                  minWidth: '50px',
-                  filter: 'invert(1)',
-                }}
-              />
-            </Tooltip>
+            {tabs &&
+              tabs.map((item) => {
+                return (
+                  <Tooltip
+                    key={item.ref}
+                    className="mt-2"
+                    title={item.title}
+                    classes={{
+                      tooltip: 'btn-bg text-white',
+                    }}
+                  >
+                    <Tab
+                      name={item.ref}
+                      // label="All"
+                      icon={<Icon alt="test avatar" img={item.imgSrc} />}
+                      style={{
+                        color: 'white',
+                        padding: '10px 10px',
+                        minWidth: '50px',
+                      }}
+                      centered
+                      onClick={() => filterHandler(item.ref)}
+                    />
+                  </Tooltip>
+                );
+              })}
           </Tabs>
         </Box>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">

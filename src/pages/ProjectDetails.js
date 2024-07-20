@@ -49,9 +49,9 @@ function ProjectDetails() {
     <div className="wrapper container">
       <img className="background" src={backgroundImage} alt="bg" />
       <div className="row">
-        <div className="col-12 col-lg-6 pt-4 pb-2 pb-lg-0 details-img-wrap">
-          <div className="text-center mb-4 d-flex align-items-center btn experience">
-            <ArrowBackIosIcon />{' '}
+        <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
+          <div className="text-center mb-3 d-flex align-items-center btn experience">
+            <ArrowBackIosIcon />
             <Link className="reverseLinks" to="/projects">
               Projects
             </Link>
