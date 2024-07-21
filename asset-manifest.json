@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.6cb37fe3.css",
-    "main.js": "/upgraded/static/js/main.dbe66458.js",
+    "main.css": "/upgraded/static/css/main.0fa76890.css",
+    "main.js": "/upgraded/static/js/main.620e0b3a.js",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/avatar-first.png": "/upgraded/static/media/avatar-first.d5c9c4a3ad7ac6f9ed67.png",
@@ -18,11 +18,11 @@
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
     "index.html": "/upgraded/index.html",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.6cb37fe3.css.map": "/upgraded/static/css/main.6cb37fe3.css.map",
-    "main.dbe66458.js.map": "/upgraded/static/js/main.dbe66458.js.map"
+    "main.0fa76890.css.map": "/upgraded/static/css/main.0fa76890.css.map",
+    "main.620e0b3a.js.map": "/upgraded/static/js/main.620e0b3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cb37fe3.css",
-    "static/js/main.dbe66458.js"
+    "static/css/main.0fa76890.css",
+    "static/js/main.620e0b3a.js"
   ]
 }
