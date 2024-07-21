@@ -19,6 +19,8 @@ import Accordian from '../component/Accordian';
 import Contact from '../component/Contact';
 import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
+import { useDispatch, useSelector } from 'react-redux';
+import { filterProjects } from '../store/features/projectSlice';
 
 const tabs = [
   { title: 'Browse all', ref: 'all', imgSrc: browse },
@@ -30,8 +32,19 @@ const tabs = [
 ];
 
 function Projects() {
-  const [projectList, setProjectList] = useState(projectData);
   const [value, setValue] = useState(0);
+
+  const allProjectData = useSelector(
+    (state) => state.projects.filteredProjects
+  );
+  const dispatch = useDispatch();
+
+  function filterHandler(Categoty) {
+    dispatch(filterProjects(Categoty));
+  }
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   // ---animation
 
@@ -46,27 +59,6 @@ function Projects() {
       { autoAlpha: 1, duration: 2, ease: 'back' }
     );
   });
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  let show = false;
-
-  function filterHandler(Categoty) {
-    show = true;
-    if (Categoty === 'all') {
-      setProjectList(() => {
-        return projectData;
-      });
-    } else {
-      setProjectList(() => {
-        return projectData.filter((item, i) => {
-          return item.ref === Categoty;
-        });
-      });
-    }
-  }
 
   return (
     <>
@@ -106,7 +98,6 @@ function Projects() {
                         padding: '10px 10px',
                         minWidth: '50px',
                       }}
-                      centered
                       onClick={() => filterHandler(item.ref)}
                     />
                   </Tooltip>
@@ -115,10 +106,10 @@ function Projects() {
           </Tabs>
         </Box>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
-          {projectList &&
-            projectList.map((item, index) => {
+          {allProjectData &&
+            allProjectData.map((item, index) => {
               return (
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12 col-md-6 col-lg-4" key={index}>
                   <Card
                     key={index}
                     img={item.img}

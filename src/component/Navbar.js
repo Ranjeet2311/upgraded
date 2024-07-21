@@ -18,7 +18,7 @@ const menuLinks = [
 
 const navIconStyle = {
   marginRight: '2rem',
-  color: 'rgb(0, 0, 0)',
+  color: 'white',
   border: '1px solid white',
   background: 'white',
   margin: '6px 12px',
@@ -59,7 +59,7 @@ function Navbar() {
                       exact
                       activeclassname="active"
                     >
-                      {link.name}{' '}
+                      {link.name}
                     </NavLink>
                   </li>
                 );
@@ -70,6 +70,7 @@ function Navbar() {
                 </StaticModal>
               </li>
               <IconButton
+                className="animated-background border-0"
                 style={navIconStyle}
                 target="_blank"
                 href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
@@ -78,6 +79,7 @@ function Navbar() {
               </IconButton>
 
               <IconButton
+                className="animated-background border-0"
                 style={navIconStyle}
                 target="_blank"
                 href="https://github.com/Ranjeet2311"

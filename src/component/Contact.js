@@ -24,12 +24,10 @@ function Contact({ children, download }) {
   return (
     <div className=" col-12 ">
       <div className="row justify-content-xl-center">
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0 d-none d-xl-block">
-          {children}
-        </div>
+        <div className="col-12 col-lg-3 mb-2 mb-lg-0">{children}</div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           <a
-            className="me-2 me-lg-4 btn btn-bg w-100"
+            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
             style={{ color: 'white', textDecoration: 'none' }}
             target="blank"
             href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
@@ -39,7 +37,7 @@ function Contact({ children, download }) {
         </div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           <a
-            className="me-2 me-lg-4 btn btn-bg w-100"
+            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
             style={{ color: 'white', textDecoration: 'none' }}
             target="blank"
             href="mailto:ranjeetkumar2311@gmail.com"
@@ -48,16 +46,16 @@ function Contact({ children, download }) {
           </a>
         </div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0 d-none d-xl-block">
-          <btn
+          <button
             type="button"
-            className="me-2 me-lg-4 btn btn-bg w-100"
+            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
             style={{ color: 'white', textDecoration: 'none' }}
             onClick={download}
             target="_blank"
           >
             <FileDownloadRoundedIcon />
             Download my CV
-          </btn>
+          </button>
         </div>
       </div>
     </div>

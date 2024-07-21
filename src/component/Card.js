@@ -83,9 +83,9 @@ function ImgMediaCard({
             </ul>
           )}
         </div>
-        <div class="card-footer border-0">
+        <div className="card-footer border-0">
           {showBtn && (
-            <a
+            <button
               rel="noreferrer"
               href={demo}
               target="_blank"
@@ -93,7 +93,7 @@ function ImgMediaCard({
               type="button"
             >
               {hide ? secBtnText : primeBtnText}
-            </a>
+            </button>
           )}
           {/* <a
                 target="_blank"

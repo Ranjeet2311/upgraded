@@ -17,7 +17,9 @@ function ContactForm() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Thank you for writing me. I'll write back to you ASAP.");
+      setResult(
+        "✅ Yuhoo!! Your message was sent successfully. I'll write back to you ASAP."
+      );
       event.target.reset();
     } else {
       console.log('Error', data);
@@ -31,7 +33,7 @@ function ContactForm() {
         <div className="mb-3">
           <div className="row">
             <div className="col">
-              <label for="exampleFormControlInput1" className="form-label">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 First name*
               </label>
               <input
@@ -44,7 +46,7 @@ function ContactForm() {
               />
             </div>
             <div className="col">
-              <label for="exampleFormControlInput1" className="form-label">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Last name*
               </label>
               <input
@@ -59,7 +61,7 @@ function ContactForm() {
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Contact number
           </label>
           <input
@@ -71,7 +73,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Your email address*
           </label>
           <input
@@ -84,7 +86,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Topic*
           </label>
           <input
@@ -97,7 +99,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlTextarea1" className="form-label">
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Short description (Optional)
           </label>
           <textarea
@@ -117,7 +119,7 @@ function ContactForm() {
         </div>
       </form>
       <h5>
-        <span>{result}</span>
+        <span className="text-white h6">{result}</span>
       </h5>
     </div>
   );

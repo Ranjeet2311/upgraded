@@ -98,7 +98,20 @@ p {
   color: $white;
 
   @include for-tablet-portrait-up() {
-    font-size: 1rem;
+    font-size: 1rem !important;
+  }
+}
+button,
+a,
+.btn {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0.2rem 0;
+  margin: 0.2rem 0rem;
+  color: $white;
+
+  @include for-tablet-portrait-up() {
+    font-size: 14px !important;
   }
 }
 ul {
@@ -123,6 +136,32 @@ button {
   @include for-tablet-portrait-up() {
     font-size: 12px !important;
     line-height: 22px !important;
+  }
+}
+
+.animated-background {
+  width: auto;
+  background: linear-gradient(
+    to left,
+    rgba(237, 78, 218, 0.6),
+    rgb(58, 123, 213)
+  );
+  animation: mymove 1s alternate-reverse infinite;
+}
+@keyframes mymove {
+  from {
+    background: linear-gradient(
+      to left,
+      rgba(237, 78, 218, 0.6),
+      rgb(58, 123, 213)
+    );
+  }
+  to {
+    background: linear-gradient(
+      to left,
+      rgb(58, 123, 213),
+      rgba(237, 78, 218, 0.6)
+    );
   }
 }
 
@@ -380,6 +419,7 @@ button {
 }
 
 .btn-bg {
+  transition: all 0.4s ease-out;
   background: linear-gradient(
     to left,
     rgba(188, 62, 174, 1) 30%,
@@ -388,7 +428,6 @@ button {
   border: 2px solid rgb(72, 50, 133, 0.4);
 
   &:hover {
-    transition: all 0.4s ease-out;
     background: linear-gradient(
       to left,
       rgb(72, 50, 133, 1) 30%,
