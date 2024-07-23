@@ -121,7 +121,7 @@ function ProjectDetails() {
           <button
             onClick={() => navigate(-1)}
             target="blank"
-            className="btn btn-bg text-light w-100 mt-4"
+            className="btn btn-bg text-light w-100 mt-4 border-0"
             type="button"
           >
             <ArrowBackIosIcon /> Return

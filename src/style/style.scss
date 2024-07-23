@@ -143,24 +143,25 @@ button {
   width: auto;
   background: linear-gradient(
     to left,
-    rgba(237, 78, 218, 0.6),
-    rgb(58, 123, 213)
+    rgba(188, 62, 174, 0.5),
+    rgb(72, 50, 133, 0.5)
   );
-  animation: mymove 1s alternate-reverse infinite;
+  animation: mymove 0.6s reverse infinite;
 }
+
 @keyframes mymove {
   from {
     background: linear-gradient(
       to left,
-      rgba(237, 78, 218, 0.6),
-      rgb(58, 123, 213)
+      rgba(188, 62, 174, 0.5),
+      rgb(72, 50, 133, 0.5)
     );
   }
   to {
     background: linear-gradient(
       to left,
-      rgb(58, 123, 213),
-      rgba(237, 78, 218, 0.6)
+      rgb(72, 50, 133, 0.5),
+      rgba(188, 62, 174, 0.5)
     );
   }
 }
@@ -467,7 +468,6 @@ button {
       height: auto;
       overflow: auto;
       // object-fit: fill;
-
       // @include at-900px() {
       //   transform: scale(1.1);
       // }
@@ -476,7 +476,6 @@ button {
 
   .zoom {
     transform: scale(1.6) translate(30%, 30%);
-
     @include at-900px() {
       transform: scale(1.1);
     }
@@ -489,17 +488,14 @@ button {
       &:hover {
         background: linear-gradient(
           to left,
-
           #483285 30%,
           rgba(188, 62, 174, 0.5803921569) 70%
         );
       }
     }
-
     &:not(.collapsed) {
       box-shadow: none !important;
       background: transparent;
-
       &::after {
         background-image: url('../images/angle-circle-arrow-up-icon.svg');
         transform: scale(1.6);
@@ -517,7 +513,6 @@ button {
       }
     }
   }
-
   .heading {
     @include at-900px() {
       font-size: 22px;

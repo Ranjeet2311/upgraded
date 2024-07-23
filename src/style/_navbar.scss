@@ -4,28 +4,19 @@
   left: 0;
   width: 100vw;
   padding: 10px 0;
-  background-color: rgb(0 0 0 / 30%);
-  // background: #0575e6; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(
-  //   to left,
-  //   #fc3845,
-  //   #491414
-  // ); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(
-  //   270deg,
-  //   #fc3845,
-  //   #491414
-  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // background: linear-gradient(to left, #56b0fd94, #3a7bd5);
   z-index: 100;
 
   .Navbar-wrap {
-    padding: 10px 16px;
+    padding: 6px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background: linear-gradient(
+      to left,
+      rgba(188, 62, 174, 0) 0%,
+      rgb(72, 50, 133, 0.8) 60%,
+      rgba(188, 62, 174, 0)
+    );
     // position: fixed;
     // top: 0;
     // left: 0;
@@ -34,12 +25,12 @@
 
     @include at-900px {
       padding: 30px 16px;
-      // background: rgb(0 0 0 / 60%);
+      background: transparent;
     }
 
     .logo {
       z-index: 1000;
-      width: 60px;
+      width: 40px;
 
       @include at-900px {
         position: absolute;

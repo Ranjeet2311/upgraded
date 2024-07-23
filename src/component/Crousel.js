@@ -41,7 +41,7 @@ function Crousel({ data }) {
                     alt=""
                     className="d-block w-100"
                   />
-                  <div className="carousel-caption d-none d-md-block">
+                  <div className="carousel-caption">
                     <h5 className="experience">{image.place}</h5>
                   </div>
                 </div>

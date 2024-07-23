@@ -48,12 +48,12 @@ function Home() {
       <img className="background pe-0 ps-0" src={backgroundImage} alt="" />
       <div className="row align-items-center">
         <div
-          className=" col-12 col-lg-4 left-side d-flex flex-column align-items-center experience-img"
+          className="col-12 col-lg-4 left-side d-flex flex-column align-items-center experience-img experience"
           ref={left}
         >
           <Crousel data={sliderImages} />
         </div>
-        <div className="col-12 col-lg-8 right mt-4" ref={right}>
+        <div className="col-12 col-lg-8 right" ref={right}>
           <HeadH1 text="{👋 Welcome! I'm Ranjeet }" />
           <div className="experience">
             <Paragraph text="I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code. But I'm not just confined to the realm of computers." />
