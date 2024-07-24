@@ -65,7 +65,7 @@ function ContactForm() {
             Contact number
           </label>
           <input
-            type="text"
+            type="number"
             className="form-control"
             id="exampleFormControlInput1"
             placeholder="+44 000 000 00"
@@ -77,7 +77,7 @@ function ContactForm() {
             Your email address*
           </label>
           <input
-            type="text"
+            type="email"
             className="form-control"
             id="exampleFormControlInput1"
             placeholder="brucewayne@example.com"

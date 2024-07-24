@@ -255,14 +255,14 @@ button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #ed4eda99, #3a7bd5);
+  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   transition: all 0, 4s ease-in-out;
-  background: linear-gradient(to bottom, #3e7dbc94, #0951b6);
+  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
 }
 
 .wrapper {
@@ -558,6 +558,7 @@ button {
 
 .react-multi-carousel-list {
   padding-bottom: 40px;
+  padding-left: 0 !important;
 
   li {
     margin-right: 5px;

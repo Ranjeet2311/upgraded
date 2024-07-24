@@ -12,14 +12,11 @@ import Contact from '../component/Contact';
 import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
 import Divider from '../component/Divider';
+import MultiCarousel from '../component/MultiCarousel';
+import { maxOneSlide } from '../data/Skills';
 
 function Experience() {
   const [image, setImage] = useState(false);
-  // ---animation
-
-  // const leftX1 = useRef();
-  // const rightX = useRef();
-  // const rightX1 = useRef();
   const bottom = useRef();
   const left = useRef();
   const leftX = useRef();
@@ -85,11 +82,19 @@ function Experience() {
       <Heading text="< ⚙️ Experience />" />
       <Divider />
       <div className="row caption mb-4 mt-4" onMouseEnter={imageChangeHandler}>
-        <div className="col-12 col-lg-4 experience-img left-side experience">
+        <div className="col-12 col-lg-4 experience-img left-side">
           {image ? (
-            <img src={greetingHI} alt="Greeting-Avatar" />
+            <img
+              src={greetingHI}
+              alt="Greeting-Avatar"
+              className="rounded-circle experience"
+            />
           ) : (
-            <img src={greetingNamaste} alt="Greeting-Avatar" />
+            <img
+              src={greetingNamaste}
+              alt="Greeting-Avatar"
+              className="rounded-circle experience"
+            />
           )}
         </div>
         <div className="col-12 col-lg-8 para mt-4 mt-lg-0 experience">
@@ -97,18 +102,35 @@ function Experience() {
         </div>
       </div>
       <div className="row d align-items-center">
-        {experienceData &&
-          experienceData.map((item) => {
-            return (
-              <div className="col-12 col-lg-6" key={item.id}>
-                <ExperienceBlock
-                  title={item.title}
-                  responsibilities={item.responsibilities}
-                  techs={item.techs}
-                />
-              </div>
-            );
-          })}
+        <MultiCarousel
+          infinite={false}
+          responsive={maxOneSlide}
+          autoPlay={false}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          autoPlaySpeed={10000}
+          keyBoardControl={true}
+          customTransition="all 1.5s"
+          transitionDuration={500}
+          minimumTouchDrag={0}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          containerClass="carousel-container mb-4"
+        >
+          {experienceData &&
+            experienceData.map((item) => {
+              return (
+                <div className="col-12" key={item.id}>
+                  <ExperienceBlock
+                    title={item.title}
+                    responsibilities={item.responsibilities}
+                    techs={item.techs}
+                  />
+                </div>
+              );
+            })}
+        </MultiCarousel>
       </div>
       <div className=" mt-4">
         <Accordian heading="Connect with me" accordianSelect="projectOne">

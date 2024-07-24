@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
-import TechStack from './pages/TechStack';
+import Expertise from './pages/Expertise';
 import Projects from './pages/Projects';
 import Navbar from './component/Navbar';
 import NotFound from './pages/NotFound';
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/tech-stack" element={<TechStack />} />
+          <Route path="/expertise" element={<Expertise />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:projectId" element={<ProjectDetails />} />
           <Route path="*" element={<NotFound />} />

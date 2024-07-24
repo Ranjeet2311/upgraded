@@ -5,7 +5,6 @@ import Heading from '../component/Heading';
 import HeadH2 from '../component/HeadH2';
 import Divider from '../component/Divider';
 import Paragraph from '../component/Paragraph';
-import projectData from '../data/ProjectData';
 import Card from '../component/Card';
 import backgroundImage from '../images/background.jpg';
 import vue from '../images/vue-js-icon.svg';
@@ -39,8 +38,8 @@ function Projects() {
   );
   const dispatch = useDispatch();
 
-  function filterHandler(Categoty) {
-    dispatch(filterProjects(Categoty));
+  function filterHandler(categoty) {
+    dispatch(filterProjects(categoty));
   }
   const handleChange = (event, newValue) => {
     setValue(newValue);

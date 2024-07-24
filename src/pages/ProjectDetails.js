@@ -13,6 +13,7 @@ import Divider from '../component/Divider';
 import Card from '../component/Card';
 import Accordian from '../component/Accordian';
 import MultiCarousel from '../component/MultiCarousel';
+import { maxFourSlide } from '../data/Skills';
 
 function ProjectDetails() {
   const [zoom, setZoom] = useState(false);
@@ -35,9 +36,6 @@ function ProjectDetails() {
   });
 
   function zoomHandler() {
-    // console.log(` setZoomsetZoom : `, zoom);
-    // console.log(`ref :: `, ref);
-    // console.log(`relatedData ::; `, relatedData);
     return setZoom(!zoom);
   }
 
@@ -87,7 +85,7 @@ function ProjectDetails() {
               })}
           </div>
           <p className="experience w-100 mb-2">
-            Created at :{' '}
+            Last updated :{' '}
             {createdDate !== 'Invalid date'
               ? createdDate
               : 'Checkout github for date'}
@@ -133,7 +131,22 @@ function ProjectDetails() {
           <Heading text="Related projects" />
           <Divider />
         </div>
-        <MultiCarousel>
+        <MultiCarousel
+          infinite={true}
+          responsive={maxFourSlide}
+          autoPlay={true}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          autoPlaySpeed={10000}
+          keyBoardControl={true}
+          customTransition="all 1.5s"
+          transitionDuration={500}
+          minimumTouchDrag={0}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          containerClass="carousel-container experience mb-4"
+        >
           {relatedData.map((slide, i) => {
             return (
               <Card

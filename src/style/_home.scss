@@ -70,11 +70,11 @@
   // width: 400px;
   img {
     width: 100% !important;
-    border-radius: 12px !important;
     cursor: pointer;
     width: 100% !important;
     height: 400px;
     object-fit: cover;
+    border: 1px solid white;
 
     @include at-900px {
       // border-radius: 50%;
@@ -90,7 +90,7 @@
     }
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition: all 0.4s ease-in-out;
 
       @include at-900px {

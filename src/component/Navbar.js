@@ -10,8 +10,8 @@ import StaticModal from './StaticModal';
 import ContactForm from './ContactForm';
 
 const menuLinks = [
-  { name: 'Info', url: '/' },
-  { name: 'Tech-Stack', url: '/tech-stack' },
+  { name: 'Home', url: '/' },
+  { name: 'Expertise', url: '/expertise' },
   { name: 'Experience', url: '/experience' },
   { name: 'Projects', url: '/projects' },
 ];

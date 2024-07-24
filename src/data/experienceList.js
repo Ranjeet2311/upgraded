@@ -1,7 +1,7 @@
 const experienceData = [
   {
     id: 4,
-    title: 'Parental leave  | December 2023 - till now |',
+    title: 'Parental Break  | December 2023 - Current |',
     techs: [
       'Html',
       'Markdown',
@@ -33,13 +33,13 @@ const experienceData = [
     responsibilities: [
       'Visited India after 4 years.',
       'learned Slovene language and Passed A1 level test.',
-      'Taking care of my wife and a new family member',
       'Making some independent projects , for details checkout my Github.',
+      'Supported and took care of my wife and welcomed a new family member.',
     ],
   },
   {
     id: 3,
-    title: 'Frontend Developer-XLAB doo | June 2022 - 30th Nov 2023 ',
+    title: 'Frontend Developer-XLAB doo | June 2022 - 1st Dec 2023 |',
     techs: [
       'Html',
       'Markdown',
@@ -73,7 +73,7 @@ const experienceData = [
   },
   {
     id: 2,
-    title: 'Soft Smart Services | Aug 2015 - Dec 2021',
+    title: 'Soft Smart Services | Aug 2015 - Dec 2021 |',
     techs: [
       'Html',
       'Scss',
