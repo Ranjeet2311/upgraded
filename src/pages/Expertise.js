@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { skillsData } from '../data/Skills';
+import { useDispatch, useSelector } from 'react-redux';
+import { filterSkills } from '../store/features/expertiseSlice';
 import Heading from '../component/Heading';
 import HeadH2 from '../component/HeadH2';
 import Divider from '../component/Divider';
@@ -11,41 +12,19 @@ import StaticModal from '../component/StaticModal';
 import ContactForm from '../component/ContactForm';
 import { Tabs, Tab, Box } from '@mui/material';
 
-const techCategory = [
-  { title: 'Frontend', ref: 'frontend' },
-  { title: 'Backend', ref: 'backend' },
-  { title: 'Code_management', ref: 'managing' },
-  { title: 'Design', ref: 'design' },
-  { title: 'CMS', ref: 'cms' },
-];
-
-const filteredData = skillsData.filter((item, i) => {
-  return item.end === 'frontend';
-});
-
 function Expertise() {
   const [value, setValue] = useState(0);
-  const [stack, setStack] = useState(filteredData);
-  const [stackName, setStackName] = useState('Frontend');
-
-  const handleChange = (event, newValue) => {
+  const tabChangeHandle = (event, newValue) => {
     setValue(newValue);
   };
 
+  const dispatch = useDispatch();
+  const { filteredSkills, label, techCategory } = useSelector(
+    (state) => state.expertise
+  );
+
   function filterHandler(category) {
-    console.log(category);
-    console.log('stackName :: ', stackName);
-    setStackName(category);
-    switch (category) {
-      case category:
-        const filteredData = skillsData.filter((item, i) => {
-          return item.end === category;
-        });
-        setStack(filteredData);
-        break;
-      default:
-        break;
-    }
+    dispatch(filterSkills(category));
   }
 
   return (
@@ -59,7 +38,8 @@ function Expertise() {
           scrollButtons="auto"
           allowScrollButtonsMobile
           value={value}
-          onChange={handleChange}
+          onChange={tabChangeHandle}
+          indicatorColor="primary"
           aria-label="scrollable force tabs example"
         >
           {techCategory &&
@@ -79,10 +59,10 @@ function Expertise() {
         </Tabs>
       </Box>
       <div>
-        <HeadH2 text={stackName.toUpperCase()} />
+        <HeadH2 text={label.toUpperCase()} />
         <div className="skillBox experience">
-          {stack &&
-            stack.map((item) => {
+          {filteredSkills &&
+            filteredSkills.map((item) => {
               return (
                 <ImgSm
                   key={item.id}
