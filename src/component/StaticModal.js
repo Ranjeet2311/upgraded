@@ -1,8 +1,10 @@
-import TextsmsIcon from '@mui/icons-material/Textsms';
-import '../style/modal.scss';
-import { createPortal } from 'react-dom';
+import TextsmsIcon from "@mui/icons-material/Textsms";
+import "../style/modal.scss";
+import { createPortal } from "react-dom";
+import { useTranslation } from "react-i18next";
 
 function StaticModal({ title, children }) {
+  const { t } = useTranslation();
   return (
     <div>
       <button
@@ -11,7 +13,7 @@ function StaticModal({ title, children }) {
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        <TextsmsIcon /> Message me
+        <TextsmsIcon /> {t("Message me")}
       </button>
       {createPortal(
         <div
@@ -49,7 +51,7 @@ function StaticModal({ title, children }) {
             </div>
           </div>
         </div>,
-        document.getElementById('modal')
+        document.getElementById("modal")
       )}
     </div>
   );

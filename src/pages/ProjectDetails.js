@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import projectData from '../data/ProjectData';
-import backgroundImage from '../images/background.jpg';
-import Heading from '../component/Heading';
-import moment from 'moment';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import CodeOffIcon from '@mui/icons-material/CodeOff';
-import PreviewIcon from '@mui/icons-material/Preview';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Divider from '../component/Divider';
-import Card from '../component/Card';
-import Accordian from '../component/Accordian';
-import MultiCarousel from '../component/MultiCarousel';
-import { maxFourSlide } from '../data/Skills';
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import projectData from "../data/ProjectData";
+import backgroundImage from "../images/background.jpg";
+import Heading from "../component/Heading";
+import moment from "moment";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import CodeOffIcon from "@mui/icons-material/CodeOff";
+import PreviewIcon from "@mui/icons-material/Preview";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import Divider from "../component/Divider";
+import Card from "../component/Card";
+import Accordian from "../component/Accordian";
+import MultiCarousel from "../component/MultiCarousel";
+import { maxFourSlide } from "../data/Skills";
+import { useTranslation } from "react-i18next";
 
 function ProjectDetails() {
   const [zoom, setZoom] = useState(false);
@@ -27,8 +28,8 @@ function ProjectDetails() {
     filterProject;
   console.log(`filterProject :: `, filterProject);
 
-  const createdDate = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
-    'DD MMMM YYYY'
+  const createdDate = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
+    "DD MMMM YYYY"
   );
 
   const relatedData = projectData.filter((related, i) => {
@@ -42,6 +43,7 @@ function ProjectDetails() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+  const { t } = useTranslation();
 
   return (
     <div className="wrapper container">
@@ -51,29 +53,35 @@ function ProjectDetails() {
           <div className="text-center mb-3 d-flex align-items-center btn experience">
             <ArrowBackIosIcon />
             <Link className="reverseLinks" to="/projects">
-              Projects
+              {t("Projects")}
             </Link>
             <p className="mx-1">/ </p>
             <Link className="reverseLinks" to={`/projects/${title}`}>
-              {title}
+              {t(title)}
             </Link>
           </div>
           <img
             onClick={zoomHandler}
-            src={process.env.PUBLIC_URL + '/' + img}
+            src={process.env.PUBLIC_URL + "/" + img}
             alt={title}
-            className={`details-image ${zoom ? 'zoom' : ''}`}
+            className={`details-image ${zoom ? "zoom" : ""}`}
           />
           <p className="text-light text-center experience">
-            Click on imgae to zoom / shrink
+            {t("Click on imgae to zoom / shrink")}
           </p>
         </div>
         <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience pt-0">
-          <Heading className="text-start" text={title} />
-          <p>{description ? description : '---Description not available---'}</p>
+          <Heading className="text-start" text={t(title)} />
+          <p>
+            {description
+              ? `${t(description)}`
+              : "---Description not available---"}
+          </p>
           <div className="row my-4 ms-0">
             <span className="text-white d-block mb-2 px-0">
-              {tags ? ' Tech highlights' : 'Checkout github for more details'}
+              {tags
+                ? `${t("Tech highlights")}`
+                : "Checkout github for more details"}
             </span>
             {tags &&
               tags.map((items, index) => {
@@ -85,19 +93,19 @@ function ProjectDetails() {
               })}
           </div>
           <p className="experience w-100 mb-2">
-            Last updated :{' '}
-            {createdDate !== 'Invalid date'
+            {t("Last updated")} :{" "}
+            {createdDate !== "Invalid date"
               ? createdDate
-              : 'Checkout github for date'}
+              : "Checkout github for date"}
           </p>
-          <Accordian heading="Links" accordianSelect="homeTwo" w-100>
+          <Accordian heading={t("Links")} accordianSelect="homeTwo" w-100>
             <a
               href={demo}
               target="blank"
               className="btn btn-bg text-light w-100"
               type="button"
             >
-              <PreviewIcon /> Live Demo
+              <PreviewIcon /> {t("Live Demo")}
             </a>
             <a
               href={code}
@@ -105,7 +113,7 @@ function ProjectDetails() {
               className="btn btn-bg text-light w-100  mt-2"
               type="button"
             >
-              <CodeOffIcon /> Source Code
+              <CodeOffIcon /> {t("Source Code")}
             </a>
             <a
               href="https://github.com/Ranjeet2311/"
@@ -113,7 +121,7 @@ function ProjectDetails() {
               className="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center"
               type="button"
             >
-              <GitHubIcon /> <span className="ms-2"> My Github</span>
+              <GitHubIcon /> <span className="ms-2">{t("My Github")}</span>
             </a>
           </Accordian>
           <button
@@ -122,13 +130,13 @@ function ProjectDetails() {
             className="btn btn-bg text-light w-100 mt-4 border-0"
             type="button"
           >
-            <ArrowBackIosIcon /> Return
+            <ArrowBackIosIcon /> {t("Return")}
           </button>
         </div>
       </div>
       <div className="row mt-4 pt-4">
         <div className="col-12 mb-4">
-          <Heading text="Related projects" />
+          <Heading text={t("Related projects")} />
           <Divider />
         </div>
         <MultiCarousel
@@ -152,7 +160,7 @@ function ProjectDetails() {
               <Card
                 key={i}
                 img={slide.img}
-                title={slide.title}
+                title={t(slide.title)}
                 code={slide.code}
                 demo={slide.demo}
                 tags={slide.tags}
@@ -160,8 +168,8 @@ function ProjectDetails() {
                 createdAt={slide.createdAt}
                 pageLink={`/projects/${slide.title}`}
                 showBtn={true}
-                primeBtnText="More Details"
-                secBtnText="🤠 Click for more details"
+                primeBtnText={t("More Details")}
+                secBtnText={`🤠 ${t("Click for more details")} `}
               />
             );
           })}

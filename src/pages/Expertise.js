@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { filterSkills } from '../store/features/expertiseSlice';
-import Heading from '../component/Heading';
-import HeadH2 from '../component/HeadH2';
-import Divider from '../component/Divider';
-import ImgSm from '../component/ImgSm';
-import backgroundImage from '../images/background.jpg';
-import Contact from '../component/Contact';
-import Accordian from '../component/Accordian';
-import StaticModal from '../component/StaticModal';
-import ContactForm from '../component/ContactForm';
-import { Tabs, Tab, Box } from '@mui/material';
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { filterSkills } from "../store/features/expertiseSlice";
+import Heading from "../component/Heading";
+import HeadH2 from "../component/HeadH2";
+import Divider from "../component/Divider";
+import ImgSm from "../component/ImgSm";
+import backgroundImage from "../images/background.jpg";
+import Contact from "../component/Contact";
+import Accordian from "../component/Accordian";
+import StaticModal from "../component/StaticModal";
+import ContactForm from "../component/ContactForm";
+import { Tabs, Tab, Box } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function Expertise() {
   const [value, setValue] = useState(0);
@@ -26,11 +27,12 @@ function Expertise() {
   function filterHandler(category) {
     dispatch(filterSkills(category));
   }
+  const { t } = useTranslation();
 
   return (
     <div className="text-center wrapper container">
       <img className="background" src={backgroundImage} alt="" />
-      <Heading text="< 🛡️ My tech stack />" />
+      <Heading text={`<🛡️${t("My tech stack")} / >`} />
       <Divider />
       <Box className="experience my-4 d-flex justify-content-center align-items-center">
         <Tabs
@@ -43,14 +45,15 @@ function Expertise() {
           aria-label="scrollable force tabs example"
         >
           {techCategory &&
-            techCategory.map((item) => {
+            techCategory.map((item, i) => {
               return (
                 <Tab
-                  label={item.title}
+                  key={i}
+                  label={t(item.title)}
                   style={{
-                    color: 'white',
-                    padding: '10px 10px',
-                    minWidth: '50px',
+                    color: "white",
+                    padding: "10px 10px",
+                    minWidth: "50px",
                   }}
                   onClick={() => filterHandler(item.ref)}
                 />
@@ -59,7 +62,7 @@ function Expertise() {
         </Tabs>
       </Box>
       <div>
-        <HeadH2 text={label.toUpperCase()} />
+        <HeadH2 text={t(label).toUpperCase()} />
         <div className="skillBox experience">
           {filteredSkills &&
             filteredSkills.map((item) => {
@@ -75,9 +78,9 @@ function Expertise() {
         </div>
       </div>
       <div className="mt-4">
-        <Accordian heading="Let's Connect " accordianSelect="techTwo">
+        <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
           <Contact>
-            <StaticModal title="Sending message to @Ranjeet">
+            <StaticModal title={t("Sending message to @Ranjeet")}>
               <ContactForm> </ContactForm>
             </StaticModal>
           </Contact>

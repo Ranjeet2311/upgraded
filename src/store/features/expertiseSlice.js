@@ -1,27 +1,27 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { skillsData } from '../../data/Skills';
+import { createSlice } from "@reduxjs/toolkit";
+import { skillsData } from "../../data/Skills";
 
 const techCategory = [
-  { title: 'Frontend', ref: 'frontend' },
-  { title: 'Backend', ref: 'backend' },
-  { title: 'Code_management', ref: 'managing' },
-  { title: 'Design', ref: 'design' },
-  { title: 'CMS', ref: 'cms' },
+  { title: "Frontend", ref: "frontend" },
+  { title: "Backend", ref: "backend" },
+  { title: "Code management", ref: "managing" },
+  { title: "Design", ref: "design" },
+  { title: "CMS", ref: "cms" },
 ];
 
 const filteredData = skillsData.filter((item, i) => {
-  return item.end === 'frontend';
+  return item.end === "frontend";
 });
 
 const initialState = {
   allSkills: skillsData,
   filteredSkills: filteredData,
-  label: 'Frontend',
+  label: "Frontend",
   techCategory,
 };
 
 export const expertiseSlice = createSlice({
-  name: 'expertise',
+  name: "expertise",
   initialState,
   reducers: {
     filterSkills(state, action) {

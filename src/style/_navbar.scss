@@ -74,8 +74,7 @@
         li {
           list-style: none;
           list-style: none;
-          margin-right: 3rem;
-          margin-top: 6px;
+          margin-right: 26px;
 
           @include at-900px {
             margin: 0 auto 10px;
@@ -85,9 +84,9 @@
             border-bottom: 1px solid transparent;
             text-decoration: none;
             color: white;
+            font-size: 16px !important;
 
             @include at-900px {
-              font-size: 1.2rem;
               text-shadow: 3px 2px black;
             }
 
@@ -97,7 +96,7 @@
             }
 
             &::after {
-              content: '';
+              content: "";
               width: 0%;
               height: 2px;
               background-color: rgb(197, 223, 246);

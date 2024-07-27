@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 function ContactForm() {
-  const [result, setResult] = useState('');
+  const [result, setResult] = useState("");
+
+  const { t } = useTranslation();
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult('Sending....');
+    setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append('access_key', '8f73314e-621e-43c7-bff3-69fa455e78bf');
+    formData.append("access_key", "8f73314e-621e-43c7-bff3-69fa455e78bf");
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
       body: formData,
     });
 
@@ -22,7 +25,7 @@ function ContactForm() {
       );
       event.target.reset();
     } else {
-      console.log('Error', data);
+      console.log("Error", data);
       setResult(data.message);
     }
   };
@@ -34,7 +37,7 @@ function ContactForm() {
           <div className="row">
             <div className="col">
               <label htmlFor="exampleFormControlInput1" className="form-label">
-                First name*
+                {t("First name")} *
               </label>
               <input
                 type="text"
@@ -47,7 +50,7 @@ function ContactForm() {
             </div>
             <div className="col">
               <label htmlFor="exampleFormControlInput1" className="form-label">
-                Last name*
+                {t("Last name")} *
               </label>
               <input
                 type="text"
@@ -62,7 +65,7 @@ function ContactForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            Contact number
+            {t("Contact number")}
           </label>
           <input
             type="number"
@@ -74,7 +77,7 @@ function ContactForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            Your email address*
+            {t("Your email address")} *
           </label>
           <input
             type="email"
@@ -87,7 +90,7 @@ function ContactForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            Topic*
+            {t("Subject")} *
           </label>
           <input
             type="text"
@@ -100,7 +103,7 @@ function ContactForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            Short description (Optional)
+            {t("Short description (Optional)")}
           </label>
           <textarea
             className="form-control"
@@ -114,7 +117,7 @@ function ContactForm() {
             type="submit"
             className="btn btn-bg w-100 border-0 text-white"
           >
-            Send
+            {t("Send")}
           </button>
         </div>
       </form>

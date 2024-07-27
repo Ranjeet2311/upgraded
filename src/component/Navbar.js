@@ -1,27 +1,29 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import Logo from '../images/new-logo.jpg';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import IconButton from '@mui/material/IconButton';
-import StaticModal from './StaticModal';
-import ContactForm from './ContactForm';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import Logo from "../images/new-logo.jpg";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import IconButton from "@mui/material/IconButton";
+import StaticModal from "./StaticModal";
+import ContactForm from "./ContactForm";
+import LanguageSwitch from "./LanguageSwitch";
+import { useTranslation } from "react-i18next";
 
 const menuLinks = [
-  { name: 'Home', url: '/' },
-  { name: 'Expertise', url: '/expertise' },
-  { name: 'Experience', url: '/experience' },
-  { name: 'Projects', url: '/projects' },
+  { name: "Home", url: "/" },
+  { name: "Expertise", url: "/expertise" },
+  { name: "Experience", url: "/experience" },
+  { name: "Projects", url: "/projects" },
 ];
 
 const navIconStyle = {
-  marginRight: '2rem',
-  color: 'white',
-  border: '1px solid white',
-  background: 'white',
-  margin: '6px 12px',
+  marginRight: "2rem",
+  color: "white",
+  border: "1px solid white",
+  background: "white",
+  margin: "6px 12px",
 };
 
 function Navbar() {
@@ -31,6 +33,7 @@ function Navbar() {
     // console.log('Burger Clicked');
     setClicked(!clicked);
   };
+  const { t } = useTranslation();
 
   return (
     <div className="top-wrap">
@@ -40,13 +43,13 @@ function Navbar() {
         </NavLink>
         <div onClick={clickHandler} className="burger-menu">
           {clicked ? (
-            <CloseIcon style={{ fontSize: '2.5rem', color: 'white' }} />
+            <CloseIcon style={{ fontSize: "2.5rem", color: "white" }} />
           ) : (
-            <MenuIcon style={{ fontSize: '2.5rem', color: 'white' }} />
+            <MenuIcon style={{ fontSize: "2.5rem", color: "white" }} />
           )}
         </div>
         <nav>
-          <ul className={clicked ? 'menu-list' : 'menu-list-close'}>
+          <ul className={clicked ? "menu-list" : "menu-list-close"}>
             {menuLinks.map((link, i) => {
               return (
                 <li key={i}>
@@ -58,18 +61,22 @@ function Navbar() {
                     exact
                     activeclassname="active"
                   >
-                    {link.name}
+                    {t(link.name)}
                   </NavLink>
                 </li>
               );
             })}
             <li>
-              <StaticModal title="Sending message to @Ranjeet">
+              <StaticModal title={t("Sending message to @Ranjeet")}>
                 <ContactForm downloadCv="true"> </ContactForm>
               </StaticModal>
             </li>
+            <li>
+              {" "}
+              <LanguageSwitch />{" "}
+            </li>
             <IconButton
-              className="animated-background border-0"
+              className="animated-background border-0 mx-1"
               style={navIconStyle}
               target="_blank"
               href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
@@ -78,7 +85,7 @@ function Navbar() {
             </IconButton>
 
             <IconButton
-              className="animated-background border-0"
+              className="animated-background border-0 mx-1"
               style={navIconStyle}
               target="_blank"
               href="https://github.com/Ranjeet2311"

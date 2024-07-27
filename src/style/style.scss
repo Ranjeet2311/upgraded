@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@400;500;700&display=swap");
 
-$headFont: 'Roboto Serif', serif;
-$baseFont: 'Montserrat', sans-serif;
+$headFont: "Roboto Serif", serif;
+$baseFont: "Montserrat", sans-serif;
 $white: #ffffff;
 $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 
@@ -31,11 +31,11 @@ $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
   }
 }
 
-@import '_navbar.scss';
-@import '_home.scss';
-@import '_about.scss';
-@import '_skills.scss';
-@import '_project.scss';
+@import "_navbar.scss";
+@import "_home.scss";
+@import "_about.scss";
+@import "_skills.scss";
+@import "_project.scss";
 
 .defaultBg {
   background-color: rgba(188, 62, 174, 0.5803921569);
@@ -460,6 +460,8 @@ button {
     max-height: 600px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    z-index: 9;
 
     @include at-900px() {
       height: 400px !important;
@@ -500,7 +502,7 @@ button {
       box-shadow: none !important;
       background: transparent;
       &::after {
-        background-image: url('../images/angle-circle-arrow-up-icon.svg');
+        background-image: url("../images/angle-circle-arrow-up-icon.svg");
         transform: scale(1.6);
         @include at-900px() {
           transform: scale(1.2);
@@ -508,7 +510,7 @@ button {
       }
     }
     &::after {
-      background-image: url('../images/angle-circle-arrow-down-icon.svg');
+      background-image: url("../images/angle-circle-arrow-down-icon.svg");
       transform: scale(1.6);
       filter: invert(100%);
       @include at-900px() {
@@ -590,4 +592,13 @@ button {
   .react-multi-carousel-dot-list {
     bottom: 0px;
   }
+}
+
+.form-select {
+  // background-image: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  line-height: 18px;
+  width: 60px;
+  // color: white;
 }

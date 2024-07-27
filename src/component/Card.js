@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import moment from 'moment';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import moment from "moment";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-function ImgMediaCard({
+function Card({
   img,
   title,
   code,
@@ -19,9 +20,10 @@ function ImgMediaCard({
 }) {
   const [hide, setHide] = useState(false);
   const stack = tags && tags.slice(0, 5);
-  const date = moment(createdAt, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format(
-    'DD MMMM YYYY'
+  const date = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
+    "DD MMMM YYYY"
   );
+  const { t } = useTranslation();
 
   return (
     // <div className="col-12 col-md-6 col-xl-4">
@@ -36,7 +38,7 @@ function ImgMediaCard({
         {img && (
           <div className="img-wrap">
             <img
-              src={process.env.PUBLIC_URL + '/' + img}
+              src={process.env.PUBLIC_URL + "/" + img}
               className="card-img-top"
               alt={title}
             />
@@ -44,22 +46,22 @@ function ImgMediaCard({
         )}
         <div className="card-body pb-0">
           <h5 className="card-title text-dark">
-            <span className={type === 'general' ? 'inline me-1' : 'd-none'}>
+            <span className={type === "general" ? "inline me-1" : "d-none"}>
               🟢
             </span>
             {title}
           </h5>
           {createdAt && (
             <p className="created d-flex align-items-center">
-              <span className="me-2">Last updated :</span>
+              <span className="me-2"> {t("Last updated")} :</span>
               <span>
-                {date !== 'Invalid date' ? date : 'Checkout github for date'}
+                {date !== "Invalid date" ? date : "Checkout github for date"}
               </span>
             </p>
           )}
           <p className="description d-flex align-items-center">
-            {description && description.substr(0, 130)}{' '}
-            {description && '....Read more....'}
+            {description && description.substr(0, 130)}{" "}
+            {description && "....Read more...."}
           </p>
           {stack && (
             <div className="row card-stack">
@@ -74,11 +76,12 @@ function ImgMediaCard({
               {stack && <p className="stack-pill">more....</p>}
             </div>
           )}
+
           {list && (
             <ul className="desc-list">
               {list &&
                 list.map((description, i) => {
-                  return <li> {description} </li>;
+                  return <li key={i}> {t(description)} </li>;
                 })}
             </ul>
           )}
@@ -110,4 +113,4 @@ function ImgMediaCard({
   );
 }
 
-export default ImgMediaCard;
+export default Card;
