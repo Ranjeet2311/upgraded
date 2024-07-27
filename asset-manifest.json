@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.8acbe390.css",
+    "main.css": "/upgraded/static/css/main.26c7d285.css",
     "main.js": "/upgraded/static/js/main.ca3e9eb4.js",
     "static/media/globe.png": "/upgraded/static/media/globe.8e1f0323dfab7f573ca8.png",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
@@ -22,11 +22,11 @@
     "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.8acbe390.css.map": "/upgraded/static/css/main.8acbe390.css.map",
+    "main.26c7d285.css.map": "/upgraded/static/css/main.26c7d285.css.map",
     "main.ca3e9eb4.js.map": "/upgraded/static/js/main.ca3e9eb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acbe390.css",
+    "static/css/main.26c7d285.css",
     "static/js/main.ca3e9eb4.js"
   ]
 }
