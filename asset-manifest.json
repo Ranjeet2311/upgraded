@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.87fafb47.css",
-    "main.js": "/upgraded/static/js/main.8998adf3.js",
+    "main.css": "/upgraded/static/css/main.8acbe390.css",
+    "main.js": "/upgraded/static/js/main.ca3e9eb4.js",
+    "static/media/globe.png": "/upgraded/static/media/globe.8e1f0323dfab7f573ca8.png",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/avatar-first.png": "/upgraded/static/media/avatar-first.d5c9c4a3ad7ac6f9ed67.png",
@@ -13,16 +14,19 @@
     "static/media/all-icon.svg": "/upgraded/static/media/all-icon.5eac64278842a86f7eb72d82aa923773.svg",
     "static/media/react-js-icon.svg": "/upgraded/static/media/react-js-icon.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
     "static/media/template.svg": "/upgraded/static/media/template.f2ac32df4f8d1dd076d4e57a36e83908.svg",
+    "static/media/si.svg": "/upgraded/static/media/si.2a47feb6de33bb7d0894a003cdb10016.svg",
     "static/media/angle-circle-arrow-up-icon.svg": "/upgraded/static/media/angle-circle-arrow-up-icon.3aa96e478bcbe5516990.svg",
     "static/media/angle-circle-arrow-down-icon.svg": "/upgraded/static/media/angle-circle-arrow-down-icon.4d726fba4a328d3e3e92.svg",
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
     "index.html": "/upgraded/index.html",
+    "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.87fafb47.css.map": "/upgraded/static/css/main.87fafb47.css.map",
-    "main.8998adf3.js.map": "/upgraded/static/js/main.8998adf3.js.map"
+    "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
+    "main.8acbe390.css.map": "/upgraded/static/css/main.8acbe390.css.map",
+    "main.ca3e9eb4.js.map": "/upgraded/static/js/main.ca3e9eb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.87fafb47.css",
-    "static/js/main.8998adf3.js"
+    "static/css/main.8acbe390.css",
+    "static/js/main.ca3e9eb4.js"
   ]
 }
