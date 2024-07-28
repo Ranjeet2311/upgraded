@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { filterSkills } from "../store/features/expertiseSlice";
 import Heading from "../component/Heading";
@@ -28,6 +28,29 @@ function Expertise() {
     dispatch(filterSkills(category));
   }
   const { t } = useTranslation();
+
+  useEffect(() => {
+    switch (label) {
+      case "frontend":
+        setValue(0);
+        break;
+      case "backend":
+        setValue(1);
+        break;
+      case "managing":
+        setValue(2);
+        break;
+      case "design":
+        setValue(3);
+        break;
+      case "cms":
+        setValue(4);
+        break;
+
+      default:
+        break;
+    }
+  });
 
   return (
     <div className="text-center wrapper container">
