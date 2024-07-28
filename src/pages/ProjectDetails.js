@@ -26,7 +26,7 @@ function ProjectDetails() {
   });
   const { createdAt, img, title, tags, code, demo, description, ref } =
     filterProject;
-  console.log(`filterProject :: `, filterProject);
+  // console.log(`filterProject :: `, filterProject);
 
   const createdDate = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
     "DD MMMM YYYY"

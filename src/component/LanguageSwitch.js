@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../style/lang-switch.scss";
 import * as React from "react";
@@ -17,22 +16,20 @@ const language = [
 ];
 
 function LanguageSwitch() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const { i18n } = useTranslation();
-  // const [lang, setlang] = useState("");
-
-  console.log(`i18n ::: `, i18n.language);
+  const open = Boolean(anchorEl);
 
   function changeLangHandle(lang) {
-    // setlang(lang);
     i18n.changeLanguage(lang);
     setAnchorEl(null);
-    console.log(`Lang Switch`);
   }
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   return (
@@ -47,7 +44,8 @@ function LanguageSwitch() {
           onClick={handleClick}
         >
           <img
-            style={{ maxWidth: "25px" }}
+            className="rotate"
+            style={{ maxWidth: "30px" }}
             src={earth}
             alt="world-icon"
             srcset=""
@@ -57,6 +55,7 @@ function LanguageSwitch() {
         <Menu
           id="basic-menu"
           anchorEl={anchorEl}
+          onClose={handleClose}
           open={open}
           MenuListProps={{
             "aria-labelledby": "basic-button",

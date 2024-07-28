@@ -13,3 +13,19 @@
 .MuiMenu-paper {
   width: 80px !important;
 }
+.rotate {
+  display: inline-block;
+  animation: infiniteRotate 14s linear infinite;
+  transform-style: preserve-3d;
+}
+@keyframes infiniteRotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

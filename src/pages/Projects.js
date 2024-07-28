@@ -34,17 +34,17 @@ const tabs = [
 function Projects() {
   const [value, setValue] = useState(0);
 
-  const allProjectData = useSelector(
-    (state) => state.projects.filteredProjects
-  );
+  const { filteredProjects, tabValue } = useSelector((state) => state.projects);
   const dispatch = useDispatch();
+
+  console.log(`tabValue ::  `, tabValue);
 
   function filterHandler(categoty) {
     dispatch(filterProjects(categoty));
   }
-  const handleChange = (event, newValue) => {
+  function handleChange(event, newValue) {
     setValue(newValue);
-  };
+  }
 
   // ---animation
 
@@ -58,6 +58,29 @@ function Projects() {
       { autoAlpha: -1, duration: 2 },
       { autoAlpha: 1, duration: 2, ease: "back" }
     );
+
+    switch (tabValue) {
+      case "all":
+        setValue(0);
+        break;
+      case "react":
+        setValue(1);
+        break;
+      case "vue":
+        setValue(2);
+        break;
+      case "angular":
+        setValue(3);
+        break;
+      case "funApp":
+        setValue(4);
+        break;
+      case "template":
+        setValue(5);
+        break;
+      default:
+        break;
+    }
   });
   const { t } = useTranslation();
 
@@ -85,7 +108,7 @@ function Projects() {
                   <Tooltip
                     key={item.ref}
                     className="mt-2"
-                    title={t(item.title)}
+                    title={item.title}
                     classes={{
                       tooltip: "btn-bg text-white",
                     }}
@@ -107,8 +130,8 @@ function Projects() {
           </Tabs>
         </Box>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
-          {allProjectData &&
-            allProjectData.map((item, index) => {
+          {filteredProjects &&
+            filteredProjects.map((item, index) => {
               return (
                 <div className="col-12 col-md-6 col-lg-4" key={index}>
                   <Card
@@ -118,7 +141,7 @@ function Projects() {
                     code={item.code}
                     demo={item.demo}
                     tags={item.tags}
-                    description={t(item.description)}
+                    description={item.description}
                     createdAt={item.createdAt}
                     pageLink={`/projects/${item.title}`}
                     showBtn={true}

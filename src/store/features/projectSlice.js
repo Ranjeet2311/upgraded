@@ -1,17 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
-import projectData from '../../data/ProjectData';
+import { createSlice } from "@reduxjs/toolkit";
+import projectData from "../../data/ProjectData";
 
 const initialState = {
   allProjects: projectData,
   filteredProjects: projectData,
+  tabValue: "all",
 };
 
 export const projectsSlice = createSlice({
-  name: 'projects',
+  name: "projects",
   initialState,
   reducers: {
     filterProjects(state, action) {
-      if (action.payload === 'all') {
+      state.tabValue = action.payload;
+
+      if (action.payload === "all") {
         state.filteredProjects = state.allProjects;
       } else {
         const filterData = state.allProjects.filter(
