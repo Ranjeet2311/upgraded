@@ -72,11 +72,10 @@ function Navbar() {
               </StaticModal>
             </li>
             <li>
-              {" "}
-              <LanguageSwitch />{" "}
+              <LanguageSwitch />
             </li>
             <IconButton
-              className="animated-background border-0 mx-1"
+              className="animated-background border-0 mx-1 d-block d-lg-none"
               style={navIconStyle}
               target="_blank"
               href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
@@ -85,13 +84,33 @@ function Navbar() {
             </IconButton>
 
             <IconButton
-              className="animated-background border-0 mx-1"
+              className="animated-background border-0 mx-1 d-block d-lg-none"
               style={navIconStyle}
               target="_blank"
               href="https://github.com/Ranjeet2311"
             >
               <GitHubIcon />
             </IconButton>
+
+            <div className="d-none d-lg-block">
+              <div className="social-icons">
+                <IconButton
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
+                >
+                  <LinkedInIcon />
+                  <span>Linkedin</span>
+                </IconButton>
+
+                <IconButton
+                  target="_blank"
+                  href="https://github.com/Ranjeet2311"
+                >
+                  <GitHubIcon />
+                  <span>Github</span>
+                </IconButton>
+              </div>
+            </div>
           </ul>
         </nav>
       </div>

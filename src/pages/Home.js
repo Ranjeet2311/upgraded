@@ -16,33 +16,33 @@ import Divider from "../component/Divider";
 import { useTranslation } from "react-i18next";
 
 function Home() {
-  const pop = useRef();
-  const popx = useRef();
+  // const pop = useRef();
+  // const popx = useRef();
   const left = useRef();
   const right = useRef();
 
   const { t } = useTranslation();
 
   useEffect(() => {
-    gsap.from(
-      pop.current,
-      { scale: 0.4, duration: 1 },
-      { scale: 1.4, duration: 2, ease: "back" }
-    );
-    gsap.from(
-      popx.current,
-      { scale: 0.4, duration: 1 },
-      { scale: 1.4, duration: 4, ease: "back" }
-    );
+    // gsap.from(
+    //   pop.current,
+    //   { scale: 0.4, duration: 1 },
+    //   { scale: 1.4, duration: 2, ease: "back" }
+    // );
+    // gsap.from(
+    //   popx.current,
+    //   { scale: 0.4, duration: 1 },
+    //   { scale: 1.4, duration: 4, ease: "back" }
+    // );
     gsap.fromTo(
       left.current,
-      { x: "-1000", autoAlpha: -1, duration: 2 },
-      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
+      { zoom: 0, duration: 2 },
+      { zoom: 1, duration: 5 }
     );
     gsap.fromTo(
       right.current,
-      { x: "1000", autoAlpha: -1, duration: 2 },
-      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
+      { opacity: 0, duration: 2 },
+      { opacity: 1, duration: 5, ease: "back" }
     );
   }, []);
 

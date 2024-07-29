@@ -42,16 +42,16 @@ function Cookies({ onConsent }) {
               </h6>
               <div className="row mt-4">
                 <div className="col-12 col-md-6">
-                  <button className="btn btn-bg me-4 px-2 py-1 w-75 border-0 mx-auto">
-                    Deny
+                  <button
+                    onClick={handleConsent}
+                    className="btn btn-bg px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
+                  >
+                    Allow
                   </button>
                 </div>
                 <div className="col-12 col-md-6">
-                  <button
-                    onClick={handleConsent}
-                    className="btn btn-bg px-2 py-1 w-75 border-0 mx-auto"
-                  >
-                    Allow
+                  <button className="btn btn-bg me-4 px-2 py-1 w-100 w-lg-75 border-0 mx-auto">
+                    Deny
                   </button>
                 </div>
               </div>
