@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/upgraded/static/css/main.fa7f3859.css",
-    "main.js": "/upgraded/static/js/main.d74f891f.js",
+    "main.js": "/upgraded/static/js/main.ffd9f252.js",
     "static/media/globe.png": "/upgraded/static/media/globe.783441f1dd1a244aeeee.png",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
@@ -24,10 +24,10 @@
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "main.fa7f3859.css.map": "/upgraded/static/css/main.fa7f3859.css.map",
-    "main.d74f891f.js.map": "/upgraded/static/js/main.d74f891f.js.map"
+    "main.ffd9f252.js.map": "/upgraded/static/js/main.ffd9f252.js.map"
   },
   "entrypoints": [
     "static/css/main.fa7f3859.css",
-    "static/js/main.d74f891f.js"
+    "static/js/main.ffd9f252.js"
   ]
 }
