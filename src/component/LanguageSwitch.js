@@ -48,8 +48,7 @@ function LanguageSwitch() {
             style={{ maxWidth: "30px" }}
             src={earth}
             alt="world-icon"
-            srcset=""
-          />{" "}
+          />
           Lang
         </Button>
         <Menu
@@ -65,6 +64,7 @@ function LanguageSwitch() {
             language.map((lan, i) => {
               return (
                 <MenuItem
+                  key={i}
                   className={
                     lan.code === i18n.language ? "bg-primary text-light" : ""
                   }
@@ -81,21 +81,6 @@ function LanguageSwitch() {
             })}
         </Menu>
       </div>
-      {/* <select
-        value={lang}
-        onChange={changeLangHandle}
-        className="form-select lang-switch"
-        aria-label="Default select example"
-      >
-        {language &&
-          language.map((lan, i) => {
-            return (
-              <option key={i} value={lan.code}>
-                {lan.lang}
-              </option>
-            );
-          })}
-      </select> */}
     </>
   );
 }

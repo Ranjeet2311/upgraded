@@ -19,16 +19,6 @@ function App() {
     setIsAnalyticsInitialized(true);
   }
 
-  function TrackPageViews() {
-    const location = useLocation();
-
-    useEffect(() => {
-      trackPageView(location.pathname + location.search);
-    }, [location]);
-
-    return null;
-  }
-
   return (
     <div className="app">
       <BrowserRouter basename="/upgraded">
@@ -47,5 +37,15 @@ function App() {
     </div>
   );
 }
+
+const TrackPageViews = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+
+  return null;
+};
 
 export default App;
