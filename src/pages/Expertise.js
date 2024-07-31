@@ -50,7 +50,7 @@ function Expertise() {
       default:
         break;
     }
-  });
+  }, [label]);
 
   return (
     <div className="text-center wrapper container">

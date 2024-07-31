@@ -37,8 +37,6 @@ function Projects() {
   const { filteredProjects, tabValue } = useSelector((state) => state.projects);
   const dispatch = useDispatch();
 
-  console.log(`tabValue ::  `, tabValue);
-
   function filterHandler(categoty) {
     dispatch(filterProjects(categoty));
   }
@@ -81,7 +79,7 @@ function Projects() {
       default:
         break;
     }
-  });
+  }, [tabValue]);
   const { t } = useTranslation();
 
   return (
