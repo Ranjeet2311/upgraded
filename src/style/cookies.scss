@@ -1,23 +1,22 @@
-.cookies {
+.dialog {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(0, 0, 0, 0.9);
+  z-index: 9999;
   position: fixed;
-  top: 15%;
-  background: rgb(0, 0, 0, 1);
-  color: white;
-  margin: 10px auto;
-  z-index: 999999;
-  max-width: 750px;
+  top: -1px;
 
-  dialog {
-    ::backdrop {
-      background-image: linear-gradient(
-        45deg,
-        magenta,
-        rebeccapurple,
-        dodgerblue,
-        green
-      );
-      opacity: 0.75;
-    }
+  .cookies {
+    color: white;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 1);
+    margin: 4px auto;
+    padding: 24px;
+    border-radius: 12px;
+    margin-top: 100px;
+    border: 1px solid white;
+    // box-shadow: 2px 8px 116px white;
+    transition: all 0.5s ease-out;
   }
 
   .btn {

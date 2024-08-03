@@ -147,6 +147,9 @@
     "Car service demo": "Car service demo",
     "Animated Boat": "Animated Boat",
 
-    "Login with your email and password and create your playlist, add your favorite YouTube music videos to your playlist and watch your music video anytime.": "Login with your email and password and create your playlist, add your favorite YouTube music videos to your playlist and watch your music video anytime. Saves your time in browsing your favourite music. You can also browse and listen to the music playlist made by other members. You can delete and add as many videos as you wish on your account. If you have no account then start with sign-up. This app does not save any data to browser memory."
+    "Login with your email and password and create your playlist, add your favorite YouTube music videos to your playlist and watch your music video anytime.": "Login with your email and password and create your playlist, add your favorite YouTube music videos to your playlist and watch your music video anytime. Saves your time in browsing your favourite music. You can also browse and listen to the music playlist made by other members. You can delete and add as many videos as you wish on your account. If you have no account then start with sign-up. This app does not save any data to browser memory.",
+    "cookies": "Our web-app uses cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. Cookies are small text files that are placed on your device to help us understand how you use our site and to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

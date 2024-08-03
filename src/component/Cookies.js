@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../style/cookies.scss";
 import cookie_Icon from "../images/cookie-icon.svg";
+import { createPortal } from "react-dom";
+import { useTranslation } from "react-i18next";
 
 function Cookies({ onConsent }) {
   const [consentGiven, setConsentGiven] = useState(false);
+  const { t } = useTranslation();
 
   function handleConsent() {
     setConsentGiven(true);
@@ -22,11 +25,11 @@ function Cookies({ onConsent }) {
     initialConsent();
   });
 
-  return (
+  return createPortal(
     <>
       {!consentGiven && (
-        <div className="container">
-          <dialog open className="cookies p-4">
+        <dialog open className="dialog">
+          <div className="cookies">
             <form method="dialog">
               <img
                 className="mb-4"
@@ -34,32 +37,28 @@ function Cookies({ onConsent }) {
                 alt="cookie_Icon"
                 style={{ width: "40px" }}
               />
-              <h6>
-                Our web-app uses cookies to enhance your browsing experience,
-                serve personalized content, and analyze our traffic. Cookies are
-                small text files that are placed on your device to help us
-                understand how you use our site and to improve your experience.
-              </h6>
+              <h6>{t("cookies")}</h6>
               <div className="row mt-4">
                 <div className="col-12 col-md-6">
                   <button
                     onClick={handleConsent}
                     className="btn btn-bg px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
                   >
-                    Allow
+                    {t("accept")}
                   </button>
                 </div>
                 <div className="col-12 col-md-6">
                   <button className="btn btn-bg me-4 px-2 py-1 w-100 w-lg-75 border-0 mx-auto">
-                    Deny
+                    {t("decline")}
                   </button>
                 </div>
               </div>
             </form>
-          </dialog>
-        </div>
+          </div>
+        </dialog>
       )}
-    </>
+    </>,
+    document.getElementById("cookies")
   );
 }
 
