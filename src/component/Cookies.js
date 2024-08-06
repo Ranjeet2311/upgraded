@@ -3,6 +3,7 @@ import "../style/cookies.scss";
 import cookie_Icon from "../images/cookie-icon.svg";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
+import LanguageSwitch from "./LanguageSwitch";
 
 function Cookies({ onConsent }) {
   const [consentGiven, setConsentGiven] = useState(false);
@@ -31,12 +32,15 @@ function Cookies({ onConsent }) {
         <dialog open className="dialog">
           <div className="cookies">
             <form method="dialog">
-              <img
-                className="mb-4"
-                src={cookie_Icon}
-                alt="cookie_Icon"
-                style={{ width: "40px" }}
-              />
+              <div className="d-flex justify-content-between">
+                <img
+                  className="mb-4"
+                  src={cookie_Icon}
+                  alt="cookie_Icon"
+                  style={{ width: "40px" }}
+                />
+                <LanguageSwitch />
+              </div>
               <h6>{t("cookies")}</h6>
               <div className="row mt-4">
                 <div className="col-12 col-md-6">
@@ -44,12 +48,15 @@ function Cookies({ onConsent }) {
                     onClick={handleConsent}
                     className="btn btn-bg px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
                   >
-                    {t("accept")}
+                    {t("Accept all")}
                   </button>
                 </div>
                 <div className="col-12 col-md-6">
-                  <button className="btn btn-bg me-4 px-2 py-1 w-100 w-lg-75 border-0 mx-auto">
-                    {t("decline")}
+                  <button
+                    onClick={handleConsent}
+                    className="btn btn-bg me-4 px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
+                  >
+                    {t("Only necessary")}
                   </button>
                 </div>
               </div>
