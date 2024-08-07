@@ -1,20 +1,33 @@
 .carousel {
   width: 100% !important;
+  position: relative;
   .carousel-inner {
     .carousel-item {
       transition: transform 0.2s ease;
     }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 42px;
+    position: absolute;
+    bottom: 53px;
+    top: inherit;
   }
   .carousel-indicators {
     margin: 0px;
 
     .active {
       background-color: rgba(188, 62, 174);
+      border-radius: 14px;
+      height: 12px;
+      width: 30px;
     }
     button {
       background-color: white;
       opacity: 1 !important;
-      height: 6px;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
     }
   }
   .carousel-caption {

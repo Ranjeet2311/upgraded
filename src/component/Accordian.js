@@ -1,4 +1,4 @@
-import Heading from './Heading';
+import Heading from "./Heading";
 
 function Accordian({ heading, children, accordianSelect }) {
   return (

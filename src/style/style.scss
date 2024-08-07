@@ -19,6 +19,9 @@ $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 //   // background-position: top left;
 // background-blend-mode: luminosity;
 // }
+body {
+  background: black;
+}
 
 @mixin for-tablet-portrait-up {
   @media (max-width: 600px) {
@@ -194,8 +197,8 @@ button {
   }
 
   .ccard {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: rgba(255, 255, 255, 1);
     border-radius: 12px;
     // border: none;
@@ -283,14 +286,19 @@ button {
 }
 
 .app {
-  margin-top: 120px;
+  margin-top: 110px;
   padding-bottom: 120px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
 .colored-pill {
-  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
+  background: linear-gradient(
+    to left,
+    rgb(72, 50, 133, 1) 30%,
+    rgba(188, 62, 174, 1) 70%
+  );
+  // background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
   margin: 6px 4px;
   padding: 4px 16px;
   border-radius: 20px;
@@ -300,6 +308,7 @@ button {
   list-style: none;
   text-align: center;
   cursor: pointer;
+  border: 1px solid white;
 
   &:hover {
     background: repeating-linear-gradient(135deg, #483285 30%, #bc3eae94 70%);
@@ -332,13 +341,15 @@ button {
 
   .card {
     position: relative;
-    background: rgb(0 0 0 / 40%);
+    // background: rgb(0 0 0 / 40%);
+    background: transparent;
     padding-bottom: 10px;
     overflow-x: hidden;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 12px;
 
     &:hover {
-      background-color: rgba(188 62 174 /70%);
+      background-color: rgb(188, 62, 174, 0.9);
       border: 1px solid rgba(188, 62, 174);
       box-shadow: 6px 6px 23px rgb(0 0 0 / 90%);
       transition: all 0.3s ease-in-out;
@@ -423,6 +434,7 @@ button {
 }
 
 .btn-bg {
+  border: none;
   transition: all 0.4s ease-out;
   background: linear-gradient(
     to left,
@@ -446,6 +458,7 @@ button {
   background: rgb(0 0 0 / 30%);
   padding: 12px;
   border-radius: 12px;
+  border: 1px solid white;
 }
 
 // -----details--------------
@@ -489,6 +502,7 @@ button {
 
 .accordion {
   .accordion-button {
+    box-shadow: none !important;
     .collapsed {
       &:hover {
         background: linear-gradient(
@@ -561,13 +575,26 @@ button {
   }
 }
 
+.project-details {
+  .react-multi-carousel-list {
+    padding-bottom: 60px;
+    padding-left: 0 !important;
+
+    li {
+      margin-right: 12px;
+      @include at-900px() {
+        margin-right: 0;
+      }
+    }
+  }
+}
 .react-multi-carousel-list {
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   padding-left: 0 !important;
 
-  li {
-    margin-right: 5px;
-  }
+  // li {
+  //   margin-right: 5px;
+  // }
   .react-multi-carousel-dot--active {
     color: #fc3845;
     button {
@@ -601,4 +628,30 @@ button {
   line-height: 18px;
   width: 60px;
   // color: white;
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  background-color: rgb(72, 50, 133, 1);
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 5px;
+  animation: blinking 0.5s linear infinite;
+}
+
+@keyframes blinking {
+  0% {
+    border: 1px solid rgb(72, 50, 133, 1);
+  }
+
+  100% {
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+.css-1aquho2-MuiTabs-indicator,
+.MuiTabs-indicator {
+  background-color: rgba(188, 62, 174, 1) !important;
+  height: 4px !important;
 }

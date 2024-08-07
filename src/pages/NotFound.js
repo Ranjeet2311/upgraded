@@ -1,14 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Avatar from '../images/avatar-second.png';
-import backgroundImage from '../images/background.jpg';
-import Heading from '../component/Heading';
-import Divider from '../component/Divider';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Avatar from "../images/avatar-second.png";
+import backgroundImage from "../images/background.jpg";
+import Heading from "../component/Heading";
+import Divider from "../component/Divider";
 
 function NotFound() {
   return (
-    <div className="text-center wrapper container">
-      <img className="background" src={backgroundImage} alt="" />
+    <div className="text-center container">
+      {/* <img className="background" src={backgroundImage} alt="" /> */}
       <div>
         <Heading text="< 404 page />" />
         <h4 className="text-light w-50 text-center ms-auto me-auto">

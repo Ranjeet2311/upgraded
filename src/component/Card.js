@@ -45,9 +45,9 @@ function Card({
           </div>
         )}
         <div className="card-body pb-0">
-          <h5 className="card-title text-dark">
+          <h5 className="card-title text-dark d-flex align-items-center">
             <span className={type === "general" ? "inline me-1" : "d-none"}>
-              🟢
+              <div className="dot"></div>
             </span>
             {title}
           </h5>

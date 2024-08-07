@@ -2,7 +2,6 @@ import { useRef, useEffect } from "react";
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
-import { gsap } from "gsap";
 import { useTranslation } from "react-i18next";
 
 function Contact({ children, download }) {
@@ -12,16 +11,9 @@ function Contact({ children, download }) {
     link.href = "CV_Ranjeet_Kumar.pdf";
     link.click();
   }
-  const popx = useRef();
   const { t } = useTranslation();
 
-  useEffect(() => {
-    gsap.from(
-      popx.current,
-      { scale: 0.4, duration: 1 },
-      { scale: 1.4, duration: 4, ease: "back" }
-    );
-  });
+  useEffect(() => {});
 
   return (
     <div className=" col-12 ">

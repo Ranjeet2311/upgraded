@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Tabs, Tab, Box, Tooltip } from "@mui/material";
-import { gsap } from "gsap";
 import Heading from "../component/Heading";
 import HeadH2 from "../component/HeadH2";
 import Divider from "../component/Divider";
@@ -46,17 +45,7 @@ function Projects() {
 
   // ---animation
 
-  const up = useRef();
-  const appear = useRef();
-
   useEffect(() => {
-    gsap.from(up.current, { y: "1200", duration: 0.5 });
-    gsap.fromTo(
-      appear.current,
-      { autoAlpha: -1, duration: 2 },
-      { autoAlpha: 1, duration: 2, ease: "back" }
-    );
-
     switch (tabValue) {
       case "all":
         setValue(0);
@@ -84,14 +73,14 @@ function Projects() {
 
   return (
     <>
-      <div className="project-wrapper wrapper container">
-        <img className="background" src={backgroundImage} alt="" />
+      <div className="project-wrapper container px-0">
+        {/* <img className="background" src={backgroundImage} alt="" /> */}
         <Heading text={`<🤸${t("My Personal Projects")} / >`} />
         <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} />
         <Divider />
         <div className="col"></div>
         <HeadH2 text={t("Filter projects by frameworks & types")} />
-        <Box className="experience">
+        <Box className="experience mt-2">
           <Tabs
             variant="scrollable"
             scrollButtons="auto"
@@ -105,11 +94,11 @@ function Projects() {
                 return (
                   <Tooltip
                     key={item.ref}
-                    className="mt-2"
                     title={item.title}
                     classes={{
-                      tooltip: "btn-bg text-white",
+                      tooltip: "btn-bg border-0 text-white",
                     }}
+                    style={{ fontSize: "26px" }}
                   >
                     <Tab
                       name={item.ref}
@@ -151,7 +140,7 @@ function Projects() {
             })}
         </div>
       </div>
-      <div className="container mt-4">
+      <div className="container mt-4 px-0">
         <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
           <Contact>
             <StaticModal title={t("Sending message to @Ranjeet")}>

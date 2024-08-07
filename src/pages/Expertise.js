@@ -53,8 +53,8 @@ function Expertise() {
   }, [label]);
 
   return (
-    <div className="text-center wrapper container">
-      <img className="background" src={backgroundImage} alt="" />
+    <div className="text-center container px-0">
+      {/* <img className="background" src={backgroundImage} alt="" /> */}
       <Heading text={`<🛡️${t("My tech stack")} / >`} />
       <Divider />
       <Box className="experience my-4 d-flex justify-content-center align-items-center">

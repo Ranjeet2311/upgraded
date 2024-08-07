@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import React, { useState } from "react";
 import Heading from "../component/Heading";
 import Paragraph from "../component/Paragraph";
 import { experienceData } from "../data/experienceList";
@@ -18,73 +17,21 @@ import { useTranslation } from "react-i18next";
 
 function Experience() {
   const [image, setImage] = useState(false);
-  const bottom = useRef();
-  const left = useRef();
-  const leftX = useRef();
 
-  useEffect(() => {
-    gsap.from(bottom.current, { y: "1000", duration: 2 });
-    gsap.fromTo(
-      left.current,
-      { x: "-1000", autoAlpha: -1, duration: 2 },
-      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
-    );
-    gsap.fromTo(
-      leftX.current,
-      { x: "-1000", autoAlpha: -1, duration: 2 },
-      { x: "0", autoAlpha: 1, duration: 3, ease: "back" }
-    );
-    // gsap.fromTo(
-    //   leftX.current,
-    //   { autoAlpha: -2, duration: 2 },
-    //   { autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-
-    // gsap.fromTo(
-    //   leftX1.current,
-    //   { autoAlpha: -2, duration: 2 },
-    //   { autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-    // gsap.fromTo(
-    //   leftX1.current,
-    //   { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
-    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-
-    // gsap.fromTo(
-    //   rightX.current,
-    //   { autoAlpha: -2, duration: 2 },
-    //   { autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-    // gsap.fromTo(
-    //   rightX.current,
-    //   { x: "-1000", y: "-10", autoAlpha: -2, duration: 2 },
-    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-
-    // gsap.fromTo(
-    //   rightX1.current,
-    //   { autoAlpha: -2, duration: 2 },
-    //   { autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-    // gsap.fromTo(
-    //   rightX1.current,
-    //   { x: "1000", y: "-10", autoAlpha: -2, duration: 2 },
-    //   { x: "0", y: "0", autoAlpha: 1, duration: 2, ease: "easeInOut" }
-    // );
-  });
   function imageChangeHandler() {
     setImage(!image);
   }
   const { t } = useTranslation();
 
   return (
-    <div className="wrapper container">
-      <img className="background" src={backgroundImage} alt="" />
+    <div className="container">
+      {/* <img className="background" src={backgroundImage} alt="" /> */}
       <Heading text={`<⚙️${t("Experience")} / >`} />
-      {/* <Heading text="< ⚙️ Experience />" /> */}
       <Divider />
-      <div className="row caption mb-4 mt-4" onMouseEnter={imageChangeHandler}>
+      <div
+        className="row mb-4 mt-4 justify-content-center align-items-center"
+        onMouseEnter={imageChangeHandler}
+      >
         <div className="col-12 col-lg-4 experience-img left-side">
           {image ? (
             <img
@@ -100,7 +47,7 @@ function Experience() {
             />
           )}
         </div>
-        <div className="col-12 col-lg-8 para mt-4 mt-lg-0 experience">
+        <div className="col-12 col-lg-8 mt-4 mt-lg-0 experience">
           <Paragraph text={t("experienceDetails")} />
         </div>
       </div>
@@ -136,14 +83,16 @@ function Experience() {
             })}
         </MultiCarousel>
       </div>
-      <div className=" mt-4">
-        <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
-          <Contact>
-            <StaticModal title={t("Sending message to @Ranjeet")}>
-              <ContactForm downloadCv="true"> </ContactForm>
-            </StaticModal>
-          </Contact>
-        </Accordian>
+      <div className="row">
+        <div className="col-12 mt-4 px-0">
+          <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
+            <Contact>
+              <StaticModal title={t("Sending message to @Ranjeet")}>
+                <ContactForm downloadCv="true"> </ContactForm>
+              </StaticModal>
+            </Contact>
+          </Accordian>
+        </div>
       </div>
     </div>
   );

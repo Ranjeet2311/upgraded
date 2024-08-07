@@ -46,11 +46,11 @@ function ProjectDetails() {
   const { t } = useTranslation();
 
   return (
-    <div className="wrapper container">
-      <img className="background" src={backgroundImage} alt="bg" />
+    <div className="container project-details">
+      {/* <img className="background" src={backgroundImage} alt="bg" /> */}
       <div className="row">
         <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
-          <div className="text-center mb-3 d-flex align-items-center btn experience">
+          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0">
             <ArrowBackIosIcon />
             <Link className="reverseLinks" to="/projects">
               {t("Projects")}
@@ -66,7 +66,7 @@ function ProjectDetails() {
             alt={title}
             className={`details-image ${zoom ? "zoom" : ""}`}
           />
-          <p className="text-light text-center experience">
+          <p className="text-light text-center experience mb-0">
             {t("Click on imgae to zoom / shrink")}
           </p>
         </div>
@@ -102,7 +102,7 @@ function ProjectDetails() {
             <a
               href={demo}
               target="blank"
-              className="btn btn-bg text-light w-100"
+              className="btn btn-bg text-light w-100 border-0"
               type="button"
             >
               <PreviewIcon /> {t("Live Demo")}
@@ -110,7 +110,7 @@ function ProjectDetails() {
             <a
               href={code}
               target="blank"
-              className="btn btn-bg text-light w-100  mt-2"
+              className="btn btn-bg text-light w-100 mt-2 border-0"
               type="button"
             >
               <CodeOffIcon /> {t("Source Code")}
@@ -118,7 +118,7 @@ function ProjectDetails() {
             <a
               href="https://github.com/Ranjeet2311/"
               target="blank"
-              className="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center"
+              className="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center border-0"
               type="button"
             >
               <GitHubIcon /> <span className="ms-2">{t("My Github")}</span>
@@ -153,7 +153,7 @@ function ProjectDetails() {
           minimumTouchDrag={0}
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
-          containerClass="carousel-container experience mb-4"
+          containerClass="carousel-container mb-4"
         >
           {relatedData.map((slide, i) => {
             return (
