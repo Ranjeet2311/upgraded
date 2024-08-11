@@ -3,8 +3,8 @@ import projectData from "../../data/ProjectData";
 
 const initialState = {
   allProjects: projectData,
-  filteredProjects: projectData,
-  tabValue: "all",
+  filteredProjects: projectData.filter((project) => project.ref === "react"),
+  tabValue: "react",
 };
 
 export const projectsSlice = createSlice({
