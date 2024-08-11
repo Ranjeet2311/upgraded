@@ -41,6 +41,7 @@ function Card({
               src={process.env.PUBLIC_URL + "/" + img}
               className="card-img-top"
               alt={title}
+              loading="lazy"
             />
           </div>
         )}

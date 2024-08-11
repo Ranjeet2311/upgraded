@@ -21,6 +21,7 @@ function ImgSm({ image, alt, name }) {
     <div className="ccard-main" ref={ref}>
       <animated.img
         className="ccard"
+        loading="lazy"
         style={{ transform: props.xys.to(trans) }}
         onMouseLeave={() => setXys([0, 0, 1])}
         onMouseMove={(e) => {

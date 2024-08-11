@@ -48,6 +48,7 @@ function LanguageSwitch() {
             style={{ maxWidth: "30px" }}
             src={earth}
             alt="world-icon"
+            loading="lazy"
           />
           Lang
         </Button>
@@ -74,7 +75,8 @@ function LanguageSwitch() {
                     style={{ maxWidth: "20px", marginRight: "4px" }}
                     src={lan.img}
                     alt="lan.lang"
-                  />{" "}
+                    loading="lazy"
+                  />
                   {lan.lang}
                 </MenuItem>
               );

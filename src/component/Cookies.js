@@ -35,6 +35,7 @@ function Cookies({ onConsent }) {
               <div className="d-flex justify-content-between">
                 <img
                   className="mb-4"
+                  loading="lazy"
                   src={cookie_Icon}
                   alt="cookie_Icon"
                   style={{ width: "40px" }}

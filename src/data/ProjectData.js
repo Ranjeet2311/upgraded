@@ -9,6 +9,7 @@ const projectData = [
       "redux",
       "redux-toolkit",
       "createPortal",
+      "children",
       "eslint",
       "javaScript XML",
       "mapping",

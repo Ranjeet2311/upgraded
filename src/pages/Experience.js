@@ -38,12 +38,14 @@ function Experience() {
               src={greetingHI}
               alt="Greeting-Avatar"
               className="rounded-circle experience"
+              loading="lazy"
             />
           ) : (
             <img
               src={greetingNamaste}
               alt="Greeting-Avatar"
               className="rounded-circle experience"
+              loading="lazy"
             />
           )}
         </div>

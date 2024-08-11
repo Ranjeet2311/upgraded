@@ -35,6 +35,7 @@ function Crousel({ data }) {
                   }
                 >
                   <img
+                    loading="lazy"
                     style={{
                       maxHeight: "400px",
                       background: "white",

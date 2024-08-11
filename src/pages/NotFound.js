@@ -17,7 +17,7 @@ function NotFound() {
         </h4>
         <div>
           <NavLink to="/" className="ms-2">
-            <img className=" w-25" src={Avatar} alt="logo" />
+            <img className=" w-25" src={Avatar} alt="logo" loading="lazy" />
           </NavLink>
         </div>
         <Divider />

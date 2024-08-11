@@ -39,7 +39,7 @@ function Navbar() {
     <div className="top-wrap">
       <div className="Navbar-wrap container">
         <NavLink to="/" className="logo">
-          <img className="logo-image" src={Logo} alt="logo" />
+          <img className="logo-image" src={Logo} alt="logo" loading="lazy" />
         </NavLink>
         <div onClick={clickHandler} className="burger-menu">
           {clicked ? (
