@@ -33,7 +33,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-3 mb-1">
+      <div className="mt-3 mb-1 pt-2 pt-md-4">
         <Heading text={`<${t("home.glance")} / >`} />
         <Divider />
       </div>

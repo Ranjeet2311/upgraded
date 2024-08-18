@@ -44,13 +44,13 @@ function LanguageSwitch() {
           onClick={handleClick}
         >
           <img
-            className="rotate"
+            className="rotate me-1"
             style={{ maxWidth: "30px" }}
             src={earth}
             alt="world-icon"
             loading="lazy"
           />
-          Lang
+          <span>Lang</span>
         </Button>
         <Menu
           id="basic-menu"

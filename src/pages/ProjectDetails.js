@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import projectData from "../data/ProjectData";
 import backgroundImage from "../images/background.jpg";
 import Heading from "../component/Heading";
 import moment from "moment";
@@ -15,24 +14,27 @@ import Accordian from "../component/Accordian";
 import MultiCarousel from "../component/MultiCarousel";
 import { maxFourSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 function ProjectDetails() {
   const [zoom, setZoom] = useState(false);
   const { projectId } = useParams();
   const navigate = useNavigate();
 
-  let filterProject = projectData.find((item, index) => {
+  const allProjects = useSelector((state) => state.projects.allProjects);
+
+  let selectedProject = allProjects.find((item, index) => {
     return item.title === projectId;
   });
+
   const { createdAt, img, title, tags, code, demo, description, ref } =
-    filterProject;
-  // console.log(`filterProject :: `, filterProject);
+    selectedProject;
 
   const createdDate = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
     "DD MMMM YYYY"
   );
 
-  const relatedData = projectData.filter((related, i) => {
+  const relatedData = allProjects.filter((related, i) => {
     return related.ref === ref && related.title !== title;
   });
 
@@ -40,10 +42,10 @@ function ProjectDetails() {
     return setZoom(!zoom);
   }
 
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-  const { t } = useTranslation();
 
   return (
     <div className="container project-details">
