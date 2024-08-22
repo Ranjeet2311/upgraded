@@ -1,11 +1,8 @@
 import React from "react";
 import HeadH1 from "../component/HeadH1";
 import Paragraph from "../component/Paragraph";
-import backgroundImage from "../images/background.jpg";
 import Card from "../component/Card";
 import { workWithMe } from "../data/Skills";
-import Crousel from "../component/Crousel";
-import { sliderImages } from "../data/experienceList";
 import Contact from "../component/Contact";
 import Accordian from "../component/Accordian";
 import StaticModal from "../component/StaticModal";
@@ -13,16 +10,17 @@ import ContactForm from "../component/ContactForm";
 import Heading from "../component/Heading";
 import Divider from "../component/Divider";
 import { useTranslation } from "react-i18next";
+import profilePic from "../images/home_pic.png";
 
 function Home() {
   const { t } = useTranslation();
 
   return (
     <div className="container">
-      {/* <img className="background pe-0 ps-0" src={backgroundImage} alt="" /> */}
-      <div className="row align-items-center">
-        <div className="col-12 col-lg-4 d-flex flex-column align-items-center roaming-img experience">
-          <Crousel data={sliderImages} />
+      <div className="row align-items-center top-section">
+        <div className="col-12 col-lg-4 roaming-img">
+          <div className="blue-sphere"></div>
+          <img src={profilePic} alt="" srcset="" className="profile-pic" />
         </div>
         <div className="col-12 col-lg-8 right pe-lg-0">
           <HeadH1 text={t("home.greeting")} />
@@ -48,7 +46,7 @@ function Home() {
                   pageLink={item.pageLink}
                   showBtn={true}
                   primeBtnText={t("More Details")}
-                  secBtnText={`✅${t("Show more details")}`}
+                  secBtnText={`${t("Show more details")}`}
                   type="general"
                 />
               </div>

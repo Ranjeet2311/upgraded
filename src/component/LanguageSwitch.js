@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import de from "../images/flags/de.svg";
 import si from "../images/flags/si.svg";
 import us from "../images/flags/us.svg";
-import earth from "../images/flags/globe.png";
+import earth from "../images/flags/globe2.png";
 
 const language = [
   { code: "en", lang: "Eng", img: us },
@@ -36,7 +36,7 @@ function LanguageSwitch() {
     <>
       <div className="lang-switch">
         <Button
-          className="text-light btn bg-transparent border-0 lang-btn"
+          className="text-light btn bg-transparent border-0 lang-btn ps-lg-0"
           id="basic-button"
           aria-controls={open ? "basic-menu" : undefined}
           aria-haspopup="true"

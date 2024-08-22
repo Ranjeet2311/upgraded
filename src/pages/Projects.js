@@ -5,7 +5,6 @@ import HeadH2 from "../component/HeadH2";
 import Divider from "../component/Divider";
 import Paragraph from "../component/Paragraph";
 import Card from "../component/Card";
-import backgroundImage from "../images/background.jpg";
 import vue from "../images/vue-js-icon.svg";
 import angular from "../images/angular-icon.svg";
 import react from "../images/react-js-icon.svg";
@@ -74,9 +73,8 @@ function Projects() {
   return (
     <>
       <div className="project-wrapper container px-0">
-        {/* <img className="background" src={backgroundImage} alt="" /> */}
         <Heading text={`<🤸${t("My Personal Projects")} / >`} />
-        <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} />
+        {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}
         <Divider />
         <div className="col"></div>
         <HeadH2 text={t("Filter projects by frameworks & types")} />
@@ -133,7 +131,7 @@ function Projects() {
                     pageLink={`/projects/${item.title}`}
                     showBtn={true}
                     primeBtnText={t("More Details")}
-                    secBtnText={`🤠 ${t("Click for more details")} `}
+                    secBtnText={`${t("Click for more details")} `}
                   />
                 </div>
               );

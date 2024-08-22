@@ -2,6 +2,7 @@ import { useState } from "react";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import headShot from "../images/avatar_headShot.png";
 
 function Card({
   img,
@@ -46,9 +47,11 @@ function Card({
           </div>
         )}
         <div className="card-body pb-0">
-          <h5 className="card-title text-dark d-flex align-items-center">
+          <h5 className="card-title text-dark d-flex align-items-center mb-4">
             <span className={type === "general" ? "inline me-1" : "d-none"}>
-              <div className="dot"></div>
+              <div className="dot">
+                <img src={headShot} alt="head-shot avatar" />
+              </div>
             </span>
             {title}
           </h5>

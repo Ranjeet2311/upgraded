@@ -73,7 +73,7 @@ const skillsData = [
   },
   {
     id: 13,
-    img: "images/skillPics/express-js-icon.png",
+    img: "images/skillPics/express-js-icon.svg",
     title: "Express Js",
     end: "backend",
   },

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Logo from "../images/new-logo.jpg";
+import Logo from "../images/new-logo.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
@@ -59,7 +59,7 @@ function Navbar() {
                     }}
                     to={link.url}
                     exact
-                    activeclassname="active"
+                    activeClassName="active"
                   >
                     {t(link.name)}
                   </NavLink>

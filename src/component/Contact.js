@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import { useTranslation } from "react-i18next";
 
-function Contact({ children, download }) {
+function Contact({ children }) {
   function download() {
     const link = document.createElement("a");
     link.download = `CV_Ranjeet_Kumar.pdf`;

@@ -48,15 +48,36 @@
   );
 }
 
+.top-section {
+  // background-image: url(../images/layered-waves-second.svg);
+  border-radius: 0 0 12px 12px;
+}
+
 .roaming-img {
-  // width: 400px;
-  img {
-    width: 100% !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .blue-sphere {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    // background-image: url(../images/blob.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    // filter: drop-shadow(0 0 80px #000ce8aa);
+    background-size: contain;
+    animation: move 5s infinite; /* 2 seconds duration, infinite loop */
+    transition: transform 0.8s ease-in; /* Smooth transition */
+  }
+  .profile-pic {
     cursor: pointer;
-    height: 300px;
+    height: auto;
+    width: 300px !important;
     object-fit: cover;
-    border: 1px solid white;
-    border-radius: 12px;
+    position: absolute;
+    top: 120px;
+    // filter: drop-shadow(0 0 80px #000ce8aa);
 
     @include at-900px {
       // border-radius: 50%;
@@ -64,20 +85,46 @@
       width: 400px;
       margin: 10px auto 20px;
       display: block;
+      top: 30px;
     }
     @include for-tablet-portrait-up() {
-      height: 200px;
+      height: auto;
       width: 200px;
       margin: 10px auto 10px;
+      top: 120px;
     }
 
     &:hover {
-      transform: scale(1.1);
-      transition: all 0.4s ease-in-out;
-
       @include at-900px {
         transform: scale(1);
       }
     }
+  }
+}
+
+@keyframes move {
+  0%,
+  10% {
+    transform: translateX(0);
+    background-image: url(../images/blob.svg);
+    filter: drop-shadow(0 0 80px #000ce8aa);
+  }
+  25% {
+    transform: translate(10px, 10px), rotate(45deg);
+  }
+  50% {
+    transform: translate(10px, 10px);
+    transform: scale(1.1);
+    background-image: url(../images/blob-another.svg);
+    filter: drop-shadow(0 0 80px #000ce8aa);
+  }
+  75% {
+    transform: translate(-10px, -10px), rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0);
+    transform: scale(1);
+    background-image: url(../images/blob-another.svg);
+    filter: drop-shadow(0 0 80px #000ce8aa);
   }
 }

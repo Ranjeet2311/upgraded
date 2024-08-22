@@ -3,9 +3,9 @@ import Heading from "../component/Heading";
 import Paragraph from "../component/Paragraph";
 import { experienceData } from "../data/experienceList";
 import ExperienceBlock from "../component/ExperienceBlock";
-import backgroundImage from "../images/background.jpg";
-import greetingHI from "../images/avatar-second.png";
-import greetingNamaste from "../images/avatar-first.png";
+// import backgroundImage from "../images/background.jpg";
+// import greetingHI from "../images/avatar-second.png";
+// import greetingNamaste from "../images/avatar-first.png";
 import Accordian from "../component/Accordian";
 import Contact from "../component/Contact";
 import StaticModal from "../component/StaticModal";
@@ -14,6 +14,9 @@ import Divider from "../component/Divider";
 import MultiCarousel from "../component/MultiCarousel";
 import { maxOneSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
+// import Crousel from "../component/Crousel";
+// import { sliderImages } from "../data/experienceList";
+import berlinPic from "../images/werdev.jpg";
 
 function Experience() {
   const [image, setImage] = useState(false);
@@ -25,15 +28,17 @@ function Experience() {
 
   return (
     <div className="container">
-      {/* <img className="background" src={backgroundImage} alt="" /> */}
       <Heading text={`<⚙️${t("Experience")} / >`} />
       <Divider />
       <div
-        className="row mb-4 mt-4 justify-content-center align-items-center"
+        className="row mb-4 mt-4 justify-content-center"
         onMouseEnter={imageChangeHandler}
       >
-        <div className="col-12 col-lg-4 experience-img left-side">
-          {image ? (
+        <div className="col-12 col-lg-4 left-side">
+          <img src={berlinPic} alt="we are devs berlin" />
+          <p>Place: "We're Dev Conference, Berlin"</p>
+          {/* <Crousel data={sliderImages} /> */}
+          {/* {image ? (
             <img
               src={greetingHI}
               alt="Greeting-Avatar"
@@ -47,7 +52,7 @@ function Experience() {
               className="rounded-circle experience"
               loading="lazy"
             />
-          )}
+          )} */}
         </div>
         <div className="col-12 col-lg-8 mt-4 mt-lg-0 experience">
           <Paragraph text={t("experienceDetails")} />
