@@ -55,7 +55,10 @@ function Experience() {
           )} */}
         </div>
         <div className="col-12 col-lg-8 mt-4 mt-lg-0 experience">
-          <Paragraph text={t("experienceDetails")} />
+          <Paragraph text={t("experienceDetails.one")} />
+          <Paragraph text={t("experienceDetails.two")} />
+          <Paragraph text={t("experienceDetails.three")} />
+          <Paragraph text={t("experienceDetails.four")} />
         </div>
       </div>
       <div className="row d align-items-center">

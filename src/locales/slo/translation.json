@@ -113,7 +113,12 @@
     "Apr 2013 - 2014": "Apr 2013 - 2014",
     "Activities & Responsibilities": "Dejavnosti in odgovornosti",
     "Used tech stack": "Rabljeni tehnični sklad",
-    "experienceDetails": "Kot inženir programske opreme za razvijalce sprednjega dela sem navdušen nad ustvarjanjem brezhibnih uporabniških izkušenj in gradnjo inovativnih spletnih aplikacij. Z ostrim očesom za oblikovanje in močnimi temelji na HTML, CSS in JavaScript mi ​​uspeva prevajanje kreativnih konceptov v funkcionalne in odzivne vmesnike. Moje izkušnje segajo do uporabe sodobnih frontend okvirov, kot so React.js, Vue.js in Angular, za razvoj dinamičnih in razširljivih rešitev. Zavezan sem k nenehnemu izpopolnjevanju svojih veščin in spremljanju najnovejših trendov v panogi, da zagotovim visokokakovostno programsko opremo, ki ne le izpolnjuje, ampak tudi presega pričakovanja uporabnikov. S sodelovalno miselnostjo in željo po odličnosti sem predan prispevanju k uspehu vsakega projekta, ki se ga lotim, pri čemer v ospredje postavljam ustvarjalnost, inovativnost in tehnično strokovno znanje.",
+    "experienceDetails": {
+      "one": "Z več kot 7,5 leti poklicnih izkušenj sem izpopolnil svoje veščine pri gradnji in optimizaciji spletnih aplikacij z uporabo najsodobnejših tehnologij, kot so React, Vue, Angular, Express.js, PostgreSQL in druge. Moja kariera je vključevala tako samostojno freelancing delo kot tudi sodelovanje v podjetjih, kar mi omogoča, da v svoje delo vnesem vsestranski pristop.",
+      "two": "Kot Freelancer sem upravljal celotne življenjske cikle projektov, od začetne zasnove do končne izvedbe, pri čemer sem dosledno izpolnjeval pričakovanja strank in dosegal merljive rezultate. Moje delo je vključevalo razvoj in optimizacijo SEO-prijaznih spletnih strani in aplikacij, da bi zagotovili njihovo učinkovito delovanje v iskalnih rezultatih.",
+      "three": "V korporativnih okoljih sem tesno sodeloval z inženirskimi ekipami pri razvoju in izboljšanju B2B portalov ter drugih projektov z velikim vplivom. Moj prispevek je segal na različne nacionalne in evropske pobude, kjer sem imel ključno vlogo pri zagotavljanju uspeha projektov z mojo tehnično strokovnostjo in predanostjo kakovosti.",
+      "four": "Kot samostojni svetovalec sem uspešno izvedel projekte, ki niso le izpolnili, ampak celo presegli cilje strank, zlasti pri ustvarjanju skalabilnih, vzdržljivih in visokozmogljivih spletnih aplikacij."
+    },
 
     "Music Wallets (vue 3)": "Glasbene denarnice (vue 3)",
     "Group Chat (vue 3)": "Skupinski klepet (vue 3)",

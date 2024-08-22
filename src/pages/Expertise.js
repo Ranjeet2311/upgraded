@@ -86,7 +86,7 @@ function Expertise() {
       </Box>
       <div>
         <HeadH2 text={t(label).toUpperCase()} />
-        <div className="skillBox experience">
+        <div className="skillBox experience py-4">
           {filteredSkills &&
             filteredSkills.map((item) => {
               return (

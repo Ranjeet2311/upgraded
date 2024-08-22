@@ -113,8 +113,12 @@
     "Apr 2013 - 2014": "April 2013 – 2014",
     "Activities & Responsibilities": "Aktivitäten und Verantwortlichkeiten",
     "Used tech stack": "Gebrauchter Tech-Stack",
-    "experienceDetails": "Als Softwareentwickler für Frontend-Entwickler liegt mir die Gestaltung nahtloser Benutzererlebnisse und die Entwicklung innovativer Webanwendungen am Herzen. Mit einem ausgeprägten Gespür für Design und fundierten Kenntnissen in HTML, CSS und JavaScript genieße ich die Umsetzung kreativer Konzepte in funktionale und reaktionsfähige Oberflächen. Meine Erfahrung erstreckt sich auf die Nutzung moderner Frontend-Frameworks wie React.js, Vue.js und Angular, um dynamische und skalierbare Lösungen zu entwickeln. Ich bin bestrebt, meine Fähigkeiten kontinuierlich zu verbessern und über die neuesten Branchentrends auf dem Laufenden zu bleiben, um qualitativ hochwertige Software zu liefern, die die Erwartungen der Benutzer nicht nur erfüllt, sondern übertrifft. Mit einer kollaborativen Denkweise und einem Streben nach Exzellenz setze ich mich dafür ein, zum Erfolg jedes meiner Projekte beizutragen und dabei Kreativität, Innovation und technisches Fachwissen in den Vordergrund zu stellen.",
-
+    "experienceDetails": {
+      "one": "Mit über 7,5 Jahren Berufserfahrung habe ich meine Fähigkeiten im Aufbau und in der Optimierung von Webanwendungen mit modernen Technologien wie React, Vue, Angular, Express.js, PostgreSQL und mehr verfeinert. Meine Karriere umfasst sowohl unabhängige freiberufliche Tätigkeiten als auch kollaborative Rollen in Unternehmen, was es mir ermöglicht, einen vielseitigen Ansatz in meine Arbeit einzubringen.",
+      "two": "Als Freelancer habe ich komplette Projektlebenszyklen von der ersten Konzeptidee bis zur finalen Auslieferung verwaltet, dabei stets die Erwartungen der Kunden erfüllt und messbare Ergebnisse geliefert. Meine Arbeit umfasste die Entwicklung und Optimierung von SEO-freundlichen Websites und Anwendungen, um sicherzustellen, dass sie in den Suchmaschinenrankings effektiv performen.",
+      "three": "In Unternehmensumgebungen habe ich eng mit Engineering-Teams zusammengearbeitet, um B2B-Portale und andere wirkungsvolle Projekte zu entwickeln und zu verbessern. Meine Beiträge haben sich auf verschiedene nationale und europäische Initiativen erstreckt, bei denen ich eine Schlüsselrolle bei der Sicherstellung des Projekterfolgs durch meine technische Expertise und mein Qualitätsbewusstsein gespielt habe.",
+      "four": "Als unabhängiger Berater habe ich Projekte erfolgreich durchgeführt, die nicht nur die Ziele der Kunden erreicht, sondern diese sogar übertroffen haben, insbesondere bei der Schaffung skalierbarer, wartungsfreundlicher und leistungsstarker Webanwendungen."
+    },
     "Music Wallets (vue 3)": "Musik-Wallets (vue 3)",
     "Group Chat (vue 3)": "Gruppenchat (vue 3)",
     "Github Repo browser (Angular)": "Github Repo-Browser (Angular)",
