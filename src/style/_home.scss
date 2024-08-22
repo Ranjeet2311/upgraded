@@ -103,25 +103,36 @@
 }
 
 @keyframes move {
-  0%,
+  0% {
+    opacity: 0.8;
+    background-image: url(../images/blob.svg);
+    filter: drop-shadow(0 0 80px #000ce8aa);
+  }
   10% {
+    opacity: 1;
     transform: translateX(0);
     background-image: url(../images/blob.svg);
     filter: drop-shadow(0 0 80px #000ce8aa);
   }
   25% {
+    opacity: 0.7;
     transform: translate(10px, 10px), rotate(45deg);
+    background-image: url(../images/blob-one.svg);
   }
   50% {
+    opacity: 0.9;
     transform: translate(10px, 10px);
     transform: scale(1.1);
     background-image: url(../images/blob-another.svg);
     filter: drop-shadow(0 0 80px #000ce8aa);
   }
   75% {
+    opacity: 0.6;
     transform: translate(-10px, -10px), rotate(0deg);
+    background-image: url(../images/blob-one.svg);
   }
   100% {
+    opacity: 1;
     transform: translate(0, 0);
     transform: scale(1);
     background-image: url(../images/blob-another.svg);

@@ -199,6 +199,13 @@ const workWithMe = [
     pageLink: "expertise",
   },
   {
+    title: "Experiences",
+    desc: [
+      "- A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.",
+    ],
+    pageLink: "/experience",
+  },
+  {
     title: "Soft Skills",
     desc: [
       "- Strong problem-solving abilities.",
@@ -216,13 +223,6 @@ const workWithMe = [
       "- Web performance optimization.",
       "- Cross-browser testing & Web animations.",
       "- Ability to troubleshoot and resolve issues efficiently.",
-    ],
-    pageLink: "/experience",
-  },
-  {
-    title: "Experiences",
-    desc: [
-      "- A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.",
     ],
     pageLink: "/experience",
   },

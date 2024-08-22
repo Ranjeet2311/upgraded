@@ -2,6 +2,7 @@ import TextsmsIcon from "@mui/icons-material/Textsms";
 import "../style/modal.scss";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
+import capAvatar from "../images/cap_headShot.png";
 
 function StaticModal({ title, children }) {
   const { t } = useTranslation();
@@ -28,6 +29,9 @@ function StaticModal({ title, children }) {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
+                <div className="dot me-3">
+                  <img src={capAvatar} alt="head-shot avatar" />
+                </div>
                 <h1 className="modal-title fs-5" id="staticBackdropLabel">
                   {title}
                 </h1>

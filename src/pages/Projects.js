@@ -78,7 +78,7 @@ function Projects() {
         <Divider />
         <div className="col"></div>
         <HeadH2 text={t("Filter projects by frameworks & types")} />
-        <Box className="experience mt-2">
+        <Box className="experience mt-4 pt-2">
           <Tabs
             variant="scrollable"
             scrollButtons="auto"

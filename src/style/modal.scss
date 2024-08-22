@@ -1,18 +1,9 @@
 .modal-content {
-  // background: linear-gradient(
-  //   45deg,
-  //   rgba(188, 62, 174, 1) 30%,
-  //   rgb(72, 50, 133, 1) 70%
-  // ) !important;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border: 1px solid white !important;
+  background: #000000 !important;
+  border: 1px solid black;
   border-radius: 12px !important;
-  // box-shadow: 0px 0px 26px #646cffaa;
-  filter: drop-shadow(0 0 80px #000ce8aa);
+  box-shadow: 0px 0px 26px #000ce8aa;
+  background-clip: inherit;
 
   .form-label {
     color: white;
