@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.53a9a19c.css",
-    "main.js": "/upgraded/static/js/main.fdaa1059.js",
+    "main.css": "/upgraded/static/css/main.b60252d3.css",
+    "main.js": "/upgraded/static/js/main.a95a22dd.js",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
     "static/media/home_pic.png": "/upgraded/static/media/home_pic.868d0e884a1b537ee4a2.png",
+    "static/media/cap_headShot.png": "/upgraded/static/media/cap_headShot.c903e7b12db62ce54bb1.png",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/javascript-icon.png": "/upgraded/static/media/javascript-icon.2eb13d122657c30d561a.png",
@@ -22,16 +23,17 @@
     "static/media/angle-circle-arrow-up-icon.svg": "/upgraded/static/media/angle-circle-arrow-up-icon.3aa96e478bcbe5516990.svg",
     "static/media/angle-circle-arrow-down-icon.svg": "/upgraded/static/media/angle-circle-arrow-down-icon.4d726fba4a328d3e3e92.svg",
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
-    "static/media/blob.svg": "/upgraded/static/media/blob.eb39d91118152da8f88e.svg",
     "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "static/media/blob-another.svg": "/upgraded/static/media/blob-another.e45594fa1fd9ac4da75e.svg",
+    "static/media/blob.svg": "/upgraded/static/media/blob.1bfe7afa2b0668781c67.svg",
+    "static/media/blob-another.svg": "/upgraded/static/media/blob-another.036f485d1c90fc8ae57c.svg",
+    "static/media/blob-one.svg": "/upgraded/static/media/blob-one.b265476e2d7390019522.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.53a9a19c.css.map": "/upgraded/static/css/main.53a9a19c.css.map",
-    "main.fdaa1059.js.map": "/upgraded/static/js/main.fdaa1059.js.map"
+    "main.b60252d3.css.map": "/upgraded/static/css/main.b60252d3.css.map",
+    "main.a95a22dd.js.map": "/upgraded/static/js/main.a95a22dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.53a9a19c.css",
-    "static/js/main.fdaa1059.js"
+    "static/css/main.b60252d3.css",
+    "static/js/main.a95a22dd.js"
   ]
 }
