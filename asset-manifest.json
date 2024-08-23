@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.b60252d3.css",
+    "main.css": "/upgraded/static/css/main.6295b2d8.css",
     "main.js": "/upgraded/static/js/main.a95a22dd.js",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
@@ -25,15 +25,15 @@
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
     "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "static/media/blob.svg": "/upgraded/static/media/blob.1bfe7afa2b0668781c67.svg",
-    "static/media/blob-another.svg": "/upgraded/static/media/blob-another.036f485d1c90fc8ae57c.svg",
-    "static/media/blob-one.svg": "/upgraded/static/media/blob-one.b265476e2d7390019522.svg",
+    "static/media/blob.svg": "/upgraded/static/media/blob.54b6437ca41141785513.svg",
+    "static/media/blob-one.svg": "/upgraded/static/media/blob-one.ac5fc3ce9fc1c932e4c1.svg",
+    "static/media/blob-another.svg": "/upgraded/static/media/blob-another.46837f99c4cceb0c7457.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.b60252d3.css.map": "/upgraded/static/css/main.b60252d3.css.map",
+    "main.6295b2d8.css.map": "/upgraded/static/css/main.6295b2d8.css.map",
     "main.a95a22dd.js.map": "/upgraded/static/js/main.a95a22dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b60252d3.css",
+    "static/css/main.6295b2d8.css",
     "static/js/main.a95a22dd.js"
   ]
 }
