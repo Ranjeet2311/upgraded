@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.6295b2d8.css",
-    "main.js": "/upgraded/static/js/main.a95a22dd.js",
+    "main.css": "/upgraded/static/css/main.83dd0d53.css",
+    "main.js": "/upgraded/static/js/main.acb1d093.js",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
     "static/media/home_pic.png": "/upgraded/static/media/home_pic.868d0e884a1b537ee4a2.png",
@@ -29,11 +29,11 @@
     "static/media/blob-one.svg": "/upgraded/static/media/blob-one.ac5fc3ce9fc1c932e4c1.svg",
     "static/media/blob-another.svg": "/upgraded/static/media/blob-another.46837f99c4cceb0c7457.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.6295b2d8.css.map": "/upgraded/static/css/main.6295b2d8.css.map",
-    "main.a95a22dd.js.map": "/upgraded/static/js/main.a95a22dd.js.map"
+    "main.83dd0d53.css.map": "/upgraded/static/css/main.83dd0d53.css.map",
+    "main.acb1d093.js.map": "/upgraded/static/js/main.acb1d093.js.map"
   },
   "entrypoints": [
-    "static/css/main.6295b2d8.css",
-    "static/js/main.a95a22dd.js"
+    "static/css/main.83dd0d53.css",
+    "static/js/main.acb1d093.js"
   ]
 }
