@@ -15,7 +15,7 @@ const menuLinks = [
   { name: "Home", url: "/" },
   { name: "Expertise", url: "/expertise" },
   { name: "Experience", url: "/experience" },
-  { name: "Projects", url: "/projects" },
+  { name: "Repositories", url: "/repositories" },
 ];
 
 const navIconStyle = {

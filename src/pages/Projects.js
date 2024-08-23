@@ -29,7 +29,7 @@ const tabs = [
   { title: "Templates", ref: "template", imgSrc: template },
 ];
 
-function Projects() {
+function Repositories() {
   const [value, setValue] = useState(0);
 
   const { filteredProjects, tabValue } = useSelector((state) => state.projects);
@@ -77,7 +77,7 @@ function Projects() {
         {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}
         <Divider />
         <div className="col"></div>
-        <HeadH2 text={t("Filter projects by frameworks & types")} />
+        {/* <HeadH2 text={t("Filter projects by frameworks & types")} /> */}
         <Box className="experience mt-2">
           <Tabs
             variant="scrollable"
@@ -142,7 +142,7 @@ function Projects() {
                     tags={item.tags}
                     description={item.description}
                     createdAt={item.createdAt}
-                    pageLink={`/projects/${item.title}`}
+                    pageLink={`/repositories/${item.title}`}
                     showBtn={true}
                     primeBtnText={t("More Details")}
                     secBtnText={`${t("Click for more details")} `}
@@ -166,4 +166,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Repositories;

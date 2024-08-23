@@ -168,7 +168,7 @@ function ProjectDetails() {
                 tags={slide.tags}
                 description={slide.description}
                 createdAt={slide.createdAt}
-                pageLink={`/projects/${slide.title}`}
+                pageLink={`/repositories/${slide.title}`}
                 showBtn={true}
                 primeBtnText={t("More Details")}
                 secBtnText={`🤠 ${t("Click for more details")} `}
