@@ -77,7 +77,7 @@ function LanguageSwitch() {
                     alt="lan.lang"
                     loading="lazy"
                   />
-                  {lan.lang}
+                  <span className="lang-text">{lan.lang}</span>
                 </MenuItem>
               );
             })}

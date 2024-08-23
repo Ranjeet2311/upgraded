@@ -78,7 +78,7 @@ function Projects() {
         <Divider />
         <div className="col"></div>
         <HeadH2 text={t("Filter projects by frameworks & types")} />
-        <Box className="experience mt-4 pt-2">
+        <Box className="experience mt-2">
           <Tabs
             variant="scrollable"
             scrollButtons="auto"
@@ -114,11 +114,25 @@ function Projects() {
               })}
           </Tabs>
         </Box>
+        <p className="m-auto mt-2">
+          {t("Now displaying list of")}
+          <strong className="mx-1 megenta">"{tabValue.toUpperCase()}"</strong>
+          {t("repositories, for more repositories checkout my")}
+          <span className="ms-1">
+            <a
+              href="https://github.com/Ranjeet2311"
+              className="megenta"
+              target="blank"
+            >
+              github
+            </a>
+          </span>
+        </p>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
           {filteredProjects &&
             filteredProjects.map((item, index) => {
               return (
-                <div className="col-12 col-md-6 col-lg-4" key={index}>
+                <div className="col-12 col-md-6 col-lg-3" key={index}>
                   <Card
                     key={index}
                     img={item.img}
@@ -132,6 +146,7 @@ function Projects() {
                     showBtn={true}
                     primeBtnText={t("More Details")}
                     secBtnText={`${t("Click for more details")} `}
+                    type="project"
                   />
                 </div>
               );

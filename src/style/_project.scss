@@ -13,8 +13,34 @@
 
     &:hover {
       background: rgba(0, 12, 232, 0.4) !important;
+      // .stack-pill {
+      //   border: 1px solid black;
+      // }
+    }
+    .card-body {
+      padding: 14px 10px 8px;
+      .card-title {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .created {
+        font-family: $baseFont !important;
+      }
+      .description {
+        font-size: 12px !important;
+      }
       .stack-pill {
-        border: 1px solid black;
+        font-size: 10px !important;
+      }
+      // .card-stack {
+      //   margin-bottom: 0 !important;
+      // }
+    }
+    .card-footer {
+      padding: 0px 10px;
+      .btn {
+        font-size: 12px !important;
+        // margin: 0;
       }
     }
   }

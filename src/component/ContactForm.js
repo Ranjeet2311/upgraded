@@ -33,7 +33,7 @@ function ContactForm() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div className="mb-3">
+        <div className="mb-2">
           <div className="row">
             <div className="col">
               <label htmlFor="exampleFormControlInput1" className="form-label">
@@ -63,7 +63,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             {t("Contact number")}
           </label>
@@ -75,7 +75,7 @@ function ContactForm() {
             name="contact"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             {t("Your email address")} *
           </label>
@@ -88,7 +88,7 @@ function ContactForm() {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             {t("Subject")} *
           </label>
@@ -112,7 +112,7 @@ function ContactForm() {
             name="textarea"
           ></textarea>
         </div>
-        <div className="mb-3">
+        <div className="mb-0">
           <button
             type="submit"
             className="btn btn-bg w-100 border-0 text-white"
@@ -121,7 +121,7 @@ function ContactForm() {
           </button>
         </div>
       </form>
-      <h5>
+      <h5 className="mt-2">
         <span className="text-white h6">{result}</span>
       </h5>
     </div>

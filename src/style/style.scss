@@ -48,8 +48,8 @@ body {
   }
 
   .heading {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 38px;
     font-weight: 700;
     font-family: $headFont !important;
     text-shadow: 1px 1px 2px black;
@@ -63,7 +63,7 @@ body {
 }
 // ------H1 Component --------
 h1 {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 62px;
   font-weight: 700;
   font-family: $headFont !important;
@@ -80,6 +80,7 @@ h1 {
 h2,
 h3,
 h4 h5 {
+  font-size: 26px;
   color: $white !important;
   span {
     margin-right: 5px !important;
@@ -87,14 +88,14 @@ h4 h5 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   padding: 0.2rem 0;
   margin: 0.2rem 0rem;
   color: $white;
 
   @include for-tablet-portrait-up() {
-    font-size: 1rem !important;
+    font-size: 14px !important;
   }
 }
 button,
@@ -382,7 +383,7 @@ button {
     }
 
     .img-wrap {
-      height: 220px;
+      height: 160px;
       overflow: hidden;
       img {
         object-fit: cover !important;
@@ -404,7 +405,7 @@ button {
 
     .card-stack {
       // max-height: 80px;
-      margin: 12px 0 12px;
+      margin: 6px 0 6px;
       // overflow-y: scroll;
       // overflow-x: hidden;
       // padding-bottom: 15px;
@@ -656,4 +657,11 @@ button {
 .MuiTabs-indicator {
   background-color: rgba(188, 62, 174, 1) !important;
   height: 4px !important;
+}
+
+.megenta {
+  // color: rgba(188, 62, 174, 1);
+  background: linear-gradient(to left, #f7f4f4, #ec38bc, #f7f4f4);
+  -webkit-background-clip: text;
+  color: transparent;
 }

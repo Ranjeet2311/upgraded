@@ -20,7 +20,7 @@ function Home() {
       <div className="row align-items-center top-section">
         <div className="col-12 col-lg-4 roaming-img">
           <div className="blue-sphere"></div>
-          <img src={profilePic} alt="" srcset="" className="profile-pic" />
+          <img src={profilePic} alt="profilepic" className="profile-pic" />
         </div>
         <div className="col-12 col-lg-8 right pe-lg-0">
           <HeadH1 text={t("home.greeting")} />
