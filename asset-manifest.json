@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.8ed34db7.css",
-    "main.js": "/upgraded/static/js/main.806ccd58.js",
-    "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
+    "main.css": "/upgraded/static/css/main.34a5e8ea.css",
+    "main.js": "/upgraded/static/js/main.5120ce73.js",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
     "static/media/cap_headShot.png": "/upgraded/static/media/cap_headShot.c903e7b12db62ce54bb1.png",
     "static/media/background.jpg": "/upgraded/static/media/background.e679025811e411bb1bb2.jpg",
@@ -10,9 +9,11 @@
     "static/media/javascript-icon.png": "/upgraded/static/media/javascript-icon.2eb13d122657c30d561a.png",
     "static/media/new-logo.png": "/upgraded/static/media/new-logo.f0318f88e1b99d7c20d4.png",
     "static/media/avatar_headShot.png": "/upgraded/static/media/avatar_headShot.85f06829f8c3d356e8f9.png",
+    "static/media/coder.svg": "/upgraded/static/media/coder.51e900cd0bf217aaf21ad2a1815bb164.svg",
     "static/media/vr.svg": "/upgraded/static/media/vr.241803735812a4ae994a77e8536720b5.svg",
     "static/media/revicons.eot": "/upgraded/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/upgraded/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/Launch.svg": "/upgraded/static/media/Launch.4bf4462ef12de491f7568cb6d4e28727.svg",
     "static/media/revicons.woff": "/upgraded/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/all-icon.svg": "/upgraded/static/media/all-icon.5eac64278842a86f7eb72d82aa923773.svg",
     "static/media/react-js-icon.svg": "/upgraded/static/media/react-js-icon.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
@@ -26,11 +27,11 @@
     "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.8ed34db7.css.map": "/upgraded/static/css/main.8ed34db7.css.map",
-    "main.806ccd58.js.map": "/upgraded/static/js/main.806ccd58.js.map"
+    "main.34a5e8ea.css.map": "/upgraded/static/css/main.34a5e8ea.css.map",
+    "main.5120ce73.js.map": "/upgraded/static/js/main.5120ce73.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ed34db7.css",
-    "static/js/main.806ccd58.js"
+    "static/css/main.34a5e8ea.css",
+    "static/js/main.5120ce73.js"
   ]
 }
