@@ -12,6 +12,7 @@ import StaticModal from "../component/StaticModal";
 import ContactForm from "../component/ContactForm";
 import { Tabs, Tab, Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import coder from "../images/coder.svg";
 
 function Expertise() {
   const [value, setValue] = useState(0);
@@ -54,60 +55,69 @@ function Expertise() {
 
   return (
     <div className="text-center container px-0">
-      {/* <img className="background" src={backgroundImage} alt="" /> */}
-      <Heading text={`<🛡️${t("My tech stack")} / >`} />
-      <Divider />
-      <Box className="experience my-4 d-flex justify-content-center align-items-center">
-        <Tabs
-          variant="scrollable"
-          scrollButtons="auto"
-          allowScrollButtonsMobile
-          value={value}
-          onChange={tabChangeHandle}
-          indicatorColor="primary"
-          aria-label="scrollable force tabs example"
-        >
-          {techCategory &&
-            techCategory.map((item, i) => {
-              return (
-                <Tab
-                  key={i}
-                  label={t(item.title)}
-                  style={{
-                    color: "white",
-                    padding: "10px 10px",
-                    minWidth: "50px",
-                  }}
-                  onClick={() => filterHandler(item.ref)}
-                />
-              );
-            })}
-        </Tabs>
-      </Box>
-      <div>
-        <HeadH2 text={t(label).toUpperCase()} />
-        <div className="skillBox experience py-4">
-          {filteredSkills &&
-            filteredSkills.map((item) => {
-              return (
-                <ImgSm
-                  key={item.id}
-                  image={item.img}
-                  alt={item.title}
-                  name={item.title}
-                />
-              );
-            })}
+      <div className="row align-items-center">
+        <div className="col-12">
+          <Heading text={`<🛡️${t("My tech stack")} / >`} />
+          <Divider />
         </div>
-      </div>
-      <div className="mt-4">
-        <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
-          <Contact>
-            <StaticModal title={t("Sending message to @Ranjeet")}>
-              <ContactForm> </ContactForm>
-            </StaticModal>
-          </Contact>
-        </Accordian>
+        <div className="col-12 col-lg-3 me-lg-4">
+          <img src={coder} alt="coder" className="header-pic" />
+        </div>
+        <div className="col-12 col-lg-7 experience">
+          <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+            <Tabs
+              variant="scrollable"
+              scrollButtons="auto"
+              allowScrollButtonsMobile
+              value={value}
+              onChange={tabChangeHandle}
+              indicatorColor="primary"
+              aria-label="scrollable force tabs example"
+            >
+              {techCategory &&
+                techCategory.map((item, i) => {
+                  return (
+                    <Tab
+                      key={i}
+                      label={t(item.title)}
+                      style={{
+                        color: "white",
+                        padding: "10px 10px",
+                        minWidth: "50px",
+                      }}
+                      onClick={() => filterHandler(item.ref)}
+                    />
+                  );
+                })}
+            </Tabs>
+          </Box>
+          <h2 className="d-flex justify-content-center justify-content-lg-start ps-lg-3">
+            {t(label).toUpperCase()}{" "}
+          </h2>
+          {/* <HeadH2 text={t(label).toUpperCase()} /> */}
+          <div className="skillBox py-1 justify-content-center justify-content-lg-start">
+            {filteredSkills &&
+              filteredSkills.map((item) => {
+                return (
+                  <ImgSm
+                    key={item.id}
+                    image={item.img}
+                    alt={item.title}
+                    name={item.title}
+                  />
+                );
+              })}
+          </div>
+        </div>
+        <div className="mt-4">
+          <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
+            <Contact>
+              <StaticModal title={t("Sending message to @Ranjeet")}>
+                <ContactForm> </ContactForm>
+              </StaticModal>
+            </Contact>
+          </Accordian>
+        </div>
       </div>
     </div>
   );
