@@ -1,11 +1,7 @@
-import React, { useState } from "react";
 import Heading from "../component/Heading";
 import Paragraph from "../component/Paragraph";
 import { experienceData } from "../data/experienceList";
 import ExperienceBlock from "../component/ExperienceBlock";
-// import backgroundImage from "../images/background.jpg";
-// import greetingHI from "../images/avatar-second.png";
-// import greetingNamaste from "../images/avatar-first.png";
 import Accordian from "../component/Accordian";
 import Contact from "../component/Contact";
 import StaticModal from "../component/StaticModal";
@@ -14,45 +10,20 @@ import Divider from "../component/Divider";
 import MultiCarousel from "../component/MultiCarousel";
 import { maxOneSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
-// import Crousel from "../component/Crousel";
-// import { sliderImages } from "../data/experienceList";
-import berlinPic from "../images/werdev.jpg";
+import coder from "../images/coder.svg";
+import launch from "../images/Launch.svg";
+import { sliderImages } from "../data/experienceList";
 
 function Experience() {
-  const [image, setImage] = useState(false);
-
-  function imageChangeHandler() {
-    setImage(!image);
-  }
   const { t } = useTranslation();
 
   return (
-    <div className="container">
+    <div className="container exp_page">
       <Heading text={`<⚙️${t("Experience")} / >`} />
       <Divider />
-      <div
-        className="row mb-4 mt-4 justify-content-center"
-        onMouseEnter={imageChangeHandler}
-      >
+      <div className="row mb-4 mt-4 justify-content-center">
         <div className="col-12 col-lg-4 left-side">
-          <img src={berlinPic} alt="we are devs berlin" />
-          <p>Place: "We're Dev Conference, Berlin"</p>
-          {/* <Crousel data={sliderImages} /> */}
-          {/* {image ? (
-            <img
-              src={greetingHI}
-              alt="Greeting-Avatar"
-              className="rounded-circle experience"
-              loading="lazy"
-            />
-          ) : (
-            <img
-              src={greetingNamaste}
-              alt="Greeting-Avatar"
-              className="rounded-circle experience"
-              loading="lazy"
-            />
-          )} */}
+          <img src={coder} alt="we are devs berlin" className="header-pic " />
         </div>
         <div className="col-12 col-lg-8 mt-4 mt-lg-0 experience">
           <Paragraph text={t("experienceDetails.one")} />
@@ -61,39 +32,74 @@ function Experience() {
           <Paragraph text={t("experienceDetails.four")} />
         </div>
       </div>
-      <div className="row d align-items-center">
-        <MultiCarousel
-          infinite={false}
-          responsive={maxOneSlide}
-          autoPlay={false}
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-          autoPlaySpeed={10000}
-          keyBoardControl={true}
-          customTransition="all 1.5s"
-          transitionDuration={500}
-          minimumTouchDrag={0}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          containerClass="carousel-container mb-4"
-        >
-          {experienceData &&
-            experienceData.map((item) => {
+      <div className="row d align-items-center mt-4 pt-4">
+        <div className="col-12 col-lg-8 order-lg-first">
+          <MultiCarousel
+            infinite={false}
+            responsive={maxOneSlide}
+            autoPlay={false}
+            swipeable={true}
+            draggable={true}
+            showDots={true}
+            autoPlaySpeed={10000}
+            keyBoardControl={true}
+            customTransition="all 1.5s"
+            transitionDuration={500}
+            minimumTouchDrag={0}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            containerClass="carousel-container mb-4"
+          >
+            {experienceData &&
+              experienceData.map((item) => {
+                return (
+                  <div key={item.id}>
+                    <ExperienceBlock
+                      title={item.title}
+                      responsibilities={item.responsibilities}
+                      techs={item.techs}
+                      duration={item.duration}
+                    />
+                  </div>
+                );
+              })}
+          </MultiCarousel>
+        </div>
+        <div className="col-12 col-lg-4 order-first order-lg-last">
+          <img src={launch} alt="we are devs berlin" className="header-pic " />
+        </div>
+      </div>
+      <div className="row mt-4 d-none d-xl-block">
+        <div className="col-12">
+          <Heading text="My experience while travelling" />
+        </div>
+        <div className="col-3 mx-auto mt-2 mt-lg-4 pt-1 pt-lg-2">
+          <MultiCarousel
+            infinite={true}
+            responsive={maxOneSlide}
+            autoPlay={false}
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all 0.5s"
+            transitionDuration={500}
+            minimumTouchDrag={0}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            containerClass="carousel-container mb-4"
+          >
+            {sliderImages.map((image, i) => {
               return (
-                <div className="col-12" key={item.id}>
-                  <ExperienceBlock
-                    title={item.title}
-                    responsibilities={item.responsibilities}
-                    techs={item.techs}
-                    duration={item.duration}
-                  />
+                <div className="image_gallery">
+                  <img src={image.slide} alt="" />
+                  <p className="text-center"> {image.place} </p>
                 </div>
               );
             })}
-        </MultiCarousel>
-      </div>
-      <div className="row">
+          </MultiCarousel>
+        </div>
         <div className="col-12 mt-4 px-0">
           <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
             <Contact>

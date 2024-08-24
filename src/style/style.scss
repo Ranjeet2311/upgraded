@@ -460,13 +460,13 @@ button {
   border: none;
   transition: all 0.8s ease-out;
   background: #03001e;
-  background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc, #000ce8aa);
-  background: linear-gradient(to right, #000ce8aa, #ec38bc, #000ce8aa);
+  background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc);
+  background: linear-gradient(to right, #000ce8aa, #ec38bc);
   transition: all 0.4s ease-in-out;
 
   &:hover {
-    background: -webkit-linear-gradient(to right, #ec38bc, #000ce8aa, #ec38bc);
-    background: linear-gradient(to right, #ec38bc, #000ce8aa, #ec38bc);
+    background: -webkit-linear-gradient(to right, #ec38bc, #000ce8aa);
+    background: linear-gradient(to right, #ec38bc, #000ce8aa);
   }
 }
 

@@ -17,13 +17,25 @@
   }
   .skill_slide {
     overflow: hidden;
+    padding-top: 86px;
+    padding-bottom: 30px;
+    @include at-900px {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+
     .expertise_slide {
       border-radius: 12px 0 0 12px;
-      background-color: white;
+      background-color: #ec38bc;
       font-size: 16px;
-      color: black;
+      color: white;
       font-weight: 800;
       text-align: center;
+      box-shadow: 2px 2px 1cap #ec38bc;
+
+      &:hover {
+        box-shadow: 2px 2px 30px #ec38bc;
+      }
     }
     .react-multi-carousel-list {
       padding-bottom: 0px;

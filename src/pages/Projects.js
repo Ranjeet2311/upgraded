@@ -91,6 +91,7 @@ function Repositories() {
               tabs.map((item) => {
                 return (
                   <Tooltip
+                    placement="bottom"
                     key={item.ref}
                     title={item.title}
                     classes={{
@@ -114,16 +115,12 @@ function Repositories() {
               })}
           </Tabs>
         </Box>
-        <p className="m-auto mt-2">
+        <p className="m-auto mt-2 mt-lg-4 pt-2 pt-lg-4">
           {t("Now displaying list of")}
           <strong className="mx-1 megenta">"{tabValue.toUpperCase()}"</strong>
           {t("repositories, for more repositories checkout my")}
           <span className="ms-1">
-            <a
-              href="https://github.com/Ranjeet2311"
-              className="megenta"
-              target="blank"
-            >
+            <a href="https://github.com/Ranjeet2311" target="blank">
               github
             </a>
           </span>

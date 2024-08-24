@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 function ExperienceBlock({ title, responsibilities, techs, duration }) {
   const { t } = useTranslation();
   return (
-    <div className="mt-4 experience">
+    <div className="mt-4 px-3 py-2">
       <h5
         className="fw-bolder text-decoration-underline"
         style={{ color: "#ffffff" }}

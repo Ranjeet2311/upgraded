@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="row px-2 skill_slide my-4 pt-4 align-items-center">
+      <div className="row px-2 skill_slide align-items-center">
         <div className="col-4 col-md-2 py-3 expertise_slide">My Expertise</div>
         <div className="col-8 col-md-10 pe-0">
           <MultiCarousel
