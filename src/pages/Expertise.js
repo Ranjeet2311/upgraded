@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { filterSkills } from "../store/features/expertiseSlice";
 import Heading from "../component/Heading";
-import HeadH2 from "../component/HeadH2";
 import Divider from "../component/Divider";
 import ImgSm from "../component/ImgSm";
-import backgroundImage from "../images/background.jpg";
 import Contact from "../component/Contact";
 import Accordian from "../component/Accordian";
 import StaticModal from "../component/StaticModal";
 import ContactForm from "../component/ContactForm";
 import { Tabs, Tab, Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import coder from "../images/coder.svg";
 
 function Expertise() {
   const [value, setValue] = useState(0);
@@ -54,59 +51,60 @@ function Expertise() {
   }, [label]);
 
   return (
-    <div className="text-center container px-0">
+    <div className="text-center container px-0 texh_stack">
       <div className="row align-items-center">
         <div className="col-12">
           <Heading text={`<🛡️${t("My tech stack")} / >`} />
           <Divider />
         </div>
-        <div className="col-12 col-lg-3 me-lg-4">
-          <img src={coder} alt="coder" className="header-pic" />
-        </div>
-        <div className="col-12 col-lg-7 experience">
-          <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center">
-            <Tabs
-              variant="scrollable"
-              scrollButtons="auto"
-              allowScrollButtonsMobile
-              value={value}
-              onChange={tabChangeHandle}
-              indicatorColor="primary"
-              aria-label="scrollable force tabs example"
-            >
-              {techCategory &&
-                techCategory.map((item, i) => {
+        <div className="col-12 col-lg-12 experience mt-4">
+          <h2 className="d-flex justify-content-center">
+            {t(label).toUpperCase()}{" "}
+          </h2>
+          <div className="row">
+            <div className="col-12 col-lg-3 h-100">
+              <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center flex-column">
+                <Tabs
+                  orientation="vertical"
+                  variant="scrollable"
+                  scrollButtons="auto"
+                  allowScrollButtonsMobile
+                  value={value}
+                  onChange={tabChangeHandle}
+                  indicatorColor="primary"
+                  aria-label="scrollable force tabs example"
+                >
+                  {techCategory &&
+                    techCategory.map((item, i) => {
+                      return (
+                        <Tab
+                          key={i}
+                          label={t(item.title)}
+                          style={{
+                            color: "white",
+                            padding: "10px 20px 10px 10px",
+                            minWidth: "50px",
+                          }}
+                          onClick={() => filterHandler(item.ref)}
+                        />
+                      );
+                    })}
+                </Tabs>
+              </Box>
+            </div>
+            <div className="col-9 skillBox py-1 justify-content-center justify-content-lg-start">
+              {filteredSkills &&
+                filteredSkills.map((item) => {
                   return (
-                    <Tab
-                      key={i}
-                      label={t(item.title)}
-                      style={{
-                        color: "white",
-                        padding: "10px 10px",
-                        minWidth: "50px",
-                      }}
-                      onClick={() => filterHandler(item.ref)}
+                    <ImgSm
+                      key={item.id}
+                      image={item.img}
+                      alt={item.title}
+                      name={item.title}
                     />
                   );
                 })}
-            </Tabs>
-          </Box>
-          <h2 className="d-flex justify-content-center justify-content-lg-start ps-lg-3">
-            {t(label).toUpperCase()}{" "}
-          </h2>
-          {/* <HeadH2 text={t(label).toUpperCase()} /> */}
-          <div className="skillBox py-1 justify-content-center justify-content-lg-start">
-            {filteredSkills &&
-              filteredSkills.map((item) => {
-                return (
-                  <ImgSm
-                    key={item.id}
-                    image={item.img}
-                    alt={item.title}
-                    name={item.title}
-                  />
-                );
-              })}
+            </div>
           </div>
         </div>
         <div className="mt-4">

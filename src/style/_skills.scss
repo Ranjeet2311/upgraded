@@ -5,6 +5,21 @@
 // background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 // margin-top: 4rem;
 
+.texh_stack {
+  .css-1aquho2-MuiTabs-indicator,
+  .MuiTabs-indicator {
+    background-color: rgba(188, 62, 174, 1) !important;
+    height: 20% !important;
+  }
+
+  .css-lfwcke-MuiTabs-flexContainer {
+    @include at-900px {
+      flex-direction: row !important;
+      overflow-y: scroll;
+    }
+  }
+}
+
 .skillBox {
   margin: 10px auto 26px;
   display: flex;
