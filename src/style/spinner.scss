@@ -1,0 +1,12 @@
+.spinner {
+  height: 300px;
+  position: relative;
+  .spinner-border {
+    width: "8rem";
+    height: "8rem";
+  }
+  .pic {
+    position: absolute;
+    top: 98px;
+  }
+}

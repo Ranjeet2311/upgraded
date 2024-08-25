@@ -663,15 +663,15 @@ button {
   height: 4px !important;
 }
 
-.megenta {
+.magenta {
   // color: rgba(188, 62, 174, 1);
-  background: linear-gradient(to left, #f7f4f4, #ec38bc, #f7f4f4);
+  background: linear-gradient(to left, #f7f4f4, #333cf7aa, #f7f4f4);
   -webkit-background-clip: text;
   color: transparent;
 
   &:hover {
     cursor: pointer;
-    background: linear-gradient(to left, #ec38bc, #f7f4f4, #ec38bc);
+    background: linear-gradient(to left, #333cf7aa, #f7f4f4, #333cf7aa);
     -webkit-background-clip: text;
     color: transparent;
   }

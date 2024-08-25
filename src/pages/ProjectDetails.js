@@ -54,11 +54,11 @@ function ProjectDetails() {
         <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
           <div className="text-center mb-3 d-flex align-items-center btn experience mt-0">
             <ArrowBackIosIcon />
-            <Link className="reverseLinks" to="/projects">
+            <Link className="reverseLinks" to="/repositories">
               {t("Projects")}
             </Link>
             <p className="mx-1">/ </p>
-            <Link className="reverseLinks" to={`/projects/${title}`}>
+            <Link className="reverseLinks" to={`/repositories/${title}`}>
               {t(title)}
             </Link>
           </div>
