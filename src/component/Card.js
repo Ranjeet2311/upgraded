@@ -58,7 +58,7 @@ function Card({
             {title}
           </h5>
           {createdAt && (
-            <p className="created my-0 py-0">
+            <p className="created highlight my-0 py-0">
               <span className="me-2"> {t("Last updated")} :</span>
               <span>
                 {date !== "Invalid date" ? date : "Checkout github for date"}

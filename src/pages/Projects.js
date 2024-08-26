@@ -25,7 +25,7 @@ const tabs = [
   { title: "React", ref: "react", imgSrc: react },
   { title: "Vue", ref: "vue", imgSrc: vue },
   { title: "Angular", ref: "angular", imgSrc: angular },
-  { title: "Fun Apps", ref: "funApp", imgSrc: javaScript },
+  // { title: "Fun Apps", ref: "funApp", imgSrc: javaScript },
   // { title: "Templates", ref: "template", imgSrc: template },
 ];
 
@@ -42,7 +42,7 @@ function Repositories() {
   }
   setTimeout(() => {
     setShowData(true);
-  }, 1000);
+  }, 600);
 
   useEffect(() => {
     switch (tabValue) {
@@ -114,7 +114,7 @@ function Repositories() {
           </Box>
         )}
         {showData && (
-          <p className="m-auto mt-2 mt-lg-4 pt-2 pt-lg-4">
+          <p className="m-auto mt-2 mt-lg-2 pt-2 mb-1 pt-lg-4">
             {t("Now displaying list of")}
             <strong className="mx-1 magenta">"{tabValue.toUpperCase()}"</strong>
             {t("repositories, for more repositories checkout my")}

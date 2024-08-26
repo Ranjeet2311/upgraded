@@ -390,6 +390,7 @@ button {
       overflow: hidden;
       img {
         object-fit: cover !important;
+        height: 100%;
       }
     }
 
@@ -696,4 +697,9 @@ button {
   //     transform: scale(1);
   //   }
   // }
+}
+
+.highlight {
+  font-weight: 800;
+  color: #ec38bc;
 }
