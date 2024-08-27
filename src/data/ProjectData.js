@@ -81,7 +81,7 @@ const projectData = [
     description:
       "This app is a modern restaurant management platform designed to streamline the process of ordering and managing food items online. It features an intuitive user interface where customers can browse through a variety of menu items, add their selections to the cart, and place orders efficiently. The app also integrates various functionalities like filtering food categories, displaying detailed product information, and managing orders, making it an ideal solution for restaurants looking to enhance their online presence and improve customer service.",
     code: "https://github.com/Ranjeet2311/restaurant-app",
-    demo: "https://restaurant-h46zf4so2-ranjeet2311s-projects.vercel.app",
+    demo: "https://spontaneous-horse-117d2d.netlify.app",
   },
   {
     id: 3,

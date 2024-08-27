@@ -25,7 +25,7 @@ function Experience() {
         <div className="col-12 col-lg-4 left-side">
           <img src={coder} alt="we are devs berlin" className="header-pic " />
         </div>
-        <div className="col-12 col-lg-8 mt-4 mt-lg-0 experience">
+        <div className="col-12 col-lg-8 mt-4 mt-lg-0 py-2 px-1 experience">
           <Paragraph text={t("experienceDetails.one")} />
           <Paragraph text={t("experienceDetails.two")} />
           <Paragraph text={t("experienceDetails.three")} />

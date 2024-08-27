@@ -72,7 +72,7 @@ function ProjectDetails() {
             {t("Click on imgae to zoom / shrink")}
           </p>
         </div>
-        <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience pt-0">
+        <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2">
           <Heading className="text-start" text={t(title)} />
           <p>
             {description
@@ -94,7 +94,7 @@ function ProjectDetails() {
                 );
               })}
           </div>
-          <p className="experience w-100 mb-2">
+          <p className="experience w-100 mb-2 ps-3">
             {t("Last updated")} :{" "}
             {createdDate !== "Invalid date"
               ? createdDate
