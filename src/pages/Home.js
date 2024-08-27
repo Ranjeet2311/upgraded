@@ -29,15 +29,15 @@ function Home() {
         </div>
         <div className="col-12 col-lg-8 right pe-lg-0">
           <HeadH1 text={t("home.greeting")} />
-          <div className="experience">
+          <div className="experience py-2">
             <Paragraph text={t("home.description.one")} />
             <Paragraph text={t("home.description.two")} />
             <Paragraph text={t("home.description.three")} />
           </div>
         </div>
       </div>
-      <div className="row px-2 skill_slide align-items-center">
-        <div className="col-4 col-md-2 py-3 expertise_slide">My Expertise</div>
+      <div className="row px-2 skill_slide align-items-center experience">
+        <div className="col-4 col-md-2 expertise_slide">My Expertise</div>
         <div className="col-8 col-md-10 pe-0">
           <MultiCarousel
             infinite={true}
@@ -73,7 +73,7 @@ function Home() {
         <Heading text={`<${t("home.glance")} / >`} />
         <Divider />
       </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mt-4 experience">
+      <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
         {workWithMe &&
           workWithMe.map((item, i) => {
             return (
@@ -95,7 +95,10 @@ function Home() {
         <div className="col-12 mt-4 px-0">
           <Accordian heading={t("Let's Connect")} accordianSelect="homeTwo">
             <Contact>
-              <StaticModal title={t("Sending message to @Ranjeet")}>
+              <StaticModal
+                btnText={t("Message me")}
+                title={t("Sending message to @Ranjeet")}
+              >
                 <ContactForm> </ContactForm>
               </StaticModal>
             </Contact>

@@ -103,7 +103,10 @@ function Experience() {
         <div className="col-12 mt-4 px-0">
           <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
             <Contact>
-              <StaticModal title={t("Sending message to @Ranjeet")}>
+              <StaticModal
+                btnText={t("Message me")}
+                title={t("Sending message to @Ranjeet")}
+              >
                 <ContactForm downloadCv="true"> </ContactForm>
               </StaticModal>
             </Contact>

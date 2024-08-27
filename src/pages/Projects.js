@@ -116,7 +116,7 @@ function Repositories() {
         {showData && (
           <p className="m-auto mt-2 mt-lg-2 pt-2 mb-1 pt-lg-4">
             {t("Now displaying list of")}
-            <strong className="mx-1 magenta">"{tabValue.toUpperCase()}"</strong>
+            <strong className="mx-1">"{tabValue.toUpperCase()}"</strong>
             {t("repositories, for more repositories checkout my")}
             <span className="ms-1">
               <a
@@ -159,7 +159,10 @@ function Repositories() {
       <div className="container mt-4 px-0">
         <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
           <Contact>
-            <StaticModal title={t("Sending message to @Ranjeet")}>
+            <StaticModal
+              btnText={t("Message me")}
+              title={t("Sending message to @Ranjeet")}
+            >
               <ContactForm> </ContactForm>
             </StaticModal>
           </Contact>

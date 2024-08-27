@@ -52,7 +52,7 @@ function ProjectDetails() {
       {/* <img className="background" src={backgroundImage} alt="bg" /> */}
       <div className="row">
         <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
-          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0">
+          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 ps-4">
             <ArrowBackIosIcon />
             <Link className="reverseLinks" to="/repositories">
               {t("Projects")}

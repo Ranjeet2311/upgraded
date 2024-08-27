@@ -1,0 +1,52 @@
+.toggle-wrap {
+  position: relative;
+  top: -12px;
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  label {
+    width: 50px;
+    height: 10px;
+    display: block;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.6s;
+    // box-shadow: 0 0 20px #477a8550;
+    // border: 1px solid white;
+  }
+  label::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #e8f5f7;
+    background-image: url(../images/sun-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 70px;
+    top: -12px;
+    padding: 16px;
+    left: 0px;
+    transition: 0.6s;
+    // border: 1px solid white;
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+  }
+
+  input:checked + label {
+    background-color: rgba(12, 14, 14, 0.4);
+    // border: 1px solid rgb(49, 48, 48);
+    filter: invert(1) !important;
+  }
+
+  label:active:after {
+    width: 20px;
+  }
+}

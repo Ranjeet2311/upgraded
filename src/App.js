@@ -9,10 +9,13 @@ import NotFound from "./pages/NotFound";
 import ProjectDetails from "./pages/ProjectDetails";
 import { initializeAnalytics, trackPageView } from "./analytics";
 import Cookies from "./component/Cookies";
+import { useSelector } from "react-redux";
 
 const TRACKING_ID = "G-X5LNVZ2K4X";
 function App() {
   const [isAnalyticsInitialized, setIsAnalyticsInitialized] = useState(false);
+
+  const { bodyColor } = useSelector((state) => state.switch);
 
   function handleConsent() {
     initializeAnalytics(TRACKING_ID);
@@ -20,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className={!bodyColor ? "app dark-bg" : "app"}>
       <BrowserRouter basename="/upgraded">
         {isAnalyticsInitialized && <TrackPageViews />}
         <Cookies onConsent={handleConsent} />

@@ -1,11 +1,11 @@
 import TextsmsIcon from "@mui/icons-material/Textsms";
 import "../style/modal.scss";
 import { createPortal } from "react-dom";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import capAvatar from "../images/cap_headShot.png";
 
-function StaticModal({ title, children }) {
-  const { t } = useTranslation();
+function StaticModal({ title, btnText, children }) {
+  // const { t } = useTranslation();
   return (
     <div>
       <button
@@ -14,7 +14,7 @@ function StaticModal({ title, children }) {
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        <TextsmsIcon /> {t("Message me")}
+        <TextsmsIcon /> {btnText}
       </button>
       {createPortal(
         <div

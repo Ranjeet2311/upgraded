@@ -57,7 +57,7 @@ function Expertise() {
           <Heading text={`<🛡️${t("My tech stack")} / >`} />
           <Divider />
         </div>
-        <div className="col-12 col-lg-12 experience mt-4">
+        <div className="col-12 col-lg-12 mt-4">
           <h2 className="d-flex justify-content-center">
             {t(label).toUpperCase()}{" "}
           </h2>
@@ -110,7 +110,10 @@ function Expertise() {
         <div className="mt-4">
           <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
             <Contact>
-              <StaticModal title={t("Sending message to @Ranjeet")}>
+              <StaticModal
+                btnText={t("Message me")}
+                title={t("Sending message to @Ranjeet")}
+              >
                 <ContactForm> </ContactForm>
               </StaticModal>
             </Contact>

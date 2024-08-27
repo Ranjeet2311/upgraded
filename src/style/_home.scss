@@ -17,11 +17,13 @@
   }
   .skill_slide {
     overflow: hidden;
-    padding-top: 86px;
-    padding-bottom: 30px;
+    margin-top: 86px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
     @include at-900px {
-      padding-top: 40px;
-      padding-bottom: 0;
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
 
     .expertise_slide {
@@ -32,6 +34,7 @@
       font-weight: 800;
       text-align: center;
       box-shadow: 2px 2px 1cap #ec38bc;
+      padding: 32px 10px;
 
       &:hover {
         box-shadow: 2px 2px 30px #ec38bc;
@@ -61,8 +64,13 @@
         }
         .img-wrap {
           height: 40px;
-          width: 40px;
-          object-fit: cover;
+          width: 80px;
+
+          img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }

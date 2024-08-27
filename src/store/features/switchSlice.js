@@ -1,12 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   showModal: true,
   darkMode: false,
+  bodyColor: true,
 };
 
 export const switchSlice = createSlice({
-  name: 'switch',
+  name: "switch",
   initialState,
   reducers: {
     toggleModal(state, action) {
@@ -15,8 +16,18 @@ export const switchSlice = createSlice({
     toggleDarkMode(state, action) {
       state.darkMode = !state.darkMode;
     },
+
+    bodyColorHandler(state, action) {
+      if (action.payload) {
+        state.bodyColor = true;
+      }
+      if (!action.payload) {
+        state.bodyColor = false;
+      }
+    },
   },
 });
 
-export const { toggleModal, toggleDarkMode } = switchSlice.actions;
+export const { toggleModal, toggleDarkMode, bodyColorHandler } =
+  switchSlice.actions;
 export default switchSlice.reducer;

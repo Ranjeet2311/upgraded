@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -10,6 +10,10 @@ import StaticModal from "./StaticModal";
 import ContactForm from "./ContactForm";
 import LanguageSwitch from "./LanguageSwitch";
 import { useTranslation } from "react-i18next";
+import SwitchToggle from "./SwitchToggle";
+import { useDispatch } from "react-redux";
+import { bodyColorHandler } from "../store/features/switchSlice";
+import { useSelector } from "react-redux";
 
 const menuLinks = [
   { name: "Home", url: "/" },
@@ -28,11 +32,24 @@ const navIconStyle = {
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const [showSwitch, setShowSwitch] = useState(false);
 
   const clickHandler = () => {
     // console.log('Burger Clicked');
     setClicked(!clicked);
   };
+
+  const dispatch = useDispatch();
+  const switchHandle = (e) => {
+    setShowSwitch(!showSwitch);
+    dispatch(bodyColorHandler(e.target.checked));
+  };
+  const { bodyColor } = useSelector((state) => state.switch);
+
+  useEffect(() => {
+    setShowSwitch(bodyColor);
+  }, [bodyColor]);
+
   const { t } = useTranslation();
 
   return (
@@ -67,8 +84,11 @@ function Navbar() {
               );
             })}
             <li>
-              <StaticModal title={t("Sending message to @Ranjeet")}>
-                <ContactForm downloadCv="true"> </ContactForm>
+              <StaticModal
+                btnText={`Connect`}
+                title={t("Sending message to @Ranjeet")}
+              >
+                <ContactForm> </ContactForm>
               </StaticModal>
             </li>
             <li>
@@ -91,6 +111,9 @@ function Navbar() {
             >
               <GitHubIcon />
             </IconButton>
+            <li onChange={switchHandle}>
+              <SwitchToggle checked={showSwitch} />
+            </li>
 
             <div className="d-none d-lg-block">
               <div className="social-icons">
