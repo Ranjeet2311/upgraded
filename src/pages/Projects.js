@@ -79,7 +79,7 @@ function Repositories() {
         <div className="col"></div>
         {/* <HeadH2 text={t("Filter projects by frameworks & types")} /> */}
         {showData && (
-          <Box className="experience mt-2">
+          <Box className="experience mt-2 px-4">
             <Tabs
               variant="scrollable"
               scrollButtons="auto"
@@ -104,7 +104,7 @@ function Repositories() {
                         name={item.ref}
                         label={item.title}
                         icon={<Icon alt="test avatar" img={item.imgSrc} />}
-                        className="tab_label"
+                        className="tab_label mx-1"
                         onClick={() => filterHandler(item.ref)}
                       />
                     </Tooltip>
@@ -114,13 +114,13 @@ function Repositories() {
           </Box>
         )}
         {showData && (
-          <p className="m-auto mt-2 mt-lg-2 pt-2 mb-1 pt-lg-4">
+          <p className="mt-2 mt-lg-2 pt-2 mb-1 pt-lg-4 text-center w-100">
             {t("Now displaying list of")}
             <strong className="mx-1">"{tabValue.toUpperCase()}"</strong>
             {t("repositories, for more repositories checkout my")}
             <span className="ms-1">
               <a
-                className="lead"
+                className="lead bg-white px-2 rounded-1 btn-bg"
                 href="https://github.com/Ranjeet2311"
                 target="blank"
               >
@@ -145,8 +145,8 @@ function Repositories() {
                     createdAt={item.createdAt}
                     pageLink={`/repositories/${item.title}`}
                     showBtn={true}
-                    primeBtnText={t("More Details")}
-                    secBtnText={`${t("Click for more details")} `}
+                    primeBtnText={t("Click for more details")}
+                    secBtnText={`${t("Click for more details")}`}
                     type="project"
                   />
                 </div>

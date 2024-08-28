@@ -28,7 +28,13 @@ function Home() {
           <img src={profilePic} alt="profilepic" className="header-pic" />
         </div>
         <div className="col-12 col-lg-8 right pe-lg-0">
-          <HeadH1 text={t("home.greeting")} />
+          <HeadH1>
+            {t("home.greeting")}{" "}
+            <span className="colored-text cursive ms-2">
+              {" "}
+              {t("home.Ranjeet")}
+            </span>
+          </HeadH1>
           <div className="experience py-2">
             <Paragraph text={t("home.description.one")} />
             <Paragraph text={t("home.description.two")} />
@@ -83,7 +89,7 @@ function Home() {
                   list={item.desc}
                   pageLink={item.pageLink}
                   showBtn={true}
-                  primeBtnText={t("More Details")}
+                  primeBtnText={t("Show more details")}
                   secBtnText={`${t("Show more details")}`}
                   type="general"
                 />

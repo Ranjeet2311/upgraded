@@ -52,13 +52,19 @@ function ProjectDetails() {
       {/* <img className="background" src={backgroundImage} alt="bg" /> */}
       <div className="row">
         <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
-          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 ps-4">
+          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 p-2 w-100">
             <ArrowBackIosIcon />
-            <Link className="reverseLinks" to="/repositories">
+            <Link
+              className="text-decoration-none text-white"
+              to="/repositories"
+            >
               {t("Projects")}
             </Link>
             <p className="mx-1">/ </p>
-            <Link className="reverseLinks" to={`/repositories/${title}`}>
+            <Link
+              className="text-decoration-none text-white"
+              to={`/repositories/${title}`}
+            >
               {t(title)}
             </Link>
           </div>

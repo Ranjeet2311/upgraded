@@ -19,7 +19,8 @@
     "Send": "Send",
 
     "home": {
-      "greeting": "👋 Welcome! I'm Ranjeet",
+      "greeting": "👋 Welcome! I'm",
+      "Ranjeet": "Ranjeet Kumar",
       "description": {
         "one": "I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code. But I'm not just confined to the realm of computers.",
         "two": "A true traveler and explorer at heart I've journeyed across continents, immersing in diverse cultures, and navigating through some of the world’s most breathtaking landscapes. Whether hiking through remote mountain ranges, diving into the depths of the ocean, or exploring bustling urban environments, I bring the same curiosity and problem-solving skills to each new adventure.",

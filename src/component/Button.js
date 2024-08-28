@@ -1,21 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import arrowRight from "../images/arrow-right.svg";
 
-export default function Button({ link, isLInk, to, style, children }) {
+export default function Button({ isLInk, to, style, children, className }) {
+  console.log(`isLInk :: `, isLInk);
+
   if (isLInk) {
-    <Link to={to}>
+    return (
+      <Link
+        to={to}
+        style={{ ...style }}
+        className={`btn inline-block btn-bg px-4 py-1 ${className}`}
+      >
+        {children}
+        <span>
+          <img src={arrowRight} alt="arrow" className="arrow" />
+        </span>
+      </Link>
+    );
+  } else {
+    return (
       <button
-        className="btn inline-block btn-bg px-4 py-2"
+        className={`btn inline-block btn-bg px-4 py-1 ${className}`}
         style={{ ...style }}
       >
         {children}
       </button>
-    </Link>;
-  } else {
-    return (
-      <div className="btn inline-block btn-bg  px-4 py-2" style={{ ...style }}>
-        {children}
-      </div>
     );
   }
 }
