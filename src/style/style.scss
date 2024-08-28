@@ -28,7 +28,17 @@ body {
   .project-wrapper,
   .project-details {
     .card {
-      background: rgba(0, 0, 0, 0.6) !important;
+      background: linear-gradient(to top, #fefefe, #0e2c77, #5b3be9) !important;
+      border: none;
+
+      &:hover {
+        background: linear-gradient(
+          to top,
+          #0e2c77,
+          #5b3be9,
+          #fefefe
+        ) !important;
+      }
     }
   }
 }
@@ -717,5 +727,5 @@ button {
 
 .highlight {
   font-weight: 800;
-  color: #ec38bc;
+  color: #f85cce;
 }
