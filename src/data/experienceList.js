@@ -116,11 +116,18 @@ const sliderImages = [
     slide: "images/slideImages/frankfurt.jpeg",
     place: "Frankfurt, Germany",
   },
+  { slide: "images/slideImages/x1.png", place: "XLAB, Slovenia" },
   { slide: "images/slideImages/werdev.jpg", place: "Berlin, Germany" },
+  {
+    slide: "images/slideImages/munich.jpeg",
+    place: "München, Germany",
+  },
   {
     slide: "images/slideImages/Belgium.jpeg",
     place: "Brussels, Belgium",
   },
+  { slide: "images/slideImages/x2.jpg", place: "XLAB, Slovenia" },
+  { slide: "images/slideImages/x3.jpg", place: "XLAB, Slovenia" },
   { slide: "images/slideImages/france.jpeg", place: "Paris, France" },
   {
     slide: "images/slideImages/venice.jpeg",

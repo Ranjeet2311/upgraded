@@ -655,13 +655,20 @@ button,
     }
   }
 }
+
+.react-multi-carousel-item {
+  justify-content: center !important;
+  display: flex;
+}
 .react-multi-carousel-list {
   padding-bottom: 60px;
   padding-left: 0 !important;
+  // overflow: visible !important;
 
   // li {
   //   margin-right: 5px;
   // }
+
   .react-multi-carousel-dot--active {
     color: #fc3845;
     button {

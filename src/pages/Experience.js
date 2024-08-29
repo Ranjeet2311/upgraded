@@ -8,7 +8,7 @@ import StaticModal from "../component/StaticModal";
 import ContactForm from "../component/ContactForm";
 import Divider from "../component/Divider";
 import MultiCarousel from "../component/MultiCarousel";
-import { maxOneSlide } from "../data/Skills";
+import { maxOneSlide, maxFourSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
 import coder from "../images/coder.svg";
 import launch from "../images/Launch.svg";
@@ -69,19 +69,19 @@ function Experience() {
           <img src={launch} alt="we are devs berlin" className="header-pic " />
         </div>
       </div>
-      <div className="row mt-4 d-none d-xl-block">
+      <div className="row mt-4">
         <div className="col-12">
-          <Heading text="My experience while travelling" />
+          <Heading text="Few Pictures" />
         </div>
-        <div className="col-3 mx-auto mt-2 mt-lg-4 pt-1 pt-lg-2">
+        <div className="col-12 mx-auto mt-2 mt-lg-4 pt-1 pt-lg-2">
           <MultiCarousel
             infinite={true}
-            responsive={maxOneSlide}
-            autoPlay={false}
+            responsive={maxFourSlide}
+            autoPlay={true}
             swipeable={true}
             draggable={true}
             showDots={false}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={2000}
             keyBoardControl={true}
             customTransition="all 0.5s"
             transitionDuration={500}
