@@ -44,7 +44,7 @@ function Cookies({ onConsent }) {
               </div>
               <h6>{t("cookies")}</h6>
               <div className="row mt-4">
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 mt-2">
                   <button
                     onClick={handleConsent}
                     className="btn btn-bg px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
@@ -52,7 +52,7 @@ function Cookies({ onConsent }) {
                     {t("Accept all")}
                   </button>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 mt-2">
                   <button
                     onClick={handleConsent}
                     className="btn btn-bg me-4 px-2 py-1 w-100 w-lg-75 border-0 mx-auto"
