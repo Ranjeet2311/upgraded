@@ -1,6 +1,5 @@
 import { useState } from "react";
 import moment from "moment";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import headShot from "../images/avatar_headShot.png";
 import Button from "./Button";

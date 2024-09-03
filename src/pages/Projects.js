@@ -1,14 +1,11 @@
-import React, { useEffect, useState, lazy } from "react";
+import React, { useEffect, useState } from "react";
 import { Tabs, Tab, Box, Tooltip } from "@mui/material";
 import Heading from "../component/Heading";
-import HeadH2 from "../component/HeadH2";
 import Divider from "../component/Divider";
 import Card from "../component/Card";
 import vue from "../images/vue-js-icon.svg";
 import angular from "../images/angular-icon.svg";
 import react from "../images/react-js-icon.svg";
-import javaScript from "../images/javascript-icon.png";
-// import template from "../images/template.svg";
 import browse from "../images/all-icon.svg";
 import Icon from "../component/Icon";
 import Accordian from "../component/Accordian";
@@ -19,14 +16,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { filterProjects } from "../store/features/projectSlice";
 import { useTranslation } from "react-i18next";
 import Spinner from "../component/Spinner";
+import Metadata from "../component/Metadata";
 
 const tabs = [
   { title: "Browse all", ref: "all", imgSrc: browse },
   { title: "React", ref: "react", imgSrc: react },
   { title: "Vue", ref: "vue", imgSrc: vue },
   { title: "Angular", ref: "angular", imgSrc: angular },
-  // { title: "Fun Apps", ref: "funApp", imgSrc: javaScript },
-  // { title: "Templates", ref: "template", imgSrc: template },
 ];
 
 function Repositories() {
@@ -72,6 +68,10 @@ function Repositories() {
 
   return (
     <>
+      <Metadata
+        title="Repository | Ranjeet Kumar"
+        description="Explore the GitHub repositories of Ranjeet Kumar, showcasing a diverse range of web development projects. From advanced frontend applications built with Vue.js, React, and Angular, to backend integrations using Node.js and PHP, these repositories highlight his 7.5+ years of experience in crafting efficient, scalable, and high-performance code."
+      />
       <div className="project-wrapper container px-0">
         <Heading text={`<🤸${t("My Personal Projects")} / >`} />
         {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}

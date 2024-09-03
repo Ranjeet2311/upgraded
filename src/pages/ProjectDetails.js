@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import backgroundImage from "../images/background.jpg";
 import Heading from "../component/Heading";
 import moment from "moment";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CodeOffIcon from "@mui/icons-material/CodeOff";
 import PreviewIcon from "@mui/icons-material/Preview";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Divider from "../component/Divider";
 import Card from "../component/Card";
 import Accordian from "../component/Accordian";
@@ -15,175 +13,175 @@ import MultiCarousel from "../component/MultiCarousel";
 import { maxFourSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
+import Metadata from "../component/Metadata";
 
 function ProjectDetails() {
   const [zoom, setZoom] = useState(false);
   const { projectId } = useParams();
   const navigate = useNavigate();
-
   const allProjects = useSelector((state) => state.projects.allProjects);
-
   let selectedProject = allProjects.find((item, index) => {
     return item.title === projectId;
   });
-
   const { createdAt, img, title, tags, code, demo, description, ref } =
     selectedProject;
 
   const createdDate = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
     "DD MMMM YYYY"
   );
-
   const relatedData = allProjects.filter((related, i) => {
     return related.ref === ref && related.title !== title;
   });
-
   function zoomHandler() {
     return setZoom(!zoom);
   }
-
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   });
 
   return (
-    <div className="container project-details">
-      {/* <img className="background" src={backgroundImage} alt="bg" /> */}
-      <div className="row">
-        <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
-          <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 p-2 w-100">
-            <ArrowBackIosIcon />
-            <Link
-              className="text-decoration-none text-white"
-              to="/repositories"
-            >
-              {t("Projects")}
-            </Link>
-            <p className="mx-1">/ </p>
-            <Link
-              className="text-decoration-none text-white"
-              to={`/repositories/${title}`}
-            >
-              {t(title)}
-            </Link>
+    <>
+      <Metadata
+        title={`${title} | Ranjeet Kumar`}
+        description="Explore the GitHub repositories of Ranjeet Kumar, showcasing a diverse range of web development projects. From advanced frontend applications built with Vue.js, React, and Angular, to backend integrations using Node.js and PHP, these repositories highlight his 7.5+ years of experience in crafting efficient, scalable, and high-performance code."
+      />
+      <div className="container project-details">
+        <div className="row">
+          <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
+            <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 p-2 w-100">
+              <ArrowBackIosIcon />
+              <Link
+                className="text-decoration-none text-white"
+                to="/repositories"
+              >
+                {t("Projects")}
+              </Link>
+              <p className="mx-1">/ </p>
+              <Link
+                className="text-decoration-none text-white"
+                to={`/repositories/${title}`}
+              >
+                {t(title)}
+              </Link>
+            </div>
+            <img
+              onClick={zoomHandler}
+              src={process.env.PUBLIC_URL + "/" + img}
+              alt={title}
+              className={`details-image ${zoom ? "zoom" : ""}`}
+            />
+            <p className="text-light text-center experience mb-0">
+              {t("Click on imgae to zoom / shrink")}
+            </p>
           </div>
-          <img
-            onClick={zoomHandler}
-            src={process.env.PUBLIC_URL + "/" + img}
-            alt={title}
-            className={`details-image ${zoom ? "zoom" : ""}`}
-          />
-          <p className="text-light text-center experience mb-0">
-            {t("Click on imgae to zoom / shrink")}
-          </p>
+          <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2">
+            <Heading className="text-start" text={t(title)} />
+            <p>
+              {description
+                ? `${t(description)}`
+                : "---Description not available---"}
+            </p>
+            <div className="row my-4 ms-0">
+              <span className="text-white d-block mb-2 px-0">
+                {tags
+                  ? `${t("Tech highlights")}`
+                  : "Checkout github for more details"}
+              </span>
+              {tags &&
+                tags.map((items, index) => {
+                  return (
+                    <div className="colored-pill text-light" key={index}>
+                      {items}
+                    </div>
+                  );
+                })}
+            </div>
+            <p className="experience w-100 mb-2 ps-3">
+              {t("Last updated")} :{" "}
+              {createdDate !== "Invalid date"
+                ? createdDate
+                : "Checkout github for date"}
+            </p>
+            <Accordian heading={t("Links")} accordianSelect="homeTwo" w-100>
+              <a
+                href={demo}
+                target="blank"
+                className="btn btn-bg text-light w-100 border-0"
+                type="button"
+              >
+                <PreviewIcon /> {t("Live Demo")}
+              </a>
+              <a
+                href={code}
+                target="blank"
+                className="btn btn-bg text-light w-100 mt-2 border-0"
+                type="button"
+              >
+                <CodeOffIcon /> {t("Source Code")}
+              </a>
+              <a
+                href="https://github.com/Ranjeet2311/"
+                target="blank"
+                className="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center border-0"
+                type="button"
+              >
+                <GitHubIcon /> <span className="ms-2">{t("My Github")}</span>
+              </a>
+            </Accordian>
+            <button
+              onClick={() => navigate(-1)}
+              target="blank"
+              className="btn btn-bg text-light w-100 mt-4 border-0"
+              type="button"
+            >
+              <ArrowBackIosIcon /> {t("Return")}
+            </button>
+          </div>
         </div>
-        <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2">
-          <Heading className="text-start" text={t(title)} />
-          <p>
-            {description
-              ? `${t(description)}`
-              : "---Description not available---"}
-          </p>
-          <div className="row my-4 ms-0">
-            <span className="text-white d-block mb-2 px-0">
-              {tags
-                ? `${t("Tech highlights")}`
-                : "Checkout github for more details"}
-            </span>
-            {tags &&
-              tags.map((items, index) => {
-                return (
-                  <div className="colored-pill text-light" key={index}>
-                    {items}
-                  </div>
-                );
-              })}
+        <div className="row mt-4 pt-4">
+          <div className="col-12 mb-4">
+            <Heading text={t("Related projects")} />
+            <Divider />
           </div>
-          <p className="experience w-100 mb-2 ps-3">
-            {t("Last updated")} :{" "}
-            {createdDate !== "Invalid date"
-              ? createdDate
-              : "Checkout github for date"}
-          </p>
-          <Accordian heading={t("Links")} accordianSelect="homeTwo" w-100>
-            <a
-              href={demo}
-              target="blank"
-              className="btn btn-bg text-light w-100 border-0"
-              type="button"
-            >
-              <PreviewIcon /> {t("Live Demo")}
-            </a>
-            <a
-              href={code}
-              target="blank"
-              className="btn btn-bg text-light w-100 mt-2 border-0"
-              type="button"
-            >
-              <CodeOffIcon /> {t("Source Code")}
-            </a>
-            <a
-              href="https://github.com/Ranjeet2311/"
-              target="blank"
-              className="btn btn-bg text-light w-100 my-2 d-flex justify-content-center align-items-center border-0"
-              type="button"
-            >
-              <GitHubIcon /> <span className="ms-2">{t("My Github")}</span>
-            </a>
-          </Accordian>
-          <button
-            onClick={() => navigate(-1)}
-            target="blank"
-            className="btn btn-bg text-light w-100 mt-4 border-0"
-            type="button"
+          <MultiCarousel
+            infinite={true}
+            responsive={maxFourSlide}
+            autoPlay={true}
+            swipeable={true}
+            draggable={true}
+            showDots={true}
+            autoPlaySpeed={10000}
+            keyBoardControl={true}
+            customTransition="all 1.5s"
+            transitionDuration={500}
+            minimumTouchDrag={0}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            containerClass="carousel-container mb-4"
           >
-            <ArrowBackIosIcon /> {t("Return")}
-          </button>
+            {relatedData.map((slide, i) => {
+              return (
+                <Card
+                  key={i}
+                  img={slide.img}
+                  title={t(slide.title)}
+                  code={slide.code}
+                  demo={slide.demo}
+                  tags={slide.tags}
+                  description={slide.description}
+                  createdAt={slide.createdAt}
+                  pageLink={`/repositories/${slide.title}`}
+                  showBtn={true}
+                  primeBtnText={t("More Details")}
+                  secBtnText={`🤠 ${t("Click for more details")} `}
+                />
+              );
+            })}
+          </MultiCarousel>
         </div>
       </div>
-      <div className="row mt-4 pt-4">
-        <div className="col-12 mb-4">
-          <Heading text={t("Related projects")} />
-          <Divider />
-        </div>
-        <MultiCarousel
-          infinite={true}
-          responsive={maxFourSlide}
-          autoPlay={true}
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-          autoPlaySpeed={10000}
-          keyBoardControl={true}
-          customTransition="all 1.5s"
-          transitionDuration={500}
-          minimumTouchDrag={0}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          containerClass="carousel-container mb-4"
-        >
-          {relatedData.map((slide, i) => {
-            return (
-              <Card
-                key={i}
-                img={slide.img}
-                title={t(slide.title)}
-                code={slide.code}
-                demo={slide.demo}
-                tags={slide.tags}
-                description={slide.description}
-                createdAt={slide.createdAt}
-                pageLink={`/repositories/${slide.title}`}
-                showBtn={true}
-                primeBtnText={t("More Details")}
-                secBtnText={`🤠 ${t("Click for more details")} `}
-              />
-            );
-          })}
-        </MultiCarousel>
-      </div>
-    </div>
+    </>
   );
 }
 

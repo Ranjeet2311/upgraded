@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
