@@ -54,11 +54,11 @@ function Home() {
               infinite={true}
               responsive={multiSlide}
               autoPlay={true}
-              swipeable={true}
-              draggable={true}
+              swipeable={false}
+              draggable={false}
               showDots={false}
               autoPlaySpeed={500}
-              keyBoardControl={true}
+              keyBoardControl={false}
               customTransition="all 0.5s"
               transitionDuration={500}
               minimumTouchDrag={0}

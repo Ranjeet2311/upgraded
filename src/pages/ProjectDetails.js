@@ -104,14 +104,16 @@ function ProjectDetails() {
                 : "Checkout github for date"}
             </p>
             <Accordian heading={t("Links")} accordianSelect="homeTwo" w-100>
-              <a
-                href={demo}
-                target="blank"
-                className="btn btn-bg text-light w-100 border-0"
-                type="button"
-              >
-                <PreviewIcon /> {t("Live Demo")}
-              </a>
+              {demo && (
+                <a
+                  href={demo}
+                  target="blank"
+                  className="btn btn-bg text-light w-100 border-0"
+                  type="button"
+                >
+                  <PreviewIcon /> {t("Live Demo")}
+                </a>
+              )}
               <a
                 href={code}
                 target="blank"

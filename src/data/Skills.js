@@ -170,7 +170,7 @@ const skillsData = [
   },
   {
     id: 29,
-    img: "images/skillPics/woo-commerce.png",
+    img: "images/skillPics/woo-commerce.svg",
     title: "Woo-Com.",
     end: "cms",
   },

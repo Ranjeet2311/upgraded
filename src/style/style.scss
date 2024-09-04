@@ -439,6 +439,9 @@ button,
     img {
       object-fit: cover !important;
       height: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
