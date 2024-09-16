@@ -7,6 +7,7 @@ import vue from "../images/vue-js-icon.svg";
 import angular from "../images/angular-icon.svg";
 import react from "../images/react-js-icon.svg";
 import browse from "../images/all-icon.svg";
+import webApp from "../images/web-app.png";
 import Icon from "../component/Icon";
 import Accordian from "../component/Accordian";
 import Contact from "../component/Contact";
@@ -20,9 +21,10 @@ import Metadata from "../component/Metadata";
 
 const tabs = [
   { title: "Browse all", ref: "all", imgSrc: browse },
-  { title: "React", ref: "react", imgSrc: react },
-  { title: "Vue", ref: "vue", imgSrc: vue },
-  { title: "Angular", ref: "angular", imgSrc: angular },
+  { title: "Full Stack", ref: "fullStack", imgSrc: webApp },
+  { title: "React FE", ref: "react", imgSrc: react },
+  { title: "Vue FE", ref: "vue", imgSrc: vue },
+  { title: "Angular FE", ref: "angular", imgSrc: angular },
 ];
 
 function Repositories() {
@@ -45,20 +47,23 @@ function Repositories() {
       case "all":
         setValue(0);
         break;
-      case "react":
+      case "fullStack":
         setValue(1);
         break;
-      case "vue":
+      case "react":
         setValue(2);
         break;
-      case "angular":
+      case "vue":
         setValue(3);
         break;
-      case "funApp":
+      case "angular":
         setValue(4);
         break;
-      case "template":
+      case "funApp":
         setValue(5);
+        break;
+      case "template":
+        setValue(6);
         break;
       default:
         break;

@@ -174,6 +174,12 @@ const skillsData = [
     title: "Woo-Com.",
     end: "cms",
   },
+  {
+    id: 30,
+    img: "images/skillPics/mongodb-icon.svg",
+    title: "MongoDB",
+    end: "backend",
+  },
 ];
 
 const workWithMe = [

@@ -11,7 +11,7 @@ function SwitchToggle({ checked }) {
         role="switch"
         checked={checked}
       />
-      <label for="switch"></label>
+      <label htmlFor="switch"></label>
     </div>
   );
 }

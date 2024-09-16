@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import arrowRight from "../images/arrow-right.svg";
 
 export default function Button({ isLInk, to, style, children, className }) {
-  console.log(`isLInk :: `, isLInk);
+  // console.log(`isLInk :: `, isLInk);
 
   if (isLInk) {
     return (
