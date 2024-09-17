@@ -20,11 +20,11 @@ import Spinner from "../component/Spinner";
 import Metadata from "../component/Metadata";
 
 const tabs = [
-  { title: "Browse all", ref: "all", imgSrc: browse },
+  { title: "All", ref: "all", imgSrc: browse },
   { title: "Full Stack", ref: "fullStack", imgSrc: webApp },
-  { title: "React FE", ref: "react", imgSrc: react },
-  { title: "Vue FE", ref: "vue", imgSrc: vue },
-  { title: "Angular FE", ref: "angular", imgSrc: angular },
+  { title: "React", ref: "react", imgSrc: react },
+  { title: "Vue", ref: "vue", imgSrc: vue },
+  { title: "Angular", ref: "angular", imgSrc: angular },
 ];
 
 function Repositories() {

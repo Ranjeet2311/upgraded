@@ -14,6 +14,8 @@ import MultiCarousel from "../component/MultiCarousel";
 import { useSelector } from "react-redux";
 import { multiSlide } from "../data/Skills";
 import Metadata from "../component/Metadata";
+import Button from "../component/Button";
+import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
 
 function Home() {
   const { t } = useTranslation();
@@ -44,6 +46,19 @@ function Home() {
               <Paragraph text={t("home.description.one")} />
               <Paragraph text={t("home.description.two")} />
               <Paragraph text={t("home.description.three")} />
+              <a
+                href="#download"
+                className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4"
+              >
+                <FileDownloadRoundedIcon /> {t("Download my CV")}
+              </a>
+              <Button
+                isLInk={true}
+                to="/repositories"
+                className="text-light mt-4 ms-lg-4"
+              >
+                {t("Live Demo")} apps
+              </Button>
             </div>
           </div>
         </div>
@@ -103,7 +118,7 @@ function Home() {
             })}
         </div>
         <div className="row">
-          <div className="col-12 mt-4 px-0">
+          <div className="col-12 mt-4 px-0" id="download">
             <Accordian heading={t("Let's Connect")} accordianSelect="homeTwo">
               <Contact>
                 <StaticModal

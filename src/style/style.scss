@@ -415,12 +415,6 @@ button,
         transform: translateX(50%);
       }
     }
-
-    .arrow {
-      margin-left: 6px;
-      filter: invert(1);
-      transition: 0.1s ease-in;
-    }
   }
 
   @include at-900px() {
@@ -489,6 +483,12 @@ button,
       text-decoration: none;
     }
   }
+}
+
+.arrow {
+  margin-left: 6px;
+  filter: invert(1);
+  transition: 0.1s ease-in;
 }
 // }
 .dot {

@@ -3,7 +3,9 @@ import projectData from "../../data/ProjectData";
 
 const initialState = {
   allProjects: projectData,
-  filteredProjects: projectData.filter((project) => project.ref === "react"),
+  filteredProjects: projectData.filter(
+    (project) => project.ref.indexOf("react") !== -1
+  ),
   tabValue: "react",
 };
 
@@ -18,7 +20,7 @@ export const projectsSlice = createSlice({
         state.filteredProjects = state.allProjects;
       } else {
         const filterData = state.allProjects.filter(
-          (item) => item.ref === action.payload
+          (item) => item.ref.indexOf(action.payload) !== -1
         );
         state.filteredProjects = filterData;
       }

@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 1,
     createdAt: "2024-09-16T12:25:16+0000",
-    ref: "fullStack",
+    ref: ["fullStack", "react"],
     img: "images/projectPics/jobs-portal.png",
     title: "Job Portal | Full Stack | React+Express+MongoDB",
     tags: [
@@ -59,7 +59,7 @@ const projectData = [
   {
     id: 2,
     createdAt: "2024-07-26T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/Portfolio.png",
     title: "Portfolio (React)",
     tags: [
@@ -102,7 +102,7 @@ const projectData = [
   {
     id: 3,
     createdAt: "2024-08-26T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/restaurant-app.png",
     title: "Restaurant-app (React+TS+Redux)",
     tags: [
@@ -143,7 +143,7 @@ const projectData = [
   {
     id: 4,
     createdAt: "2024-09-03T12:25:16+0000",
-    ref: "fullStack",
+    ref: ["fullStack", "react"],
     img: "images/projectPics/NextLevel-Food-menu.png",
     title: "Recipe-share | Full Stack | NextJs",
     tags: [
@@ -181,7 +181,7 @@ const projectData = [
   {
     id: 5,
     createdAt: "2024-02-16T12:25:16+0000",
-    ref: "vue",
+    ref: ["vue", "fullStack"],
     img: "images/projectPics/music-app.png",
     title: "Music Wallets | Full Stack | Vue3",
     tags: [
@@ -208,7 +208,7 @@ const projectData = [
   {
     id: 6,
     createdAt: "2023-12-20T12:25:16+0000",
-    ref: "vue",
+    ref: ["vue", "fullStack"],
     img: "images/projectPics/chat-app.png",
     title: "Group Chat | Full Stack | Vue3",
     tags: [
@@ -238,7 +238,7 @@ const projectData = [
   {
     id: 7,
     createdAt: "2024-03-03T12:25:16+0000",
-    ref: "angular",
+    ref: ["angular"],
     img: "images/projectPics/git-app.png",
     title: "Github Repo browser (Angular)",
     tags: [
@@ -270,7 +270,7 @@ const projectData = [
   {
     id: 8,
     createdAt: "2024-03-27T12:25:16+0000",
-    ref: "angular",
+    ref: ["angular"],
     img: "images/projectPics/Appointment-App.png",
     title: "Appointment tracker (Angular)",
     tags: [
@@ -296,7 +296,7 @@ const projectData = [
   {
     id: 9,
     createdAt: "2021-08-10T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/quiz-demo.jpg",
     title: "Quiz App (React)",
     tags: [
@@ -328,7 +328,7 @@ const projectData = [
   {
     id: 10,
     createdAt: "2021-09-02T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/Text-to-speech-image.jpg",
     title: "React-Text to Speech (React)",
     tags: [
@@ -361,7 +361,7 @@ const projectData = [
   {
     id: 11,
     createdAt: "2022-03-02T12:25:16+0000",
-    ref: "vue",
+    ref: ["vue"],
     img: "images/projectPics/counter-app.png",
     title: "Simple Counter (vue 2)",
     tags: [
@@ -384,7 +384,7 @@ const projectData = [
   {
     id: 12,
     createdAt: "2022-02-11T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/KeeperApp.png",
     title: "Keeper App (React)",
     tags: [
@@ -420,7 +420,7 @@ const projectData = [
   {
     id: 13,
     createdAt: "2021-12-15T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/movie-database-project.png",
     title: "Movie Database (React)",
     tags: [
@@ -455,7 +455,7 @@ const projectData = [
   {
     id: 14,
     createdAt: "2022-03-02T12:25:16+0000",
-    ref: "react",
+    ref: ["react"],
     img: "images/projectPics/contact-manager.jpg",
     title: "Contact Manager (React)",
     tags: [

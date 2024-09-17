@@ -29,9 +29,14 @@ function ProjectDetails() {
   const createdDate = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
     "DD MMMM YYYY"
   );
-  const relatedData = allProjects.filter((related, i) => {
-    return related.ref === ref && related.title !== title;
+
+  const relatedData = allProjects.filter((project) => {
+    return (
+      ref.some((refString) => project.ref.includes(refString)) &&
+      project.title !== title
+    );
   });
+
   function zoomHandler() {
     return setZoom(!zoom);
   }
@@ -153,10 +158,10 @@ function ProjectDetails() {
             swipeable={true}
             draggable={true}
             showDots={true}
-            autoPlaySpeed={10000}
+            autoPlaySpeed={2000}
             keyBoardControl={true}
-            customTransition="all 1.5s"
-            transitionDuration={500}
+            customTransition="all 1s"
+            transitionDuration={2000}
             minimumTouchDrag={0}
             renderButtonGroupOutside={false}
             renderDotsOutside={false}
