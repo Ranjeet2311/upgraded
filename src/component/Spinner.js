@@ -1,5 +1,5 @@
 import React from "react";
-import clap from "../images/clap.png";
+// import clap from "../images/clap.png";
 import spinner from "../images/spinner.svg";
 import "../style/spinner.scss";
 
@@ -12,12 +12,12 @@ function Spinner() {
           alt="loading"
           style={{ width: "140px", objectFit: "cover" }}
         />
-        <img
+        {/* <img
           className="pic"
           src={clap}
           alt="loading"
           style={{ width: "40px", height: "40px", objectFit: "cover" }}
-        />
+        /> */}
         <p className="text-center magenta mt-4">
           Loading your content... Good things take time!
         </p>

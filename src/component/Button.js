@@ -2,7 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import arrowRight from "../images/arrow-right.svg";
 
-export default function Button({ isLInk, to, style, children, className }) {
+export default function Button({
+  isLInk,
+  to,
+  style,
+  children,
+  className,
+  onButtonCLick,
+}) {
   // console.log(`isLInk :: `, isLInk);
 
   if (isLInk) {
@@ -23,6 +30,7 @@ export default function Button({ isLInk, to, style, children, className }) {
       <button
         className={`btn inline-block btn-bg px-4 py-1 ${className}`}
         style={{ ...style }}
+        onClick={onButtonCLick}
       >
         {children}
       </button>

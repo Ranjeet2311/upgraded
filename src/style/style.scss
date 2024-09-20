@@ -407,16 +407,6 @@ button,
     }
   }
 
-  a,
-  btn {
-    transition: 0.1s ease-in;
-    &:hover {
-      .arrow {
-        transform: translateX(50%);
-      }
-    }
-  }
-
   @include at-900px() {
     min-width: auto;
   }
@@ -485,12 +475,25 @@ button,
   }
 }
 
+// ----Arrow slide-----
+a,
+button,
+.btn {
+  transition: 0.1s ease-in;
+  &:hover {
+    .arrow {
+      transform: translateX(50%);
+    }
+  }
+}
+
 .arrow {
   margin-left: 6px;
   filter: invert(1);
   transition: 0.1s ease-in;
 }
-// }
+// ------
+
 .dot {
   height: 50px;
   width: 50px;

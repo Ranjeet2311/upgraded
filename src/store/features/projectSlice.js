@@ -4,16 +4,16 @@ import projectData from "../../data/ProjectData";
 const initialState = {
   allProjects: projectData,
   filteredProjects: projectData.filter(
-    (project) => project.ref.indexOf("react") !== -1
+    (project) => project.ref.indexOf("fullStack") !== -1
   ),
-  tabValue: "react",
+  tabValue: "fullStack",
 };
 
 export const projectsSlice = createSlice({
   name: "projects",
   initialState,
   reducers: {
-    filterProjects(state, action) {
+    filterProjects: (state, action) => {
       state.tabValue = action.payload;
 
       if (action.payload === "all") {

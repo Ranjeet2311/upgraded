@@ -1,4 +1,12 @@
 .home {
+  .hero_home {
+    .btn {
+      @include at-900px {
+        width: 100%;
+      }
+    }
+  }
+
   .roaming-img {
     position: relative;
     display: flex;

@@ -16,6 +16,7 @@ import { multiSlide } from "../data/Skills";
 import Metadata from "../component/Metadata";
 import Button from "../component/Button";
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
+import SecretForm from "../component/SecretForm";
 
 function Home() {
   const { t } = useTranslation();
@@ -29,16 +30,15 @@ function Home() {
         description="I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code."
       />
       <div className="container home">
-        <div className="row align-items-center">
+        <div className="row align-items-center hero_home">
           <div className="col-12 col-lg-4 roaming-img">
             {/* <div className="blue-sphere"></div> */}
             <img src={profilePic} alt="profilepic" className="header-pic" />
           </div>
           <div className="col-12 col-lg-8 right pe-lg-0">
             <HeadH1>
-              {t("home.greeting")}{" "}
+              {t("home.greeting")}
               <span className="colored-text cursive ms-2">
-                {" "}
                 {t("home.Ranjeet")}
               </span>
             </HeadH1>
@@ -46,12 +46,9 @@ function Home() {
               <Paragraph text={t("home.description.one")} />
               <Paragraph text={t("home.description.two")} />
               <Paragraph text={t("home.description.three")} />
-              <a
-                href="#download"
-                className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4"
-              >
+              <SecretForm className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4">
                 <FileDownloadRoundedIcon /> {t("Download my CV")}
-              </a>
+              </SecretForm>
               <Button
                 isLInk={true}
                 to="/repositories"
