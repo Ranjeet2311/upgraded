@@ -30,9 +30,8 @@ function Home() {
         description="I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code."
       />
       <div className="container home">
-        <div className="row align-items-center hero_home">
+        <div className="row align-items-center hero_home section-padding-top section-padding-bottom">
           <div className="col-12 col-lg-4 roaming-img">
-            {/* <div className="blue-sphere"></div> */}
             <img src={profilePic} alt="profilepic" className="header-pic" />
           </div>
           <div className="col-12 col-lg-8 right pe-lg-0">
@@ -46,20 +45,22 @@ function Home() {
               <Paragraph text={t("home.description.one")} />
               <Paragraph text={t("home.description.two")} />
               <Paragraph text={t("home.description.three")} />
-              <SecretForm className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4">
-                <FileDownloadRoundedIcon /> {t("Download my CV")}
-              </SecretForm>
-              <Button
-                isLInk={true}
-                to="/repositories"
-                className="text-light mt-4 ms-lg-4"
-              >
-                {t("Live Demo")} apps
-              </Button>
+              <div className="pt-2 pt-md-4">
+                <Button
+                  isLInk={true}
+                  to="/repositories"
+                  className="text-light mt-4 ms-lg-4"
+                >
+                  {t("Live Demo")} apps
+                </Button>
+                <SecretForm className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4">
+                  <FileDownloadRoundedIcon /> {t("Download my CV")}
+                </SecretForm>
+              </div>
             </div>
           </div>
         </div>
-        <div className="row px-2 skill_slide align-items-center experience">
+        <div className="row px-2 skill_slide align-items-center experience section-padding-top section-padding-bottom">
           <div className="col-4 col-md-2 expertise_slide">
             {t("My Expertise")}
           </div>
@@ -94,11 +95,11 @@ function Home() {
             </MultiCarousel>
           </div>
         </div>
-        <div className="mt-4 mb-1 pt-4 pt-md-4">
+        <div className="mt-4 mb-1 pt-4 pt-md-4 section-padding-top section-padding-bottom">
           <Heading text={`<${t("home.glance")} / >`} />
           <Divider />
         </div>
-        <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
+        <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 section-padding-bottom">
           {workWithMe &&
             workWithMe.map((item, i) => {
               return (
@@ -116,7 +117,7 @@ function Home() {
               );
             })}
         </div>
-        <div className="row">
+        <div className="row section-padding-top section-padding-bottom">
           <div className="col-12 mt-4 px-0" id="download">
             <Accordian heading={t("Let's Connect")} accordianSelect="homeTwo">
               <Contact>

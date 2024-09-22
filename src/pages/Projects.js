@@ -77,11 +77,11 @@ function Repositories() {
         title="Repository | Ranjeet Kumar"
         description="Explore the GitHub repositories of Ranjeet Kumar, showcasing a diverse range of web development projects. From advanced frontend applications built with Vue.js, React, and Angular, to backend integrations using Node.js and PHP, these repositories highlight his 7.5+ years of experience in crafting efficient, scalable, and high-performance code."
       />
-      <div className="project-wrapper container px-0">
+      <div className="project-wrapper container px-0 pt-2">
         <Heading text={`<🤸${t("My Personal Projects")} / >`} />
         {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}
         <Divider />
-        <div className="col"></div>
+        <div className="col pt-4"></div>
         {/* <HeadH2 text={t("Filter projects by frameworks & types")} /> */}
         {showData && (
           <Box className="experience mt-2 px-4">
@@ -119,7 +119,7 @@ function Repositories() {
           </Box>
         )}
         {showData && (
-          <p className="mt-2 mt-lg-2 pt-2 mb-1 pt-lg-4 text-center w-100">
+          <p className="mt-2 mt-lg-4 pt-4 mb-1 pt-lg-1 text-center w-100">
             {t("Now displaying list of")}
             <strong className="mx-1">"{tabValue.toUpperCase()}"</strong>
             {t("repositories, for more repositories checkout my")}
@@ -135,7 +135,7 @@ function Repositories() {
           </p>
         )}
         {showData ? (
-          <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
+          <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 pt-1 pt-mg-4 section-padding-bottom">
             {filteredProjects &&
               filteredProjects.map((item, index) => (
                 <div
@@ -166,7 +166,7 @@ function Repositories() {
           <Spinner />
         )}
       </div>
-      <div className="container mt-4 px-0">
+      <div className="container mt-4 px-0 section-padding-bottom section-padding-top">
         <Accordian heading={t("Let's Connect")} accordianSelect="projectOne">
           <Contact>
             <StaticModal

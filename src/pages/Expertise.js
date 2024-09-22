@@ -57,14 +57,14 @@ function Expertise() {
         title="Expertise | Ranjeet Kumar"
         description="Discover Ranjeet Kumar's deep expertise in web development, with a focus on front-end technologies like Vue.js, React, and Angular, as well as backend integration using Node.js, PHP and SQL. Learn how his 7.5+ years of experience have driven the development of high-performance, responsive web applications, and how he excels in implementing CI/CD pipelines and leading Agile teams."
       />
-      <div className="text-center container px-0 texh_stack">
+      <div className="text-center container px-0 texh_stack section-padding-bottom pt-2">
         <div className="row align-items-center">
           <div className="col-12">
             <Heading text={`<🛡️${t("My tech stack")} / >`} />
             <Divider />
           </div>
           <div className="col-12 col-lg-12 mt-4">
-            <h2 className="d-flex justify-content-center">
+            <h2 className="d-flex justify-content-center py-4 my-2">
               {t(label).toUpperCase()}{" "}
             </h2>
             <div className="row">
@@ -113,7 +113,7 @@ function Expertise() {
               </div>
             </div>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 section-padding-top section-padding-bottom">
             <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
               <Contact>
                 <StaticModal

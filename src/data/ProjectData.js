@@ -63,6 +63,7 @@ const projectData = [
     img: "images/projectPics/music-app.png",
     title: "Music Wallets | Full Stack | Vue3",
     tags: [
+      "CRUD operations",
       "route-guards",
       "firebase",
       "javascript",
@@ -175,6 +176,7 @@ const projectData = [
     title: "Recipe-share | Full Stack | NextJs",
     tags: [
       "better-sqlite3",
+      "CRUD operations",
       "slugify",
       "xss-protection",
       "react-dom",
@@ -212,6 +214,7 @@ const projectData = [
     img: "images/projectPics/chat-app.png",
     title: "Group Chat | Full Stack | Vue3",
     tags: [
+      "CRUD operations",
       "composables",
       "composition-api",
       "authentication",

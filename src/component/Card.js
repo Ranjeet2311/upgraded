@@ -92,7 +92,7 @@ function Card({
           </ul>
         )}
       </div>
-      <div className="card-footer border-0">
+      <div className="card-footer border-0 py-2">
         {/* {showBtn && (
             <button
               rel="noreferrer"

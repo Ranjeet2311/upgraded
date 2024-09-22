@@ -54,44 +54,56 @@ function ProjectDetails() {
       <div className="container project-details">
         <div className="row">
           <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
-            <div className="text-center mb-3 d-flex align-items-center btn experience mt-0 p-2 w-100">
+            <div className="bread-crumb">
               <ArrowBackIosIcon />
               <Link
-                className="text-decoration-none text-white"
+                className="text-decoration-none text-white ms-2"
                 to="/repositories"
               >
                 {t("Projects")}
               </Link>
               <p className="mx-1">/ </p>
               <Link
-                className="text-decoration-none text-white"
+                className="text-decoration-none text-white ms-2"
                 to={`/repositories/${title}`}
               >
                 {t(title)}
               </Link>
             </div>
-            <img
-              onClick={zoomHandler}
-              src={process.env.PUBLIC_URL + "/" + img}
-              alt={title}
-              className={`details-image ${zoom ? "zoom" : ""}`}
-            />
-            <p className="text-light text-center experience mb-0">
+            <div className="details-image-wrap">
+              <img
+                onClick={zoomHandler}
+                src={process.env.PUBLIC_URL + "/" + img}
+                alt={title}
+                className={`details-image ${zoom ? "zoom" : ""}`}
+              />
+            </div>
+            <p className="text-light experience mb-0">
               {t("Click on imgae to zoom / shrink")}
             </p>
           </div>
-          <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2">
-            <Heading className="text-start" text={t(title)} />
+          <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2 details">
+            {/* <Heading className="text-start" text={t(title)} /> */}
+            <h1 className="text-start w-100"> {t(title)} </h1>
             <p>
               {description
                 ? `${t(description)}`
                 : "---Description not available---"}
             </p>
+            <p className="experience w-100 mb-2 ps-1">
+              <b>{t("Last updated")}</b> : {""}
+              {createdDate !== "Invalid date"
+                ? createdDate
+                : "Checkout github for date"}
+            </p>
             <div className="row my-4 ms-0">
               <span className="text-white d-block mb-2 px-0">
-                {tags
-                  ? `${t("Tech highlights")}`
-                  : "Checkout github for more details"}
+                <b>
+                  {" "}
+                  {tags
+                    ? `${t("Tech highlights")}`
+                    : "Checkout github for more details"}
+                </b>
               </span>
               {tags &&
                 tags.map((items, index) => {
@@ -102,12 +114,6 @@ function ProjectDetails() {
                   );
                 })}
             </div>
-            <p className="experience w-100 mb-2 ps-3">
-              {t("Last updated")} :{" "}
-              {createdDate !== "Invalid date"
-                ? createdDate
-                : "Checkout github for date"}
-            </p>
             <Accordian heading={t("Links")} accordianSelect="homeTwo" w-100>
               {demo && (
                 <a
@@ -147,7 +153,7 @@ function ProjectDetails() {
           </div>
         </div>
         <div className="row mt-4 pt-4">
-          <div className="col-12 mb-4">
+          <div className="col-12 mb-4 section-padding-top section-padding-bottom">
             <Heading text={t("Related projects")} />
             <Divider />
           </div>

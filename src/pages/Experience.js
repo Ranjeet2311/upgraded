@@ -8,13 +8,12 @@ import StaticModal from "../component/StaticModal";
 import ContactForm from "../component/ContactForm";
 import Divider from "../component/Divider";
 import MultiCarousel from "../component/MultiCarousel";
-import { maxOneSlide, maxFourSlide } from "../data/Skills";
+import { maxOneSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
-import coder from "../images/coder.svg";
-import launch from "../images/Launch.svg";
-import teamWork from "../images/team_work.svg";
-import { sliderImages } from "../data/experienceList";
 import Metadata from "../component/Metadata";
+import teamImage from "../images/x3.jpg";
+import dev from "../images/werdev.jpg";
+import devTalk from "../images/x2.jpg";
 
 function Experience() {
   const { t } = useTranslation();
@@ -25,13 +24,13 @@ function Experience() {
         title="Experience | Ranjeet Kumar"
         description="Explore Ranjeet Kumar's extensive professional experience in web development, including contributions to enterprise-level applications using Vue.js, Angular, and backend technologies like Node.js and PHP. With 7.5+ years of expertise, discover how he has optimized web applications, in Agile teams, and delivered high-performance, responsive solutions for various B2B and national projects."
       />
-      <div className="container exp_page">
+      <div className="container exp_page pt-2">
         <Heading text={`<⚙️${t("Experience")} / >`} />
         <Divider />
-        <div className="row mb-4 mt-4 justify-content-center">
+        <div className="row mb-4 mt-4 justify-content-center section-padding-bottom section-padding-top">
           <div className="col-12 col-lg-4 left-side">
             <img
-              src={teamWork}
+              src={teamImage}
               alt="we are devs berlin"
               className="header-pic "
             />
@@ -43,21 +42,25 @@ function Experience() {
             <Paragraph text={t("experienceDetails.six")} />
           </div>
         </div>
-        <div className="row mb-4 mt-4 pt-2 pt-md-4 justify-content-center">
+        <div className="row mb-4 mt-4 pt-2 pt-md-4 justify-content-center section-padding-bottom section-padding-top">
           <div className="col-12 col-lg-8 mt-4 mt-lg-0 py-2 px-1 experience">
             <Paragraph text={t("experienceDetails.four")} />
             <Paragraph text={t("experienceDetails.five")} />
             <Paragraph text={t("experienceDetails.seven")} />
           </div>
           <div className="col-12 col-lg-4 left-side order-first order-lg-last">
-            <img src={coder} alt="we are devs berlin" className="header-pic " />
+            <img
+              src={devTalk}
+              alt="we are devs berlin"
+              className="header-pic "
+            />
           </div>
         </div>
-        <div className="row d align-items-center mt-4 pt-2 pt-md-4">
-          <div className="col-12 col-lg-4 order-lg-first">
-            <img src={launch} alt="rocket-launch" className="header-pic " />
+        <div className="row d align-items-center mt-4 pt-2 pt-md-4 section-padding-bottom section-padding-top">
+          <div className="col-12 col-lg-4">
+            <img src={dev} alt="rocket-launch" className="header-pic " />
           </div>
-          <div className="col-12 col-lg-8 order-first order-lg-last">
+          <div className="col-12 col-lg-8">
             <MultiCarousel
               infinite={false}
               responsive={maxOneSlide}
@@ -91,10 +94,10 @@ function Experience() {
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-12">
+          {/* <div className="col-12">
             <Heading text="Few Pictures" />
-          </div>
-          <div className="col-12 mx-auto mt-2 mt-lg-4 pt-1 pt-lg-2">
+          </div> */}
+          {/* <div className="col-12 mx-auto mt-2 mt-lg-4 pt-1 pt-lg-2">
             <MultiCarousel
               infinite={true}
               responsive={maxFourSlide}
@@ -120,7 +123,7 @@ function Experience() {
                 );
               })}
             </MultiCarousel>
-          </div>
+          </div> */}
           <div className="col-12 mt-4 px-0">
             <Accordian
               heading={t("Let's Connect")}

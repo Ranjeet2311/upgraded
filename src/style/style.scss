@@ -173,6 +173,46 @@ button,
   }
 }
 
+.section-padding-top {
+  padding-top: 60px;
+
+  @include at-900px() {
+    padding-top: 40px;
+  }
+
+  @include for-tablet-portrait-up() {
+    padding-top: 30px;
+  }
+}
+.section-padding-bottom {
+  padding-bottom: 60px;
+
+  @include at-900px() {
+    padding-bottom: 40px;
+  }
+
+  @include for-tablet-portrait-up() {
+    padding-bottom: 30px;
+  }
+}
+
+.bread-crumb {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 16px;
+  a {
+    font-size: 16px !important;
+    line-height: 20px;
+
+    @include for-tablet-portrait-up() {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
 .animated-background {
   width: auto;
   background: linear-gradient(
@@ -538,30 +578,42 @@ button,
 .details-img-wrap {
   position: relative;
 
-  .details-image {
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.8s;
-    height: auto;
-    max-height: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    z-index: 9;
+  .details-image-wrap {
+    height: 450px;
+    width: 450px;
+    padding-bottom: 20px;
 
     @include at-900px() {
-      height: 400px !important;
-      transform: scale(1);
+      width: 100%;
+      height: auto;
     }
 
-    &:hover {
-      // transform: scale(1.6) translate(30%, 30%);
+    .details-image {
+      height: 100% !important;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.8s;
       height: auto;
-      overflow: auto;
-      // object-fit: fill;
-      // @include at-900px() {
-      //   transform: scale(1.1);
-      // }
+      max-height: 600px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      z-index: 9;
+
+      @include at-900px() {
+        height: 400px !important;
+        transform: scale(1);
+      }
+
+      &:hover {
+        // transform: scale(1.6) translate(30%, 30%);
+        height: auto;
+        overflow: auto;
+        // object-fit: fill;
+        // @include at-900px() {
+        //   transform: scale(1.1);
+        // }
+      }
     }
   }
 
@@ -649,6 +701,18 @@ button,
 }
 
 .project-details {
+  .details {
+    h1 {
+      font-size: 28px !important;
+      line-height: 32px;
+
+      @include at-900px() {
+        font-size: 22px !important;
+        line-height: 26px;
+      }
+    }
+  }
+
   .react-multi-carousel-list {
     padding-bottom: 60px;
     padding-left: 0 !important;
