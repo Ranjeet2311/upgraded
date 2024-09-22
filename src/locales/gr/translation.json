@@ -115,11 +115,23 @@
     "Activities & Responsibilities": "Aktivitäten und Verantwortlichkeiten",
     "Used tech stack": "Gebrauchter Tech-Stack",
     "experienceDetails": {
-      "one": "Mit über 7,5 Jahren Berufserfahrung habe ich meine Fähigkeiten im Aufbau und in der Optimierung von Webanwendungen mit modernen Technologien wie React, Vue, Angular, Express.js, PostgreSQL und mehr verfeinert. Meine Karriere umfasst sowohl unabhängige freiberufliche Tätigkeiten als auch kollaborative Rollen in Unternehmen, was es mir ermöglicht, einen vielseitigen Ansatz in meine Arbeit einzubringen.",
-      "two": "Als Freelancer habe ich komplette Projektlebenszyklen von der ersten Konzeptidee bis zur finalen Auslieferung verwaltet, dabei stets die Erwartungen der Kunden erfüllt und messbare Ergebnisse geliefert. Meine Arbeit umfasste die Entwicklung und Optimierung von SEO-freundlichen Websites und Anwendungen, um sicherzustellen, dass sie in den Suchmaschinenrankings effektiv performen.",
-      "three": "In Unternehmensumgebungen habe ich eng mit Engineering-Teams zusammengearbeitet, um B2B-Portale und andere wirkungsvolle Projekte zu entwickeln und zu verbessern. Meine Beiträge haben sich auf verschiedene nationale und europäische Initiativen erstreckt, bei denen ich eine Schlüsselrolle bei der Sicherstellung des Projekterfolgs durch meine technische Expertise und mein Qualitätsbewusstsein gespielt habe.",
-      "four": "Als unabhängiger Berater habe ich Projekte erfolgreich durchgeführt, die nicht nur die Ziele der Kunden erreicht, sondern diese sogar übertroffen haben, insbesondere bei der Schaffung skalierbarer, wartungsfreundlicher und leistungsstarker Webanwendungen."
+      "one": "Meine Reise als Programmierer begann in der Schule, wo ich die Grundlagen der Webentwicklung und Datenbanken erlernte. Dieses frühe Fundament legte den Grundstein für meine Studienjahre, in denen ich meine Fähigkeiten weiter verfeinerte, insbesondere in der C++-Programmierung.",
+      "two": "Als leidenschaftlicher Naturwissenschaftler und Technik-Enthusiast war es schon immer mein Ziel, in der Technologiebranche zu arbeiten. Meine berufliche Laufbahn begann offiziell als Customer Support Engineer, wo ich praktische Erfahrungen bei der Lösung technischer Herausforderungen sammelte. Diese Rolle markierte den Beginn meines stetigen Wachstums in der Technologie.",
+      "three": "Anschließend wechselte ich in die Freiberuflichkeit, wo ich mit Kunden aus verschiedenen Ländern an einer Vielzahl von Projekten arbeitete. Diese Erfahrung ermöglichte es mir, meine technischen Fähigkeiten zu schärfen, mich an unterschiedliche Herausforderungen anzupassen und als vielseitiger Programmierer zu wachsen.",
+      "four": "Mit über 7,5 Jahren Berufserfahrung habe ich Expertise in der Entwicklung und Optimierung von Webanwendungen unter Verwendung moderner Technologien wie React, Vue, Angular, Express.js und PostgreSQL entwickelt. Meine Karriere umfasst sowohl die unabhängige Freiberuflichkeit als auch die Zusammenarbeit in Unternehmen, was es mir ermöglicht, einen flexiblen Ansatz in jedes Projekt einzubringen.",
+      "five": "Als Freiberufler habe ich komplette Projektlebenszyklen von der Konzeptphase bis zur finalen Auslieferung erfolgreich gemanagt und dabei stets die Erwartungen der Kunden übertroffen und messbare Ergebnisse erzielt. Meine Arbeit umfasste häufig die Entwicklung und Optimierung von SEO-freundlichen Websites und Anwendungen, um sowohl in der Benutzererfahrung als auch im Suchmaschinenranking Spitzenleistungen zu erzielen.",
+      "six": "In Unternehmensumgebungen habe ich eng mit Engineering-Teams zusammengearbeitet, um B2B-Portale und andere Projekte mit hoher Reichweite zu entwickeln und zu verbessern. Darüber hinaus habe ich zu verschiedenen nationalen und europäischen Initiativen beigetragen, indem ich meine technische Expertise und mein Engagement für Qualität eingesetzt habe, um den Projekterfolg sicherzustellen.",
+      "seven": "Als unabhängiger Berater habe ich skalierbare, wartbare und leistungsstarke Webanwendungen geliefert, die oft die Ziele der Kunden übertroffen haben. Meine Fähigkeit, effiziente, ergebnisorientierte Lösungen zu schaffen, war entscheidend für meinen anhaltenden Erfolg als Programmierer und Berater."
     },
+
+    "My Expertise": "Meine Expertise",
+    "Secret code for downloading CV": "Geheimcode zum Herunterladen des Lebenslaufs",
+    "Thanks for confirming, downloading should start in few seconds. Please check download forlder.": "Vielen Dank für die Bestätigung. Der Download sollte in wenigen Sekunden beginnen. Bitte überprüfen Sie den Download-Ordner.",
+    "Submit secret code": "Geben Sie den Geheimcode ein",
+    "Please provide secret code to download my CV": "Bitte geben Sie einen Geheimcode ein, um meinen Lebenslauf herunterzuladen",
+    "Close": "Schließen",
+    "secret code": "Geheimcode",
+
     "Music Wallets (vue 3)": "Musik-Wallets (vue 3)",
     "Group Chat (vue 3)": "Gruppenchat (vue 3)",
     "Github Repo browser (Angular)": "Github Repo-Browser (Angular)",

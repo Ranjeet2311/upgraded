@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 export default function SecretForm({ children, className }) {
   const [showValidation, setShowValidation] = useState(false);
   const [secretCode, setsecretCode] = useState("");
   const [error, setError] = useState(" ");
+
+  const { t } = useTranslation();
 
   const secretHandler = (e) => {
     e.preventDefault();
@@ -22,7 +25,7 @@ export default function SecretForm({ children, className }) {
       e.target.reset();
       setsecretCode("");
     } else {
-      setError("Please provide secret code to download my CV");
+      setError(t("Please provide secret code to download my CV"));
     }
   };
 
@@ -54,7 +57,7 @@ export default function SecretForm({ children, className }) {
                           htmlFor="exampleFormControlInput1"
                           className="form-label"
                         >
-                          Secret code for downloading CV
+                          {t("Secret code for downloading CV")}
                         </label>
                         <p
                           className={
@@ -63,25 +66,27 @@ export default function SecretForm({ children, className }) {
                         >
                           {error
                             ? error
-                            : "Thanks for confirming, downloading should start in few seconds. Please check download forlder."}
+                            : t(
+                                "Thanks for confirming, downloading should start in few seconds. Please check download forlder."
+                              )}
                         </p>
                         <input
                           type="text"
                           className="form-control"
                           id="exampleFormControlInput1"
-                          placeholder="secret code"
+                          placeholder={t("secret code")}
                           name="secretcode"
                           onChange={(e) => setsecretCode(e.target.value)}
                         />
                       </div>
                       <button className="btn btn-bg me-4 mb-3 mt-2 px-2 py-1 w-100 w-lg-50 border-0 mx-auto">
-                        Submit secret code
+                        {t("Submit secret code")}
                       </button>
                       <button
                         className="btn btn-bg me-4 mt-2 px-2 py-1 w-100 w-lg-50 border-0 mx-auto"
                         onClick={() => setShowValidation(!showValidation)}
                       >
-                        Close
+                        {t("Close")}
                       </button>
                     </div>
                   </div>

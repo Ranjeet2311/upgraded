@@ -12,6 +12,7 @@ import { maxOneSlide, maxFourSlide } from "../data/Skills";
 import { useTranslation } from "react-i18next";
 import coder from "../images/coder.svg";
 import launch from "../images/Launch.svg";
+import teamWork from "../images/team_work.svg";
 import { sliderImages } from "../data/experienceList";
 import Metadata from "../component/Metadata";
 
@@ -29,17 +30,34 @@ function Experience() {
         <Divider />
         <div className="row mb-4 mt-4 justify-content-center">
           <div className="col-12 col-lg-4 left-side">
-            <img src={coder} alt="we are devs berlin" className="header-pic " />
+            <img
+              src={teamWork}
+              alt="we are devs berlin"
+              className="header-pic "
+            />
           </div>
           <div className="col-12 col-lg-8 mt-4 mt-lg-0 py-2 px-1 experience">
             <Paragraph text={t("experienceDetails.one")} />
             <Paragraph text={t("experienceDetails.two")} />
             <Paragraph text={t("experienceDetails.three")} />
-            <Paragraph text={t("experienceDetails.four")} />
+            <Paragraph text={t("experienceDetails.six")} />
           </div>
         </div>
-        <div className="row d align-items-center mt-4 pt-4">
-          <div className="col-12 col-lg-8 order-lg-first">
+        <div className="row mb-4 mt-4 pt-2 pt-md-4 justify-content-center">
+          <div className="col-12 col-lg-8 mt-4 mt-lg-0 py-2 px-1 experience">
+            <Paragraph text={t("experienceDetails.four")} />
+            <Paragraph text={t("experienceDetails.five")} />
+            <Paragraph text={t("experienceDetails.seven")} />
+          </div>
+          <div className="col-12 col-lg-4 left-side order-first order-lg-last">
+            <img src={coder} alt="we are devs berlin" className="header-pic " />
+          </div>
+        </div>
+        <div className="row d align-items-center mt-4 pt-2 pt-md-4">
+          <div className="col-12 col-lg-4 order-lg-first">
+            <img src={launch} alt="rocket-launch" className="header-pic " />
+          </div>
+          <div className="col-12 col-lg-8 order-first order-lg-last">
             <MultiCarousel
               infinite={false}
               responsive={maxOneSlide}
@@ -70,13 +88,6 @@ function Experience() {
                   );
                 })}
             </MultiCarousel>
-          </div>
-          <div className="col-12 col-lg-4 order-first order-lg-last">
-            <img
-              src={launch}
-              alt="we are devs berlin"
-              className="header-pic "
-            />
           </div>
         </div>
         <div className="row mt-4">

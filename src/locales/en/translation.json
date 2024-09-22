@@ -114,11 +114,22 @@
     "Activities & Responsibilities": "Activities & Responsibilities",
     "Used tech stack": "Used tech stack",
     "experienceDetails": {
-      "one": "With over 7.5 years of professional experience, I have honed my skills in building and optimizing web applications using cutting-edge technologies like React, Vue, Angular, Express.js, PostgreSQL, and more. My career has spanned both independent freelancing and collaborative roles within companies, allowing me to bring a versatile approach to my work.",
-      "two": "As a Freelancer, I’ve managed full project lifecycles, from initial concept to final delivery, consistently meeting client expectations and delivering measurable results. My work has included developing and optimizing SEO-friendly websites and applications, ensuring they perform effectively in search rankings.",
-      "three": "Within corporate settings, I have collaborated closely with engineering teams to develop and enhance B2B portals and other high-impact projects. My contributions have extended to various national and European initiatives, where I’ve played a key role in ensuring project success through my technical expertise and commitment to quality.",
-      "four": "As an Independent Consultant, I’ve successfully delivered projects that have not only met but exceeded client goals, particularly in creating scalable, maintainable, and high-performing web applications."
+      "one": "My programming journey began in high school, where I was introduced to the basics of web development and databases. This early foundation laid the groundwork for my college years, where I further honed my skills, particularly in C++ programming.",
+      "two": "As a passionate science student and technology enthusiast, I have always been driven to work in the tech industry. My career officially started as a Customer Support Engineer, where I gained hands-on experience in solving technical challenges. This role marked the beginning of my evolving journey in technology.",
+      "three": "Afterward, I transitioned into freelancing, working with clients across various countries on diverse projects. This experience allowed me to sharpen my technical skills, adapt to different challenges, and grow as a versatile programmer.",
+      "four": "With over 7.5 years of professional experience, I have developed expertise in building and optimizing web applications using modern technologies such as React, Vue, Angular, Express.js, and PostgreSQL. My career has spanned both independent freelancing and collaborative roles within companies, enabling me to bring a flexible approach to every project.",
+      "five": "As a freelancer, I’ve managed complete project lifecycles—from initial concept to final delivery—consistently exceeding client expectations and delivering measurable results. My work has often involved developing and optimizing SEO-friendly websites and applications, ensuring high performance in both user experience and search rankings.",
+      "six": "Within corporate environments, I have closely collaborated with engineering teams to develop and enhance B2B portals and other high-impact projects. I have also contributed to various national and European initiatives, using my technical expertise and commitment to quality to drive project success.",
+      "seven": "As an independent consultant, I have delivered scalable, maintainable, and high-performing web applications, frequently surpassing client goals. My ability to create efficient, results-oriented solutions has been key to my ongoing success as a programmer and consultant."
     },
+
+    "My Expertise": "My Expertise",
+    "Secret code for downloading CV": "Secret code for downloading CV",
+    "Thanks for confirming, downloading should start in few seconds. Please check download forlder.": "Thanks for confirming, downloading should start in few seconds. Please check download forlder.",
+    "Submit secret code": "Submit secret code",
+    "Please provide secret code to download my CV": "Please provide secret code to download my CV",
+    "Close": "Close",
+    "secret code": "secret code",
 
     "Music Wallets (vue 3)": "Music Wallets (vue 3)",
     "Group Chat (vue 3)": "Group Chat (vue 3)",

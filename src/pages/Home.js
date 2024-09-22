@@ -60,7 +60,9 @@ function Home() {
           </div>
         </div>
         <div className="row px-2 skill_slide align-items-center experience">
-          <div className="col-4 col-md-2 expertise_slide">My Expertise</div>
+          <div className="col-4 col-md-2 expertise_slide">
+            {t("My Expertise")}
+          </div>
           <div className="col-8 col-md-10 pe-0">
             <MultiCarousel
               infinite={true}

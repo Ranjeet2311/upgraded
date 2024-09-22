@@ -138,7 +138,12 @@ function Repositories() {
           <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
             {filteredProjects &&
               filteredProjects.map((item, index) => (
-                <div className="col-12 col-md-6 col-lg-3" key={index}>
+                <div
+                  className={`col-12 col-md-6 col-lg-3 ${
+                    filteredProjects.length <= 2 && "col-lg-4"
+                  } `}
+                  key={index}
+                >
                   <Card
                     key={index}
                     img={item.img}

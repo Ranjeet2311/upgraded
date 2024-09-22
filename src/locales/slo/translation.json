@@ -115,11 +115,22 @@
     "Activities & Responsibilities": "Dejavnosti in odgovornosti",
     "Used tech stack": "Rabljeni tehnični sklad",
     "experienceDetails": {
-      "one": "Z več kot 7,5 leti poklicnih izkušenj sem izpopolnil svoje veščine pri gradnji in optimizaciji spletnih aplikacij z uporabo najsodobnejših tehnologij, kot so React, Vue, Angular, Express.js, PostgreSQL in druge. Moja kariera je vključevala tako samostojno freelancing delo kot tudi sodelovanje v podjetjih, kar mi omogoča, da v svoje delo vnesem vsestranski pristop.",
-      "two": "Kot Freelancer sem upravljal celotne življenjske cikle projektov, od začetne zasnove do končne izvedbe, pri čemer sem dosledno izpolnjeval pričakovanja strank in dosegal merljive rezultate. Moje delo je vključevalo razvoj in optimizacijo SEO-prijaznih spletnih strani in aplikacij, da bi zagotovili njihovo učinkovito delovanje v iskalnih rezultatih.",
-      "three": "V korporativnih okoljih sem tesno sodeloval z inženirskimi ekipami pri razvoju in izboljšanju B2B portalov ter drugih projektov z velikim vplivom. Moj prispevek je segal na različne nacionalne in evropske pobude, kjer sem imel ključno vlogo pri zagotavljanju uspeha projektov z mojo tehnično strokovnostjo in predanostjo kakovosti.",
-      "four": "Kot samostojni svetovalec sem uspešno izvedel projekte, ki niso le izpolnili, ampak celo presegli cilje strank, zlasti pri ustvarjanju skalabilnih, vzdržljivih in visokozmogljivih spletnih aplikacij."
+      "one": "Moja pot programerja se je začela v srednji šoli, kjer sem se spoznal z osnovami spletnega razvoja in podatkovnih baz. To zgodnje znanje je postavilo temelje za moja študentska leta, ko sem še dodatno izpopolnil svoje veščine, zlasti na področju programiranja v C++.",
+      "two": "Kot strasten naravoslovec in navdušenec nad tehnologijo me je vedno gnala želja po delu v tehnološki industriji. Moja kariera se je uradno začela kot inženir za podporo strankam, kjer sem pridobil praktične izkušnje pri reševanju tehničnih izzivov. Ta vloga je zaznamovala začetek mojega nenehnega razvoja v tehnologiji.",
+      "three": "Kasneje sem prešel na samostojno delo, sodeloval s strankami iz različnih držav na raznolikih projektih. Te izkušnje so mi omogočile, da sem izostril svoje tehnične veščine, se prilagajal različnim izzivom in rasel kot vsestranski programer.",
+      "four": "Z več kot 7,5 let poklicnih izkušenj sem pridobil strokovno znanje na področju gradnje in optimizacije spletnih aplikacij z uporabo sodobnih tehnologij, kot so React, Vue, Angular, Express.js in PostgreSQL. Moja kariera vključuje tako neodvisno delo kot tudi sodelovanje znotraj podjetij, kar mi omogoča prilagodljiv pristop k vsakemu projektu.",
+      "five": "Kot samostojni izvajalec sem uspešno vodil celoten življenjski cikel projektov—od začetne zasnove do končne dostave—ter dosledno presegal pričakovanja strank in zagotavljal merljive rezultate. Moje delo je pogosto vključevalo razvoj in optimizacijo SEO prijaznih spletnih mest in aplikacij, kar zagotavlja visoko zmogljivost tako v uporabniški izkušnji kot pri uvrstitvi v iskalnikih.",
+      "six": "V korporativnem okolju sem tesno sodeloval z inženirskimi ekipami pri razvoju in izboljšanju B2B portalov ter drugih projektov z velikim vplivom. Prav tako sem prispeval k različnim nacionalnim in evropskim pobudam, kjer sem s svojo tehnično strokovnostjo in predanostjo kakovosti prispeval k uspehu projektov.",
+      "seven": "Kot neodvisni svetovalec sem uspešno dostavljal projekte, ki so presegli cilje strank, še posebej na področju ustvarjanja skalabilnih, vzdržnih in zmogljivih spletnih aplikacij. Moja sposobnost ustvarjanja učinkovitih, na rezultate osredotočenih rešitev je bila ključna za moj nenehni uspeh kot programer in svetovalec."
     },
+
+    "My Expertise": "Moje strokovno znanje",
+    "Secret code for downloading CV": "Tajna koda za prenos življenjepisa",
+    "Thanks for confirming, downloading should start in few seconds. Please check download forlder.": "Hvala za potrditev, prenos bi se moral začeti čez nekaj sekund. Preverite mapo za prenos.",
+    "Submit secret code": "Predloži skrivno kodo",
+    "Please provide secret code to download my CV": "Prosim, posredujte tajno kodo za prenos mojega življenjepisa",
+    "Close": "Zapri",
+    "secret code": "tajna koda",
 
     "Music Wallets (vue 3)": "Glasbene denarnice (vue 3)",
     "Group Chat (vue 3)": "Skupinski klepet (vue 3)",
