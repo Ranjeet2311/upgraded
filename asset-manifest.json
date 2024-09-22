@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/upgraded/static/css/main.6e5d9571.css",
-    "main.js": "/upgraded/static/js/main.46f2db7c.js",
+    "main.js": "/upgraded/static/js/main.1daa32a1.js",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
     "static/media/cap_headShot.png": "/upgraded/static/media/cap_headShot.c903e7b12db62ce54bb1.png",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/web-app.png": "/upgraded/static/media/web-app.4e0bb89899ada5dc6cf5.png",
     "static/media/new-logo.png": "/upgraded/static/media/new-logo.f0318f88e1b99d7c20d4.png",
+    "static/media/team_work.svg": "/upgraded/static/media/team_work.86a98fb9a1cbd0fa168f59ee720250ae.svg",
     "static/media/avatar_headShot.png": "/upgraded/static/media/avatar_headShot.85f06829f8c3d356e8f9.png",
-    "static/media/coder.svg": "/upgraded/static/media/coder.51e900cd0bf217aaf21ad2a1815bb164.svg",
-    "static/media/vr.svg": "/upgraded/static/media/vr.241803735812a4ae994a77e8536720b5.svg",
+    "static/media/coder.svg": "/upgraded/static/media/coder.ead4e44b09c3fcc3c68329d50e95a1a3.svg",
+    "static/media/vr.svg": "/upgraded/static/media/vr.111db89cac80e8106b26b4fb1abcd751.svg",
     "static/media/revicons.eot": "/upgraded/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/upgraded/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/Launch.svg": "/upgraded/static/media/Launch.4bf4462ef12de491f7568cb6d4e28727.svg",
+    "static/media/Launch.svg": "/upgraded/static/media/Launch.cea7a6a3dd796155cd9a2c1b6046fb19.svg",
     "static/media/revicons.woff": "/upgraded/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/spinner.svg": "/upgraded/static/media/spinner.4bdbdccc8399bb7cbec6fd19671ba953.svg",
     "static/media/all-icon.svg": "/upgraded/static/media/all-icon.5eac64278842a86f7eb72d82aa923773.svg",
@@ -29,10 +30,10 @@
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "main.6e5d9571.css.map": "/upgraded/static/css/main.6e5d9571.css.map",
-    "main.46f2db7c.js.map": "/upgraded/static/js/main.46f2db7c.js.map"
+    "main.1daa32a1.js.map": "/upgraded/static/js/main.1daa32a1.js.map"
   },
   "entrypoints": [
     "static/css/main.6e5d9571.css",
-    "static/js/main.46f2db7c.js"
+    "static/js/main.1daa32a1.js"
   ]
 }
