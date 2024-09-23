@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.b49580ce.css",
+    "main.css": "/upgraded/static/css/main.eeec4f04.css",
     "main.js": "/upgraded/static/js/main.ee4f0e4c.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
@@ -29,11 +29,11 @@
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.b49580ce.css.map": "/upgraded/static/css/main.b49580ce.css.map",
+    "main.eeec4f04.css.map": "/upgraded/static/css/main.eeec4f04.css.map",
     "main.ee4f0e4c.js.map": "/upgraded/static/js/main.ee4f0e4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b49580ce.css",
+    "static/css/main.eeec4f04.css",
     "static/js/main.ee4f0e4c.js"
   ]
 }
