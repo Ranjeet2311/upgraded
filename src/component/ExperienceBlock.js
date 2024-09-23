@@ -11,11 +11,18 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
         <span className="pe-2">📌</span>
         {t(title)} | {t(duration)} |
       </h5>
-      <p className="fw-bold ps-3"> {t("Activities & Responsibilities")}:</p>
+      <p className="fw-bold ps-3">
+        {" "}
+        <i> {t("Activities & Responsibilities")}</i> :
+      </p>
       <ul>
         {responsibilities &&
           responsibilities.map((resposibility, i) => {
-            return <li key={i}>{t(resposibility)}</li>;
+            return (
+              <li key={i}>
+                <i>{t(resposibility)}</i>
+              </li>
+            );
           })}
       </ul>
       {techs && (
@@ -28,7 +35,7 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
           techs.map((tech, i) => {
             return (
               <li key={i} className="colored-pill">
-                {tech}
+                <i>{tech}</i>
               </li>
             );
           })}

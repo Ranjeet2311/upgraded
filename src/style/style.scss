@@ -156,6 +156,10 @@ a {
   line-height: 28px;
 }
 
+img {
+  border-radius: 8px;
+}
+
 button,
 .a,
 .btn {
@@ -557,11 +561,18 @@ button,
   background: #03001e;
   background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc);
   background: linear-gradient(to right, #000ce8aa, #ec38bc);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease;
 
   &:hover {
     background: -webkit-linear-gradient(to right, #ec38bc, #000ce8aa);
     background: linear-gradient(to right, #ec38bc, #000ce8aa);
+  }
+}
+
+.zoom-btn {
+  transition: all 0.6s ease;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -821,4 +832,12 @@ button,
 .highlight {
   font-weight: 800;
   color: #f85cce;
+}
+
+.zoom-image {
+  transition: all 0.6s ease;
+  z-index: 9;
+  &:hover {
+    transform: scale(1.4);
+  }
 }

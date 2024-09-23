@@ -64,10 +64,12 @@ function Card({
           </p>
         )}
         <p className="description d-flex align-items-center">
-          {shortDescription}
-          {type === "project" &&
-            !shortDescription &&
-            "No description available"}
+          <i>
+            {shortDescription}
+            {type === "project" &&
+              !shortDescription &&
+              "No description available"}
+          </i>
         </p>
         {stack && (
           <div className="row card-stack">
@@ -75,7 +77,7 @@ function Card({
               stack.map((item, index) => {
                 return (
                   <p className="stack-pill" key={index}>
-                    {item}
+                    <i>{item}</i>
                   </p>
                 );
               })}

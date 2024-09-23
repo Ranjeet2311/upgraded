@@ -9,7 +9,7 @@ import ContactForm from "../component/ContactForm";
 import Heading from "../component/Heading";
 import Divider from "../component/Divider";
 import { useTranslation } from "react-i18next";
-import profilePic from "../images/vr.svg";
+import profilePic from "../images/berlin-river.png";
 import MultiCarousel from "../component/MultiCarousel";
 import { useSelector } from "react-redux";
 import { multiSlide } from "../data/Skills";
@@ -31,10 +31,18 @@ function Home() {
       />
       <div className="container home">
         <div className="row align-items-center hero_home section-padding-top section-padding-bottom">
-          <div className="col-12 col-lg-4 roaming-img">
-            <img src={profilePic} alt="profilepic" className="header-pic" />
+          <div className="col-12 col-lg-5 roaming-img d-flex flex-column">
+            <img
+              src={profilePic}
+              alt="profilepic"
+              className="header-pic zoom-image"
+            />
+            <p className="text-center text-lg-start text-light mt-2 mb-2">
+              <b>Place</b> : <i>The Spree river Berlin</i> <br />{" "}
+              <b>Hover to zoom the image</b>
+            </p>
           </div>
-          <div className="col-12 col-lg-8 right pe-lg-0">
+          <div className="col-12 col-lg-7 right pe-lg-0">
             <HeadH1>
               {t("home.greeting")}
               <span className="colored-text cursive ms-2">
@@ -44,16 +52,18 @@ function Home() {
             <div className="experience py-2">
               <Paragraph text={t("home.description.one")} />
               <Paragraph text={t("home.description.two")} />
-              <Paragraph text={t("home.description.three")} />
+              <i>
+                <Paragraph text={t("home.description.three")} />
+              </i>
               <div className="pt-2 pt-md-4">
                 <Button
                   isLInk={true}
                   to="/repositories"
-                  className="text-light mt-4 ms-lg-4"
+                  className="text-light mt-4 ms-lg-4 zoom-btn"
                 >
                   {t("Live Demo")} apps
                 </Button>
-                <SecretForm className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4">
+                <SecretForm className="btn inline-block btn-bg px-4 py-1 text-light mt-4 ms-lg-4 zoom-btn">
                   <FileDownloadRoundedIcon /> {t("Download my CV")}
                 </SecretForm>
               </div>
