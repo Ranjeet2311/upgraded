@@ -111,29 +111,35 @@ function Home() {
               </h5> */}
               <div className="experience py-2">
                 <Paragraph text={t("home.new-description")} />
-                <div className="social-icons ps-4 mt-4">
-                  <a
-                    className="btn btn-bg me-4 px-4"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
-                    rel="noreferrer"
-                  >
-                    <LinkedInIcon />
-                    <span className="ms-2">Linkedin</span>
-                  </a>
-
-                  <a
-                    className="btn btn-bg px-4 me-4"
-                    target="_blank"
-                    href="https://github.com/Ranjeet2311"
-                    rel="noreferrer"
-                  >
-                    <GitHubIcon />
-                    <span className="ms-2">Github</span>
-                  </a>
-                  <SecretForm className="btn btn-bg px-4 me-4">
-                    <FileDownloadRoundedIcon /> {t("Download my CV")}
-                  </SecretForm>
+                <div className="row social-icons ps-lg-4 mt-4">
+                  <div className="col-12 col-lg-6 col-xl-4 mt-3">
+                    <a
+                      className="btn btn-bg me-4"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
+                      rel="noreferrer"
+                    >
+                      <LinkedInIcon />
+                      <span className="ms-2">Linkedin</span>
+                    </a>
+                  </div>
+                  <div className="col-12 col-lg-6 col-xl-4 mt-3">
+                    <a
+                      className="btn btn-bg me-4"
+                      target="_blank"
+                      href="https://github.com/Ranjeet2311"
+                      rel="noreferrer"
+                    >
+                      <GitHubIcon />
+                      <span className="ms-2">Github</span>
+                    </a>
+                  </div>
+                  <div className="col-12 col-lg-6 col-xl-4 mt-3">
+                    <SecretForm className="btn btn-bg">
+                      <FileDownloadRoundedIcon />
+                      <span className="ms-2">{t("Download my CV")}</span>
+                    </SecretForm>
+                  </div>
                 </div>
                 {/* <div className="pt-2 pt-md-4">
                   <Button
