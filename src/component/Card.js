@@ -55,14 +55,14 @@ function Card({
           </span>
           {title}
         </h5>
-        {createdAt && (
+        {/* {createdAt && (
           <p className="created highlight my-0 py-0">
             <span className="me-2"> {t("Last updated")} :</span>
             <span>
               {date !== "Invalid date" ? date : "Checkout github for date"}
             </span>
           </p>
-        )}
+        )} */}
         <p className="description d-flex align-items-center">
           <i>
             {shortDescription}

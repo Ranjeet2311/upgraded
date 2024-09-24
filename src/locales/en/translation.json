@@ -19,15 +19,21 @@
     "Send": "Send",
 
     "home": {
-      "greeting": "👋 Welcome! I'm",
+      "greeting": "👋Welcome!",
+      "i'm": "I'm",
       "Ranjeet": "Ranjeet Kumar",
       "description": {
         "one": "I'm a dynamic individual who seamlessly blends the world of technology with a passion for adventure. As a seasoned software engineer, I've an impressive track record of developing innovative solutions and writing clean, efficient code. But I'm not just confined to the realm of computers.",
         "two": "A true traveler and explorer at heart I've journeyed across continents, immersing in diverse cultures, and navigating through some of the world’s most breathtaking landscapes. Whether hiking through remote mountain ranges, diving into the depths of the ocean, or exploring bustling urban environments, I bring the same curiosity and problem-solving skills to each new adventure.",
         "three": "Combining technical expertise with a love for discovery, I continually seeks new horizons, both in the digital world and beyond. This unique blend of experiences not only enriches my professional life but also fuels a profound understanding of the interconnectedness of our world."
       },
+      "new-description": "I’m a seasoned developer with expertise ranging from frontend to full-stack development, with experience across a variety of projects and frameworks. I have closely collaborated with engineering teams to develop and enhance B2B portals, as well as various national and European projects. As an independent consultant, I have successfully developed and optimized SEO-friendly websites and applications, delivering measurable results. Every day brings new opportunities to learn, grow, and excel, and I approach challenges with a positive outlook.",
       "glance": "🧐 Information at a glance "
     },
+    "Innovative & Solution-Driven": "Innovative & Solution-Driven",
+    "Adaptable | Forward-Thinking": "Adaptable | Forward-Thinking",
+    "Problem-Solver | Team Player": "Problem-Solver | Team Player",
+
     "Programming": "Programming",
     "Soft Skills": "Soft Skills",
     "Engineering Practices": "Engineering Practices",

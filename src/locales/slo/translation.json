@@ -19,15 +19,20 @@
     "Send": "Pošlji",
 
     "home": {
-      "greeting": "👋 Dobrodošli! Jaz sem",
+      "greeting": "👋Dobrodošli! ",
+      "i'm": "Jaz sem",
       "Ranjeet": "Ranjeet Kumar",
       "description": {
         "one": "Sem dinamičen posameznik, ki neopazno združuje svet tehnologije s strastjo do pustolovščin. Kot izkušen programski inženir imam impresivne izkušnje pri razvoju inovativnih rešitev in pisanju čiste, učinkovite kode. Vendar nisem omejen samo na področje računalnikov.",
         "two": "Pravi popotnik in raziskovalec po srcu sem potoval čez celine, se potopil v različne kulture in krmaril po nekaterih najbolj dih jemajočih pokrajinah na svetu. Ne glede na to, ali hodim po odročnih gorah, se potapljam v globine oceana ali raziskujem živahna urbana okolja, v vsako novo avanturo vnašam enako radovednost in veščine reševanja problemov.",
         "three": "Z združevanjem tehničnega znanja in ljubezni do odkrivanja nenehno iščem nova obzorja, tako v digitalnem svetu kot zunaj njega. Ta edinstvena mešanica izkušenj ne le obogati mojega poklicnega življenja, ampak spodbuja tudi globoko razumevanje medsebojne povezanosti našega sveta."
       },
+      "new-description": "Sem izkušen razvijalec z znanjem tako na področju razvoja sprednjega dela kot celotnih aplikacij, z izkušnjami na različnih projektih in v različnih okoljih. Tesno sem sodeloval z inženirskimi ekipami pri razvoju in izboljšanju B2B portalov ter različnih nacionalnih in evropskih projektov. Kot neodvisni svetovalec sem uspešno razvil in optimiziral SEO-prijazna spletna mesta in aplikacije, ki so prinesla merljive rezultate. Vsak dan prinaša nove priložnosti za učenje, rast in doseganje odličnosti, pri čemer na izzive vedno gledam pozitivno.",
       "glance": "🧐 informacije na prvi pogled"
     },
+    "Innovative & Solution-Driven": "Inovativen & Usmerjen k rešitvam",
+    "Adaptable | Forward-Thinking": "Prilagodljiv | Usmerjen v prihodnost",
+    "Problem-Solver | Team Player": "Reševalec problemov | Igralec ekipe",
     "Programming": "Programiranje",
     "Soft Skills": "Mehke veščine",
     "Engineering Practices": "Inženirske prakse",

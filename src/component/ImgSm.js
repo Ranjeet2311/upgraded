@@ -28,7 +28,7 @@ function ImgSm({ image, alt, name }) {
           const rect = ref.current.getBoundingClientRect();
           setXys(calc(e.clientX, e.clientY, rect));
         }}
-        src={image}
+        src={process.env.PUBLIC_URL + "/" + image}
         alt={alt}
       />
       <p>{name}</p>

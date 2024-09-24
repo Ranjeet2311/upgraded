@@ -19,8 +19,8 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
         {responsibilities &&
           responsibilities.map((resposibility, i) => {
             return (
-              <li key={i}>
-                <i>{t(resposibility)}</i>
+              <li className="mb-2" key={i}>
+                {t(resposibility)}
               </li>
             );
           })}

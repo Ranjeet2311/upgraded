@@ -1,7 +1,7 @@
 const experienceData = [
   {
     id: 4,
-    title: "Parental Break",
+    title: "Parental Break | Freelance",
     duration: "December 2023 - Current",
     techs: [
       "Html",

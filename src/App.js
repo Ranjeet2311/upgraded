@@ -10,6 +10,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import { initializeAnalytics, trackPageView } from "./analytics";
 import Cookies from "./component/Cookies";
 import { useSelector } from "react-redux";
+import ProjectDetail from "./component/singlePageDesign/ProjectDetail";
 
 const TRACKING_ID = "G-X5LNVZ2K4X";
 function App() {
@@ -27,13 +28,13 @@ function App() {
       <BrowserRouter basename="/upgraded">
         {isAnalyticsInitialized && <TrackPageViews />}
         <Cookies onConsent={handleConsent} />
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route index element={<Home />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/repositories" element={<Repositories />} />
-          <Route path="/repositories/:projectId" element={<ProjectDetails />} />
+          <Route path="/repositories/:projectId" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -17,6 +17,7 @@ export default function Button({
       <Link
         to={to}
         style={{ ...style }}
+        // target="blank"
         className={`btn inline-block btn-bg px-4 py-1 ${className}`}
       >
         {children}

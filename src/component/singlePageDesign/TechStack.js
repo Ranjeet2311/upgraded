@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterSkills } from "../store/features/expertiseSlice";
-import Heading from "../component/Heading";
-import Divider from "../component/Divider";
-import ImgSm from "../component/ImgSm";
-import Contact from "../component/Contact";
-import Accordian from "../component/Accordian";
-import StaticModal from "../component/StaticModal";
-import ContactForm from "../component/ContactForm";
+import { filterSkills } from "../../store/features/expertiseSlice";
+import Heading from "../../component/Heading";
+import Divider from "../../component/Divider";
+import ImgSm from "../../component/ImgSm";
 import { Tabs, Tab, Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import Metadata from "../component/Metadata";
-
-function Expertise() {
+export default function TechStack() {
   const [value, setValue] = useState(0);
   const tabChangeHandle = (event, newValue) => {
     setValue(newValue);
@@ -50,14 +44,10 @@ function Expertise() {
         break;
     }
   }, [label]);
-
   return (
-    <>
-      <Metadata
-        title="Expertise | Ranjeet Kumar"
-        description="Discover Ranjeet Kumar's deep expertise in web development, with a focus on front-end technologies like Vue.js, React, and Angular, as well as backend integration using Node.js, PHP and SQL. Learn how his 7.5+ years of experience have driven the development of high-performance, responsive web applications, and how he excels in implementing CI/CD pipelines and leading Agile teams."
-      />
-      <div className="text-center container px-0 texh_stack section-padding-bottom pt-2">
+    <div>
+      {" "}
+      <div className="text-center container px-0 texh_stack pt-2">
         <div className="row align-items-center">
           <div className="col-12">
             <Heading text={`<🛡️${t("My tech stack")} / >`} />
@@ -113,22 +103,8 @@ function Expertise() {
               </div>
             </div>
           </div>
-          <div className="mt-4">
-            <Accordian heading={t("Let's Connect")} accordianSelect="techTwo">
-              <Contact>
-                <StaticModal
-                  btnText={t("Message me")}
-                  title={t("Sending message to @Ranjeet")}
-                >
-                  <ContactForm> </ContactForm>
-                </StaticModal>
-              </Contact>
-            </Accordian>
-          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
-
-export default Expertise;

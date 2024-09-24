@@ -19,15 +19,21 @@
     "Send": "Schicken",
 
     "home": {
-      "greeting": "👋 Willkommen! Ich bin",
+      "greeting": "👋Willkommen! ",
+      "i'm": "Ich bin",
       "Ranjeet": "Ranjeet Kumar",
       "description": {
         "one": "Ich bin ein dynamischer Mensch, der die Welt der Technologie nahtlos mit einer Leidenschaft für Abenteuer verbindet. Als erfahrener Softwareentwickler kann ich auf eine beeindruckende Erfolgsbilanz bei der Entwicklung innovativer Lösungen und dem Schreiben von sauberem, effizientem Code zurückblicken. Aber ich bin nicht nur auf den Bereich der Computer beschränkt.",
         "two": "Im Herzen bin ich ein wahrer Reisender und Entdecker. Ich bin über Kontinente gereist, in verschiedene Kulturen eingetaucht und durch einige der atemberaubendsten Landschaften der Welt navigiert. Egal, ob ich durch abgelegene Bergketten wandere, in die Tiefen des Ozeans eintauche oder geschäftige städtische Umgebungen erkunde, ich bringe bei jedem neuen Abenteuer die gleiche Neugier und die gleichen Fähigkeiten zur Problemlösung mit.",
         "three": "Ich verbinde technisches Fachwissen mit der Liebe zum Entdecken und suche ständig nach neuen Horizonten, sowohl in der digitalen Welt als auch darüber hinaus. Diese einzigartige Erfahrungsmischung bereichert nicht nur mein Berufsleben, sondern fördert auch ein tiefes Verständnis für die Vernetzung unserer Welt."
       },
+      "new-description": "Ich bin ein erfahrener Entwickler mit Fachkenntnissen in der Frontend- und Fullstack-Entwicklung sowie Erfahrung in einer Vielzahl von Projekten und Frameworks. Ich habe eng mit Engineering-Teams zusammengearbeitet, um B2B-Portale sowie verschiedene nationale und europäische Projekte zu entwickeln und zu verbessern. Als unabhängiger Berater habe ich erfolgreich SEO-optimierte Websites und Anwendungen entwickelt und optimiert, die messbare Ergebnisse liefern. Jeder Tag bringt neue Chancen, zu lernen, zu wachsen und Exzellenz zu erreichen, und ich gehe Herausforderungen mit einer positiven Einstellung an.",
       "glance": "🧐 Informationen auf einen Blick"
     },
+    "Innovative & Solution-Driven": " Innovativ & Lösungsorientiert",
+    "Adaptable | Forward-Thinking": "Anpassungsfähig | Zukunftsorientiert",
+    "Problem-Solver | Team Player": "Problemlöser | Teamplayer",
+
     "Programming": "Programmierung",
     "Soft Skills": "Soft Skills",
     "Engineering Practices": "Ingenieurpraktiken",

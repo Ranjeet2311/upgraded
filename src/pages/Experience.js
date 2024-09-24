@@ -14,6 +14,8 @@ import Metadata from "../component/Metadata";
 import teamImage from "../images/x3.jpg";
 import dev from "../images/werdev.jpg";
 import devTalk from "../images/x2.jpg";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { Link } from "react-router-dom";
 
 function Experience() {
   const { t } = useTranslation();
@@ -24,10 +26,26 @@ function Experience() {
         title="Experience | Ranjeet Kumar"
         description="Explore Ranjeet Kumar's extensive professional experience in web development, including contributions to enterprise-level applications using Vue.js, Angular, and backend technologies like Node.js and PHP. With 7.5+ years of expertise, discover how he has optimized web applications, in Agile teams, and delivered high-performance, responsive solutions for various B2B and national projects."
       />
+
       <div className="container exp_page pt-2">
+        <div className="col-12">
+          <div className="bread-crumb">
+            <ArrowBackIosIcon />
+            <Link className="text-decoration-none text-white ms-2" to="/">
+              {t("Back to Home")}
+            </Link>
+            <p className="mx-1">/ </p>
+            <Link
+              className="text-decoration-none text-white ms-2"
+              to={`/experience/`}
+            >
+              {t("experience")}
+            </Link>
+          </div>
+        </div>
         <Heading text={`<⚙️${t("Experience")} / >`} />
         <Divider />
-        <div className="row mb-4 mt-4 justify-content-center section-padding-bottom section-padding-top">
+        <div className="row mb-4 mt-4 justify-content-center">
           <div className="col-12 col-lg-4 left-side">
             <img
               src={teamImage}

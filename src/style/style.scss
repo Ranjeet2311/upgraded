@@ -18,31 +18,97 @@ $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 
 body {
   background: black;
+  cursor: drop-shadow(0 0 40px rgba(0, 12, 232, 0.667)) !important;
 }
 
 .dark-bg {
-  background: #a8c0ff;
-  background: -webkit-linear-gradient(to top, #3f2b96, #6c94fa, #3f2b96);
-  background: linear-gradient(to top, #3f2b96, #6c94fa, #3f2b96);
+  background: white;
+  // background: -webkit-linear-gradient(to top, #3f2b96, #6c94fa, #3f2b96);
+  // background: linear-gradient(to top, #3f2b96, #6c94fa, #3f2b96);
   transition: 0.6s;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  .tab_label,
+  span,
+  p {
+    color: black !important;
+  }
+  .colored-pill {
+    color: white !important;
+  }
 
   .ccard {
     background: white;
+  }
+  .accordion .accordion-button::after {
+    filter: none;
+  }
+  .bread-crumb {
+    a {
+      color: black !important;
+    }
+  }
+
+  hr {
+    border-color: black !important;
+  }
+
+  .btn {
+    span {
+      color: white !important;
+    }
+  }
+
+  .header-pic {
+    filter: none !important;
+  }
+  .experience {
+    filter: none !important;
+    background-color: white;
+  }
+  .Navbar-wrap {
+    box-shadow: none !important;
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: black !important;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    // background: linear-gradient(to left, #2499ffaa, rgb(255, 35, 229));
+  }
+  .css-1aquho2-MuiTabs-indicator,
+  .MuiTabs-indicator {
+    background-color: rgba(188, 62, 174, 1) !important;
   }
 
   .project-wrapper,
   .project-details {
     .card {
-      background: linear-gradient(to top, #fefefe, #0e2c77, #5b3be9) !important;
+      // background: linear-gradient(to top, #fefefe, #0e2c77, #5b3be9) !important;
+      background: white !important;
       border: none;
-
+      box-shadow: -5px 8px 12px #9fb1d499;
       &:hover {
-        background: linear-gradient(
-          to top,
-          #0e2c77,
-          #5b3be9,
-          #fefefe
-        ) !important;
+        filter: none;
+        background: white !important;
+        box-shadow: 8px 8px 20px #2c5364;
+      }
+
+      .card-title {
+        color: black !important;
+        text-shadow: none;
+      }
+      .stack-pill,
+      .btn {
+        color: white !important;
+        box-shadow: none;
       }
     }
   }
@@ -356,7 +422,7 @@ button,
 }
 
 .app {
-  padding-top: 110px;
+  padding-top: 30px;
   padding-bottom: 120px;
   padding-left: 12px;
   padding-right: 12px;
@@ -840,4 +906,36 @@ button,
   &:hover {
     transform: scale(1.4);
   }
+}
+
+// -------------
+section {
+  box-sizing: border-box;
+  width: 100%;
+  // height: 100%;
+  // display: flex;
+  // justify-content: flex-start;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(to right, #000ce8aa, #ec38bc);
+  transform-origin: 0%;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 35, 229);
+  // font-size: 18px !important;
 }

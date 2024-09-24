@@ -197,46 +197,52 @@
 }
 
 .social-icons {
-  position: absolute;
-  right: 0;
-  top: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: rgb(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 253, 253, 0.2);
-  border-radius: 12px;
-  padding: 6px 4px;
-  color: white;
-  transform: translateX(14px);
-  transition: all 0.4s ease-in;
-  box-shadow: 6px 6px 60px #000ce8aa;
-
-  span {
-    display: none;
-    transition: all 0.8s ease-in;
-    color: white;
-    font-size: 16px;
-    border-radius: 12px !important;
-  }
-
-  &:hover {
-    border: none;
-    transform: translateX(0px);
-    transition: all 0.4s ease-out;
-    background: linear-gradient(45deg, rgba(188, 62, 174), rgba(0, 12, 232));
-    box-shadow: 6px 6px 40px #000ce8aa;
-
-    span {
-      display: block;
-      padding-right: 12px;
-    }
-  }
-
-  .MuiSvgIcon-fontSizeMedium {
-    margin-right: 12px;
-    color: white;
-    font-size: 25px;
-  }
+  // justify-content: space-between;
+  align-items: center;
 }
+
+// .social-icons {
+//   position: absolute;
+//   right: 0;
+//   top: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   background: rgb(0, 0, 0, 0.6);
+//   border: 1px solid rgba(255, 253, 253, 0.2);
+//   border-radius: 12px;
+//   padding: 6px 4px;
+//   color: white;
+//   transform: translateX(14px);
+//   transition: all 0.4s ease-in;
+//   box-shadow: 6px 6px 60px #000ce8aa;
+
+//   span {
+//     display: none;
+//     transition: all 0.8s ease-in;
+//     color: white;
+//     font-size: 16px;
+//     border-radius: 12px !important;
+//   }
+
+//   &:hover {
+//     border: none;
+//     transform: translateX(0px);
+//     transition: all 0.4s ease-out;
+//     background: linear-gradient(45deg, rgba(188, 62, 174), rgba(0, 12, 232));
+//     box-shadow: 6px 6px 40px #000ce8aa;
+
+//     span {
+//       display: block;
+//       padding-right: 12px;
+//     }
+//   }
+
+//   .MuiSvgIcon-fontSizeMedium {
+//     margin-right: 12px;
+//     color: white;
+//     font-size: 25px;
+//   }
+// }
