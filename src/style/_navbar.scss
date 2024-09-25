@@ -1,30 +1,32 @@
 .top-wrap {
   position: fixed;
-  top: 6px;
+  top: 18px;
   left: 0;
   width: 100vw;
   padding: 10px 0;
   z-index: 100;
 
   .Navbar-wrap {
-    padding: 6px 12px;
+    padding: 2px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background: linear-gradient(
-    //   to left,
-    //   rgba(188, 62, 174, 0),
-    //   // rgb(72, 50, 133, 1) ,
-    //   rgba(0, 12, 232, 0.6),
-    //   rgba(188, 62, 174, 0)
-    // );
-    background: linear-gradient(45deg, black, rgb(32, 41, 219), black);
-    box-shadow: 1px 1px 44px rgba(0, 12, 232, 0.667);
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.6),
+      rgb(32, 41, 219),
+      rgba(0, 0, 0, 0.6)
+    );
+    box-shadow: 1px 1px 44px rgba(0, 8, 132, 0.667);
     border-radius: 12px;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       box-shadow: 1px 1px 24px #000ce8aa;
+
+      .logo-imag {
+        box-shadow: 0px;
+      }
     }
 
     @include at-900px {
@@ -40,21 +42,62 @@
 
     .logo {
       z-index: 1000;
-      width: 40px;
-      background: #000ce8aa;
-      border-radius: 50%;
+      width: 100%;
+      // border-radius: 50%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      position: relative;
 
       @include at-900px {
         position: absolute;
-        left: 52px;
-        // padding: 15px 0 0;
-        width: 50px;
+        left: 20%;
+      }
+      @include mid {
+        left: 21%;
+      }
+      @include for-tablet-portrait-up {
+        left: 23%;
+      }
+      @include sm {
+        left: 26%;
       }
 
       .logo-image {
         border: 1px solid white;
-        width: 100%;
+        width: 60px;
         border-radius: 50%;
+        background: #000ce8aa;
+        position: absolute;
+        box-shadow: 2px 6px 20px rgba(188, 62, 174, 1);
+
+        &:hover {
+          box-shadow: 8px 12px 60px rgba(188, 62, 174, 1);
+          transition: all 0.6 ease-in-out;
+        }
+        @include at-900px {
+          left: -15%;
+        }
+      }
+      .logo-image-second {
+        background: transparent;
+        width: 65px;
+        border-radius: 0px;
+        position: absolute;
+        left: 60px;
+
+        @include at-900px {
+          left: -9%;
+        }
+        @include mid {
+          left: -7%;
+        }
+        @include for-tablet-portrait-up {
+          left: -2%;
+        }
+        @include sm {
+          left: 0%;
+        }
       }
     }
 
@@ -98,7 +141,7 @@
             border-bottom: 1px solid transparent;
             text-decoration: none;
             color: white;
-            font-size: 16px !important;
+            font-size: 18px !important;
 
             @include at-900px {
               text-shadow: 3px 2px black;

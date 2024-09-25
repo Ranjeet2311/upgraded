@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../../images/new-logo.png";
+import LogoSecond from "../../images/logo-second.svg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
@@ -55,6 +56,12 @@ export default function Navbar() {
       <div className="Navbar-wrap container">
         <NavLink href="/" className="logo">
           <img className="logo-image" src={Logo} alt="logo" loading="lazy" />
+          <img
+            className="logo-image-second ms-2"
+            src={LogoSecond}
+            alt="logo"
+            loading="lazy"
+          />
         </NavLink>
         <div onClick={clickHandler} className="burger-menu">
           {clicked ? (
