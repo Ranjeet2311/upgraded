@@ -3,30 +3,30 @@ import { useTranslation } from "react-i18next";
 function ExperienceBlock({ title, responsibilities, techs, duration }) {
   const { t } = useTranslation();
   return (
-    <div className="mt-4 px-3 py-2">
-      <h5
+    <div className="px-3 py-2 ExperienceBlock">
+      <h3
         className="fw-bolder text-decoration-underline"
         style={{ color: "#ffffff" }}
       >
         <span className="pe-2">📌</span>
         {t(title)} | {t(duration)} |
-      </h5>
-      <p className="fw-bold ps-3">
+      </h3>
+      <p className="fw-bold ps-3 mt-4">
         {" "}
-        <i> {t("Activities & Responsibilities")}</i> :
+        {t("Activities & Responsibilities")} :
       </p>
       <ul>
         {responsibilities &&
           responsibilities.map((resposibility, i) => {
             return (
-              <li className="mb-2" key={i}>
+              <li className="mb-2 responsibilities" key={i}>
                 {t(resposibility)}
               </li>
             );
           })}
       </ul>
       {techs && (
-        <p if className="fw-bold ps-3">
+        <p if className="fw-bold ps-3 text-decoration-underline mt-4 mb-2">
           {t("Used tech stack")}:
         </p>
       )}
@@ -35,7 +35,7 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
           techs.map((tech, i) => {
             return (
               <li key={i} className="colored-pill">
-                <i>{tech}</i>
+                {tech}
               </li>
             );
           })}

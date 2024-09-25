@@ -18,7 +18,7 @@
 }
 .rotate {
   display: inline-block;
-  animation: infiniteRotate 14s linear infinite;
+  animation: infiniteRotate 5s linear infinite;
   transform-style: preserve-3d;
 }
 @keyframes infiniteRotate {

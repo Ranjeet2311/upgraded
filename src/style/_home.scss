@@ -1,5 +1,26 @@
 .home {
   .hero_home {
+    .typing-text {
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 500 !important;
+      font-family: $headFont !important;
+      padding: 0.5rem 0;
+      color: $white;
+
+      @include at-900px() {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      @include for-tablet-portrait-up() {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    p {
+      font-weight: 500;
+    }
     .btn {
       @include at-900px {
         width: 100%;

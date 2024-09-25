@@ -12,10 +12,10 @@ function Contact({ children }) {
 
   return (
     <div className=" col-12 ">
-      <div className="row justify-content-xl-center">
+      <div className="row justify-content-xl-center mx-0">
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           {
-            <SecretForm className="btn me-2 me-lg-4 btn btn-bg w-100 border-0">
+            <SecretForm className="btn me-0 me-lg-2 btn btn-bg w-100 border-0">
               <FileDownloadRoundedIcon />
               {t("Download my CV")}
             </SecretForm>
@@ -33,7 +33,7 @@ function Contact({ children }) {
         </div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           <a
-            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
+            className="me-lg-2 me-lg-4 btn btn-bg w-100 border-0"
             style={{ color: "white", textDecoration: "none" }}
             target="blank"
             href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
@@ -43,7 +43,7 @@ function Contact({ children }) {
         </div>
         <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           <a
-            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
+            className=" me-lg-2 btn btn-bg w-100 border-0"
             style={{ color: "white", textDecoration: "none" }}
             target="blank"
             href="mailto:ranjeetkumar2311@gmail.com"

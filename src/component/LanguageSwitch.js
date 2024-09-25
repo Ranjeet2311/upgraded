@@ -45,7 +45,7 @@ function LanguageSwitch() {
         >
           <img
             className="rotate me-1"
-            style={{ maxWidth: "30px" }}
+            style={{ maxWidth: "25px" }}
             src={earth}
             alt="world-icon"
             loading="lazy"

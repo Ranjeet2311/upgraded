@@ -112,13 +112,13 @@ export default function Project() {
           {t("Now displaying list of")}
           <strong className="mx-1">"{tabValue.toUpperCase()}"</strong>
           {t("repositories, for more repositories checkout my")}
-          <span className="ms-1">
+          <span className="ms-1 link">
             <a
-              className="lead bg-white px-2 rounded-1 btn-bg"
+              className="link px-2"
               href="https://github.com/Ranjeet2311"
               target="blank"
             >
-              github
+              github.
             </a>
           </span>
         </p>

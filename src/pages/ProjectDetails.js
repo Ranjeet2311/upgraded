@@ -79,7 +79,7 @@ function ProjectDetails() {
               />
             </div>
             <p className="text-light experience mb-0">
-              {t("Click on imgae to zoom / shrink")}
+              <b> {t("Click on imgae to zoom / shrink")}</b>
             </p>
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2 details">

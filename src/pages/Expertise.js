@@ -64,9 +64,9 @@ function Expertise() {
             <Divider />
           </div>
           <div className="col-12 col-lg-12 mt-4">
-            <h2 className="d-flex justify-content-center py-4 my-2">
+            <h3 className="d-flex justify-content-center py-4 my-2">
               {t(label).toUpperCase()}{" "}
-            </h2>
+            </h3>
             <div className="row">
               <div className="col-12 col-lg-3 h-100">
                 <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center flex-column">

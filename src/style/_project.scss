@@ -11,6 +11,7 @@
       rgba(0, 12, 232, 0.4)
     ) !important;
     padding-bottom: 14px;
+    font-family: $merriweather !important;
 
     &:hover {
       background: rgba(0, 12, 232, 0.4) !important;
@@ -20,19 +21,22 @@
     }
     .card-body {
       padding: 14px 10px 8px;
+      font-family: $merriweather !important;
       .card-title {
         font-size: 16px;
         line-height: 18px;
         min-height: 28px;
       }
-      .created {
-        font-family: $baseFont !important;
-      }
+      // .created {
+      //   font-family: $baseFont !important;
+      // }
       .description {
         font-size: 12px !important;
+        font-family: $merriweather !important;
       }
       .stack-pill {
-        font-size: 10px !important;
+        font-size: 12px !important;
+        font-weight: 700;
       }
       // .card-stack {
       //   margin-bottom: 0 !important;
@@ -41,7 +45,7 @@
     .card-footer {
       padding: 0px 10px;
       .btn {
-        font-size: 12px !important;
+        font-size: 14px !important;
         // margin: 0;
       }
     }
@@ -49,12 +53,12 @@
 }
 
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-  font-size: 14px !important;
+  font-size: 18px !important;
   padding: 10px auto !important;
 }
 
 .tab_label {
-  font-size: 12px !important;
+  font-size: 15px !important;
   color: white !important;
   padding: 10px 10px !important;
   min-width: 40px !important;
