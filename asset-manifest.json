@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.502500de.css",
-    "main.js": "/upgraded/static/js/main.f045c515.js",
+    "main.css": "/upgraded/static/css/main.39ab4e43.css",
+    "main.js": "/upgraded/static/js/main.11f73ccb.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/x2.jpg": "/upgraded/static/media/x2.300eb2b750c769ea751e.jpg",
@@ -14,6 +14,7 @@
     "static/media/avatar_headShot.png": "/upgraded/static/media/avatar_headShot.85f06829f8c3d356e8f9.png",
     "static/media/revicons.eot": "/upgraded/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/upgraded/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/logo-second.svg": "/upgraded/static/media/logo-second.dbd528135f8a6860df1b0b1cb3eba149.svg",
     "static/media/revicons.woff": "/upgraded/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/spinner.svg": "/upgraded/static/media/spinner.4bdbdccc8399bb7cbec6fd19671ba953.svg",
     "static/media/all-icon.svg": "/upgraded/static/media/all-icon.5eac64278842a86f7eb72d82aa923773.svg",
@@ -29,11 +30,11 @@
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.502500de.css.map": "/upgraded/static/css/main.502500de.css.map",
-    "main.f045c515.js.map": "/upgraded/static/js/main.f045c515.js.map"
+    "main.39ab4e43.css.map": "/upgraded/static/css/main.39ab4e43.css.map",
+    "main.11f73ccb.js.map": "/upgraded/static/js/main.11f73ccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.502500de.css",
-    "static/js/main.f045c515.js"
+    "static/css/main.39ab4e43.css",
+    "static/js/main.11f73ccb.js"
   ]
 }
