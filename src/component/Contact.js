@@ -13,25 +13,15 @@ function Contact({ children }) {
   return (
     <div className=" col-12 ">
       <div className="row justify-content-xl-center mx-0">
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">
+        {/* <div className="col-12 col-lg-3 mb-2 mb-lg-0">
           {
             <SecretForm className="btn me-0 me-lg-2 btn btn-bg w-100 border-0">
               <FileDownloadRoundedIcon />
               {t("Download my CV")}
             </SecretForm>
           }
-          {/* <button
-            type="button"
-            className="me-2 me-lg-4 btn btn-bg w-100 border-0"
-            style={{ color: "white", textDecoration: "none" }}
-            onClick={showSecretForm}
-            target="_blank"
-          >
-            <FileDownloadRoundedIcon />
-            {t("Download my CV")}
-          </button> */}
-        </div>
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">
+        </div> */}
+        <div className="col-12 col-lg-4 mb-2 mb-lg-0">
           <a
             className="me-lg-2 me-lg-4 btn btn-bg w-100 border-0"
             style={{ color: "white", textDecoration: "none" }}
@@ -41,7 +31,7 @@ function Contact({ children }) {
             <LinkedInIcon /> Linkedin
           </a>
         </div>
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">
+        <div className="col-12 col-lg-4 mb-2 mb-lg-0">
           <a
             className=" me-lg-2 btn btn-bg w-100 border-0"
             style={{ color: "white", textDecoration: "none" }}
@@ -51,7 +41,7 @@ function Contact({ children }) {
             <MarkEmailUnreadIcon /> {t("Email me")}
           </a>
         </div>
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">{children}</div>
+        <div className="col-12 col-lg-4 mb-2 mb-lg-0">{children}</div>
       </div>
     </div>
   );

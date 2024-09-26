@@ -1,29 +1,50 @@
 .home {
   .hero_home {
+    h1 {
+      .Typewriter__wrapper {
+        font-family: $cursive !important;
+      }
+    }
     .typing-text {
-      font-size: 32px;
-      line-height: 38px;
-      font-weight: 500 !important;
-      font-family: $headFont !important;
-      padding: 0.5rem 0;
-      color: $white;
+      .Typewriter {
+        .Typewriter__wrapper {
+          font-size: 26px !important;
+          line-height: 36px;
+          font-weight: 500 !important;
+          font-family: $cursive !important;
+          padding: 0.5rem 0;
+          color: $white;
 
-      @include at-900px() {
-        font-size: 26px;
-        line-height: 36px;
-      }
+          @include at-900px() {
+            font-size: 22px;
+            line-height: 36px;
+          }
 
-      @include for-tablet-portrait-up() {
-        font-size: 20px;
-        line-height: 28px;
+          @include for-tablet-portrait-up() {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
       }
     }
+
     p {
-      font-weight: 500;
+      font-weight: 300;
+      // letter-spacing: 1px;
+      font-family: $cursive;
     }
-    .btn {
+    .social-icons {
+      display: flex;
+      justify-content: start !important;
+
       @include at-900px {
-        width: 100%;
+        justify-content: center !important;
+      }
+      .btn {
+        @include at-900px {
+          width: max-content;
+          padding-left: 0 !important;
+        }
       }
     }
   }

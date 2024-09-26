@@ -11,7 +11,7 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
         <span className="pe-2">📌</span>
         {t(title)} | {t(duration)} |
       </h3>
-      <p className="fw-bold ps-3 mt-4">
+      <p className="fw-bold ps-3 mt-4 mb-2 mb-lg-4">
         {" "}
         {t("Activities & Responsibilities")} :
       </p>

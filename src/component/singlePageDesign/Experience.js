@@ -1,14 +1,8 @@
 import Heading from "../../component/Heading";
-import Paragraph from "../../component/Paragraph";
 import { experienceData } from "../../data/experienceList";
 import ExperienceBlock from "../../component/ExperienceBlock";
 import Divider from "../../component/Divider";
-import MultiCarousel from "../../component/MultiCarousel";
-import { maxOneSlide } from "../../data/Skills";
 import { useTranslation } from "react-i18next";
-import teamImage from "../../images/x3.jpg";
-import dev from "../../images/werdev.jpg";
-import devTalk from "../../images/x2.jpg";
 import Accordian from "../Accordian";
 import { Link } from "react-router-dom";
 
@@ -40,7 +34,7 @@ export default function Experience() {
               );
             })}
           <Link className="mt-4" to="/experience">
-            <p className="underline">Read more about me...</p>
+            <p className="underline link">Read more about me...</p>
           </Link>
         </div>
       </div>

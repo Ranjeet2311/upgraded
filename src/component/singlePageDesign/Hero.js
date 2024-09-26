@@ -3,14 +3,11 @@ import Typewriter from "typewriter-effect";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { IconButton } from "@mui/material";
 import FileDownloadRoundedIcon from "@mui/icons-material/FileDownloadRounded";
-import SecretForm from "../../component/SecretForm";
 import { useTranslation } from "react-i18next";
 import profilePic from "../../images/berlin-river.png";
 import HeadH1 from "../../component/HeadH1";
 import Paragraph from "../../component/Paragraph";
-import Button from "../Button";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -45,15 +42,16 @@ export default function Hero() {
           <span className="colored-text ms-2">
             <Typewriter
               options={{
-                strings: [t("home.Ranjeet")],
+                strings: [t("home.Ranjeet"), "a software dev"],
                 autoStart: true,
                 loop: true,
-                pauseFor: 100000000,
+                delay: 100,
+                pauseFor: 6000,
               }}
             />
           </span>
         </HeadH1>
-        <h2 className="colored-text ms-2 mt-3 ms-4 typing-text">
+        <h2 className="ms-2 mt-3 ms-4 typing-text">
           {t("home.i'm")}
           <span className="ms-2">
             <Typewriter
@@ -65,6 +63,7 @@ export default function Hero() {
                 ],
                 autoStart: true,
                 loop: true,
+                delay: 130,
                 pauseFor: 1000,
               }}
             />
@@ -87,35 +86,47 @@ export default function Hero() {
       </h5> */}
         <div className="experience py-2">
           <Paragraph text={t("home.new-description")} />
-          <div className="row social-icons ps-lg-4 mt-4">
-            <div className="col-12 col-lg-6 col-xl-4 mt-3">
-              <a
-                className="btn btn-bg me-lg-4"
-                target="_blank"
-                href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
-                rel="noreferrer"
-              >
-                <LinkedInIcon />
-                <span className="ms-2">Linkedin</span>
-              </a>
-            </div>
-            <div className="col-12 col-lg-6 col-xl-4 mt-3">
-              <a
-                className="btn btn-bg me-lg-4"
-                target="_blank"
-                href="https://github.com/Ranjeet2311"
-                rel="noreferrer"
-              >
-                <GitHubIcon />
-                <span className="ms-2">Github</span>
-              </a>
-            </div>
-            <div className="col-12 col-lg-6 col-xl-4 mt-3">
-              <Button className="btn" onButtonCLick={handleCVDownload}>
-                <FileDownloadRoundedIcon />
-                <span className="ms-2">{t("Download my CV")}</span>
-              </Button>
-            </div>
+          <div className="row social-icons ps-lg-4 mt-4 mx-0">
+            <a
+              className="btn me-4 multi-colored-text mt-3"
+              target="_blank"
+              href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
+              rel="noreferrer"
+              type="button"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Linkedin"
+            >
+              <LinkedInIcon />
+              <span className="ms-2">Linkedin</span>
+            </a>
+
+            <a
+              className="btn me-4 multi-colored-text mt-3"
+              target="_blank"
+              href="https://github.com/Ranjeet2311"
+              rel="noreferrer"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Github"
+            >
+              <GitHubIcon />
+              <span className="ms-2">Github</span>
+            </a>
+
+            <button
+              className="btn multi-colored-text mt-3"
+              onClick={handleCVDownload}
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Download my CV"
+            >
+              <FileDownloadRoundedIcon />
+              <span className="ms-2">{t("Download my CV")}</span>
+            </button>
+            {/* <Button className="btn" onButtonCLick={handleCVDownload}>
+
+              </Button> */}
           </div>
           {/* <div className="pt-2 pt-md-4">
           <Button

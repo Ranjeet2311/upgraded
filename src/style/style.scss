@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
 // font-family: "Merriweather", serif;
 // font-family: "Libre Baskerville", serif;
 // font-family: "Lato", system-ui;
 // font-family: "Inconsolata", monospace;
 // font-family: "Poppins", sans-serif;
+// font-family: "Ubuntu", sans-serif;
+// font-family: "Playwrite DE Grund", cursive;
 
 $headFont: "Libre Baskerville", serif;
-$regularFont: "Inconsolata", monospace;
-$merriweather: "Merriweather", serif;
 $Poppins: "Poppins", sans-serif;
+$cursive: "Playwrite DE Grund", cursive;
 
-$cursive: "Dancing Script", cursive;
+// $cursive: "Dancing Script", cursive;
 $white: #ffffff;
 $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
 
@@ -19,7 +23,6 @@ $linear: linear-gradient(to bottom, #3e7dbc94, #0951b6);
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: $regularFont;
 }
 
 body {
@@ -52,6 +55,10 @@ body {
     );
     -webkit-background-clip: text;
     color: transparent !important;
+  }
+
+  .multi-colored-text {
+    color: black;
   }
 
   .colored-pill {
@@ -275,7 +282,7 @@ img {
 button,
 .a,
 .btn {
-  font-family: $regularFont !important;
+  font-family: $Poppins !important;
   font-size: 16px !important;
   line-height: 26px !important;
   font-weight: 600 !important;
@@ -331,10 +338,11 @@ button,
 
 .animated-background {
   width: auto;
+  font-weight: 500;
   background: linear-gradient(
     to left,
-    rgba(188, 62, 174, 0.5),
-    rgb(72, 50, 133, 0.5)
+    rgba(237, 108, 222, 1),
+    rgb(72, 50, 133, 1)
   );
   animation: mymove 0.6s reverse infinite;
 }
@@ -343,15 +351,15 @@ button,
   from {
     background: linear-gradient(
       to left,
-      rgba(188, 62, 174, 0.5),
-      rgba(0, 12, 232, 0.667)
+      rgba(72, 50, 133, 1),
+      rgba(237, 108, 222, 1)
     );
   }
   to {
     background: linear-gradient(
       to left,
-      rgba(0, 12, 232, 0.667),
-      rgba(188, 62, 174, 0.5)
+      rgba(237, 108, 222, 1),
+      rgba(72, 50, 133, 1)
     );
   }
 }
@@ -428,6 +436,7 @@ button,
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
 .css-1q2h7u5 {
   font-size: 20px !important;
+  font-weight: 300 !important;
 }
 
 /* width */
@@ -475,8 +484,16 @@ button,
 }
 
 .colored-pill {
-  background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc);
-  background: linear-gradient(to right, #000ce8aa, #ec38bc);
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
   margin: 6px 4px;
   padding: 4px 16px;
   border-radius: 20px;
@@ -499,8 +516,16 @@ button,
   }
 }
 .stack-pill {
-  background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc);
-  background: linear-gradient(to right, #000ce8aa, #ec38bc);
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
   margin: 6px 4px;
   padding: 4px 16px;
   border-radius: 20px;
@@ -655,13 +680,29 @@ button,
   border: none;
   transition: all 0.8s ease-out;
   background: #03001e;
-  background: -webkit-linear-gradient(to right, #000ce8aa, #ec38bc);
-  background: linear-gradient(to right, #000ce8aa, #ec38bc);
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 12, 232, 1),
+    rgba(236, 56, 188, 1)
+  );
   transition: all 0.6s ease;
 
   &:hover {
-    background: -webkit-linear-gradient(to right, #ec38bc, #000ce8aa);
-    background: linear-gradient(to right, #ec38bc, #000ce8aa);
+    background: -webkit-linear-gradient(
+      to right,
+      rgba(236, 56, 188, 1),
+      rgba(0, 12, 232, 1)
+    );
+    background: linear-gradient(
+      to right,
+      rgba(236, 56, 188, 1),
+      rgba(0, 12, 232, 1)
+    );
   }
 }
 
@@ -730,6 +771,7 @@ button,
     box-shadow: none !important;
 
     h2 {
+      font-family: $Poppins !important;
       @include at-900px() {
         font-size: 24px !important;
         line-height: 30px !important;
@@ -881,7 +923,16 @@ button,
 }
 
 .colored-text {
-  background: linear-gradient(to left, #2499ffaa, rgb(255, 35, 229));
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(54, 64, 247),
+    rgba(236, 56, 188, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgb(54, 64, 247),
+    rgba(236, 56, 188, 1)
+  );
   -webkit-background-clip: text;
   color: transparent !important;
   text-shadow: none;
@@ -960,26 +1011,65 @@ h5 {
   }
 }
 
-.cursive {
+// .cursive {
+//   span {
+//     .Typewriter__wrapper {
+//       font-family: $merriweather;
+//     }
+//   }
+// }
+
+.multi-colored-text {
+  display: flex;
+  align-items: center;
+  color: white;
   span {
-    .Typewriter__wrapper {
-      font-family: $merriweather;
+    font-family: $cursive;
+    font-weight: 300 !important;
+    background: linear-gradient(
+      to right,
+      rgb(248, 81, 203) 0%,
+      rgb(76, 85, 250) 100%
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    animation: moveGradient 5s ease infinite;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%; // Start from the left
+  }
+  100% {
+    background-position: 100% 50%; // Move to the right
   }
 }
 
 // --*ExperienceBlock*--
 .ExperienceBlock {
   h3 {
+    font-family: $Poppins !important;
     font-size: 26px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
   }
-  .responsibilities {
-    font-weight: 600;
+  .responsibilities,
+  p {
+    font-weight: 500;
     font-size: 18px;
+    font-family: $Poppins;
   }
   .colored-pill {
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
   }
 }

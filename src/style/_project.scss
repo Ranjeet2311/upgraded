@@ -11,7 +11,7 @@
       rgba(0, 12, 232, 0.4)
     ) !important;
     padding-bottom: 14px;
-    font-family: $merriweather !important;
+    font-family: $Poppins !important;
 
     &:hover {
       background: rgba(0, 12, 232, 0.4) !important;
@@ -21,7 +21,7 @@
     }
     .card-body {
       padding: 14px 10px 8px;
-      font-family: $merriweather !important;
+      font-family: $Poppins !important;
       .card-title {
         font-size: 16px;
         line-height: 18px;
@@ -32,7 +32,7 @@
       // }
       .description {
         font-size: 12px !important;
-        font-family: $merriweather !important;
+        font-family: $Poppins !important;
       }
       .stack-pill {
         font-size: 12px !important;
