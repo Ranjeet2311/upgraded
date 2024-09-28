@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { filterProjects } from "../../store/features/projectSlice";
 import { useTranslation } from "react-i18next";
 import Spinner from "../../component/Spinner";
+import Paragraph from "../Paragraph";
 
 const tabs = [
   { title: "All", ref: "all", imgSrc: browse },
@@ -67,13 +68,16 @@ export default function Project() {
   const { t } = useTranslation();
   return (
     <div className="project-wrapper container">
-      <Heading text={`<🤸${t("My Personal Projects")} / >`} />
+      <Heading text={`${t("My Personal Projects")}`} />
       {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}
+      <p className="small-intro colored-text text-center">
+        {t("Checkout my codes at Github")}
+      </p>
       <Divider />
-      <div className="col pt-4"></div>
+      <div className="col-12 "></div>
       {/* <HeadH2 text={t("Filter projects by frameworks & types")} /> */}
       {showData && (
-        <Box className="experience mt-2 px-4">
+        <Box className="mt-2 px-4 project-inner">
           <Tabs
             variant="scrollable"
             scrollButtons="auto"
@@ -97,7 +101,7 @@ export default function Project() {
                     <Tab
                       name={item.ref}
                       label={item.title}
-                      icon={<Icon alt="test avatar" img={item.imgSrc} />}
+                      // icon={<Icon alt="test avatar" img={item.imgSrc} />}
                       className="tab_label mx-1"
                       onClick={() => filterHandler(item.ref)}
                     />
@@ -108,7 +112,7 @@ export default function Project() {
         </Box>
       )}
       {showData && (
-        <p className="mt-2 mt-lg-4 pt-4 mb-1 pt-lg-1 text-center w-100">
+        <p className="text-center w-100">
           {t("Now displaying list of")}
           <strong className="mx-1">"{tabValue.toUpperCase()}"</strong>
           {t("repositories, for more repositories checkout my")}
@@ -124,7 +128,7 @@ export default function Project() {
         </p>
       )}
       {showData ? (
-        <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 pt-1 pt-mg-4">
+        <div className="row row-cols-1 row-cols-md-3 g-4 repos">
           {filteredProjects &&
             filteredProjects.map((item, index) => (
               <div

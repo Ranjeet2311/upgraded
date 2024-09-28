@@ -50,13 +50,13 @@ export default function TechStack() {
       <div className="text-center container px-0 texh_stack pt-2">
         <div className="row align-items-center">
           <div className="col-12">
-            <Heading text={`<🛡️${t("My tech stack")} / >`} />
+            <Heading text={`${t("My tech stack")}`} />
             <Divider />
+            <h3 className="d-flex justify-content-center colored-text">
+              {t(label).toUpperCase()}{" "}
+            </h3>
           </div>
           <div className="col-12 col-lg-12 mt-4">
-            <h2 className="d-flex justify-content-center py-4 my-2">
-              {t(label).toUpperCase()}{" "}
-            </h2>
             <div className="row">
               <div className="col-12 col-lg-3 h-100">
                 <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center flex-column">

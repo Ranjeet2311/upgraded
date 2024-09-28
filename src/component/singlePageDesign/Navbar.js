@@ -16,7 +16,7 @@ import { useSelector } from "react-redux";
 
 const menuLinks = [
   { name: "Home", url: "#home" },
-  { name: "Expertise", url: "#expertise" },
+  { name: "About", url: "#about" },
   { name: "Experience", url: "#experience" },
   { name: "Repositories", url: "#repositories" },
   { name: "Contact", url: "#contact" },

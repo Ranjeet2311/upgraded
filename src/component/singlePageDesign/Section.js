@@ -22,11 +22,12 @@ export const useInView = (elementRef, options = {}) => {
   return isInView;
 };
 
-export default function Section({ children }) {
+export default function Section({ children, className }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { threshold: 0.1 });
   return (
     <section
+      className={className && className}
       ref={ref}
       style={{
         transform: isInView ? "none" : "translateX(-200px)",

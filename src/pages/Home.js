@@ -1,7 +1,3 @@
-import HeadH1 from "../component/HeadH1";
-import Contact from "../component/Contact";
-import StaticModal from "../component/StaticModal";
-import ContactForm from "../component/ContactForm";
 import { useTranslation } from "react-i18next";
 import Metadata from "../component/Metadata";
 import Navbar from "../component/singlePageDesign/Navbar";
@@ -11,6 +7,9 @@ import Project from "../component/singlePageDesign/Project";
 import Section from "../component/singlePageDesign/Section";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Hero from "../component/singlePageDesign/Hero";
+import About from "../component/singlePageDesign/About";
+import Footer from "../component/singlePageDesign/Footer";
+import SingleContact from "../component/singlePageDesign/SingleContact";
 
 function Home() {
   const { t } = useTranslation();
@@ -31,42 +30,34 @@ function Home() {
       <Navbar />
       <div className="container home" id="home">
         <motion.div className="progress-bar" style={{ scaleX }} />
-        <Section>
-          <Hero />
-        </Section>
-        <div id="expertise">
-          <Section>
-            <TechStack />
-          </Section>
+        {/* <Section> */}
+        <Hero />
+        {/* </Section> */}
+        <div id="about">
+          {/* <Section> */}
+          <About />
+          {/* </Section> */}
         </div>
         <div id="experience">
-          <Section>
-            <Experience />
-          </Section>
+          {/* <Section> */}
+          <Experience />
+          {/* </Section> */}
+        </div>
+        <div id="expertise">
+          {/* <Section> */}
+          {/* <TechStack /> */}
+          {/* </Section> */}
         </div>
         <div id="repositories">
-          <Section>
-            <Project />
-          </Section>
+          {/* <Section> */}
+          <Project />
+          {/* </Section> */}
         </div>
-        <Section>
-          <div className="row" id="contact">
-            <div className="col-12 mt-4 px-0" id="download">
-              <HeadH1>{t("Let's Connect")}</HeadH1>
-              <div className="mt-4">
-                <Contact>
-                  <StaticModal
-                    btnText={t("Message me")}
-                    title={t("Sending message to @Ranjeet")}
-                  >
-                    <ContactForm> </ContactForm>
-                  </StaticModal>
-                </Contact>
-              </div>
-            </div>
-          </div>
-        </Section>
       </div>
+      {/* <Section> */}
+      <SingleContact />
+      {/* </Section> */}
+      <Footer />
     </>
   );
 }

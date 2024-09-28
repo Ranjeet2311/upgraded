@@ -21,9 +21,9 @@ export default function Button({
         className={`btn inline-block btn-bg px-4 py-1 ${className}`}
       >
         {children}
-        <span>
+        {/* <span>
           <img src={arrowRight} alt="arrow" className="arrow" />
-        </span>
+        </span> */}
       </Link>
     );
   } else {

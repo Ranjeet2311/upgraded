@@ -9,7 +9,7 @@ function Accordian({ heading, children, accordianSelect }) {
       <div className="accordion-item experience py-0">
         <h2 className="accordion-header" id="flush-headingOne">
           <button
-            className="accordion-button collapsed bg-transparent pt-2 pb-2 mt-2"
+            className="accordion-button collapsed bg-transparent pt-2 pb-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={`#${toggle}`}
