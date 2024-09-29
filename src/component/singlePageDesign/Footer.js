@@ -1,10 +1,16 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
 export default function Footer() {
   return (
     <div className="container footer">
+      <div className="up-btn">
+        <a href="#home">
+          <ExpandLessIcon />
+        </a>
+      </div>
       <div className="row">
         <div className="col-12 col-lg-6 footer-content">
           <p className="small-intro">

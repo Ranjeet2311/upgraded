@@ -30,3 +30,76 @@
     }
   }
 }
+
+// ----------
+.left-side {
+  .header-pic {
+    width: 100%;
+  }
+}
+
+.skill_slide {
+  overflow: hidden;
+
+  @include at-900px {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .react-multi-carousel-list {
+    padding-bottom: 0px;
+    margin-bottom: 0 !important;
+    overflow-x: hidden !important;
+    .card {
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      padding-bottom: 0;
+
+      &:hover {
+        background: transparent;
+
+        img {
+          transform: scale(1);
+        }
+      }
+      .card-body,
+      .card-footer {
+        display: none;
+      }
+      .img-wrap {
+        height: 40px;
+        width: 80px;
+
+        img {
+          width: auto;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+}
+
+.exp_page {
+  .dev-pic {
+    width: 100%;
+
+    @include at-900px {
+      margin-bottom: 40px;
+    }
+  }
+  h2 {
+    @include font-mid;
+  }
+
+  .line {
+    margin-top: 19px;
+    margin-bottom: 70px;
+  }
+}

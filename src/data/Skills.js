@@ -184,75 +184,76 @@ const skillsData = [
 
 const workWithMe = [
   {
-    title: "Programming",
-    desc: [
-      " HTML5,",
-      "CSS3,",
-      "SCSS,",
-      "React & Redux,",
-      "Vue & VueX,",
-      "Angular & RxJs,",
-      "Express.js,",
-      "Firebase,",
-      "PostgreSQL,",
-      "Cypress,",
-      "ESLint,",
-      "Bootstrap,",
-      "Tailwind,",
-      "Git,",
-      "& more...... ",
-    ],
-    pageLink: "expertise",
-  },
-  {
-    title: "Experiences",
-    desc: [
-      "- A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.",
-    ],
-    pageLink: "/experience",
-  },
-  {
     title: "Soft Skills",
     desc: [
-      "- Strong problem-solving abilities.",
-      "- Excellent communication and teamwork skills.",
-      "- Ability to work effectively in multicultural environments.",
-      "- Adaptability and willingness to learn new technologies.",
+      "Strong problem-solving abilities.",
+      "Excellent communication and teamwork skills.",
+      "Ability to troubleshoot and resolve issues efficiently.",
+      "Adaptability and willingness to learn new technologies.",
+      "A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.",
     ],
     pageLink: "/experience",
   },
-  {
-    title: "Engineering Practices",
-    desc: [
-      "- Accessibility in HTML / CSS.",
-      "- Estimation and work planning.",
-      "- Web performance optimization.",
-      "- Cross-browser testing & Web animations.",
-      "- Ability to troubleshoot and resolve issues efficiently.",
-    ],
-    pageLink: "/experience",
-  },
-  {
-    title: "Academics",
-    desc: [
-      "- BA-Prog. -Delhi University.",
-      "- G.B Senior Secondary School, New Delhi.",
-    ],
-    pageLink: "/experience",
-  },
-  {
-    title: "My Interest",
-    desc: [
-      "Yoga,",
-      "Martial Arts,",
-      "Tech Podcasts,",
-      "Tech Conferences,",
-      "Gardening,",
-      "Cycling,",
-      "Reading,",
-    ],
-    pageLink: "/experience",
-  },
+  // {
+  //   title: "Programming",
+  //   desc: [
+  //     " HTML5,",
+  //     "CSS3,",
+  //     "SCSS,",
+  //     "React & Redux,",
+  //     "Vue & VueX,",
+  //     "Angular & RxJs,",
+  //     "Express.js,",
+  //     "Firebase,",
+  //     "PostgreSQL,",
+  //     "Cypress,",
+  //     "ESLint,",
+  //     "Bootstrap,",
+  //     "Tailwind,",
+  //     "Git,",
+  //     "& more...... ",
+  //   ],
+  //   pageLink: "expertise",
+  // },
+  // {
+  //   title: "Experiences",
+  //   desc: [
+  //     "- A dynamic and seasoned software developer with 7.5 years of experience in creating responsive, user-friendly web-applications (SPA) and websites.",
+  //   ],
+  //   pageLink: "/experience",
+  // },
+  // {
+  //   title: "Engineering Practices",
+  //   desc: [
+  //     "- Accessibility in HTML / CSS.",
+  //     "- Estimation and work planning.",
+  //     "- Web performance optimization.",
+  //     "- Cross-browser testing & Web animations.",
+  //     "- Ability to troubleshoot and resolve issues efficiently.",
+  //   ],
+  //   pageLink: "/experience",
+  // },
+  // {
+  //   title: "Academics",
+  //   desc: [
+  //     "- BA-Prog. -Delhi University.",
+  //     "- G.B Senior Secondary School, New Delhi.",
+  //   ],
+  //   pageLink: "/experience",
+  // },
+  // {
+  //   title: "My Interest",
+  //   desc: [
+  //     "Yoga,",
+  //     "Martial Arts,",
+  //     "Tech Podcasts,",
+  //     "Tech Conferences,",
+  //     "Gardening,",
+  //     "Cycling,",
+  //     "Reading,",
+  //   ],
+  //   pageLink: "/experience",
+  // },
 ];
 
 const maxOneSlide = {

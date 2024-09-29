@@ -29,7 +29,7 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
           {t("Used tech stack")}:
         </p>
       )}
-      <ul className="stack-wrap ps-2 pe-0">
+      <ul className="stack-wrap ps-2 pe-0 mt-3">
         {techs &&
           techs.map((tech, i) => {
             return (

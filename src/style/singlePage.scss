@@ -28,41 +28,17 @@ $theme-green: #159957;
 $theme-blue: #155799;
 $theme-yellow: #b5ac49;
 
-@mixin font-big {
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 60.000003814697266px;
-  font-style: normal;
-  font-family: $headFont;
+// ----*Media*---------
+@mixin xl-1399px {
+  @media (max-width: 1399px) {
+    @content;
+  }
 }
-
-@mixin font-semi-big {
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 57.60000228881836px;
-  font-style: normal;
-  font-family: $headFont;
+@mixin lg-1199px {
+  @media (max-width: 1199px) {
+    @content;
+  }
 }
-@mixin font-mid {
-  font-size: 28px;
-  font-weight: normal;
-  line-height: 33px;
-  font-style: normal;
-  font-family: $headFont;
-}
-@mixin font-para {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 300;
-  font-style: normal;
-  font-family: $regular;
-}
-@mixin small-description {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: normal;
-}
-
 @mixin at-900px {
   @media (max-width: 992px) {
     @content;
@@ -82,6 +58,93 @@ $theme-yellow: #b5ac49;
   @media (max-width: 425px) {
     @content;
   }
+}
+// -----------------
+@mixin font-big {
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 60px;
+  font-style: normal;
+  font-family: $headFont;
+
+  @include at-900px {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include mid {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@mixin font-semi-big {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 57px;
+  font-style: normal;
+  font-family: $headFont;
+
+  @include at-900px {
+    font-size: 38px !important;
+    line-height: 48px !important;
+  }
+  @include mid {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+}
+@mixin font-mid {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 33px;
+  font-style: normal;
+  font-family: $headFont;
+
+  @include at-900px {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  @include mid {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+}
+@mixin font-semi-mid {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 38px;
+  font-style: normal;
+  font-family: $headFont;
+
+  @include at-900px {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  @include mid {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+}
+@mixin font-para {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $regular;
+
+  @include at-900px {
+    font-size: 17px !important;
+    line-height: 26px !important;
+  }
+  @include mid {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+@mixin small-description {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
 }
 
 @import "_navbar.scss";
@@ -116,14 +179,22 @@ body {
     color: black !important;
   }
 
+  .logo-image-second {
+    filter: invert(1);
+  }
+
   .Typewriter__wrapper {
-    background: linear-gradient(
-      to left,
-      rgba(36, 153, 255, 0.6666666667),
-      rgb(255, 35, 229)
-    );
+    background: $gradient-background-primary;
     -webkit-background-clip: text;
     color: transparent !important;
+  }
+
+  .form-wrap {
+    background: $theme-blue !important;
+    label,
+    h3 {
+      color: $white !important;
+    }
   }
 
   .multi-colored-text {
@@ -132,6 +203,37 @@ body {
 
   .colored-pill {
     color: white !important;
+  }
+
+  .btn-bg {
+    span {
+      color: white !important;
+    }
+  }
+
+  .school {
+    box-shadow: -5px 8px 12px rgba(159, 177, 212, 0.6) !important;
+    background: linear-gradient(to right, #159957, #155799) !important;
+    h4,
+    p,
+    .colored-text {
+      color: #ffffff !important;
+      background: linear-gradient(to right, #159957, #155799) !important;
+      -webkit-background-clip: text !important;
+    }
+  }
+
+  .accordion-button {
+    h2 {
+      color: $white !important;
+    }
+  }
+  .ExperienceBlock {
+    h3,
+    li,
+    p {
+      color: $white !important;
+    }
   }
 
   .ccard {
@@ -144,6 +246,8 @@ body {
   .bread-crumb {
     a {
       color: black !important;
+      font-weight: 500 !important;
+      @include small-description;
     }
   }
 
@@ -174,7 +278,7 @@ body {
   }
   .css-1aquho2-MuiTabs-indicator,
   .MuiTabs-indicator {
-    background-color: rgb(246, 67, 225) !important;
+    background-color: $theme-green !important;
   }
 
   .project-wrapper,
@@ -318,11 +422,7 @@ a,
   width: max-content;
   text-transform: capitalize !important;
   padding: 0.2rem 0;
-
-  @include for-tablet-portrait-up() {
-    font-size: 12px !important;
-    line-height: 22px !important;
-  }
+  @include small-description;
 }
 
 .section-padding-top {
@@ -355,8 +455,8 @@ a,
   margin-bottom: 30px;
   padding-top: 16px;
   a {
-    font-size: 16px !important;
-    line-height: 20px;
+    @include small-description;
+    font-weight: 400 !important;
 
     @include for-tablet-portrait-up() {
       font-size: 14px;
@@ -427,7 +527,7 @@ a,
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
 .css-1q2h7u5 {
   // @include small-description;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
   color: $white !important;
 }
 
@@ -607,13 +707,22 @@ button,
   transition: 0.1s ease-in;
 }
 // ------
+.scroll-link {
+  color: white !important;
+  border: none;
+  background: -webkit-linear-gradient(to right, #159957, #155799);
+  background: linear-gradient(to right, #159957, #155799);
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
 
 .btn-bg {
   color: white !important;
   border: none;
-  background: #03001e;
   background: -webkit-linear-gradient(to right, #159957, #155799);
   background: linear-gradient(to right, #159957, #155799);
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 
   &:hover {
     transform: scale(1.1);
@@ -779,20 +888,20 @@ button,
   padding-left: 0 !important;
 
   .react-multi-carousel-dot--active {
-    color: #fc3845;
+    color: $theme-blue;
     button {
-      background: rgba(188, 62, 174, 1) !important;
+      background: $theme-green !important;
       width: 34px;
       height: 12px;
       border-radius: 8px;
-      border-color: rgba(188, 62, 174, 1) !important;
+      border-color: $theme-green !important;
       transition: initial 0.3s ease;
     }
   }
 
   .react-multiple-carousel__arrow {
     border-radius: 10px;
-    border: 1px solid rgba(188, 62, 174) !important;
+    border: 1px solid $theme-green !important;
 
     &:hover {
       border: 1px solid white !important;
@@ -937,12 +1046,23 @@ h5 {
     margin-right: 50px;
     position: absolute;
     left: 202px;
+
+    @include xl-1399px {
+      left: 173px;
+    }
+    @include lg-1199px {
+      left: 142px;
+    }
+
+    @include at-900px {
+      left: -14px;
+    }
   }
 
   h3 {
     font-family: $regular !important;
     font-weight: 600 !important;
-    @include font-mid;
+    @include font-semi-mid;
     background: $gradient-background-primary !important;
     padding: 12px 8px;
     border-radius: 12px;
@@ -1016,6 +1136,11 @@ h5 {
       overflow-y: scroll;
     }
   }
+
+  h3 {
+    margin-top: 19px;
+    margin-bottom: 26px;
+  }
 }
 
 .skillBox {
@@ -1037,6 +1162,12 @@ h5 {
   padding-top: 122px !important;
   padding-bottom: 122px !important;
   align-items: center;
+  overflow: hidden;
+
+  @include at-900px {
+    padding-top: 90px !important;
+    padding-bottom: 80px !important;
+  }
 
   h1 {
     font-weight: 700;
@@ -1090,8 +1221,13 @@ h5 {
       height: 400px;
       margin-left: auto;
       margin-right: auto;
-      z-index: 999;
+      z-index: 99;
       position: relative;
+
+      @include lg-1199px {
+        width: 300px;
+        height: 300px;
+      }
 
       img {
         width: 100%;
@@ -1100,6 +1236,13 @@ h5 {
         border-radius: 50%;
         border: 1px solid white;
         box-shadow: -5px 4px 8px white;
+
+        @include xl-1399px {
+          margin-top: -65px !important;
+        }
+        @include lg-1199px {
+          margin-top: -87px !important;
+        }
       }
     }
   }
@@ -1123,12 +1266,28 @@ li::marker {
   // padding-top: 122px;
   padding-bottom: 122px;
 
+  @include at-900px {
+    padding-bottom: 80px !important;
+  }
+
   .inner-wrap {
     padding-top: 70px;
 
     .about-img {
-      width: 570px;
+      width: 550px;
       height: 648px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include lg-1199px() {
+        width: 370px;
+        height: 248px;
+        margin-bottom: 40px;
+      }
+      @include mid {
+        width: 300px;
+        height: 200px;
+      }
 
       img {
         width: 100%;
@@ -1138,6 +1297,12 @@ li::marker {
     }
     .about-text-wrap {
       padding-left: 36px;
+
+      @include at-900px {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
       h2 {
         @include font-mid;
         padding-top: 56px;
@@ -1145,7 +1310,7 @@ li::marker {
         margin-bottom: 0 !important;
       }
       .bullet-head {
-        padding-top: 77px;
+        padding-top: 70px;
         padding-bottom: 18px;
         margin-bottom: 0 !important;
       }
@@ -1155,6 +1320,41 @@ li::marker {
       p {
         @include font-para;
         margin-bottom: 0 !important;
+      }
+    }
+  }
+  .academy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+
+    h2 {
+      @include font-mid;
+      margin-bottom: 26px;
+    }
+
+    .academy-inner {
+      padding-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      .school {
+        padding-top: 70px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #161d26;
+
+        @include lg-1199px {
+          margin-top: 12px;
+        }
+
+        h4 {
+          font-size: 22px;
+          line-height: 26px;
+          font-family: $regular !important;
+        }
       }
     }
   }
@@ -1176,19 +1376,31 @@ li::marker {
 
 // ----------------*Experience*-----------------
 
-.exp_page {
+.exp_section {
   position: relative;
   padding-bottom: 122px;
+
+  @include at-900px {
+    padding-bottom: 80px !important;
+  }
 
   .border-left {
     border-left: 2px solid $theme-green;
     // margin-left: 12px !important;
     margin-top: 70px;
+
+    @include at-900px {
+      margin-top: 20px !important;
+    }
   }
   .about-link {
     text-align: center;
     padding-top: 70px;
     text-decoration: none;
+
+    @include at-900px {
+      padding-top: 20px !important;
+    }
   }
 
   .experience-wrap {
@@ -1198,46 +1410,29 @@ li::marker {
 
     .experience {
       padding-top: 70px;
-    }
-  }
-
-  .academy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 70px;
-
-    h2 {
-      @include font-mid;
-    }
-
-    .academy-inner {
-      padding-top: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      .school {
-        padding-top: 70px;
-        padding: 16px;
-        border-radius: 12px;
-        background: #161d26;
-
-        h4 {
-          font-size: 22px;
-          line-height: 26px;
-          font-family: $regular !important;
-        }
+      @include at-900px {
+        padding-top: 20px !important;
       }
     }
   }
 }
 
+.exp_page {
+  .ExperienceBlock {
+    &::before {
+      display: none;
+    }
+  }
+}
 // ------------*project*-----------
 
 .project-wrapper {
   // padding-top: 122px;
   padding-bottom: 122px;
+
+  @include at-900px {
+    padding-bottom: 80px !important;
+  }
 
   .project-inner {
     padding-top: 70px;
@@ -1245,6 +1440,10 @@ li::marker {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include at-900px {
+      padding-top: 20px !important;
+    }
   }
 
   .repos {
@@ -1304,7 +1503,11 @@ li::marker {
 
 .footer {
   margin-top: 80px;
-  // padding-bottom: 20px;
+  padding-bottom: 20px;
+
+  @include at-900px {
+    margin-top: 122px;
+  }
 
   .footer-content {
     display: flex;
@@ -1337,5 +1540,24 @@ li::marker {
     // position: absolute;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.up-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 4%;
+  bottom: 10%;
+  background-color: $theme-blue;
+  color: $white;
+  border-radius: 12px;
+  z-index: 99;
+
+  .MuiSvgIcon-root,
+  .css-i4bv87-MuiSvgIcon-root {
+    height: 40px;
+    width: 40px;
   }
 }

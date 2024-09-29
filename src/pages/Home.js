@@ -30,33 +30,30 @@ function Home() {
       <Navbar />
       <div className="container home" id="home">
         <motion.div className="progress-bar" style={{ scaleX }} />
-        {/* <Section> */}
-        <Hero />
-        {/* </Section> */}
+        <Section>
+          <Hero />
+        </Section>
         <div id="about">
-          {/* <Section> */}
-          <About />
-          {/* </Section> */}
+          <Section>
+            <About />
+          </Section>
         </div>
         <div id="experience">
-          {/* <Section> */}
-          <Experience />
-          {/* </Section> */}
-        </div>
-        <div id="expertise">
-          {/* <Section> */}
-          {/* <TechStack /> */}
-          {/* </Section> */}
+          <Section>
+            <Experience />
+          </Section>
         </div>
         <div id="repositories">
-          {/* <Section> */}
-          <Project />
-          {/* </Section> */}
+          <Section>
+            <Project />
+          </Section>
         </div>
       </div>
-      {/* <Section> */}
-      <SingleContact />
-      {/* </Section> */}
+      <div id="contact">
+        <Section>
+          <SingleContact />
+        </Section>
+      </div>
       <Footer />
     </>
   );

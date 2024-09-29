@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DownloadIcon from "@mui/icons-material/Download";
 import { useTranslation } from "react-i18next";
-import profilePic from "../../images/berlin-river.png";
+import profilePic from "../../images/frankfurt.jpeg";
 import rectangle from "../../images/Rectangle.png";
 import HeadH1 from "../../component/HeadH1";
 import Paragraph from "../../component/Paragraph";
@@ -42,7 +42,7 @@ export default function Hero() {
             </span>
           </p>
           <h1 className="colored-text mt-2">
-            Frontend developer/ Web development enthuciast
+            {t("home.Frontend Developer / Web Development Enthusiast")}
           </h1>
           <p className="type-intro-second">
             {t("home.i'm")}
@@ -62,25 +62,31 @@ export default function Hero() {
               />
             </span>
           </p>
-          <p className="description">{t("home.new-description")} </p>
+          <p className="description">{t("home.Small-description")} </p>
 
           <div className="row hero-btns mt-3 pt-2 mt-md-4 pt-md-4">
-            <Button className="mx-4 colored-pill">
+            <a
+              className="ms-3 me-1 btn-bg colored-pill text-decoration-none"
+              href="#contact"
+            >
               <span className="me-2">
                 <DialpadIcon />
               </span>
-              Contact Me
-            </Button>
-            <Button className="colored-pill" onClick={handleCVDownload}>
+              {t("Contact Me")}
+            </a>
+            <Button
+              className="btn-bg colored-pill ms-3 me-1"
+              onButtonCLick={handleCVDownload}
+            >
               <span className="me-2">
                 <DownloadIcon />
               </span>
-              Get resume
+              {t("Get resume")}
             </Button>
           </div>
           <div className="row social-icons ps-lg-4 mt-4 mx-0">
             <a
-              className="btn me-4 multi-colored-text mt-3"
+              className="btn scroll-link px-2 me-4 multi-colored-text mt-3"
               target="_blank"
               href="https://www.linkedin.com/in/ranjeet-kumar-a4a928a9/"
               rel="noreferrer"
@@ -94,7 +100,7 @@ export default function Hero() {
             </a>
 
             <a
-              className="btn me-4 multi-colored-text mt-3"
+              className="btn scroll-link px-2 me-4 multi-colored-text mt-3"
               target="_blank"
               href="https://github.com/Ranjeet2311"
               rel="noreferrer"
@@ -121,7 +127,7 @@ export default function Hero() {
               </Button> */}
           </div>
         </div>
-        <div className="col-12 col-lg-6 img-wrap">
+        <div className="col-12 col-lg-6 img-wrap d-none d-lg-block">
           <div className="rectangle">
             <img src={rectangle} alt="" srcset="" />
           </div>
