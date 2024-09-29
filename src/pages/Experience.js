@@ -26,24 +26,25 @@ function Experience() {
         title="Experience | Ranjeet Kumar"
         description="Explore Ranjeet Kumar's extensive professional experience in web development, including contributions to enterprise-level applications using Vue.js, Angular, and backend technologies like Node.js and PHP. With 7.5+ years of expertise, discover how he has optimized web applications, in Agile teams, and delivered high-performance, responsive solutions for various B2B and national projects."
       />
-
-      <div className="container exp_page pt-2">
+      <div className="container exp_page pt-2 pb-4">
         <div className="col-12">
           <div className="bread-crumb">
-            <ArrowBackIosIcon />
-            <Link className="text-decoration-none text-white ms-2" to="/">
-              {t("Back to Home")}
-            </Link>
-            <p className="mx-1">/ </p>
-            <Link
-              className="text-decoration-none text-white ms-2"
-              to={`/experience/`}
-            >
-              {t("experience")}
-            </Link>
+            <p>
+              <Link className="text-decoration-none text-white ms-2" to="/">
+                <ArrowBackIosIcon /> {t("Back to Home")} /
+              </Link>
+              <span>
+                <Link
+                  className="text-decoration-none text-white ms-2"
+                  to={`/experience/`}
+                >
+                  {t("experience")}
+                </Link>
+              </span>
+            </p>
           </div>
         </div>
-        <Heading text={`<⚙️${t("Experience")} / >`} />
+        <Heading text={`${t("Experience")}`} />
         <Divider />
         <div className="row mb-4 mt-4 justify-content-center">
           <div className="col-12 col-lg-4 left-side">
@@ -76,7 +77,7 @@ function Experience() {
         </div>
         <div className="row d align-items-center mt-4 pt-2 pt-md-4 section-padding-bottom section-padding-top">
           <div className="col-12 col-lg-4">
-            <img src={dev} alt="rocket-launch" className="header-pic " />
+            <img src={dev} alt="rocket-launch" className="dev-pic" />
           </div>
           <div className="col-12 col-lg-8">
             <MultiCarousel
@@ -142,7 +143,7 @@ function Experience() {
               })}
             </MultiCarousel>
           </div> */}
-          <div className="col-12 mt-4 px-0">
+          <div className="col-12 mt-4 px-0 mb-4">
             <Accordian
               heading={t("Let's Connect")}
               accordianSelect="projectOne"

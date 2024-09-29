@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   padding: 10px 0;
-  z-index: 99999;
+  z-index: 999;
 
   .Navbar-wrap {
     padding: 2px 12px;
@@ -103,7 +103,8 @@
       display: none;
       cursor: pointer;
       z-index: 1000;
-      background: right, rgba(0, 12, 232, 0.6666666667);
+      background: $theme-green;
+      border-radius: 12px;
 
       @include at-900px() {
         display: block;

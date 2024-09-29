@@ -51,10 +51,10 @@ export default function TechStack() {
         <div className="row align-items-center">
           <div className="col-12">
             <Heading text={`${t("My tech stack")}`} />
-            <Divider />
             <h3 className="d-flex justify-content-center colored-text">
-              {t(label).toUpperCase()}{" "}
+              {t(label).toUpperCase()}
             </h3>
+            <Divider />
           </div>
           <div className="col-12 col-lg-12 mt-4">
             <div className="row">

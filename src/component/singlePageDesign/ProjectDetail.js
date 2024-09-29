@@ -55,17 +55,19 @@ export default function ProjectDetail() {
         <div className="row">
           <div className="col-12 col-lg-6 pt2 pb-2 pb-lg-0 details-img-wrap">
             <div className="bread-crumb">
-              <ArrowBackIosIcon />
-              <Link className="text-decoration-none text-white ms-2" to="/">
-                {t("Back to Home")}
-              </Link>
-              <p className="mx-1">/ </p>
-              <Link
-                className="text-decoration-none text-white ms-2"
-                to={`/repositories/${title}`}
-              >
-                {t(title)}
-              </Link>
+              <p>
+                <Link className="text-decoration-none text-white" to="/">
+                  <ArrowBackIosIcon /> {t("Back to Home")} /
+                </Link>
+                <span>
+                  <Link
+                    className="text-decoration-none text-white ms-1"
+                    to={`/repositories/${title}`}
+                  >
+                    {t(title)}
+                  </Link>
+                </span>
+              </p>
             </div>
             <div className="details-image-wrap">
               <img

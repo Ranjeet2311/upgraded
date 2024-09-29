@@ -25,8 +25,8 @@ const menuLinks = [
 const navIconStyle = {
   marginRight: "2rem",
   color: "white",
-  border: "1px solid white",
-  background: "white",
+  // border: "1px solid white",
+  // background: "white",
   margin: "6px 12px",
 };
 

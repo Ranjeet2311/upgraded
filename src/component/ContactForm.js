@@ -35,7 +35,7 @@ function ContactForm() {
       <form onSubmit={onSubmit}>
         <div className="mb-2">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 {t("First name")} *
               </label>
@@ -48,7 +48,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 {t("Last name")} *
               </label>
