@@ -206,7 +206,7 @@ const projectData = [
     description:
       "The app at is a recipe-sharing platform. It allows users to explore a collection of recipes, which are likely displayed with details such as ingredients, preparation steps, and possibly images. The design appears to focus on user-friendly navigation, enabling users to browse through different meals and find recipes easily. The platform is likely built using modern web technologies, with the potential for features like search functionality, categorization, and user interaction (e.g., comments or ratings).",
     code: "https://github.com/Ranjeet2311/recipe-_sharing",
-    demo: "",
+    demo: "https://recipe-sharing-kxw9.onrender.com/",
   },
   {
     id: 6,
