@@ -222,6 +222,15 @@ body {
       -webkit-background-clip: text !important;
     }
   }
+  .colored-text {
+    color: transparent !important;
+    background: linear-gradient(to right, #159957, #155799) !important;
+    -webkit-background-clip: text !important;
+
+    //     background: linear-gradient(to right, #159957, #155799);
+    // -webkit-background-clip: text;
+    // color: transparent !important;
+  }
 
   .accordion-button {
     h2 {
@@ -1206,21 +1215,23 @@ h5 {
 
     .rectangle {
       img {
-        width: 200%;
+        width: 150%;
         position: absolute;
-        top: -320px;
+        top: -310px;
         z-index: 9;
         transform: rotate(30deg);
+        left: 94px;
       }
     }
 
     .hero-img {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       margin-left: auto;
       margin-right: auto;
       z-index: 99;
       position: relative;
+      top: -73px;
 
       @include lg-1199px {
         width: 300px;
@@ -1272,14 +1283,15 @@ li::marker {
     padding-top: 70px;
 
     .about-img {
-      width: 550px;
-      height: 648px;
+      // width: 350px;
+      width: 100%;
+      height: 448px;
       margin-left: auto;
       margin-right: auto;
 
       @include lg-1199px() {
-        width: 370px;
-        height: 248px;
+        // width: 100%;
+        height: 280px;
         margin-bottom: 40px;
       }
       @include mid {
@@ -1294,7 +1306,7 @@ li::marker {
       }
     }
     .about-text-wrap {
-      padding-left: 36px;
+      // padding-left: 36px;
 
       @include at-900px {
         padding-left: 0px;
@@ -1552,12 +1564,73 @@ li::marker {
   bottom: 10%;
   background-color: $theme-blue;
   color: $white;
-  border-radius: 12px;
+  border-radius: 50%;
   z-index: 99;
+  padding: 6px;
+  height: 50px;
+  width: 50px;
+  // animation: wave 2s ease-in-out infinite;
 
   .MuiSvgIcon-root,
   .css-i4bv87-MuiSvgIcon-root {
     height: 40px;
     width: 40px;
+    // animation: arrow 2s ease-in-out infinite;
+  }
+}
+
+// -----------------------
+.down-button {
+  width: auto;
+  border-radius: 50%;
+  background: $theme-blue;
+  border: none;
+  color: white;
+  padding: 6px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wave 2s ease-in-out infinite;
+
+  .MuiSvgIcon-root,
+  .css-i4bv87-MuiSvgIcon-root {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    animation: arrow 2s ease-in-out infinite;
+  }
+}
+@keyframes wave {
+  0% {
+    filter: drop-shadow(0px 0px 12px $theme-blue);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 12px $theme-green);
+    transform: scale(1.1);
+    padding-top: 4px;
+  }
+  100% {
+    filter: drop-shadow(0px 0px 30px $theme-yellow);
+    transform: scale(1);
+  }
+}
+@keyframes arrow {
+  0% {
+    filter: drop-shadow(0px 0px 12px $theme-green);
+    transform: scale(1);
+    margin-top: 0px;
+  }
+  50% {
+    filter: drop-shadow(0px 0px 12px $theme-green);
+    transform: scale(1.1);
+    margin-top: 4px;
+  }
+  100% {
+    filter: drop-shadow(0px 0px 12px $theme-green);
+    transform: scale(1);
+    margin-top: 0px;
   }
 }

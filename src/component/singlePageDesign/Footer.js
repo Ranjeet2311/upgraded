@@ -1,14 +1,14 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export default function Footer() {
   return (
     <div className="container footer">
       <div className="up-btn">
         <a href="#home">
-          <ExpandLessIcon />
+          <ArrowUpwardIcon />
         </a>
       </div>
       <div className="row">

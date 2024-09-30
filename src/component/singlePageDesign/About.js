@@ -19,7 +19,7 @@ export default function About() {
       </p>
       <Divider />
       <div className="row inner-wrap">
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-4">
           <div className="about-img">
             <img
               src={profilePic}
@@ -28,7 +28,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="col-12 col-lg-6 about-text-wrap">
+        <div className="col-12 col-lg-8 about-text-wrap">
           {/* <h2 className="small-intro">Why Choose me ?</h2> */}
           <p> {t("home.new-description")} </p>
           <p className="colored-text fw-bold bullet-head">

@@ -4,13 +4,14 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Expertise from "./pages/Expertise";
 import Repositories from "./pages/Projects";
-import Navbar from "./component/Navbar";
+// import Navbar from "./component/Navbar";
 import NotFound from "./pages/NotFound";
-import ProjectDetails from "./pages/ProjectDetails";
+// import ProjectDetails from "./pages/ProjectDetails";
 import { initializeAnalytics, trackPageView } from "./analytics";
 import Cookies from "./component/Cookies";
 import { useSelector } from "react-redux";
 import ProjectDetail from "./component/singlePageDesign/ProjectDetail";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const TRACKING_ID = "G-X5LNVZ2K4X";
 function App() {
@@ -23,8 +24,16 @@ function App() {
     setIsAnalyticsInitialized(true);
   }
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <div className={!bodyColor ? "app dark-bg" : "app"}>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <BrowserRouter basename="/upgraded">
         {isAnalyticsInitialized && <TrackPageViews />}
         <Cookies onConsent={handleConsent} />
