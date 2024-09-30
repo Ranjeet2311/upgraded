@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.92adf903.css",
-    "main.js": "/upgraded/static/js/main.36c04117.js",
+    "main.css": "/upgraded/static/css/main.d58a1894.css",
+    "main.js": "/upgraded/static/js/main.71842225.js",
     "static/media/map.png": "/upgraded/static/media/map.acd79b580a20a4e0490e.png",
     "static/media/venice.jpeg": "/upgraded/static/media/venice.73697043d80ae29d2424.jpeg",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
@@ -10,13 +10,11 @@
     "static/media/cap_headShot.png": "/upgraded/static/media/cap_headShot.c903e7b12db62ce54bb1.png",
     "static/media/x3.jpg": "/upgraded/static/media/x3.9a3d96ee71a0d90b4edd.jpg",
     "static/media/frankfurt.jpeg": "/upgraded/static/media/frankfurt.760282de9daee5b1e926.jpeg",
-    "static/media/panda.png": "/upgraded/static/media/panda.9a76ed3dead929565a70.png",
     "static/media/avatar-second.png": "/upgraded/static/media/avatar-second.3d129810c93bf4e2e496.png",
     "static/media/web-app.png": "/upgraded/static/media/web-app.4e0bb89899ada5dc6cf5.png",
     "static/media/new-logo.png": "/upgraded/static/media/new-logo.f0318f88e1b99d7c20d4.png",
     "static/media/avatar_headShot.png": "/upgraded/static/media/avatar_headShot.85f06829f8c3d356e8f9.png",
     "static/media/Rectangle.png": "/upgraded/static/media/Rectangle.547a9196d6cf6e790b9c.png",
-    "static/media/panda-eye.jpg": "/upgraded/static/media/panda-eye.bc3e1ba77749a8c7d23a.jpg",
     "static/media/revicons.eot": "/upgraded/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/upgraded/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/logo-second.svg": "/upgraded/static/media/logo-second.dbd528135f8a6860df1b0b1cb3eba149.svg",
@@ -36,11 +34,11 @@
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.92adf903.css.map": "/upgraded/static/css/main.92adf903.css.map",
-    "main.36c04117.js.map": "/upgraded/static/js/main.36c04117.js.map"
+    "main.d58a1894.css.map": "/upgraded/static/css/main.d58a1894.css.map",
+    "main.71842225.js.map": "/upgraded/static/js/main.71842225.js.map"
   },
   "entrypoints": [
-    "static/css/main.92adf903.css",
-    "static/js/main.36c04117.js"
+    "static/css/main.d58a1894.css",
+    "static/js/main.71842225.js"
   ]
 }
