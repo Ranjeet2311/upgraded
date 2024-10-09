@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/upgraded/static/css/main.7e27f045.css",
-    "main.js": "/upgraded/static/js/main.ea7a1784.js",
+    "main.js": "/upgraded/static/js/main.bbe82009.js",
     "static/media/map.png": "/upgraded/static/media/map.acd79b580a20a4e0490e.png",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
@@ -35,10 +35,10 @@
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "main.7e27f045.css.map": "/upgraded/static/css/main.7e27f045.css.map",
-    "main.ea7a1784.js.map": "/upgraded/static/js/main.ea7a1784.js.map"
+    "main.bbe82009.js.map": "/upgraded/static/js/main.bbe82009.js.map"
   },
   "entrypoints": [
     "static/css/main.7e27f045.css",
-    "static/js/main.ea7a1784.js"
+    "static/js/main.bbe82009.js"
   ]
 }
