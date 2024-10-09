@@ -1,24 +1,12 @@
-// @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-
-// @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
-
-// font-family: "Merriweather", serif;
-// font-family: "Libre Baskerville", serif;
-// font-family: "Lato", system-ui;
-// font-family: "Inconsolata", monospace;
-// font-family: "Poppins", sans-serif;
-// font-family: "Ubuntu", sans-serif;
-// font-family: "Playwrite DE Grund", cursive;
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&&family=Indie+Flower&family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 // font-family: "Montserrat", sans-serif;
 // font-family: "Playfair Display", serif;
+// font-family: "Indie Flower", cursive;
 
 $headFont: "Playfair Display", serif;
 $regular: "Montserrat", sans-serif;
-// $cursive: "Playwrite DE Grund", cursive;
+$cursive: "Indie Flower", cursive;
 $white: #ffffff;
 
 // theme colors
@@ -55,7 +43,7 @@ $theme-yellow: #b5ac49;
   }
 }
 @mixin sm {
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     @content;
   }
 }
@@ -160,6 +148,7 @@ $theme-yellow: #b5ac49;
 body {
   background: black;
   cursor: drop-shadow(0 0 40px rgba(0, 12, 232, 0.667)) !important;
+  cursor: url("../images/cursor.png") 16 16, auto !important;
 }
 
 .dark-bg {
@@ -180,7 +169,9 @@ body {
   }
 
   .logo-image-second {
-    filter: invert(1);
+    @include at-900px() {
+      filter: invert(1);
+    }
   }
 
   .Typewriter__wrapper {
@@ -1052,17 +1043,17 @@ h5 {
     border-radius: 50%;
     margin-right: 50px;
     position: absolute;
-    left: 202px;
+    left: 206px;
 
     @include xl-1399px {
-      left: 173px;
+      left: 176px;
     }
     @include lg-1199px {
-      left: 142px;
+      left: 147px;
     }
 
     @include at-900px {
-      left: -14px;
+      left: -13px;
     }
   }
 
@@ -1189,7 +1180,8 @@ h5 {
     font-size: 28px;
     font-weight: normal;
     line-height: 34px;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: $cursive;
   }
 
   .type-intro-second {
@@ -1197,6 +1189,7 @@ h5 {
     font-weight: normal;
     line-height: 34px;
     font-weight: 500;
+    font-family: $cursive;
   }
 
   p {

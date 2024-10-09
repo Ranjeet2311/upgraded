@@ -36,7 +36,7 @@ export default function Hero() {
                     autoStart: true,
                     loop: true,
                     delay: 100,
-                    pauseFor: 10000,
+                    pauseFor: 12000,
                   }}
                 />
               </span>
@@ -66,13 +66,13 @@ export default function Hero() {
 
             <div className="row hero-btns mt-3 pt-2 mt-md-4 pt-md-4">
               <a
-                className="ms-3 me-1 btn-bg colored-pill text-decoration-none"
+                className="ms-3 px-4 me-1 btn-bg colored-pill text-decoration-none"
                 href="#contact"
               >
                 <span className="me-2">
                   <DialpadIcon />
                 </span>
-                {t("Contact Me")}
+                {t("Contact me")}
               </a>
               <Button
                 className="btn-bg colored-pill ms-3 me-1"

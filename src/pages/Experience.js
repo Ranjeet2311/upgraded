@@ -62,24 +62,24 @@ function Experience() {
           </div>
         </div>
         <div className="row mb-4 mt-4 pt-2 pt-md-4 justify-content-center section-padding-bottom section-padding-top">
-          <div className="col-12 col-lg-8 mt-4 mt-lg-0 py-2 px-1 experience">
+          <div className="col-12 mt-4 mt-lg-0 py-2 px-1 experience">
             <Paragraph text={t("experienceDetails.four")} />
             <Paragraph text={t("experienceDetails.five")} />
             <Paragraph text={t("experienceDetails.seven")} />
           </div>
-          <div className="col-12 col-lg-4 left-side order-first order-lg-last">
+          {/* <div className="col-12 col-lg-4 left-side order-first order-lg-last">
             <img
               src={devTalk}
               alt="we are devs berlin"
               className="header-pic "
             />
-          </div>
+          </div> */}
         </div>
         <div className="row d align-items-center mt-4 pt-2 pt-md-4 section-padding-bottom section-padding-top">
-          <div className="col-12 col-lg-4">
+          {/* <div className="col-12 col-lg-4">
             <img src={dev} alt="rocket-launch" className="dev-pic" />
-          </div>
-          <div className="col-12 col-lg-8">
+          </div> */}
+          <div className="col-12">
             <MultiCarousel
               infinite={false}
               responsive={maxOneSlide}

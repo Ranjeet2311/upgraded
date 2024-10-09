@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../../images/venice.jpeg";
+import profilePic from "../../images/berlin-river.png";
 import Heading from "../Heading";
 import Divider from "../../component/Divider";
 import Button from "../Button";
@@ -57,7 +57,7 @@ export default function About() {
             </Button>
             <a
               href="#skills"
-              className="colored-pill btn-bg text-decoration-none ms-3 me-1"
+              className="colored-pill btn-bg text-decoration-none ms-3 me-1 px-4"
             >
               <span className="me-2">
                 <ScienceIcon />
