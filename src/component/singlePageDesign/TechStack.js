@@ -59,7 +59,7 @@ export default function TechStack() {
           <div className="col-12 col-lg-12 mt-4">
             <div className="row">
               <div className="col-12 col-lg-3 h-100">
-                <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start align-items-center flex-column">
+                <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start flex-column">
                   <Tabs
                     orientation="vertical"
                     variant="scrollable"
@@ -77,9 +77,10 @@ export default function TechStack() {
                             key={i}
                             label={t(item.title)}
                             style={{
-                              color: "white",
+                              // color: "white",
                               padding: "10px 20px 10px 10px",
                               minWidth: "50px",
+                              width: "100%",
                             }}
                             onClick={() => filterHandler(item.ref)}
                           />

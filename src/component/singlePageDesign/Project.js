@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Tabs, Tab, Box, Tooltip } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Heading from "../../component/Heading";
 import Divider from "../../component/Divider";
 import Card from "../../component/Card";
@@ -66,6 +67,12 @@ export default function Project() {
     }
   }, [tabValue]);
   const { t } = useTranslation();
+
+  // const CustomTab = styled(Tab)(({ theme }) => ({
+  //   "& .MuiTouchRipple-root": {
+  //     color: "#159957",
+  //   },
+  // }));
   return (
     <div className="project-wrapper container">
       <Heading text={`${t("My Personal Projects")}`} />
@@ -89,23 +96,23 @@ export default function Project() {
             {tabs &&
               tabs.map((item) => {
                 return (
-                  <Tooltip
-                    placement="bottom"
-                    key={item.ref}
-                    title={item.title}
-                    classes={{
-                      tooltip: "btn-bg border-0",
-                    }}
-                    style={{ fontSize: "26px" }}
-                  >
-                    <Tab
-                      name={item.ref}
-                      label={item.title}
-                      // icon={<Icon alt="test avatar" img={item.imgSrc} />}
-                      className="tab_label mx-1"
-                      onClick={() => filterHandler(item.ref)}
-                    />
-                  </Tooltip>
+                  // <Tooltip
+                  //   placement="bottom"
+                  //   key={item.ref}
+                  //   title={item.title}
+                  //   classes={{
+                  //     tooltip: "btn-bg border-0",
+                  //   }}
+                  //   style={{ fontSize: "26px" }}
+                  // >
+                  <Tab
+                    name={item.ref}
+                    label={item.title}
+                    // icon={<Icon alt="test avatar" img={item.imgSrc} />}
+                    className="tab_label mx-1"
+                    onClick={() => filterHandler(item.ref)}
+                  />
+                  // </Tooltip>
                 );
               })}
           </Tabs>
@@ -148,8 +155,8 @@ export default function Project() {
                   createdAt={item.createdAt}
                   pageLink={`/repositories/${item.title}`}
                   showBtn={true}
-                  primeBtnText={t("Click for more details")}
-                  secBtnText={`${t("Click for more details")}`}
+                  primeBtnText={t("More Details")}
+                  secBtnText={`${t("More Details")}`}
                   type="project"
                 />
               </div>

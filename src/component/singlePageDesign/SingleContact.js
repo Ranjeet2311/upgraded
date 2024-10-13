@@ -23,7 +23,7 @@ export default function SingleContact() {
             <h3 className="colored-text">{t("Let's Connect")}</h3>
             <ContactForm />
           </div>
-          <div className="col-12 mt-4 px-0" id="download">
+          <div className="col-12 mt-4 px-md-0" id="download">
             {/* <HeadH1>{t("Let's Connect")}</HeadH1> */}
 
             {/* <div className="mt-4">

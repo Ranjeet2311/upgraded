@@ -269,17 +269,40 @@ body {
     box-shadow: none !important;
   }
 
+  // .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
+  // .css-1q2h7u5 {
+  //   color: black !important;
+  //   border-bottom: 1px solid black;
+
+  //   @include font-para;
+  // }
+  // .css-1aquho2-MuiTabs-indicator,
+  // .MuiTabs-indicator {
+  //   background-color: $theme-green !important;
+  // }
+
+  .MuiTabs-indicator,
+  .css-1aquho2-MuiTabs-indicator {
+    // border-radius: 12px !important;
+    z-index: 1 !important;
+  }
+
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
   .css-1q2h7u5 {
+    height: 36px;
+    border-radius: 12px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     color: black !important;
-    border-bottom: 1px solid black;
+  }
+  .Mui-selected {
+    z-index: 2;
+    color: white !important;
+    transition: all 0.3s ease-out;
+  }
 
-    @include font-para;
-  }
-  .css-1aquho2-MuiTabs-indicator,
-  .MuiTabs-indicator {
-    background-color: $theme-green !important;
-  }
+  //   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
+  // .css-1q2h7u5
 
   .project-wrapper,
   .project-details {
@@ -529,6 +552,18 @@ a,
   // @include small-description;
   font-weight: 600 !important;
   color: $white !important;
+  border-radius: 12px !important;
+  width: max-content;
+  // color: white !important;
+}
+
+.MuiTabs-indicator,
+.css-1aquho2-MuiTabs-indicator {
+  border-radius: 12px !important;
+  z-index: -1;
+  height: 45px !important;
+  bottom: 1px !important;
+  background: $gradient-background-secondary !important;
 }
 
 /* width */
@@ -571,8 +606,7 @@ a,
 .app {
   padding-top: 38px;
   // padding-bottom: 120px;
-  padding-left: 12px;
-  padding-right: 12px;
+
   overflow-x: hidden;
 }
 
@@ -683,6 +717,7 @@ a,
     cursor: pointer;
     transform: scale(1);
     border: none;
+    border-radius: 22px;
     .more {
       text-decoration: none;
     }
@@ -920,13 +955,13 @@ button,
   width: 60px;
 }
 
-.css-1aquho2-MuiTabs-indicator,
-.MuiTabs-indicator {
-  // background-color: $theme-yellow !important;
-  background-color: $theme-green !important;
-  height: 4px !important;
-  padding: 2px !important;
-}
+// .css-1aquho2-MuiTabs-indicator,
+// .MuiTabs-indicator {
+//   // background-color: $theme-yellow !important;
+//   background-color: $theme-green !important;
+//   height: 4px !important;
+//   padding: 2px !important;
+// }
 
 .colored-text {
   background: -webkit-linear-gradient(
@@ -1055,6 +1090,10 @@ h5 {
     @include at-900px {
       left: -13px;
     }
+
+    @include mid {
+      left: -2px;
+    }
   }
 
   h3 {
@@ -1165,6 +1204,10 @@ h5 {
   @include at-900px {
     padding-top: 90px !important;
     padding-bottom: 80px !important;
+  }
+  @include mid {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   h1 {
@@ -1279,6 +1322,10 @@ li::marker {
   @include at-900px {
     padding-bottom: 80px !important;
   }
+  @include mid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
   .inner-wrap {
     padding-top: 70px;
@@ -1296,7 +1343,7 @@ li::marker {
         margin-bottom: 40px;
       }
       @include mid {
-        width: 300px;
+        width: 100%;
         height: 200px;
       }
 
@@ -1309,10 +1356,10 @@ li::marker {
     .about-text-wrap {
       // padding-left: 36px;
 
-      @include at-900px {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+      // @include at-900px {
+      //   padding-left: 0px;
+      //   padding-right: 0px;
+      // }
 
       h2 {
         @include font-mid;
@@ -1351,6 +1398,11 @@ li::marker {
       display: flex;
       justify-content: space-between;
       align-items: start;
+
+      @include mid {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
       .school {
         padding-top: 70px;
         padding: 16px;
@@ -1370,6 +1422,9 @@ li::marker {
     }
   }
 
+  .css-j7qwjs {
+    align-items: center !important;
+  }
   .tech-wrap {
     padding-top: 110px;
 
@@ -1383,6 +1438,16 @@ li::marker {
       letter-spacing: 2px;
     }
   }
+
+  .texh_stack .MuiTabs-indicator,
+  .texh_stack .css-1aquho2-MuiTabs-indicator {
+    border-radius: 12px;
+    z-index: -1;
+    height: 46px !important;
+    bottom: 8px !important;
+    background: $gradient-background-secondary;
+    width: 100% !important;
+  }
 }
 
 // ----------------*Experience*-----------------
@@ -1393,6 +1458,10 @@ li::marker {
 
   @include at-900px {
     padding-bottom: 80px !important;
+  }
+  @include mid {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .border-left {
@@ -1444,6 +1513,10 @@ li::marker {
   @include at-900px {
     padding-bottom: 80px !important;
   }
+  @include mid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
   .project-inner {
     padding-top: 70px;
@@ -1482,10 +1555,7 @@ li::marker {
 }
 
 .contact {
-  padding-bottom: 122px;
-  @include at-900px {
-    padding-bottom: 80px !important;
-  }
+  // padding-bottom: 122px;
 
   .contact-inner {
     background-image: url(../images/map.png);
@@ -1493,14 +1563,19 @@ li::marker {
     background-position: center;
     background-size: cover;
     padding-top: 70px;
+    padding-bottom: 70px;
     margin-top: 40px;
   }
 
   .form-wrap {
     padding: 30px;
-    background-color: #161d26;
+    background-color: #1f2935;
     border-radius: 12px;
     max-width: 550px;
+
+    @include sm {
+      max-width: 350px;
+    }
 
     label {
       color: $theme-green;
@@ -1516,7 +1591,10 @@ li::marker {
 
 .footer {
   // margin-top: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #1f2935;
+  width: 100%;
 
   // @include at-900px {
   //   margin-top: 122px;
@@ -1526,11 +1604,21 @@ li::marker {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .small-intro {
+      margin-bottom: 0 !important ;
+      margin-top: 0 !important;
+    }
   }
   .footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: invert(1);
+
+    @include mid {
+      margin-top: 20px;
+    }
   }
 
   p {
@@ -1635,3 +1723,5 @@ li::marker {
     margin-top: 0px;
   }
 }
+
+// ---------------
