@@ -77,11 +77,11 @@ export default function ProjectDetail() {
                 className={`details-image ${zoom ? "zoom" : ""}`}
               />
             </div>
-            <p className="text-light experience mb-0">
+            <p className="text-light mb-0">
               {t("Click on imgae to zoom / shrink")}
             </p>
           </div>
-          <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start experience px-md-3 py-md-2 details">
+          <div className="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start px-md-3 py-md-2 details">
             {/* <Heading className="text-start" text={t(title)} /> */}
             <h1 className="text-start w-100"> {t(title)} </h1>
             <p>
@@ -89,16 +89,15 @@ export default function ProjectDetail() {
                 ? `${t(description)}`
                 : "---Description not available---"}
             </p>
-            <p className="experience w-100 mb-2 ps-1">
+            <p className="updated w-100 mb-2 ps-1">
               <b>{t("Last updated")}</b> : {""}
               {createdDate !== "Invalid date"
                 ? createdDate
                 : "Checkout github for date"}
             </p>
-            <div className="row my-4 ms-0">
+            <div className="row ms-0 tech-stack">
               <span className="text-white d-block mb-2 px-0">
                 <b>
-                  {" "}
                   {tags
                     ? `${t("Tech highlights")}`
                     : "Checkout github for more details"}

@@ -46,7 +46,6 @@ export default function TechStack() {
   }, [label]);
   return (
     <div>
-      {" "}
       <div className="text-center container px-0 texh_stack pt-2">
         <div className="row align-items-center">
           <div className="col-12">

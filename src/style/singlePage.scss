@@ -269,17 +269,11 @@ body {
     box-shadow: none !important;
   }
 
-  // .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
-  // .css-1q2h7u5 {
-  //   color: black !important;
-  //   border-bottom: 1px solid black;
-
-  //   @include font-para;
-  // }
-  // .css-1aquho2-MuiTabs-indicator,
-  // .MuiTabs-indicator {
-  //   background-color: $theme-green !important;
-  // }
+  #about,
+  #repositories {
+    box-shadow: 0px 0px 29px rgb(21, 87, 153, 30%);
+    background: $white;
+  }
 
   .MuiTabs-indicator,
   .css-1aquho2-MuiTabs-indicator {
@@ -329,6 +323,24 @@ body {
   }
 }
 
+.project-details {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .tech-stack {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .updated {
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .line {
+    margin-top: 30px;
+  }
+}
+
 .link {
   font-family: $regular !important;
   text-decoration-color: white;
@@ -359,60 +371,6 @@ body {
     // }
   }
 }
-// ------H1 Component --------
-// h1 {
-//   font-size: 40px;
-//   line-height: 46px;
-//   font-weight: 700 !important;
-//   font-family: $headFont !important;
-//   padding: 0.5rem 0;
-//   color: $white;
-
-//   @include at-900px() {
-//     font-size: 36px;
-//     line-height: 42px;
-//   }
-
-//   @include for-tablet-portrait-up() {
-//     font-size: 28px;
-//     line-height: 36px;
-//     margin: 0.5rem 0;
-//   }
-// }
-
-// h2 {
-//   font-size: 32px;
-//   line-height: 38px;
-//   color: $white !important;
-//   font-weight: 500;
-//   font-family: $Poppins !important;
-//   span {
-//     margin-right: 5px !important;
-//   }
-
-//   @include at-900px() {
-//     font-size: 26px;
-//     line-height: 32px;
-//   }
-
-//   @include for-tablet-portrait-up() {
-//     font-size: 24px;
-//     line-height: 30px;
-//     margin: 0.5rem 0;
-//   }
-// }
-
-// h3,
-// h4 h5 {
-//   font-size: 28px !important;
-//   line-height: 34px !important;
-//   color: $white !important;
-//   font-weight: 600;
-//   font-family: $headFont !important;
-//   span {
-//     margin-right: 5px !important;
-//   }
-// }
 
 h1,
 h2,
@@ -1197,13 +1155,13 @@ h5 {
 
 .hero_home {
   padding-top: 122px !important;
-  padding-bottom: 122px !important;
+  padding-bottom: 62px !important;
   align-items: center;
   overflow: hidden;
 
   @include at-900px {
     padding-top: 90px !important;
-    padding-bottom: 80px !important;
+    padding-bottom: 40px !important;
   }
   @include mid {
     padding-left: 12px;
@@ -1316,8 +1274,9 @@ li::marker {
 }
 
 .about {
-  // padding-top: 122px;
-  padding-bottom: 122px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  transform: skewY(8deg);
 
   @include at-900px {
     padding-bottom: 80px !important;
@@ -1408,9 +1367,14 @@ li::marker {
         padding: 16px;
         border-radius: 12px;
         background: #161d26;
+        box-shadow: 0 0 2px black;
 
         @include lg-1199px {
           margin-top: 12px;
+        }
+
+        &:hover {
+          box-shadow: 1px 1px 8px $theme-green;
         }
 
         h4 {
@@ -1454,9 +1418,11 @@ li::marker {
 
 .exp_section {
   position: relative;
-  padding-bottom: 122px;
+  padding-bottom: 62px;
+  padding-top: 62px !important;
 
   @include at-900px {
+    padding-top: 80px;
     padding-bottom: 80px !important;
   }
   @include mid {
@@ -1507,10 +1473,12 @@ li::marker {
 // ------------*project*-----------
 
 .project-wrapper {
-  // padding-top: 122px;
-  padding-bottom: 122px;
+  padding-top: 122px;
+  padding-bottom: 60px;
+  transform: skewY(8deg);
 
   @include at-900px {
+    padding-top: 60px;
     padding-bottom: 80px !important;
   }
   @include mid {
@@ -1532,6 +1500,11 @@ li::marker {
 
   .repos {
     padding-top: 40px;
+    padding-bottom: 80px;
+
+    @include at-900px {
+      padding-bottom: 0px !important;
+    }
   }
 }
 
@@ -1555,7 +1528,7 @@ li::marker {
 }
 
 .contact {
-  // padding-bottom: 122px;
+  padding-top: 62px;
 
   .contact-inner {
     background-image: url(../images/map.png);
@@ -1614,10 +1587,26 @@ li::marker {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: invert(1);
 
     @include mid {
       margin-top: 20px;
+    }
+
+    a {
+      width: 30px;
+      height: 30px;
+      background: $gradient-background-primary;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background: $gradient-background-secondary;
+        color: white;
+      }
     }
   }
 
@@ -1725,3 +1714,9 @@ li::marker {
 }
 
 // ---------------
+
+#about,
+#repositories {
+  transform: skewY(-8deg);
+  background: linear-gradient(to left, #161d26, rgb(1, 1, 1));
+}
