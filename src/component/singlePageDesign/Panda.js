@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import pandaEye from "../../images/panda-eye.jpg";
-import panda from "../../images/panda.png";
+import minion from "../../images/minion.png";
+import minionEye from "../../images/minion-eye.png";
 
 export default function Panda() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -45,7 +45,7 @@ export default function Panda() {
       <img
         ref={leftEyeRef}
         id="left-eye"
-        src={pandaEye}
+        src={minionEye}
         alt="left-eye"
         className="panda-left-eye eye"
         style={calculateEyeMovement(leftEyeRef)}
@@ -53,12 +53,12 @@ export default function Panda() {
       <img
         ref={rightEyeRef}
         id="right-eye"
-        src={pandaEye}
+        src={minionEye}
         alt="right-eye"
         className="panda-right-eye eye"
         style={calculateEyeMovement(rightEyeRef)}
       />
-      <img src={panda} alt="panda" className="panda-body" />
+      <img src={minion} alt="panda" className="panda-body" />
     </div>
   );
 }

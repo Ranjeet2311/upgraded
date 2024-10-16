@@ -537,14 +537,14 @@ a,
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
+  background: $gradient-background-primary;
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   transition: all 0, 4s ease-in-out;
-  background: linear-gradient(to left, #bc3eae94 30%, #483285 70%);
+  background: $gradient-background-secondary;
 }
 
 .wrapper {
@@ -1090,29 +1090,60 @@ h5 {
 
 // ------Panda--------
 
-.panda {
-  position: relative;
+@keyframes goUpAndStay {
+  0% {
+    transform: translate(41%, -54%); /* Starting position */
+  }
+  50% {
+    transform: translate(41%, -80%); /* Final position (stay at top) */
+  }
+  100% {
+    transform: translate(41%, -45%); /* Move up (midpoint) */
+  }
+}
 
-  .panda-left-eye,
-  .panda-right-eye {
+/* Second animation: Come down after a delay */
+@keyframes comeDown {
+  0% {
+    transform: translate(41%, -55%); /* Move down (midpoint) */
+  }
+  50% {
+    transform: translate(41%, -80%); /* Start from the top */
+  }
+  100% {
+    transform: translate(41%, -14%); /* Return to initial position */
+  }
+}
+
+.panda {
+  position: absolute;
+  transform: translate(41%, -54%);
+  animation: goUpAndStay 10s ease-in-out infinite alternate,
+    comeDown 16s 8s ease-out infinite alternate;
+
+  @include lg-1199px {
+    display: none;
+  }
+
+  .eye {
     position: absolute;
-    // border-radius: 50%;
-    background: black;
-    width: 10px;
-    height: 10px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     transition: transform 0.1s ease-out;
-    left: 116px;
-    top: 83px;
+  }
+  .panda-left-eye {
+    left: 32px !important;
+    top: 16px !important;
   }
   .panda-right-eye {
-    left: 152px;
-    top: 83px;
+    left: 97px !important;
+    top: 16px !important;
   }
 
   .panda-body {
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -1266,6 +1297,7 @@ h5 {
   font-weight: 600;
   margin-bottom: 30px !important;
   margin-top: 19px;
+  // font-family: $cursive;
 }
 
 li::marker {
@@ -1531,13 +1563,20 @@ li::marker {
   padding-top: 62px;
 
   .contact-inner {
-    background-image: url(../images/map.png);
+    position: relative;
+    background-image: url(../images/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 70px;
     margin-top: 40px;
+    box-shadow: 2px 4px 8px $theme-blue;
+
+    @include mid {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   .form-wrap {
@@ -1545,6 +1584,7 @@ li::marker {
     background-color: #1f2935;
     border-radius: 12px;
     max-width: 550px;
+    z-index: 2;
 
     @include sm {
       max-width: 350px;
