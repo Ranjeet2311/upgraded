@@ -5,7 +5,7 @@ import minionEye from "../../images/minion-eye.png";
 export default function Panda() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const leftEyeRef = useRef(null);
-  const rightEyeRef = useRef(null);
+  // const rightEyeRef = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -51,12 +51,12 @@ export default function Panda() {
         style={calculateEyeMovement(leftEyeRef)}
       />
       <img
-        ref={rightEyeRef}
-        id="right-eye"
+        ref={leftEyeRef}
+        id="left-eye"
         src={minionEye}
         alt="right-eye"
         className="panda-right-eye eye"
-        style={calculateEyeMovement(rightEyeRef)}
+        style={calculateEyeMovement(leftEyeRef)}
       />
       <img src={minion} alt="panda" className="panda-body" />
     </div>
