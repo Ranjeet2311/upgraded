@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.9b062d45.css",
-    "main.js": "/upgraded/static/js/main.67b727e4.js",
-    "static/media/map.png": "/upgraded/static/media/map.acd79b580a20a4e0490e.png",
+    "main.css": "/upgraded/static/css/main.b011ecc7.css",
+    "main.js": "/upgraded/static/js/main.5a688c4d.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
+    "static/media/map.jpg": "/upgraded/static/media/map.fb4bcd6de74e087ecc69.jpg",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
     "static/media/x2.jpg": "/upgraded/static/media/x2.300eb2b750c769ea751e.jpg",
+    "static/media/minion.png": "/upgraded/static/media/minion.fb8352524fe767c85e2b.png",
     "static/media/globe2.png": "/upgraded/static/media/globe2.12935e611d084c24c3de.png",
     "static/media/cap_headShot.png": "/upgraded/static/media/cap_headShot.c903e7b12db62ce54bb1.png",
     "static/media/x3.jpg": "/upgraded/static/media/x3.9a3d96ee71a0d90b4edd.jpg",
@@ -17,6 +18,7 @@
     "static/media/Rectangle.png": "/upgraded/static/media/Rectangle.547a9196d6cf6e790b9c.png",
     "static/media/revicons.eot": "/upgraded/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/upgraded/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/minion-eye.png": "/upgraded/static/media/minion-eye.e22ee89f79184e68223b.png",
     "static/media/logo-second.svg": "/upgraded/static/media/logo-second.dbd528135f8a6860df1b0b1cb3eba149.svg",
     "static/media/revicons.woff": "/upgraded/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/spinner.svg": "/upgraded/static/media/spinner.4bdbdccc8399bb7cbec6fd19671ba953.svg",
@@ -34,11 +36,11 @@
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.9b062d45.css.map": "/upgraded/static/css/main.9b062d45.css.map",
-    "main.67b727e4.js.map": "/upgraded/static/js/main.67b727e4.js.map"
+    "main.b011ecc7.css.map": "/upgraded/static/css/main.b011ecc7.css.map",
+    "main.5a688c4d.js.map": "/upgraded/static/js/main.5a688c4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b062d45.css",
-    "static/js/main.67b727e4.js"
+    "static/css/main.b011ecc7.css",
+    "static/js/main.5a688c4d.js"
   ]
 }
