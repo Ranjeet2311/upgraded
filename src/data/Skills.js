@@ -1,3 +1,100 @@
+export const endorsements = [
+  {
+    skill: "Web App Dev.",
+    icon: "images/skillPics/web-app.png",
+    // import webApp from "../images/web-app.png";
+    endorsementBy: [
+      { name: "Ales Cernivec", position: "Infrastructure and DevOps Lead" },
+      { name: "Anja Vidmar", position: "Web and Graphic Designer at XLAB" },
+      { name: "Sašo Kuntarič PMP, CSPO", position: "Project Manager at XLAB" },
+      {
+        name: "Matevz Erzen",
+        position: "Team Lead @ Munich Innovation Labs",
+      },
+      { name: "Anže Žitnik", position: "Software engineer" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+  {
+    skill: "React",
+    icon: "images/skillPics/react-js.png",
+    endorsementBy: [
+      { name: "Ales Cernivec", position: "Infrastructure and DevOps Lead" },
+      {
+        name: "Matevz Erzen",
+        position: "Team Lead @ Munich Innovation Labs",
+      },
+      { name: "Anže Žitnik", position: "Software engineer" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+  {
+    skill: "Vue",
+    icon: "images/skillPics/vue-js-icon.png",
+    endorsementBy: [
+      { name: "Ales Cernivec", position: "Infrastructure and DevOps Lead" },
+      { name: "Anja Vidmar", position: "Web and Graphic Designer at XLAB" },
+      { name: "Sašo Kuntarič PMP, CSPO", position: "Project Manager at XLAB" },
+      {
+        name: "Matevz Erzen",
+        position: "Team Lead @ Munich Innovation Labs",
+      },
+      { name: "Anže Žitnik", position: "Software engineer" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+
+  {
+    skill: "Angular",
+    icon: "images/skillPics/angular.png",
+    endorsementBy: [
+      { name: "Anja Vidmar", position: "Web and Graphic Designer at XLAB" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+  {
+    skill: "Java Script",
+    icon: "images/skillPics/js.png",
+    endorsementBy: [
+      { name: "Anja Vidmar", position: "Web and Graphic Designer at XLAB" },
+      { name: "Sašo Kuntarič PMP, CSPO", position: "Project Manager at XLAB" },
+      {
+        name: "Matevz Erzen",
+        position: "Team Lead @ Munich Innovation Labs",
+      },
+      { name: "Anže Žitnik", position: "Software engineer" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+  {
+    skill: "Gitlab",
+    icon: "images/skillPics/gitlab.png",
+    endorsementBy: [
+      { name: "Ales Cernivec", position: "Infrastructure and DevOps Lead" },
+      { name: "Sašo Kuntarič PMP, CSPO", position: "Project Manager at XLAB" },
+      {
+        name: "Parvinder Singh",
+        position: "Senior Associate at Wipro Limited",
+      },
+    ],
+  },
+];
+
 const skillsData = [
   {
     id: 1,

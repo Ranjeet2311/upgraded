@@ -1,5 +1,5 @@
 .modal-content {
-  background: #000000 !important;
+  background: linear-gradient(to right, #159957, #155799);
   border: 1px solid black;
   border-radius: 12px !important;
   box-shadow: 0px 0px 26px #000ce8aa;
@@ -8,6 +8,9 @@
   .form-label {
     color: white;
     margin-bottom: 2px !important;
+  }
+  li {
+    color: white;
   }
 
   .btn-bg {

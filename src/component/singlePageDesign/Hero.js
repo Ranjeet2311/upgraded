@@ -11,6 +11,7 @@ import Button from "../Button";
 import DialpadIcon from "@mui/icons-material/Dialpad";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import EmailIcon from "@mui/icons-material/Email";
+import Endorsement from "./Endorsement";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -148,9 +149,12 @@ export default function Hero() {
                 className="header-pic mt-lg-2 "
               />
             </div>
-            <a href="#about" className="down-button text-decoration-none">
+            <a href="#endorsement" className="down-button text-decoration-none">
               <ArrowDownwardIcon />
             </a>
+          </div>
+          <div id="endorsement" className="col-12">
+            <Endorsement />
           </div>
         </div>
       </div>

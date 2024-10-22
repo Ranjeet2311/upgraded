@@ -202,6 +202,23 @@ body {
     }
   }
 
+  .modal-content {
+    background: $theme-blue !important;
+  }
+
+  .endorsements {
+    background: $gradient-background-primary;
+    .btn {
+      background: $gradient-background-secondary !important;
+    }
+    p {
+      color: $white !important;
+    }
+    .Typewriter__wrapper {
+      color: $white !important;
+    }
+  }
+
   .school {
     box-shadow: -5px 8px 12px rgba(159, 177, 212, 0.6) !important;
     background: linear-gradient(to right, #159957, #155799) !important;
@@ -272,7 +289,7 @@ body {
   #about,
   #repositories {
     box-shadow: 0px 0px 29px rgb(21, 87, 153, 30%);
-    background: $white;
+    background: rgba(245, 245, 245, 0.7);
   }
 
   .MuiTabs-indicator,
@@ -1652,6 +1669,10 @@ li::marker {
 
   p {
     @include small-description;
+
+    span {
+      font-weight: 500;
+    }
   }
 }
 
@@ -1756,7 +1777,116 @@ li::marker {
 // ---------------
 
 #about,
-#repositories {
+#repositories,
+#endorsement_section {
   transform: skewY(-8deg);
   background: linear-gradient(to left, #161d26, rgb(1, 1, 1));
+}
+
+// ---------------endorsements --------------------
+
+.endorsement_section {
+  margin-top: 120px;
+
+  @include mid {
+    margin-top: 60px;
+  }
+
+  h2,
+  p {
+    text-align: start !important;
+  }
+  p {
+    font-weight: 600;
+  }
+
+  position: relative;
+  .react-multi-carousel-list .react-multiple-carousel__arrow {
+    display: none !important;
+  }
+  .react-multi-carousel-list {
+    margin-top: 40px;
+    @include mid {
+      margin-top: 20px;
+    }
+  }
+  .react-multi-carousel-track {
+    position: relative;
+  }
+}
+.endorsements {
+  width: max-content;
+  height: 140px;
+  background: #161d26;
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  // height: max-content;
+
+  .top_wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    .skill-img {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .skill {
+      // @include font-semi-mid;
+      margin-bottom: 10px;
+      margin-bottom: 10;
+      line-height: 22px !important;
+    }
+  }
+
+  .stats {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding: 0px 10px 0;
+    transition: all 0.4s ease-out;
+    width: 300px;
+
+    &:hover {
+      .skill {
+        text-decoration: underline;
+      }
+    }
+    p {
+      @include small-description;
+      margin-bottom: 0;
+    }
+
+    .people {
+      padding-left: 0 !important;
+
+      button {
+        @include small-description;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+
+      li {
+        list-style: none;
+        @include small-description;
+        font-weight: 500;
+        margin-top: 4px;
+
+        &::marker {
+          background-color: #b5ac49;
+        }
+      }
+    }
+  }
 }

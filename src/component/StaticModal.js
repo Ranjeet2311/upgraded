@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 // import { useTranslation } from "react-i18next";
 import capAvatar from "../images/cap_headShot.png";
 
-function StaticModal({ title, btnText, children }) {
+function StaticModal({ title, btnText, theme, children }) {
   // const { t } = useTranslation();
   return (
     <div>
@@ -14,7 +14,11 @@ function StaticModal({ title, btnText, children }) {
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        <TextsmsIcon /> {btnText}
+        <span className="me-1">
+          {" "}
+          {theme === "general" ? null : <TextsmsIcon />}
+        </span>
+        {btnText}
       </button>
       {createPortal(
         <div

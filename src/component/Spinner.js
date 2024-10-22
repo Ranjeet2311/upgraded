@@ -1,6 +1,6 @@
 import React from "react";
 // import clap from "../images/clap.png";
-import spinner from "../images/spinner.svg";
+import spinner from "../images/green_spinner.svg";
 import "../style/spinner.scss";
 
 function Spinner() {
@@ -18,9 +18,9 @@ function Spinner() {
           alt="loading"
           style={{ width: "40px", height: "40px", objectFit: "cover" }}
         /> */}
-        <p className="text-center magenta mt-4">
+        {/* <p className="text-center magenta mt-4">
           Loading your content... Good things take time!
-        </p>
+        </p> */}
       </div>
     </>
   );
