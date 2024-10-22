@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.f07b42f8.css",
-    "main.js": "/upgraded/static/js/main.fa7824de.js",
-    "static/js/481.08051b0b.chunk.js": "/upgraded/static/js/481.08051b0b.chunk.js",
-    "static/js/330.dd821358.chunk.js": "/upgraded/static/js/330.dd821358.chunk.js",
+    "main.css": "/upgraded/static/css/main.27489e1b.css",
+    "main.js": "/upgraded/static/js/main.6e7e6672.js",
+    "static/js/481.7a127218.chunk.js": "/upgraded/static/js/481.7a127218.chunk.js",
+    "static/js/878.fa93e6e3.chunk.js": "/upgraded/static/js/878.fa93e6e3.chunk.js",
+    "static/js/330.ce783027.chunk.js": "/upgraded/static/js/330.ce783027.chunk.js",
     "static/js/153.286caf4c.chunk.js": "/upgraded/static/js/153.286caf4c.chunk.js",
-    "static/js/295.419b17b1.chunk.js": "/upgraded/static/js/295.419b17b1.chunk.js",
+    "static/js/295.f04d9a73.chunk.js": "/upgraded/static/js/295.f04d9a73.chunk.js",
     "static/js/850.364edfe4.chunk.js": "/upgraded/static/js/850.364edfe4.chunk.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
     "static/media/map.jpg": "/upgraded/static/media/map.fb4bcd6de74e087ecc69.jpg",
@@ -32,25 +33,26 @@
     "static/media/cookie-icon.svg": "/upgraded/static/media/cookie-icon.05d6e303f55f9fc0b24ad8be9f01a237.svg",
     "static/media/si.svg": "/upgraded/static/media/si.2a47feb6de33bb7d0894a003cdb10016.svg",
     "static/media/sun-icon.svg": "/upgraded/static/media/sun-icon.4d3453e4f4f6d3a147c9.svg",
+    "index.html": "/upgraded/index.html",
     "static/media/angle-circle-arrow-up-icon.svg": "/upgraded/static/media/angle-circle-arrow-up-icon.3aa96e478bcbe5516990.svg",
     "static/media/angle-circle-arrow-down-icon.svg": "/upgraded/static/media/angle-circle-arrow-down-icon.4d726fba4a328d3e3e92.svg",
     "static/media/angular-icon.svg": "/upgraded/static/media/angular-icon.0a1a68b6fcd0e40935c97ace11e7094d.svg",
-    "index.html": "/upgraded/index.html",
     "static/media/us.svg": "/upgraded/static/media/us.99fe1ca93f3e27cfd8b351f30244f703.svg",
     "static/media/vue-js-icon.svg": "/upgraded/static/media/vue-js-icon.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.f07b42f8.css.map": "/upgraded/static/css/main.f07b42f8.css.map",
-    "main.fa7824de.js.map": "/upgraded/static/js/main.fa7824de.js.map",
-    "481.08051b0b.chunk.js.map": "/upgraded/static/js/481.08051b0b.chunk.js.map",
-    "330.dd821358.chunk.js.map": "/upgraded/static/js/330.dd821358.chunk.js.map",
+    "main.27489e1b.css.map": "/upgraded/static/css/main.27489e1b.css.map",
+    "main.6e7e6672.js.map": "/upgraded/static/js/main.6e7e6672.js.map",
+    "481.7a127218.chunk.js.map": "/upgraded/static/js/481.7a127218.chunk.js.map",
+    "878.fa93e6e3.chunk.js.map": "/upgraded/static/js/878.fa93e6e3.chunk.js.map",
+    "330.ce783027.chunk.js.map": "/upgraded/static/js/330.ce783027.chunk.js.map",
     "153.286caf4c.chunk.js.map": "/upgraded/static/js/153.286caf4c.chunk.js.map",
-    "295.419b17b1.chunk.js.map": "/upgraded/static/js/295.419b17b1.chunk.js.map",
+    "295.f04d9a73.chunk.js.map": "/upgraded/static/js/295.f04d9a73.chunk.js.map",
     "850.364edfe4.chunk.js.map": "/upgraded/static/js/850.364edfe4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f07b42f8.css",
-    "static/js/main.fa7824de.js"
+    "static/css/main.27489e1b.css",
+    "static/js/main.6e7e6672.js"
   ]
 }
