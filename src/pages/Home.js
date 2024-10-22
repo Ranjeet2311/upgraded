@@ -2,11 +2,11 @@ import { lazy, Suspense } from "react";
 import Metadata from "../component/Metadata";
 import Navbar from "../component/singlePageDesign/Navbar";
 import Section from "../component/singlePageDesign/Section";
-import About from "../component/singlePageDesign/About";
 import Footer from "../component/singlePageDesign/Footer";
-import Spinner from "../component/Spinner";
+import Placeholder from "../component/singlePageDesign/Placeholder";
 
 const Hero = lazy(() => import("../component/singlePageDesign/Hero"));
+const About = lazy(() => import("../component/singlePageDesign/About"));
 const Experience = lazy(() =>
   import("../component/singlePageDesign/Experience")
 );
@@ -24,39 +24,39 @@ function Home() {
       />
       <Navbar />
       <div id="home">
-        <Suspense fallback={<Spinner />}>
-          <Section>
+        <Section>
+          <Suspense fallback={<Placeholder />}>
             <Hero />
-          </Section>
-        </Suspense>
-        <div id="about">
-          <Suspense fallback={<Spinner />}>
-            <Section>
-              <About />
-            </Section>
           </Suspense>
+        </Section>
+        <div id="about">
+          <Section>
+            <Suspense fallback={<Placeholder />}>
+              <About />
+            </Suspense>
+          </Section>
         </div>
         <div id="experience">
-          <Suspense fallback={<Spinner />}>
-            <Section>
+          <Section>
+            <Suspense fallback={<Placeholder />}>
               <Experience />
-            </Section>
-          </Suspense>
+            </Suspense>
+          </Section>
         </div>
         <div id="repositories">
-          <Suspense fallback={<Spinner />}>
-            <Section>
+          <Section>
+            <Suspense fallback={<Placeholder />}>
               <Project />
-            </Section>
-          </Suspense>
+            </Suspense>
+          </Section>
         </div>
       </div>
       <div id="contact">
-        <Suspense fallback={<Spinner />}>
-          <Section>
+        <Section>
+          <Suspense fallback={<Placeholder />}>
             <SingleContact />
-          </Section>
-        </Suspense>
+          </Suspense>
+        </Section>
       </div>
       <Footer />
     </>

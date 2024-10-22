@@ -49,6 +49,7 @@ export default function Panda() {
         alt="left-eye"
         className="panda-left-eye eye"
         style={calculateEyeMovement(leftEyeRef)}
+        loading="lazy"
       />
       <img
         ref={leftEyeRef}
@@ -57,8 +58,9 @@ export default function Panda() {
         alt="right-eye"
         className="panda-right-eye eye"
         style={calculateEyeMovement(leftEyeRef)}
+        loading="lazy"
       />
-      <img src={minion} alt="panda" className="panda-body" />
+      <img src={minion} alt="panda" className="panda-body" loading="lazy" />
     </div>
   );
 }

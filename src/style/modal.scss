@@ -1,9 +1,15 @@
 .modal-content {
-  background: linear-gradient(to right, #159957, #155799);
-  border: 1px solid black;
+  background: #09233e;
+  // border: 1px solid #09233e;
   border-radius: 12px !important;
   box-shadow: 0px 0px 26px #000ce8aa;
   background-clip: inherit;
+  border: none;
+  outline: none;
+
+  .modal-header {
+    background: linear-gradient(to right, #b5ac49, #159957, #b5ac49, #155799);
+  }
 
   .form-label {
     color: white;

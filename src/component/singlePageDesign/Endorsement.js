@@ -27,13 +27,13 @@ export default function Endorsement() {
       </p>
       <Divider />
       <MultiCarousel
-        infinite={true}
+        infinite={false}
         responsive={maxFourSlide}
         autoPlay={true}
         swipeable={true}
         draggable={true}
         showDots={true}
-        autoPlaySpeed={4500}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all 0.5s"
         transitionDuration={500}

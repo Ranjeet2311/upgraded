@@ -6,9 +6,17 @@
   <link rel="icon" href="./fevicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="./stye/style.css">
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload specific Google Font styles -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" as="style">
+  <!-- DNS Prefetch for Google Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <meta property="og:image" content="https://ranjeet2311.github.io/upgraded/images/social_card.jpg" />
-  <script type="text/javascript">
+
+  <script type="text/javascript" defer>
     (function (l) {
       if (l.search[1] === '/') {
         var decoded = l.search.slice(1).split('&').map(function (s) {
@@ -23,11 +31,10 @@
 </head>
 
 <body>
-  </div>
   <div id="root"></div>
   <div id="modal"></div>
   <div id="cookies"></div>
-  <script type="text/ts" src="../src/index.js"></script>
+  <script src="../src/index.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@ function Spinner() {
           src={spinner}
           alt="loading"
           style={{ width: "140px", objectFit: "cover" }}
+          loading="lazy"
         />
         {/* <img
           className="pic"

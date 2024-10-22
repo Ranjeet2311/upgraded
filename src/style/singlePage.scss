@@ -1590,9 +1590,11 @@ li::marker {
     margin-top: 40px;
     box-shadow: 2px 4px 8px $theme-blue;
 
-    @include mid {
+    @include at-900px {
       padding-top: 30px;
       padding-bottom: 30px;
+      background-image: none;
+      background: $gradient-background-primary;
     }
   }
 
@@ -1868,9 +1870,12 @@ li::marker {
       padding-left: 0 !important;
 
       button {
-        @include small-description;
+        // @include small-description;
+        font-size: 14px !important;
+        line-height: 18px !important;
         padding-top: 6px !important;
         padding-bottom: 6px !important;
+        border-radius: 20px;
 
         &:hover {
           transform: scale(1);

@@ -25,7 +25,8 @@ export default function About() {
               <img
                 src={profilePic}
                 alt="profilepic"
-                className="header-pic mt-lg-2 "
+                className="header-pic mt-lg-2"
+                loading="lazy"
               />
             </div>
           </div>

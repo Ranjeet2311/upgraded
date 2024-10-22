@@ -50,7 +50,7 @@ export default function EndorsementBox({
             <ul className="people">
               <StaticModal
                 btnText={`${skill} ${t("See all")}`}
-                title={t("Endorsed by")}
+                title={`${skill} ${t("Endorsed by")}`}
                 theme="general"
               >
                 {endorsementBy &&

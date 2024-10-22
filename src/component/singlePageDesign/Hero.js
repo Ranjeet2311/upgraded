@@ -146,7 +146,8 @@ export default function Hero() {
               <img
                 src={profilePic}
                 alt="profilepic"
-                className="header-pic mt-lg-2 "
+                className="header-pic mt-lg-2"
+                loading="lazy"
               />
             </div>
             <a href="#endorsement" className="down-button text-decoration-none">
