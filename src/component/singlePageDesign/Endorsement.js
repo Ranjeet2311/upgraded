@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import { Divider } from "@mui/material";
 import { endorsements } from "../../data/Skills";
 import EndorsementBox from "../EndorsementBox";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export default function Endorsement() {
   const { t } = useTranslation();
@@ -27,7 +26,7 @@ export default function Endorsement() {
       </p>
       <Divider />
       <MultiCarousel
-        infinite={false}
+        infinite={true}
         responsive={maxFourSlide}
         autoPlay={true}
         swipeable={true}

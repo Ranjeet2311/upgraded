@@ -77,7 +77,7 @@ export default function About() {
             <Heading text={t("Academics")} />
             <Divider />
             <div className="row academy-inner">
-              <div class="col-12 col-lg-5 school">
+              <div className="col-12 col-lg-5 school">
                 <h4 className="fw-bolder colored-text">
                   BA-Prog. -Delhi University 2014
                 </h4>
@@ -85,7 +85,7 @@ export default function About() {
                   {t("Maths, English, Programming C++, History, Hindi.")}
                 </p>
               </div>
-              <div class="col-12 col-lg-5 school">
+              <div className="col-12 col-lg-5 school">
                 <h4 className="fw-bolder colored-text">
                   G.B. Senior Sec School, New Del - 2011
                 </h4>

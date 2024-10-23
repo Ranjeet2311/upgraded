@@ -586,7 +586,7 @@ a,
 }
 
 .stack-pill {
-  background: $theme-yellow;
+  background: $theme-blue;
 
   margin: 6px 4px;
   padding: 4px 16px;
@@ -1564,7 +1564,7 @@ li::marker {
 .dot {
   height: 50px;
   width: 50px;
-  background-color: rgba(188, 62, 174, 1);
+  background-color: $theme-blue;
   border-radius: 50%;
   margin-right: 5px;
 
@@ -1593,9 +1593,12 @@ li::marker {
     @include at-900px {
       padding-top: 30px;
       padding-bottom: 30px;
-      background-image: none;
-      background: $gradient-background-primary;
     }
+
+    // @include mid {
+    //   background-image: none;
+    //   background: $gradient-background-primary;
+    // }
   }
 
   .form-wrap {

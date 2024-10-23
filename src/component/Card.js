@@ -26,7 +26,7 @@ function Card({
   );
   const { t } = useTranslation();
 
-  const shortDescription = description && description.substr(0, 80) + ".....";
+  const shortDescription = description && description.substr(0, 150) + ".....";
 
   return (
     <div

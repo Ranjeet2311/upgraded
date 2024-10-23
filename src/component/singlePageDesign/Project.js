@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Tabs, Tab, Box, Tooltip } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Tabs, Tab, Box } from "@mui/material";
 import Heading from "../../component/Heading";
 import Divider from "../../component/Divider";
 import Card from "../../component/Card";
@@ -9,12 +8,10 @@ import angular from "../../images/angular-icon.svg";
 import react from "../../images/react-js-icon.svg";
 import browse from "../../images/all-icon.svg";
 import webApp from "../../images/web-app.png";
-import Icon from "../../component/Icon";
 import { useDispatch, useSelector } from "react-redux";
 import { filterProjects } from "../../store/features/projectSlice";
 import { useTranslation } from "react-i18next";
 import Spinner from "../../component/Spinner";
-import Paragraph from "../Paragraph";
 
 const tabs = [
   { title: "All", ref: "all", imgSrc: browse },
@@ -68,21 +65,14 @@ export default function Project() {
   }, [tabValue]);
   const { t } = useTranslation();
 
-  // const CustomTab = styled(Tab)(({ theme }) => ({
-  //   "& .MuiTouchRipple-root": {
-  //     color: "#159957",
-  //   },
-  // }));
   return (
     <div className="project-wrapper container">
       <Heading text={`${t("My Personal Projects")}`} />
-      {/* <Paragraph text={`🤸${t("Checkout my codes at Github")} <☝️> `} /> */}
       <p className="small-intro colored-text text-center">
         {t("Checkout my codes at Github")}
       </p>
       <Divider />
       <div className="col-12 "></div>
-      {/* <HeadH2 text={t("Filter projects by frameworks & types")} /> */}
       {showData && (
         <Box className="mt-2 px-4 project-inner">
           <Tabs
@@ -96,23 +86,12 @@ export default function Project() {
             {tabs &&
               tabs.map((item) => {
                 return (
-                  // <Tooltip
-                  //   placement="bottom"
-                  //   key={item.ref}
-                  //   title={item.title}
-                  //   classes={{
-                  //     tooltip: "btn-bg border-0",
-                  //   }}
-                  //   style={{ fontSize: "26px" }}
-                  // >
                   <Tab
                     name={item.ref}
                     label={item.title}
-                    // icon={<Icon alt="test avatar" img={item.imgSrc} />}
                     className="tab_label mx-1"
                     onClick={() => filterHandler(item.ref)}
                   />
-                  // </Tooltip>
                 );
               })}
           </Tabs>
@@ -139,13 +118,12 @@ export default function Project() {
           {filteredProjects &&
             filteredProjects.map((item, index) => (
               <div
+                key={index}
                 className={`col-12 col-md-6 col-lg-3 ${
                   filteredProjects.length <= 2 && "col-lg-4"
                 } `}
-                key={index}
               >
                 <Card
-                  key={index}
                   img={item.img}
                   title={t(item.title)}
                   code={item.code}

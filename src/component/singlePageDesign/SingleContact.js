@@ -3,7 +3,6 @@ import ContactForm from "../../component/ContactForm";
 import { useTranslation } from "react-i18next";
 import Heading from "../Heading";
 import Divider from "../Divider";
-import Panda from "./Panda";
 
 export default function SingleContact() {
   const { t } = useTranslation();
@@ -22,7 +21,6 @@ export default function SingleContact() {
               <h3 className="colored-text">{t("Let's Connect")}</h3>
               <ContactForm />
             </div>
-            <Panda />
           </div>
         </div>
       </div>
