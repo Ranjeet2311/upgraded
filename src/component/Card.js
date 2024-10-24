@@ -18,15 +18,16 @@ function Card({
   secBtnText,
   primeBtnText,
   type,
+  demoText,
 }) {
   const [hide, setHide] = useState(false);
-  const stack = tags && tags.slice(0, 2);
+  const stack = tags && tags.slice(0, 5);
   const date = moment(createdAt, "YYYY-MM-DDTHH:mm:ss.SSS[Z]").format(
     "DD MMMM YYYY"
   );
   const { t } = useTranslation();
 
-  const shortDescription = description && description.substr(0, 150) + ".....";
+  const shortDescription = description && description.substr(0, 150) + "...";
 
   return (
     <div
@@ -53,7 +54,7 @@ function Card({
               <img src={headShot} alt="head-shot avatar" />
             </div>
           </span>
-          {title}
+          <span className="my-0 colored-text">{title}</span>
         </h5>
         {/* {createdAt && (
           <p className="created highlight my-0 py-0">
@@ -105,14 +106,23 @@ function Card({
             </button>
           )} */}
         {showBtn && (
-          <Button
-            isLInk={true}
-            className="w-100 btn btn-bg text-light w-100 more card-btns a"
-            link
-            to={pageLink}
-          >
-            {hide ? secBtnText : primeBtnText}
-          </Button>
+          <>
+            <a
+              target="blank"
+              className="w-100 pt-1 pb-1 mb-2 btn btn-bg text-light w-100 more card-btns a"
+              href={demo}
+            >
+              {hide ? demoText : demoText}
+            </a>
+            <Button
+              isLInk={true}
+              className="w-100 pt-1 pb-1 btn btn-bg text-light w-100 more card-btns a"
+              link
+              to={pageLink}
+            >
+              {hide ? secBtnText : primeBtnText}
+            </Button>
+          </>
         )}
       </div>
     </div>

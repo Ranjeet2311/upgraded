@@ -147,8 +147,8 @@ $theme-yellow: #b5ac49;
 
 body {
   background: black;
-  cursor: drop-shadow(0 0 40px rgba(0, 12, 232, 0.667)) !important;
-  cursor: url("../images/cursor.png") 16 16, auto !important;
+  // cursor: drop-shadow(0 0 40px rgba(0, 12, 232, 0.667)) !important;
+  // cursor: url("../images/cursor.png") 16 16, auto !important;
 }
 
 .dark-bg {
@@ -539,6 +539,7 @@ a,
   height: 45px !important;
   bottom: 1px !important;
   background: $gradient-background-secondary !important;
+  border-radius: 20px !important;
 }
 
 /* width */
@@ -608,16 +609,17 @@ a,
 
 .card {
   position: relative;
-  background: transparent;
+  background: #161d26;
   padding-bottom: 10px;
   overflow-x: hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
+  // border: 1px solid rgba(2, 2, 2, 0.2) !important;
   // box-shadow: 4px 4px 60px $theme-green;
 
   &:hover {
-    background-color: $theme-green;
-    filter: drop-shadow(0 0 40px $theme-green);
+    // background-color: $theme-green;
+    filter: drop-shadow(-2px 4px 20px $theme-green);
     transition: all 0.3s ease-in-out;
 
     .btn,
@@ -659,7 +661,11 @@ a,
   }
 
   .card-title {
-    color: white !important;
+    // color: $theme-yellow !important;
+    margin-bottom: 12px !important;
+    // font-weight: 500 !important;
+    font-family: $regular;
+    font-weight: 600 !important;
   }
   .created {
     font-size: 12px;
@@ -668,7 +674,9 @@ a,
   }
   .description {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
+    font-family: $regular;
+    font-weight: 400;
   }
 
   .card-stack {
@@ -811,24 +819,16 @@ button,
         box-shadow: none !important;
         background: transparent;
         &::after {
-          background-image: url("../images/angle-circle-arrow-up-icon.svg") !important;
-          transform: scale(1.6);
+          background-image: url("../images/plus_icon.svg") !important;
           transition: all 0.3s ease-in-out;
-
-          @include at-900px() {
-            transform: scale(1.2);
-          }
+          transform: rotate(-45deg) scale(1.4);
         }
       }
       &::after {
-        background-image: url("../images/angle-circle-arrow-down-icon.svg") !important;
-        transform: scale(1.6);
+        background-image: url("../images/plus_icon.svg") !important;
         filter: invert(100%);
         transition: all 0.3s ease-in-out;
-
-        @include at-900px() {
-          transform: scale(1.2);
-        }
+        transform: scale(1.4);
       }
 
       h2 {
@@ -939,11 +939,6 @@ button,
 // }
 
 .colored-text {
-  background: -webkit-linear-gradient(
-    to right,
-    rgb(54, 64, 247),
-    rgba(236, 56, 188, 1)
-  );
   background: $gradient-background-primary;
   -webkit-background-clip: text;
   color: transparent !important;
@@ -1047,27 +1042,18 @@ h5 {
 
   &::before {
     content: "";
-    background-color: $theme-green;
-    width: 28px;
-    height: 28px;
+    background-color: $theme-yellow;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     margin-right: 50px;
     position: absolute;
-    left: 206px;
-
-    @include xl-1399px {
-      left: 176px;
-    }
-    @include lg-1199px {
-      left: 147px;
-    }
-
-    @include at-900px {
-      left: -13px;
-    }
+    left: -11px;
 
     @include mid {
-      left: -2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -1082,9 +1068,9 @@ h5 {
 
   .responsibility-label {
     @include font-para;
-    font-weight: 400;
-    margin-top: 24px;
-    margin-bottom: 18px;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .responsibilities,
   p {
@@ -1323,11 +1309,12 @@ li::marker {
 }
 
 .about {
-  padding-top: 60px;
+  padding-top: 122px;
   padding-bottom: 100px;
   transform: skewY(8deg);
 
   @include at-900px {
+    padding-top: 60px !important;
     padding-bottom: 80px !important;
   }
   @include mid {
@@ -1394,7 +1381,11 @@ li::marker {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    padding-top: 122px;
+
+    @include at-900px {
+      padding-top: 60px;
+    }
 
     h2 {
       @include font-mid;
@@ -1439,7 +1430,11 @@ li::marker {
     align-items: center !important;
   }
   .tech-wrap {
-    padding-top: 110px;
+    padding-top: 122px;
+
+    @include at-900px {
+      padding-top: 60px;
+    }
 
     h2 {
       @include font-mid;
@@ -1449,6 +1444,10 @@ li::marker {
       @include font-para;
       font-weight: 600;
       letter-spacing: 2px;
+    }
+
+    .tech-inner-wrap {
+      padding-top: 70px;
     }
   }
 
@@ -1468,10 +1467,10 @@ li::marker {
 .exp_section {
   position: relative;
   padding-bottom: 62px;
-  padding-top: 62px !important;
+  padding-top: 122px !important;
 
   @include at-900px {
-    padding-top: 80px;
+    padding-top: 60px !important;
     padding-bottom: 80px !important;
   }
   @include mid {
@@ -1483,10 +1482,6 @@ li::marker {
     border-left: 2px solid $theme-green;
     // margin-left: 12px !important;
     margin-top: 70px;
-
-    @include at-900px {
-      margin-top: 20px !important;
-    }
   }
   .about-link {
     text-align: center;
@@ -1499,12 +1494,13 @@ li::marker {
   }
 
   .experience-wrap {
+    padding-top: 30;
     h2 {
       @include font-mid;
     }
 
     .experience {
-      padding-top: 70px;
+      // padding-top: 70px;
       @include at-900px {
         padding-top: 20px !important;
       }
@@ -1577,7 +1573,10 @@ li::marker {
 }
 
 .contact {
-  padding-top: 62px;
+  padding-top: 122px !important;
+  @include at-900px {
+    padding-top: 60px !important;
+  }
 
   .contact-inner {
     position: relative;
@@ -1591,8 +1590,8 @@ li::marker {
     box-shadow: 2px 4px 8px $theme-blue;
 
     @include at-900px {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
     }
 
     // @include mid {
@@ -1618,6 +1617,12 @@ li::marker {
 
     button {
       margin-top: 24px;
+      // background: transparent !important;
+      border-radius: 20px;
+      background: $gradient-background-secondary;
+
+      // &:hover {
+      // }
     }
   }
 }
@@ -1797,6 +1802,10 @@ li::marker {
     margin-top: 60px;
   }
 
+  .react-multi-carousel-item {
+    cursor: grab;
+  }
+
   h2,
   p {
     text-align: start !important;
@@ -1846,8 +1855,8 @@ li::marker {
 
     .skill {
       // @include font-semi-mid;
+      margin-top: 15px;
       margin-bottom: 10px;
-      margin-bottom: 10;
       line-height: 22px !important;
     }
   }

@@ -128,6 +128,7 @@ export default function Project() {
                   title={t(item.title)}
                   code={item.code}
                   demo={item.demo}
+                  demoText={t("Live Demo")}
                   tags={item.tags}
                   description={item.description}
                   createdAt={item.createdAt}

@@ -73,10 +73,10 @@ export default function About() {
           <TechStack />
         </div>
         <div className="row">
-          <div className="col-12 mx-auto academy">
+          <div className="col-12 academy">
             <Heading text={t("Academics")} />
             <Divider />
-            <div className="row academy-inner">
+            <div className="row academy-inner w-100">
               <div className="col-12 col-lg-5 school">
                 <h4 className="fw-bolder colored-text">
                   BA-Prog. -Delhi University 2014
@@ -92,6 +92,14 @@ export default function About() {
                 <p className="responsibility-label">
                   {t("Maths, Chemistry, Physics, Biology, English, Computers")}
                 </p>
+              </div>
+              <div className="col-12 mt-4 pt-4 d-flex justify-content-start ps-0">
+                <Button className="colored-pill" isLInk={true} to="/experience">
+                  <span className="me-2">
+                    <ReadMoreIcon />
+                  </span>
+                  {t("Read more")}
+                </Button>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ export default function Endorsement() {
         swipeable={true}
         draggable={true}
         showDots={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={4000}
         keyBoardControl={true}
         customTransition="all 0.5s"
         transitionDuration={500}
