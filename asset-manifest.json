@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.efd41e7d.css",
-    "main.js": "/upgraded/static/js/main.e4cd02a4.js",
+    "main.css": "/upgraded/static/css/main.570ef1f2.css",
+    "main.js": "/upgraded/static/js/main.c8d66b38.js",
     "static/js/878.4d144275.chunk.js": "/upgraded/static/js/878.4d144275.chunk.js",
     "static/js/153.b93da763.chunk.js": "/upgraded/static/js/153.b93da763.chunk.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
@@ -36,13 +36,13 @@
     "static/media/arrow-right.svg": "/upgraded/static/media/arrow-right.5a83c824c718c86447ee7cdd06e1832f.svg",
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.efd41e7d.css.map": "/upgraded/static/css/main.efd41e7d.css.map",
-    "main.e4cd02a4.js.map": "/upgraded/static/js/main.e4cd02a4.js.map",
+    "main.570ef1f2.css.map": "/upgraded/static/css/main.570ef1f2.css.map",
+    "main.c8d66b38.js.map": "/upgraded/static/js/main.c8d66b38.js.map",
     "878.4d144275.chunk.js.map": "/upgraded/static/js/878.4d144275.chunk.js.map",
     "153.b93da763.chunk.js.map": "/upgraded/static/js/153.b93da763.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efd41e7d.css",
-    "static/js/main.e4cd02a4.js"
+    "static/css/main.570ef1f2.css",
+    "static/js/main.c8d66b38.js"
   ]
 }
