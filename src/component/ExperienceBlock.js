@@ -4,13 +4,15 @@ function ExperienceBlock({ title, responsibilities, techs, duration }) {
   const { t } = useTranslation();
   return (
     <div className="ExperienceBlock">
-      <h3
-        className="fw-bolder text-decoration-underline"
-        style={{ color: "#ffffff" }}
-      >
-        <span className="pe-2">📌</span>
-        {t(title)} | {t(duration)} |
-      </h3>
+      {title && (
+        <h3
+          className="fw-bolder text-decoration-underline"
+          style={{ color: "#ffffff" }}
+        >
+          <span className="pe-2">📌</span>
+          {t(title)} | {t(duration)} |
+        </h3>
+      )}
       <p className="responsibility-label">
         {t("Activities & Responsibilities")} :
       </p>

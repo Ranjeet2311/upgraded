@@ -62,9 +62,9 @@
         border: 1px solid white;
         width: 60px;
         border-radius: 50%;
-        background: #155799;
+        background: linear-gradient(to top, #159957, #81bbf5, #159957);
         position: absolute;
-        // box-shadow: 2px 6px 20px rgba(188, 62, 174, 1);
+        box-shadow: 2px 6px 20px #32363a;
 
         &:hover {
           box-shadow: 8px 12px 60px rgba(188, 62, 174, 1);

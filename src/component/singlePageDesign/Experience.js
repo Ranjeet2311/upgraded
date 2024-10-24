@@ -17,7 +17,7 @@ export default function Experience() {
       </p>
       <Divider />
       <div className="row d justify-content-center align-items-center">
-        <div className="col-12 col-lg-8 mx-auto border-left experience-wrap">
+        <div className="col-12 mx-auto border-left experience-wrap">
           {/* <Heading
             className="small-intro colored-text"
             text={t("Work History")}
@@ -29,12 +29,14 @@ export default function Experience() {
                 return (
                   <div key={item.id}>
                     <Accordian
-                      heading={`${t(`${item.title}`)} | ${`${item.duration}`}`}
+                      heading={`📌 ${t(`${item.title}`)} | ${t(
+                        `${item.duration}`
+                      )}  `}
                       accordianSelect="homeTwo"
                       w-100
                     >
                       <ExperienceBlock
-                        title={item.title}
+                        title=""
                         responsibilities={item.responsibilities}
                         techs={item.techs}
                         duration={item.duration}

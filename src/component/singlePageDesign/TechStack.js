@@ -55,8 +55,8 @@ export default function TechStack() {
             </h3>
             <Divider />
           </div>
-          <div className="col-12 col-lg-12 mt-4">
-            <div className="row">
+          <div className="col-12 col-lg-12">
+            <div className="row tech-inner-wrap">
               <div className="col-12 col-lg-3 h-100">
                 <Box className="experience my-4 d-flex justify-content-center justify-content-lg-start flex-column">
                   <Tabs
