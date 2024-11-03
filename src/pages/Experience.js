@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Heading from "../component/Heading";
 import Paragraph from "../component/Paragraph";
 import { experienceData } from "../data/experienceList";
@@ -19,6 +20,10 @@ import { Link } from "react-router-dom";
 
 function Experience() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <>
@@ -152,6 +157,7 @@ function Experience() {
                 <StaticModal
                   btnText={t("Message me")}
                   title={t("Sending message to @Ranjeet")}
+                  theme=""
                 >
                   <ContactForm downloadCv="true"> </ContactForm>
                 </StaticModal>

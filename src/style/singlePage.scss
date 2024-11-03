@@ -180,6 +180,12 @@ body {
     color: transparent !important;
   }
 
+  .chatbox {
+    .Typewriter__wrapper {
+      color: white !important;
+    }
+  }
+
   .form-wrap {
     background: $theme-blue !important;
     label,
@@ -701,6 +707,8 @@ a,
     transform: scale(1);
     border: none;
     border-radius: 22px;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
     .more {
       text-decoration: none;
     }
@@ -1704,27 +1712,52 @@ li::marker {
   }
 }
 
-.up-btn {
-  position: fixed;
+.footer-actions {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 4%;
-  bottom: 10%;
-  background-color: $theme-blue;
-  color: $white;
-  border-radius: 50%;
   z-index: 99;
-  padding: 6px;
-  height: 50px;
-  width: 50px;
+
   // animation: wave 2s ease-in-out infinite;
 
-  .MuiSvgIcon-root,
-  .css-i4bv87-MuiSvgIcon-root {
-    height: 40px;
-    width: 40px;
-    // animation: arrow 2s ease-in-out infinite;
+  .up-btn {
+    background-color: $theme-blue;
+    color: $white;
+    border-radius: 50%;
+    padding: 6px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 4%;
+    bottom: 20%;
+
+    @include mid {
+      display: none;
+    }
+
+    .MuiSvgIcon-root,
+    .css-i4bv87-MuiSvgIcon-root {
+      height: 40px;
+      width: 40px;
+      // animation: arrow 2s ease-in-out infinite;
+    }
+  }
+  .chatbox {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    @include small-description;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: $gradient-background-secondary;
+
+    .Typewriter {
+      display: inline-block;
+      position: absolute;
+      top: 40%;
+      right: 52%;
+    }
   }
 }
 

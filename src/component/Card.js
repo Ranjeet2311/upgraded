@@ -107,21 +107,21 @@ function Card({
           )} */}
         {showBtn && (
           <>
-            <a
-              target="blank"
-              className="w-100 pt-1 pb-1 mb-2 btn btn-bg text-light w-100 more card-btns a"
-              href={demo}
-            >
-              {hide ? demoText : demoText}
-            </a>
             <Button
               isLInk={true}
-              className="w-100 pt-1 pb-1 btn btn-bg text-light w-100 more card-btns a"
+              className="w-100 mb-2 btn btn-bg text-light w-100 more card-btns a"
               link
               to={pageLink}
             >
               {hide ? secBtnText : primeBtnText}
             </Button>
+            <a
+              target="blank"
+              className="w-100 btn btn-bg text-light w-100 more card-btns a"
+              href={demo}
+            >
+              {hide ? demoText : demoText}
+            </a>
           </>
         )}
       </div>

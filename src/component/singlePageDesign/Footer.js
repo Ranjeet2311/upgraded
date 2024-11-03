@@ -2,8 +2,13 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import StaticModal from "../StaticModal";
+import ContactForm from "../ContactForm";
+import { useTranslation } from "react-i18next";
+import Typewriter from "typewriter-effect";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="container-fluid footer">
       <div className="container">
@@ -43,10 +48,30 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="up-btn">
-          <a href="#home">
-            <ArrowUpwardIcon />
-          </a>
+        <div className="footer-actions d-flex flex-column">
+          <div className="up-btn">
+            <a href="#home">
+              <ArrowUpwardIcon />
+            </a>
+          </div>
+          <div className="chatbox">
+            <StaticModal
+              btnText={t("")}
+              title={t("Sending message to @Ranjeet")}
+              theme="chat"
+            >
+              <ContactForm downloadCv="true"> </ContactForm>
+            </StaticModal>
+            <Typewriter
+              options={{
+                strings: ["Hi..", "Hm..."],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+                pauseFor: 2000,
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

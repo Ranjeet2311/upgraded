@@ -3,6 +3,7 @@ import "../style/modal.scss";
 import { createPortal } from "react-dom";
 // import { useTranslation } from "react-i18next";
 import capAvatar from "../images/cap_headShot.png";
+import chatIcon from "../images/chat.png";
 
 function StaticModal({ title, btnText, theme, children }) {
   // const { t } = useTranslation();
@@ -10,13 +11,21 @@ function StaticModal({ title, btnText, theme, children }) {
     <div>
       <button
         type="button"
-        className="btn btn btn-bg w-100 text-light px-4 border-0"
+        // className="btn btn btn-bg w-100 text-light px-4 border-0"
+        className={` ${
+          theme === "chat"
+            ? "btn btn w-100 text-light"
+            : "btn btn btn-bg w-100 text-light px-4 border-0"
+        } `}
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
         <span className="me-1">
-          {" "}
-          {theme === "general" ? null : <TextsmsIcon />}
+          {theme === "general" && null}
+          {theme === "" && <TextsmsIcon />}
+          {theme === "chat" && (
+            <img src={chatIcon} alt="chat" height={70} width={90} srcset="" />
+          )}
         </span>
         {btnText}
       </button>
