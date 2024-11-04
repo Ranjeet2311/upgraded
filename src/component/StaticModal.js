@@ -1,30 +1,28 @@
+import React from "react";
 import TextsmsIcon from "@mui/icons-material/Textsms";
 import "../style/modal.scss";
 import { createPortal } from "react-dom";
-// import { useTranslation } from "react-i18next";
 import capAvatar from "../images/cap_headShot.png";
 import chatIcon from "../images/chat.png";
 
-function StaticModal({ title, btnText, theme, children }) {
-  // const { t } = useTranslation();
+function StaticModal({ id, title, btnText, theme, children }) {
   return (
     <div>
       <button
         type="button"
-        // className="btn btn btn-bg w-100 text-light px-4 border-0"
         className={` ${
           theme === "chat"
             ? "btn btn w-100 text-light"
             : "btn btn btn-bg w-100 text-light px-4 border-0"
         } `}
         data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
+        data-bs-target={`#${id}`}
       >
         <span className="me-1">
           {theme === "general" && null}
           {theme === "" && <TextsmsIcon />}
           {theme === "chat" && (
-            <img src={chatIcon} alt="chat" height={70} width={90} srcset="" />
+            <img src={chatIcon} alt="chat" height={70} width={90} />
           )}
         </span>
         {btnText}
@@ -32,11 +30,11 @@ function StaticModal({ title, btnText, theme, children }) {
       {createPortal(
         <div
           className="modal fade"
-          id="staticBackdrop"
+          id={id}
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabIndex="-1"
-          aria-labelledby="staticBackdropLabel"
+          aria-labelledby={`${id}Label`}
           aria-hidden="true"
         >
           <div className="modal-dialog modal-dialog-centered">
@@ -45,7 +43,7 @@ function StaticModal({ title, btnText, theme, children }) {
                 <div className="dot me-3">
                   <img src={capAvatar} alt="head-shot avatar" />
                 </div>
-                <h1 className="modal-title fs-5" id="staticBackdropLabel">
+                <h1 className="modal-title fs-5" id={`${id}Label`}>
                   {title}
                 </h1>
                 <button
@@ -55,16 +53,7 @@ function StaticModal({ title, btnText, theme, children }) {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body"> {children} </div>
-              {/* <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-               */}
+              <div className="modal-body">{children}</div>
             </div>
           </div>
         </div>,

@@ -59,8 +59,9 @@ export default function Footer() {
               btnText={t("")}
               title={t("Sending message to @Ranjeet")}
               theme="chat"
+              id="chatModal"
             >
-              <ContactForm downloadCv="true"> </ContactForm>
+              <ContactForm />
             </StaticModal>
             <Typewriter
               options={{

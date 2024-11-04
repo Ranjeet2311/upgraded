@@ -52,6 +52,7 @@ export default function EndorsementBox({
                 btnText={`${skill} ${t("See all")}`}
                 title={`${skill} ${t("Endorsed by")}`}
                 theme="general"
+                id={`endorsementModal`}
               >
                 {endorsementBy &&
                   endorsementBy.map((people) => (

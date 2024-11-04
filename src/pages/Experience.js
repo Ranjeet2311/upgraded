@@ -158,6 +158,7 @@ function Experience() {
                   btnText={t("Message me")}
                   title={t("Sending message to @Ranjeet")}
                   theme=""
+                  id="general"
                 >
                   <ContactForm downloadCv="true"> </ContactForm>
                 </StaticModal>
