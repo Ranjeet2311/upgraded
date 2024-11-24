@@ -33,17 +33,21 @@ export default function Hero() {
               <span className="colored-text">
                 <Typewriter
                   options={{
-                    strings: [t("home.Ranjeet"), "a software developer"],
+                    strings: [
+                      t("home.Ranjeet"),
+                      t("home.a software developer"),
+                      t("home.a creative coder"),
+                    ],
                     autoStart: true,
                     loop: true,
                     delay: 100,
-                    pauseFor: 12000,
+                    pauseFor: 6000,
                   }}
                 />
               </span>
             </p>
             <h1 className="colored-text mt-2">
-              {t("home.Frontend Developer / Web Development Enthusiast")}
+              {t("home.crafting responsive and scalable web applications")}
             </h1>
             <p className="type-intro-second">
               {t("home.i'm")}
@@ -58,7 +62,7 @@ export default function Hero() {
                     autoStart: true,
                     loop: true,
                     delay: 100,
-                    pauseFor: 5000,
+                    pauseFor: 2000,
                   }}
                 />
               </span>

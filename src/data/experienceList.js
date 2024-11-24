@@ -1,7 +1,7 @@
 const experienceData = [
   {
     id: 4,
-    title: "Parental Break | Freelance",
+    title: "Freelance | Parental Break",
     duration: "December 2023 - Current",
     techs: [
       "TypeScript",
@@ -75,7 +75,7 @@ const experienceData = [
   },
   {
     id: 2,
-    title: "Soft Smart Services",
+    title: "Web-developer - Soft Smart Services",
     duration: "Aug 2015 - Dec 2021",
     techs: [
       "React",
@@ -106,7 +106,7 @@ const experienceData = [
   },
   {
     id: 1,
-    title: "In Technologies",
+    title: "Software support - In Technologies",
     duration: "Apr 2013 - 2014",
     responsibilities: [
       "Software troubleshooting support for USA/CA/Britain clients.",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
@@ -8,6 +8,23 @@ import { useTranslation } from "react-i18next";
 import Typewriter from "typewriter-effect";
 
 export default function Footer() {
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    const checkScrollTop = () => {
+      if (!showArrow && window.scrollY > 400) {
+        setShowArrow(true);
+      } else if (showArrow && window.scrollY <= 400) {
+        setShowArrow(false);
+      }
+    };
+
+    window.addEventListener("scroll", checkScrollTop);
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, [showArrow]);
+
   const { t } = useTranslation();
   return (
     <div className="container-fluid footer">
@@ -49,11 +66,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-actions d-flex flex-column">
-          <div className="up-btn">
-            <a href="#home">
-              <ArrowUpwardIcon />
-            </a>
-          </div>
+          {showArrow && (
+            <div className="up-btn">
+              <a href="#home">
+                <ArrowUpwardIcon />
+              </a>
+            </div>
+          )}
+
           <div className="chatbox">
             <StaticModal
               btnText={t("")}

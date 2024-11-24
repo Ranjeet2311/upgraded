@@ -5,6 +5,7 @@ import Divider from "../../component/Divider";
 import { useTranslation } from "react-i18next";
 import Accordian from "../Accordian";
 import { Link } from "react-router-dom";
+import ReadMoreIcon from "@mui/icons-material/ReadMore";
 
 export default function Experience() {
   const { t } = useTranslation();
@@ -49,7 +50,9 @@ export default function Experience() {
         </div>
 
         <Link className="mt-4 colored-text about-link" to="/experience">
-          {t("Read more about me")}....
+          <button className="btn btn-bg px-4 py-1 colored-pill text-white">
+            <ReadMoreIcon /> {t("Read more")}
+          </button>
         </Link>
       </div>
     </div>
