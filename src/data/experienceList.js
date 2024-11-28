@@ -3,6 +3,7 @@ const experienceData = [
     id: 4,
     title: "Freelance | Parental Break",
     duration: "December 2023 - Current",
+    projectNumber: "5",
     techs: [
       "TypeScript",
       "React Js",
@@ -42,6 +43,7 @@ const experienceData = [
     id: 3,
     title: "Frontend Developer-XLAB doo",
     duration: "June 2022 - 1st Dec 2023",
+    projectNumber: "6",
     techs: [
       "TypeScript",
       "Vue JS,",
@@ -65,7 +67,7 @@ const experienceData = [
       "Adobe XD",
     ],
     responsibilities: [
-      "Contributed to development of responsive enterprise-level web applications using VueJs and Angular in a team of 3 engineers.",
+      "Contributed to development of responsive enterprise-level web applications using VueJs, React and Angular in a team of 3 engineers.",
       "Independently collaborated with designers and backend developers to implement pixel-perfect UI designs and integrate backend APIs.",
       "Optimized application performance by implementing code-splitting, lazy loading, and other performance optimization techniques.",
       "Contributed to the development of reusable UI components to improve development efficiency and maintain consistency across the application.",
@@ -77,6 +79,7 @@ const experienceData = [
     id: 2,
     title: "Web-developer - Soft Smart Services",
     duration: "Aug 2015 - Dec 2021",
+    projectNumber: "30+",
     techs: [
       "React",
       "Html",
@@ -97,7 +100,7 @@ const experienceData = [
     ],
 
     responsibilities: [
-      "Independently developed and managed the frontend code using the React framework.",
+      "Collaborated on React projects, creating dynamic, user-friendly interfaces.",
       "Developed websites using Html, CSS, bootstrap, JavaScript, jQuery, PHP and SQL.",
       "Created and suggested website designs.",
       "Made SEO friendly websites.",
@@ -108,6 +111,7 @@ const experienceData = [
     id: 1,
     title: "Software support - In Technologies",
     duration: "Apr 2013 - 2014",
+    projectNumber: "None",
     responsibilities: [
       "Software troubleshooting support for USA/CA/Britain clients.",
     ],

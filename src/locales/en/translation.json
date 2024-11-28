@@ -129,13 +129,13 @@
     "learned Slovene language and Passed A1 level test.": "learned Slovene language and Passed A1 level test.",
     "Making some independent projects , for details checkout my Github.": "Making some independent projects , for details checkout my Github.",
     "Supported and took care of my wife and welcomed a new family member.": "Supported and took care of my wife and welcomed a new family member.",
-    "Contributed to development of responsive enterprise-level web applications using VueJs and Angular in a team of 3 engineers.": "Contributed to development of responsive enterprise-level web applications using VueJs and Angular in a team of 3 engineers.",
+    "Contributed to development of responsive enterprise-level web applications using VueJs, React and Angular in a team of 3 engineers.": "Contributed to development of responsive enterprise-level web applications using VueJs, React and Angular in a team of 3 engineers.",
     "Independently collaborated with designers and backend developers to implement pixel-perfect UI designs and integrate backend APIs.": "Independently collaborated with designers and backend developers to implement pixel-perfect UI designs and integrate backend APIs.",
     "Optimized application performance by implementing code-splitting, lazy loading, and other performance optimization techniques.": "Optimized application performance by implementing code-splitting, lazy loading, and other performance optimization techniques.",
     "Contributed to the development of reusable UI components to improve development efficiency and maintain consistency across the application.": "Contributed to the development of reusable UI components to improve development efficiency and maintain consistency across the application.",
     "Independently migrated company's website from WordPress (PHP templating) to Hugo (Golang templating) and contributed to Django backend.": "Independently migrated company's website from WordPress (php templating) to Hugo (Golang templating) and contributed to Django backend.",
     "Worked closely with QA team to identify and fix bugs.": "Worked closely with QA team to identify and fix bugs.",
-    "Independently developed and managed the frontend code using the React framework.": "Independently developed and managed the frontend code using the React framework.",
+    "Collaborated on React projects, creating dynamic, user-friendly interfaces.": "Collaborated on React projects, creating dynamic, user-friendly interfaces.",
     "Developed websites using Html, CSS, bootstrap, JavaScript, jQuery, PHP and SQL.": "Developed websites using Html, CSS, bootstrap, JavaScript, jQuery, PHP and SQL.",
     "Created and suggested website designs.": "Created and suggested website designs.",
     "Made SEO friendly websites.": "Made SEO friendly websites.",
@@ -203,6 +203,8 @@
     "Accept all": "Accept all",
     "Only necessary": "Only necessary",
     "Now displaying list of": "Now displaying list of",
-    "repositories, for more repositories checkout my": "repositories, for more repositories checkout my"
+    "repositories, for more repositories checkout my": "repositories, for more repositories checkout my",
+    "None": "None",
+    "Projects completed": "Projects completed"
   }
 }

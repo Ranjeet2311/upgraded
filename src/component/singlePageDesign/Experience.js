@@ -31,7 +31,13 @@ export default function Experience() {
                   <div key={item.id}>
                     <Accordian
                       heading={`📌 ${t(`${item.title}`)} | ${t(
-                        `${item.duration}`
+                        `${item.duration} | ${
+                          item.projectNumber !== "None"
+                            ? `💎 ${t("Projects completed")}: ${
+                                item.projectNumber
+                              }`
+                            : ""
+                        }`
                       )}  `}
                       accordianSelect="homeTwo"
                       w-100

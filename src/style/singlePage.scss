@@ -1748,9 +1748,9 @@ li::marker {
     bottom: 1%;
     @include small-description;
     color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(201, 201, 201, 0.9);
     border-radius: 12px;
-    background: $gradient-background-secondary;
+    // background: $gradient-background-secondary;
 
     .Typewriter {
       display: inline-block;
