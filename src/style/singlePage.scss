@@ -1940,3 +1940,14 @@ li::marker {
     }
   }
 }
+
+// ------MUI arrow----------------------
+
+.css-1q0ig8p,
+.css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root {
+  background-color: $theme-green !important;
+  color: white !important;
+  border-radius: 50% !important;
+  height: 40px !important;
+  width: 40px !important;
+}

@@ -19,6 +19,12 @@ const tabs = [
   { title: "React", ref: "react", imgSrc: react },
   { title: "Vue", ref: "vue", imgSrc: vue },
   { title: "Angular", ref: "angular", imgSrc: angular },
+  { title: "NodeJS", ref: "node", imgSrc: angular },
+  { title: "ExpressJs", ref: "expressjs", imgSrc: angular },
+  { title: "SQL", ref: "sql", imgSrc: angular },
+  { title: "MongoDB", ref: "mongodb", imgSrc: angular },
+  { title: "Firebase", ref: "firebase", imgSrc: angular },
+  { title: "TypeScript", ref: "typescript", imgSrc: angular },
 ];
 
 export default function Project() {
@@ -72,7 +78,7 @@ export default function Project() {
         {t("Checkout my codes at Github")}
       </p>
       <Divider />
-      <div className="col-12 "></div>
+      {/* <div className="col-12 "></div> */}
       {showData && (
         <Box className="mt-2 px-4 project-inner">
           <Tabs
