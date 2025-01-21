@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/upgraded/static/css/main.95d63e22.css",
-    "main.js": "/upgraded/static/js/main.dac3b7e2.js",
+    "main.css": "/upgraded/static/css/main.eae48582.css",
+    "main.js": "/upgraded/static/js/main.8116dec0.js",
     "static/js/878.be868bae.chunk.js": "/upgraded/static/js/878.be868bae.chunk.js",
-    "static/js/153.ec9f826b.chunk.js": "/upgraded/static/js/153.ec9f826b.chunk.js",
+    "static/js/153.2ed78d17.chunk.js": "/upgraded/static/js/153.2ed78d17.chunk.js",
     "static/media/berlin-river.png": "/upgraded/static/media/berlin-river.9b2a05c7f28e18ee8fe0.png",
     "static/media/map.jpg": "/upgraded/static/media/map.fb4bcd6de74e087ecc69.jpg",
     "static/media/werdev.jpg": "/upgraded/static/media/werdev.6379a369f54e257b4e1c.jpg",
@@ -36,13 +36,13 @@
     "static/media/line.svg": "/upgraded/static/media/line.ab747214c86e8b87f08f8d1c1c5774be.svg",
     "static/media/plus_icon.svg": "/upgraded/static/media/plus_icon.7c713dfa6c7e1cabb19e.svg",
     "static/media/de.svg": "/upgraded/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
-    "main.95d63e22.css.map": "/upgraded/static/css/main.95d63e22.css.map",
-    "main.dac3b7e2.js.map": "/upgraded/static/js/main.dac3b7e2.js.map",
+    "main.eae48582.css.map": "/upgraded/static/css/main.eae48582.css.map",
+    "main.8116dec0.js.map": "/upgraded/static/js/main.8116dec0.js.map",
     "878.be868bae.chunk.js.map": "/upgraded/static/js/878.be868bae.chunk.js.map",
-    "153.ec9f826b.chunk.js.map": "/upgraded/static/js/153.ec9f826b.chunk.js.map"
+    "153.2ed78d17.chunk.js.map": "/upgraded/static/js/153.2ed78d17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95d63e22.css",
-    "static/js/main.dac3b7e2.js"
+    "static/css/main.eae48582.css",
+    "static/js/main.8116dec0.js"
   ]
 }
